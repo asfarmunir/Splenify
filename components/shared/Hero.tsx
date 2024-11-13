@@ -94,23 +94,26 @@ const Hero = () => {
         </div>
         <HeroBentoGrid />
       </section>
-      <div className="flex gap-10 my-[60px] justify-center ">
-        <div className="hidden lg:flex flex-col gap-3">
-          <h3 className=" p-2.5 2xl:p-4 px-8 2xl:px-10 border flex flex-col text-slate-400/80   rotate-12  rounded-3xl bg-white dark:bg-slate-900 dark:border-slate-700  border-slate-300 2xl:text-lg ">
-            <span className="text-3xl 2xl:text-4xl text-[#7268FA] font-semibold">
+      <div className="flex gap-1 px-3 md:gap-10 my-[50px] pt-8 md:pt-0 md:my-[60px] justify-center items-center  md:items-start  relative ">
+        <h2 className="   text-lg  2xl:text-xl text-center absolute top-0">
+          Our long list of happy clients include:
+        </h2>
+        <div className="flex flex-col gap-3">
+          <h3 className=" p-2.5 px-3 text-nowrap 2xl:p-4 md:px-8 2xl:px-10 border flex flex-col text-slate-400/80   rotate-12  rounded-2xl md:rounded-3xl bg-white dark:bg-slate-900 dark:border-slate-700  border-slate-300 text-[0.65rem] md:text-base 2xl:text-lg ">
+            <span className=" text-lg md:text-3xl 2xl:text-4xl text-[#7268FA] font-semibold">
               300+
             </span>
             Happy Clients
           </h3>
-          <h3 className=" p-2.5 2xl:p-4 px-8 2xl:px-10 border flex flex-col text-slate-400/80   -rotate-12   rounded-3xl bg-white dark:bg-slate-900 dark:border-slate-700  border-slate-300 2xl:text-lg ">
-            <span className=" text-3xl 2xl:text-4xl text-[#7268FA]  font-semibold">
+          <h3 className=" p-2.5 px-3 2xl:p-4 md:px-8 2xl:px-10 border flex flex-col text-slate-400/80   -rotate-12   rounded-2xl md:rounded-3xl bg-white dark:bg-slate-900 dark:border-slate-700  border-slate-300 text-[0.65rem] md:text-base 2xl:text-lg ">
+            <span className=" text-lg md:text-3xl 2xl:text-4xl text-[#7268FA] font-semibold">
               40+
             </span>
             Skillful Talent
           </h3>
         </div>
         <div className="flex flex-col px-4 items-center justify-center space-y-8">
-          <h2 className="  text-lg  2xl:text-xl text-center">
+          <h2 className="  hidden md:block text-lg  2xl:text-xl text-center">
             Our long list of happy clients include:
           </h2>
           <div className="flex items-center gap-8 justify-center flex-wrap max-w-2xl 2xl:max-w-4xl">
@@ -119,7 +122,7 @@ const Hero = () => {
               initial="initial"
               viewport={{ once: true, amount: 0.5 }}
               whileInView="animate" // Trigger the staggered animation
-              className="flex items-center gap-x-4 gap-y-2 justify-center flex-wrap"
+              className="flex items-center gap-x-1 md:gap-x-4 gap-y-2 justify-center flex-wrap"
             >
               {Array.from({ length: 9 }).map((_, index) => (
                 <motion.div
@@ -133,7 +136,7 @@ const Hero = () => {
                     alt="Clients"
                     width={130}
                     className={` dark:invert dark:opacity-70 opacity-40 
-              w-[120px] 2xl:w-[150px] `}
+              w-[80px] md:w-[120px] 2xl:w-[150px] `}
                     height={130}
                   />
                 </motion.div>
@@ -141,15 +144,15 @@ const Hero = () => {
             </motion.div>
           </div>
         </div>
-        <div className="hidden lg:flex flex-col gap-3">
-          <h3 className=" p-2.5 2xl:p-4 px-5 2xl:px-10 border flex flex-col text-slate-400/80   -rotate-12  rounded-3xl border-slate-300 bg-white dark:bg-slate-900 dark:border-slate-700  2xl:text-lg ">
-            <span className="text-3xl 2xl:text-4xl text-[#7268FA] font-semibold">
+        <div className="flex flex-col gap-3">
+          <h3 className=" p-2.5 text-nowrap px-3 2xl:p-4 md:px-5 2xl:px-10 border flex flex-col text-slate-400/80   -rotate-12 rounded-2xl  md:rounded-3xl border-slate-300 bg-white dark:bg-slate-900 dark:border-slate-700 text-[0.65rem] md:text-base 2xl:text-lg ">
+            <span className=" text-lg md:text-3xl 2xl:text-4xl text-[#7268FA] font-semibold">
               10+
             </span>
             Year of Market
           </h3>
-          <h3 className=" p-2.5 2xl:p-4 px-5 2xl:px-10 border flex flex-col text-slate-400/80   rotate-12 bg-white dark:bg-slate-900 dark:border-slate-700  rounded-3xl border-slate-300 2xl:text-lg ">
-            <span className="text-3xl 2xl:text-4xl text-[#7268FA]  font-semibold">
+          <h3 className=" p-2.5 text-nowrap px-3 2xl:p-4 md:px-5 2xl:px-10 border flex flex-col text-slate-400/80   rotate-12 bg-white dark:bg-slate-900 dark:border-slate-700  rounded-2xl md:rounded-3xl border-slate-300 text-[0.65rem] md:text-base 2xl:text-lg ">
+            <span className="text-lg md:text-3xl 2xl:text-4xl text-[#7268FA] font-semibold">
               80+
             </span>
             App Built

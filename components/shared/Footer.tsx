@@ -18,17 +18,17 @@ const Footer = () => {
         </div>
         <Link
           href={"https://www.cal.com/splenify"}
-          className=" bg-[#7165FF] mx-auto md:mx-0 text-white py-5 px-6 rounded-[20px] 2xl:text-lg"
+          className=" bg-[#7165FF] mx-auto md:mx-0 w-full text-center md:w-fit rounded-full text-white py-5 px-6 md:rounded-[20px] 2xl:text-lg"
         >
           Get Started with Splenify
         </Link>
       </div>
-      <div className="flex items-center flex-col-reverse gap-8 md:flex-row justify-between px-3 md:px-0 pt-9 md:pt-16">
-        <div className="flex flex-col items-center md:items-start pt-8 md:pt-0  max-w-xs gap-3">
+      <div className="flex items-start md:items-center flex-col-reverse gap-8 md:flex-row justify-between px-3 md:px-0 pt-9 md:pt-16">
+        <div className="flex flex-col items-start  pt-8 md:pt-0  max-w-xs gap-3">
           <h2 className=" text-3xl md:text-xl 2xl:text-3xl text-white font-semibold">
             Splenify
           </h2>
-          <p className=" text-gray-400 my-3 md:my-0 leading-loose text-center md:text-start md:leading-6 tracking-wide text-sm">
+          <p className=" text-gray-400 my-3 md:my-0 leading-loose text-start md:leading-6 tracking-wide text-sm">
             With lots of unique blocks, you can easily build a page without
             coding. Build your next landing page.
           </p>
@@ -59,12 +59,18 @@ const Footer = () => {
                 height={22}
               />
             </Link>
+            <p className=" block md:hidden  text-nowrap font-thin text-gray-400">
+              Copyright © Splenify
+            </p>
           </div>
-          <p className=" text-lg font-thin text-gray-400">
+          <p className=" hidden md:block text-lg font-thin text-gray-400">
             Copyright © Splenify
           </p>
         </div>
-        <ul className=" space-y-4 md:space-y-3 text-center md:text-start">
+        <ul className=" space-y-4 md:space-y-3 text-start">
+          <h2 className="text-base md:text-lg font-semibold text-slate-100">
+            Company
+          </h2>
           <li
             onClick={() => scrollToSection("home")}
             className=" text-sm 2xl:text-base text-gray-200 hover:cursor-pointer"

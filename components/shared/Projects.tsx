@@ -31,7 +31,7 @@ const Projects = () => {
           width={300}
           height={300}
           className=" absolute hidden md:block   top-1 rotate-1 right-0 
-          w-[34 0px] 2xl:w-[420px] dark:invert
+          w-[340px] 2xl:w-[420px] dark:invert
 
            "
         />
@@ -220,13 +220,32 @@ const Projects = () => {
         id="projects"
         className="flex flex-col md:hidden w-full relative  items-center  px-6 gap-4 2xl:gap-5   my-[20px] md:my-[30px]"
       >
+        <Image
+          src="/images/left-arrow.svg"
+          alt="Splenify"
+          width={300}
+          height={300}
+          className=" absolute    top-12 rotate-3 -right-4 
+          w-[100px] dark:invert
+
+           "
+        />
+        <Image
+          src="/images/right-arrow.svg"
+          alt="Splenify"
+          width={160}
+          height={140}
+          className=" absolute -left-4 top-8 rotate-1  
+          w-[100px]  dark:invert
+          "
+        />
         <h2 className=" text-base   2xl:xl tracking-wide ">
-          and we go beyond just visuals…
+          Catch the latest...
         </h2>
         <h1
           className={` text-3xl relative md:text-4xl 2xl:text-5xl tracking-wide text-center mb-6 ${recoleta.className}`}
         >
-          See our latest projects
+          Browse our latest <br /> projects
         </h1>
         <div className=" w-full max-w-5xl 2xl:max-w-7xl space-y-8  2xl:gap-16 ">
           <motion.div
