@@ -27,9 +27,9 @@ const Specialization = () => {
         Here’s what we help you do.
       </h2>
       <h1
-        className={` text-2xl px-3.5 relative md:text-3xl 2xl:text-5xl tracking-wide text-center mb-5 md:mb-16 ${recoleta.className}`}
+        className={` text-2xl max-w-4xl px-3.5 relative md:text-3xl 2xl:text-5xl tracking-wide text-center mb-5 md:mb-16 ${recoleta.className}`}
       >
-        Navigate the digital landscape with our <br /> app{" "}
+        Navigate the digital landscape with our app{" "}
         <span className=" text-[#7165FF] ">building excellence</span>
         <Image
           src="/images/line_vector2.svg"
@@ -94,7 +94,7 @@ const Specialization = () => {
           className="flex flex-col-reverse md:flex-row w-full  overflow-hidden  rounded-2xl "
         >
           <div className=" py-4 pb-6 md:py-6 w-full md:w-[50%]  bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-center md:items-start justify-center">
-            <h2 className=" text-start text-2xl md:text-lg 2xl:text-2xl px-8 font-semibold mb-2">
+            <h2 className=" text-center md:text-start text-2xl md:text-lg 2xl:text-2xl px-8 font-semibold mb-2">
               Software Development
             </h2>
             <p className=" md:max-w-[17.5rem] 2xl:max-w-[20rem] px-8 text-sm md:text-xs 2xl:text-sm text-center md:text-start ">
@@ -202,7 +202,7 @@ const Specialization = () => {
           className="flex flex-col-reverse md:flex-row w-full  overflow-hidden  rounded-2xl "
         >
           <div className=" py-4 pb-6 md:py-6 w-full md:w-[50%]  bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-center md:items-start justify-center">
-            <h2 className=" text-2xl md:text-lg 2xl:text-2xl   font-semibold mb-2 px-8">
+            <h2 className="text-center md:text-start text-2xl md:text-lg 2xl:text-2xl   font-semibold mb-2 px-8">
               Digital Transformation
             </h2>
             <p className=" md:max-w-[17.5rem] 2xl:max-w-[20rem] px-8 text-sm md:text-xs 2xl:text-sm text-center md:text-start ">

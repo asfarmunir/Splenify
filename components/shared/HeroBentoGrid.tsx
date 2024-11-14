@@ -20,7 +20,6 @@ export default function BentoGridDemo() {
               }}
               viewport={{
                 once: true,
-                amount: 0.25,
               }}
             >
               <Image
@@ -390,7 +389,6 @@ export default function BentoGridDemo() {
               }}
               viewport={{
                 once: true,
-                amount: 0.25,
               }}
             >
               <Image
@@ -416,7 +414,6 @@ export default function BentoGridDemo() {
               }}
               viewport={{
                 once: true,
-                amount: 0.25,
               }}
             >
               <Image
@@ -442,7 +439,6 @@ export default function BentoGridDemo() {
               }}
               viewport={{
                 once: true,
-                amount: 0.25,
               }}
             >
               <Image
@@ -468,7 +464,6 @@ export default function BentoGridDemo() {
               }}
               viewport={{
                 once: true,
-                amount: 0.2,
               }}
             >
               <Image
@@ -494,7 +489,6 @@ export default function BentoGridDemo() {
               }}
               viewport={{
                 once: true,
-                amount: 0.25,
               }}
             >
               <Image
@@ -551,7 +545,6 @@ export default function BentoGridDemo() {
                   }}
                   viewport={{
                     once: true,
-                    amount: 0.25,
                   }}
                   className=" z-40"
                 >
