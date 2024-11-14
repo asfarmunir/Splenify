@@ -229,7 +229,7 @@ const ContactUs = () => {
           </div>
           <button
             type="submit"
-            className="bg-[#7165FF] dark:bg-gradient-to-br from-blue-700 to-blue-900  p-3.5 w-full rounded-[20px] mt-4 text-lg text-white"
+            className="bg-[#7165FF]  p-3.5 w-full rounded-full mt-4 text-lg text-white"
           >
             Submit{" "}
           </button>

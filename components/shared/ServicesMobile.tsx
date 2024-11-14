@@ -30,7 +30,7 @@ const services = [
 const Services = () => {
   return (
     <motion.div
-      id="services"
+      id="mobileServices"
       initial={{
         opacity: 0,
       }}

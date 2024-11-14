@@ -18,7 +18,7 @@ const Footer = () => {
         </div>
         <Link
           href={"https://www.cal.com/splenify"}
-          className=" bg-[#7165FF] mx-auto md:mx-0 w-full text-center md:w-fit rounded-full text-white py-5 px-6 md:rounded-[20px] 2xl:text-lg"
+          className=" bg-[#7165FF] mx-auto md:mx-0 w-full text-center md:w-fit rounded-full text-white py-5 px-6 md:rounded-full 2xl:text-lg"
         >
           Get Started with Splenify
         </Link>

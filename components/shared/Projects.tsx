@@ -217,7 +217,7 @@ const Projects = () => {
             ease: "easeInOut",
           },
         }}
-        id="projects"
+        id="mobile-projects"
         className="flex flex-col md:hidden w-full relative  items-center  px-6 gap-4 2xl:gap-5   my-[20px] md:my-[30px]"
       >
         <Image
