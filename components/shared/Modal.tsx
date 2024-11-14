@@ -15,12 +15,12 @@ const Modal = () => {
     <Dialog>
       <DialogTrigger
         className="bg-[#7165FF] text-xs md:text-base
-        px-6    md:px-8 py-4 rounded-2xl text-white font-thin "
+        px-6    md:px-8 py-4 rounded-full text-white font-thin "
       >
         View Project
       </DialogTrigger>
-      <DialogContent className="  border-none max-h-[95svh] overflow-y-auto [scroll]  [scrollbar-width:none]    md:rounded-2xl p-0 md:min-w-[900px] 2xl:min-w-[930px] ">
-        <div className=" w-full flex flex-col ">
+      <DialogContent className="  border-none     md:rounded-2xl p-0 md:min-w-[900px] 2xl:min-w-[930px] ">
+        <div className=" w-full flex flex-col max-h-[95svh] md:rounded-2xl overflow-y-auto [scroll]  [scrollbar-width:none]   ">
           <div
             className=" w-full flex flex-col items-center pt-20 gap-4"
             style={{
@@ -141,7 +141,7 @@ const Modal = () => {
               </div>
             </div>
           </div>
-          <div className="rounded-md max-w-4xl my-3p flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
+          <div className="rounded-md  max-w-4xl my-3 flex flex-col  bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center ">
             <InfiniteMovingCards
               items={images}
               direction="right"
@@ -241,7 +241,7 @@ const Modal = () => {
               justifyContent: "center",
               position: "relative",
             }}
-            className=" py-20 2xl:py-32 -mt-8 bg-[#161C2D] "
+            className=" py-40 -mt-8 bg-[#161C2D] "
           >
             <div className=" flex flex-col items-center  space-y-3">
               <h2

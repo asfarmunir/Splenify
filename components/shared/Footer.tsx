@@ -25,9 +25,12 @@ const Footer = () => {
       </div>
       <div className="flex items-start md:items-center flex-col-reverse gap-8 md:flex-row justify-between px-3 md:px-0 pt-9 md:pt-16">
         <div className="flex flex-col items-start  pt-8 md:pt-0  max-w-xs gap-3">
-          <h2 className=" text-3xl md:text-xl 2xl:text-3xl text-white font-semibold">
-            Splenify
-          </h2>
+          <Image
+            src="/images/logoWhite.png"
+            alt="Splenify"
+            width={160}
+            height={160}
+          />
           <p className=" text-gray-400 my-3 md:my-0 leading-loose text-start md:leading-6 tracking-wide text-sm">
             With lots of unique blocks, you can easily build a page without
             coding. Build your next landing page.
