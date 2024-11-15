@@ -71,7 +71,7 @@ const Specialization = () => {
               src="/images/portfolio1.jpg"
               alt="Splenify"
               width={225}
-              className=" w-full h-full "
+              className=" w-full h-full object-cover object-center "
               height={123}
             />
           </div>
@@ -102,13 +102,13 @@ const Specialization = () => {
               boost efficiency and drive innovation.
             </p>
           </div>
-          <div className=" w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900 ">
+          <div className=" w-full md:w-[50%]  bg-[#F3F3F9] dark:bg-slate-900 ">
             <Image
-              src="/images/portfolio2.jpg"
+              src="/images/portfolio1.jpg"
               alt="Splenify"
-              width={225}
-              className=" w-full h-full "
-              height={123}
+              width={325}
+              className=" w-full h-full object-cover  object-center  "
+              height={323}
             />
           </div>
         </motion.div>
@@ -143,7 +143,7 @@ const Specialization = () => {
               src="/images/portfolio1.jpg"
               alt="Splenify"
               width={225}
-              className=" w-full h-full "
+              className=" w-full h-full object-cover object-center "
               height={123}
             />
           </div>
@@ -174,12 +174,12 @@ const Specialization = () => {
               ensuring top performance and efficiency.
             </p>
           </div>
-          <div className=" w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900 ">
+          <div className=" w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900  ">
             <Image
-              src="/images/portfolio2.jpg"
+              src="/images/portfolio1.jpg"
               alt="Splenify"
               width={225}
-              className=" w-full h-full "
+              className=" w-full h-full object-cover"
               height={123}
             />
           </div>
@@ -215,7 +215,7 @@ const Specialization = () => {
               src="/images/portfolio1.jpg"
               alt="Splenify"
               width={225}
-              className=" w-full h-full "
+              className=" w-full h-full object-cover object-center "
               height={123}
             />
           </div>
@@ -248,10 +248,10 @@ const Specialization = () => {
           </div>
           <div className=" w-full md:w-[50%] bg-[#F3F3F9] dark:bg-slate-900 ">
             <Image
-              src="/images/portfolio2.jpg"
+              src="/images/portfolio1.jpg"
               alt="Splenify"
               width={225}
-              className=" w-full h-full "
+              className=" w-full h-full object-cover"
               height={123}
             />
           </div>

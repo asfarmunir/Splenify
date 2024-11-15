@@ -43,8 +43,8 @@ const TestimonialModal = ({
           delayDuration={delayDuration}
         />
       </DialogTrigger>
-      <DialogContent className=" max-h-[90svh] md:min-w-[900px] 2xl:min-w-[1000px] bg-gradient-to-r from-[#900EF7] flex flex-col md:flex-row items-center gap-12 2xl:gap-20 justify-center to-[#D677FE] p-20 border-none ">
-        <div className="flex flex-col gap-4">
+      <DialogContent className=" overflow-hidden max-h-[85svh] md:max-h-[90svh] md:min-w-[900px] 2xl:min-w-[1000px] bg-gradient-to-r from-[#900EF7] flex flex-col md:flex-row  gap-6 md:gap-12 2xl:gap-20  to-[#D677FE] p-12 pt-20 md:p-20 border-none ">
+        <div className="flex flex-col  gap-4">
           <h2
             className={`text-2xl 2xl:text-4xl text-white font-bold  ${recoleta.className}`}
           >
@@ -76,7 +76,7 @@ const TestimonialModal = ({
           width={10}
           height={10}
           alt="review-img"
-          className="2xl:w-[350px] hidden md:block 2xl:h-[239px] w-[290px] h-[179px] rounded-[16px]"
+          className="2xl:w-[350px] block 2xl:h-[239px] w-[290px] h-[179px] rounded-[16px]"
         />
       </DialogContent>
     </Dialog>

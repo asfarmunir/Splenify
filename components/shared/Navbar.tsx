@@ -78,14 +78,16 @@ const Navbar = () => {
         src="/images/logoWhite.png"
         alt="Splenify"
         width={150}
-        height={150}
+        height={50}
+        priority
         className=" hidden dark:block "
       />
       <Image
         src="/images/logoBlack.png"
         alt="Splenify"
         width={150}
-        height={150}
+        height={550}
+        priority
         className=" dark:hidden "
       />
       <div className="hidden lg:inline-flex items-center gap-10">

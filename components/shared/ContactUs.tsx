@@ -89,7 +89,7 @@ const ContactUs = () => {
           height={100}
           className="absolute right-10 top-10"
         />
-        <div className=" z-50">
+        <div className=" z-10">
           <h2 className="text-2xl 2xl:text-4xl font-bold mb-3 text-white ">
             Contact Information
           </h2>

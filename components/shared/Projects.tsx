@@ -8,6 +8,7 @@ const recoleta = localFont({ src: "../../app/recoleta.ttf" });
 const Projects = () => {
   return (
     <>
+      {/* Desktop Version  */}
       <motion.div
         initial={{
           opacity: 0,
@@ -69,16 +70,18 @@ const Projects = () => {
               },
             }}
             style={{ ...styles.gridItem, ...styles.item1 }}
-            className="flex flex-col -mt-11 2xl:-mt-8 "
+            className="flex flex-col  mt-11 2xl:-mt-2.5 "
           >
-            <Image
-              src="/images/p1.svg"
-              alt="Splenify"
-              width={985}
-              height={923}
-              className=" w-full h-full "
-            />
-            <div className="flex items-center w-full pt-4 justify-between">
+            <div className="  rounded-2xl overflow-hidden max-h-[800px]  w-full h-full ">
+              <Image
+                src="/images/projectCover.svg"
+                alt="Splenify"
+                width={995}
+                height={923}
+                className=" w-full h-full object-cover object-top"
+              />
+            </div>
+            <div className="flex items-start w-full pt-6 justify-between">
               <div className="flex flex-col">
                 <p className=" font-thin text-base">Mobile Application</p>
                 <h2 className="text-xl font-bold ">Aura IOS | Android</h2>
@@ -101,16 +104,20 @@ const Projects = () => {
               },
             }}
             style={{ ...styles.gridItem, ...styles.item2 }}
-            className=" flex flex-col "
+            className="  flex flex-col w-full  "
           >
-            <Image
-              src="/images/p2.svg"
-              alt="Splenify"
-              width={985}
-              height={923}
-              className=" w-full h-full "
-            />
-            <div className="flex items-center w-full pt-6 justify-between">
+            <div className=" w-full h-full max-h-[490px] rounded-2xl overflow-hidden ">
+              <Image
+                src="/images/projectCover.svg"
+                // src="/images/p2.svg"
+                alt="Splenify"
+                width={985}
+                height={923}
+                className=" w-full h-full object-cover object-center "
+              />
+            </div>
+
+            <div className="flex items-start w-full pt-6 justify-between">
               <div className="flex flex-col">
                 <p className=" font-thin text-base">Video Animation</p>
                 <h2 className="text-xl font-bold ">AB.S Snack Animation</h2>
@@ -138,16 +145,19 @@ const Projects = () => {
               },
             }}
             style={{ ...styles.gridItem, ...styles.item3 }}
-            className="flex flex-col -mt-1"
+            className="flex flex-col w-full -mt-1"
           >
-            <Image
-              src="/images/p3.svg"
-              alt="Splenify"
-              width={985}
-              height={923}
-              className=" w-full h-full "
-            />
-            <div className="flex items-center w-full pt-4  justify-between">
+            <div className=" w-full h-full  max-h-[490px] overflow-hidden rounded-2xl">
+              <Image
+                src="/images/projectCover.svg"
+                // src="/images/p3.svg"
+                alt="Splenify"
+                width={985}
+                height={923}
+                className=" w-full  h-full object-cover object-center "
+              />
+            </div>
+            <div className="flex items-start w-full pt-6  justify-between">
               <div className="flex flex-col">
                 <p className=" font-thin text-base">Web Development</p>
                 <h2 className="text-xl font-bold ">
@@ -177,16 +187,19 @@ const Projects = () => {
               },
             }}
             style={{ ...styles.gridItem, ...styles.item4 }}
-            className=" flex flex-col"
+            className=" flex flex-col "
           >
-            <Image
-              src="/images/p4.svg"
-              alt="Splenify"
-              width={985}
-              height={923}
-              className=" w-full h-full "
-            />
-            <div className="flex items-center w-full pt-6  justify-between">
+            <div className=" w-full h-full max-h-[800px]  rounded-2xl overflow-hidden">
+              <Image
+                src="/images/projectCover.svg"
+                alt="Splenify"
+                width={985}
+                height={923}
+                className=" w-full h-full object-cover object-center  "
+              />
+            </div>
+
+            <div className="flex items-start w-full pt-6  justify-between">
               <div className="flex flex-col">
                 <p className=" font-thin text-base">
                   Full Stack Web Development
@@ -203,6 +216,8 @@ const Projects = () => {
           </motion.div>
         </div>
       </motion.div>
+
+      {/* Mobile Version */}
       <motion.div
         initial={{
           opacity: 0,
@@ -262,15 +277,17 @@ const Projects = () => {
                 ease: "easeInOut",
               },
             }}
-            className="flex flex-col "
+            className=" flex h-[400px] flex-col  "
           >
-            <Image
-              src="/images/p1.svg"
-              alt="Splenify"
-              width={985}
-              height={923}
-              className=" w-full h-full "
-            />
+            <div className=" w-full h-full rounded-3xl overflow-hidden">
+              <Image
+                src="/images/projectCover.svg"
+                alt="Splenify"
+                width={985}
+                height={923}
+                className=" w-full h-full object-cover object-center "
+              />
+            </div>
             <div className="flex items-center w-full pt-4 justify-between">
               <div className="flex flex-col">
                 <p className=" text-sm font-thin md:text-base">
@@ -302,15 +319,17 @@ const Projects = () => {
                 ease: "easeInOut",
               },
             }}
-            className=" flex flex-col "
+            className=" flex max-h-[400px]  flex-col  "
           >
-            <Image
-              src="/images/p2.svg"
-              alt="Splenify"
-              width={985}
-              height={923}
-              className=" w-full h-full "
-            />
+            <div className=" w-full h-full rounded-3xl overflow-hidden">
+              <Image
+                src="/images/projectCover.svg"
+                alt="Splenify"
+                width={985}
+                height={923}
+                className=" w-full h-full  object-cover object-center "
+              />
+            </div>
             <div className="flex items-center w-full pt-4 justify-between">
               <div className="flex flex-col">
                 <p className=" text-sm font-thin md:text-base">
@@ -342,15 +361,17 @@ const Projects = () => {
                 ease: "easeInOut",
               },
             }}
-            className="flex flex-col"
+            className=" flex max-h-[400px]  flex-col  "
           >
-            <Image
-              src="/images/p3.svg"
-              alt="Splenify"
-              width={985}
-              height={923}
-              className=" w-full h-full "
-            />
+            <div className=" w-full h-full rounded-3xl overflow-hidden">
+              <Image
+                src="/images/projectCover.svg"
+                alt="Splenify"
+                width={985}
+                height={923}
+                className=" w-full h-full object-cover object-center "
+              />
+            </div>
             <div className="flex items-center w-full pt-4  justify-between">
               <div className="flex flex-col">
                 <p className=" font-thin text-sm md:text-base">
@@ -383,15 +404,17 @@ const Projects = () => {
                 ease: "easeInOut",
               },
             }}
-            className=" flex flex-col"
+            className=" flex max-h-[400px]  flex-col  "
           >
-            <Image
-              src="/images/p4.svg"
-              alt="Splenify"
-              width={985}
-              height={923}
-              className=" w-full h-full "
-            />
+            <div className=" w-full h-full rounded-3xl overflow-hidden">
+              <Image
+                src="/images/projectCover.svg"
+                alt="Splenify"
+                width={985}
+                height={923}
+                className=" w-full h-full object-cover object-center "
+              />
+            </div>
             <div className="flex items-center w-full pt-4  justify-between">
               <div className="flex flex-col">
                 <p className=" font-thin text-sm md:text-base">

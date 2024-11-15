@@ -95,7 +95,7 @@ const Hero = () => {
         <HeroBentoGrid />
       </section>
       <div className="flex gap-1 px-3 md:gap-10 my-[50px] pt-8 md:pt-0 md:my-[60px] justify-center items-center  md:items-start  relative ">
-        <h2 className="   text-lg  2xl:text-xl text-center absolute top-0">
+        <h2 className=" block  md:hidden text-lg  2xl:text-xl text-center absolute top-0">
           Our long list of happy clients include:
         </h2>
         <div className="flex flex-col gap-3">
