@@ -373,8 +373,8 @@ export default function BentoGridDemo() {
         objectPosition="center"
         className="md:hidden w-full px-4"
       /> */}
-      <div className=" w-full     h-fit flex md:hidden  items-start my-8   justify-center gap-24">
-        <div className="flex  flex-col items-start gap-4">
+      <div className=" w-full     h-fit flex md:hidden  items-start my-8   justify-center ">
+        <div className="flex  w-full flex-col items-start gap-4">
           <div className="flex items-start gap-4">
             <motion.div
               initial={{ opacity: 0, y: 100 }}
@@ -395,8 +395,9 @@ export default function BentoGridDemo() {
                 priority
                 src="/bento grid/1.svg"
                 alt="hero"
-                width={400}
+                width={490}
                 height={400}
+                className=" -ml-4 -mt-3"
                 objectFit="cover"
                 objectPosition="center"
               />
@@ -420,7 +421,8 @@ export default function BentoGridDemo() {
                 priority
                 src="/bento grid/2.svg"
                 alt="hero"
-                width={150}
+                width={230}
+                className=" -mt-1 -ml-2"
                 height={100}
                 objectFit="cover"
                 objectPosition="center"
@@ -445,7 +447,7 @@ export default function BentoGridDemo() {
                 priority
                 src="/bento grid/3.svg"
                 alt="hero"
-                width={380}
+                width={450}
                 height={330}
                 objectFit="cover"
                 objectPosition="center"
@@ -522,8 +524,9 @@ export default function BentoGridDemo() {
                 priority
                 src="/bento grid/6.svg"
                 alt="hero"
-                width={50}
+                width={120}
                 height={40}
+                className=" -ml-6 -mt-8 "
                 objectFit="cover"
                 objectPosition="center"
               />
@@ -552,8 +555,9 @@ export default function BentoGridDemo() {
                     priority
                     src="/bento grid/star1.svg"
                     alt="hero"
-                    width={30}
+                    width={50}
                     height={40}
+                    className=" -ml-1"
                     objectFit="cover"
                     objectPosition="center"
                   />
@@ -604,9 +608,9 @@ export default function BentoGridDemo() {
                   {" "}
                   <Image
                     priority
-                    src="/bento grid/7.svg"
+                    src="/bento grid/11.svg"
                     alt="hero"
-                    width={170}
+                    width={190}
                     height={150}
                     objectFit="cover"
                     objectPosition="center"
@@ -667,7 +671,7 @@ export default function BentoGridDemo() {
                 />
               </motion.div>
 
-              <div className="flex gap-12">
+              <div className="flex gap-12 -mr-4">
                 <motion.div
                   initial={{ opacity: 0, y: 100 }}
                   whileInView={{
@@ -688,7 +692,7 @@ export default function BentoGridDemo() {
                     priority
                     src="/bento grid/8.svg"
                     alt="hero"
-                    width={170}
+                    width={200}
                     height={200}
                     objectFit="cover"
                     objectPosition="center"
@@ -696,48 +700,6 @@ export default function BentoGridDemo() {
                 </motion.div>
               </div>
             </div>
-
-            {/* <div className="flex flex-col justify-center items-center mt-14  gap-4 ">
-              <Image
-                priority
-                src="/bento grid/9.svg"
-                alt="hero"
-                width={130}
-                height={400}
-                objectFit="cover"
-                objectPosition="center"
-              />
-
-              <motion.div
-                initial={{ opacity: 0, y: 100, rotate: 60 }}
-                whileInView={{
-                  opacity: 1,
-                  y: 0,
-                  rotate: 0,
-                  transition: {
-                    delay: 0.1,
-                    duration: 1,
-                    ease: "easeOut",
-                  },
-                }}
-                viewport={{
-                  once: true,
-
-                  amount: 0.01,
-                }}
-              >
-                {" "}
-                <Image
-                  priority
-                  src="/bento grid/star1.svg"
-                  alt="hero"
-                  width={80}
-                  height={400}
-                  objectFit="cover"
-                  objectPosition="center"
-                />
-              </motion.div>
-            </div> */}
           </div>
         </div>
       </div>

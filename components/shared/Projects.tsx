@@ -74,7 +74,7 @@ const Projects = () => {
           >
             <div className="  rounded-2xl overflow-hidden max-h-[800px]  w-full h-full ">
               <Image
-                src="/images/projectCover.svg"
+                src="/images/projectCover1.svg"
                 alt="Splenify"
                 width={995}
                 height={923}
@@ -149,7 +149,7 @@ const Projects = () => {
           >
             <div className=" w-full h-full  max-h-[490px] overflow-hidden rounded-2xl">
               <Image
-                src="/images/projectCover.svg"
+                src="/images/projectCover2.svg"
                 // src="/images/p3.svg"
                 alt="Splenify"
                 width={985}
@@ -191,7 +191,7 @@ const Projects = () => {
           >
             <div className=" w-full h-full max-h-[800px]  rounded-2xl overflow-hidden">
               <Image
-                src="/images/projectCover.svg"
+                src="/images/projectCover3.svg"
                 alt="Splenify"
                 width={985}
                 height={923}
@@ -281,7 +281,7 @@ const Projects = () => {
           >
             <div className=" w-full h-full rounded-3xl overflow-hidden">
               <Image
-                src="/images/projectCover.svg"
+                src="/images/projectCover1.svg"
                 alt="Splenify"
                 width={985}
                 height={923}
@@ -365,7 +365,7 @@ const Projects = () => {
           >
             <div className=" w-full h-full rounded-3xl overflow-hidden">
               <Image
-                src="/images/projectCover.svg"
+                src="/images/projectCover3.svg"
                 alt="Splenify"
                 width={985}
                 height={923}
@@ -408,7 +408,7 @@ const Projects = () => {
           >
             <div className=" w-full h-full rounded-3xl overflow-hidden">
               <Image
-                src="/images/projectCover.svg"
+                src="/images/projectCover2.svg"
                 alt="Splenify"
                 width={985}
                 height={923}
