@@ -45,7 +45,7 @@ const DialogContent = React.forwardRef<
       {...props}
     >
       {children}
-      <DialogPrimitive.Close className=" absolute left-6 top-6 flex items-center gap-2  rounded-sm  ring-offset-background focus:outline-none focus:ring-0 focus:ring-ring focus:ring-offset-0 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
+      <DialogPrimitive.Close className=" absolute z-50 left-6 top-6 flex items-center gap-2  rounded-sm  ring-offset-background focus:outline-none focus:ring-0 focus:ring-ring focus:ring-offset-0 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
         <FaArrowLeftLong className="h-8 w-8 bg-white rounded-full p-2 text-slate-700" />
         <span className="text-lg font-semibold inline 2xl:text-xl text-white">
           Back
