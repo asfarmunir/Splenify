@@ -19,7 +19,7 @@ const Modal = () => {
       >
         View Project
       </DialogTrigger>
-      <DialogContent className="  border-none     md:rounded-2xl p-0 md:min-w-[900px] 2xl:min-w-[930px] ">
+      <DialogContent className="  border-none     md:rounded-2xl p-0 md:min-w-[900px] 2xl:min-w-[940px] ">
         <div className=" w-full flex flex-col max-h-[100svh] md:max-h-[95svh] md:rounded-2xl overflow-y-auto [scroll]  [scrollbar-width:none]   ">
           <div
             className=" w-full flex flex-col items-center pt-20 gap-4"
@@ -155,39 +155,47 @@ const Modal = () => {
               Tools Used
             </h2>
 
-            <div className="flex flex-wrap justify-center gap-y-4 gap-x-6 py-5  md:gap-y-10">
+            <div className="flex flex-wrap justify-center gap-y-4 gap-x-2.5 py-5  md:gap-y-10">
               <Image
                 src="/projects/flutter-icon.svg"
                 alt="Tech"
                 width={180}
-                className=" border border-slate-300 dark:border-slate-700 py-3.5 px-8 rounded-xl"
+                className=" border border-slate-200 dark:border-slate-700 py-3.5 px-8 rounded-md"
                 height={150}
               />
               <Image
                 src="/projects/angular-icon.svg"
                 alt="Tech"
                 width={180}
-                className=" border border-slate-300 dark:border-slate-700 py-3.5 px-8 rounded-xl"
+                className=" border border-slate-200 dark:border-slate-700 py-3.5 px-8 rounded-md"
                 height={150}
               />
               <Image
                 src="/projects/react-icon.svg"
                 alt="Tech"
                 width={180}
-                className=" border border-slate-300 dark:border-slate-700 py-3.5 px-8 rounded-xl"
+                className=" border border-slate-200 dark:border-slate-700 py-3.5 px-8 rounded-md"
                 height={150}
               />
               <Image
                 src="/projects/django-icon.svg"
                 alt="Tech"
                 width={180}
-                className=" border  border-slate-300 dark:border-slate-700 py-3.5 px-8 rounded-xl"
+                className=" border  border-slate-200 dark:border-slate-700 py-3.5 px-8 rounded-md"
                 height={150}
               />
             </div>
           </div>
-          <div className="  bg-gradient-to-r from-[#CB71F2] flex flex-col md:flex-row pt-12 md:pt-0 items-center gap-8  justify-center to-[#5C0F97] px-20 border-none ">
-            <div className="flex flex-col gap-4">
+          <div className="    relative   bg-gradient-to-r from-[#CB71F2] flex flex-col md:flex-row pt-16 md:pt-8   items-center gap-8  justify-center to-[#5C0F97] px-12 md:px-20 border-none ">
+            <Image
+              src="/images/arrow3.svg"
+              width={140}
+              height={390}
+              alt="shape"
+              className="absolute w-[135px] md:w-[115px] 2xl:w-[140px]  rotate-12 md:rotate-0   left-0 top-0   z-20
+              "
+            />
+            <div className="flex flex-col gap-4 md:pb-8 ">
               <h2
                 className={`text-3xl 2xl:text-4xl text-white font-bold  ${recoleta.className}`}
               >
@@ -199,7 +207,7 @@ const Modal = () => {
                 landing page and creating stellar social media assets, pitch
                 decks, and more. Their versatility and expertise are unmatched."
               </p>
-              <div className="flex items-center gap-3">
+              <div className="flex pl-6 pt-1 z-50 items-center gap-3">
                 <Image
                   src="/images/avatar.png"
                   width={100}
@@ -211,7 +219,7 @@ const Modal = () => {
                   <h1 className="font-bold text-base text-white">
                     Ruslan Babar
                   </h1>
-                  <p className="text-sm text-white">Co-Founder of RecruitU</p>
+                  <p className="text-xs text-white">Co-Founder of RecruitU</p>
                 </div>
               </div>
             </div>
@@ -221,7 +229,7 @@ const Modal = () => {
               width={10}
               height={10}
               alt="review-img"
-              className="2xl:w-[350px] 2xl:h-[239px] mt-auto w-[290px] h-[179px] rounded-[16px]"
+              className="2xl:w-[350px] 2xl:h-[239px] mt-auto w-[300px] h-[189px] rounded-[16px]"
             />
           </div>
           <div
@@ -241,7 +249,7 @@ const Modal = () => {
               justifyContent: "center",
               position: "relative",
             }}
-            className=" py-40 -mt-8 bg-[#161C2D] "
+            className=" py-40  bg-[#161C2D] "
           >
             <div className=" flex flex-col items-center  space-y-3">
               <h2
