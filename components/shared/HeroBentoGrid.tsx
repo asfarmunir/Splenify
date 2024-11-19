@@ -1,6 +1,19 @@
 import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
+import img1 from "@/public/images/test.png";
+import img2 from "@/public/bento grid/2.png";
+import img3 from "@/public/bento grid/3.png";
+import img4 from "@/public/bento grid/4.png";
+import img5 from "@/public/bento grid/5.png";
+import img6 from "@/public/bento grid/6.png";
+import img7 from "@/public/bento grid/7.png";
+import img8 from "@/public/bento grid/8.png";
+import img9 from "@/public/bento grid/9.png";
+import img10 from "@/public/bento grid/10.png";
+import img11 from "@/public/bento grid/11.png";
+import star1 from "@/public/bento grid/star1.png";
+import star2 from "@/public/bento grid/star2.png";
 export default function BentoGridDemo() {
   return (
     <>
@@ -23,8 +36,10 @@ export default function BentoGridDemo() {
               }}
             >
               <Image
-                priority
-                src="/bento grid/1.svg"
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                unoptimized
+                src={img1}
                 alt="hero"
                 width={400}
                 height={400}
@@ -49,8 +64,10 @@ export default function BentoGridDemo() {
               }}
             >
               <Image
-                priority
-                src="/bento grid/2.svg"
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                unoptimized
+                src={img2}
                 alt="hero"
                 width={150}
                 height={100}
@@ -75,8 +92,10 @@ export default function BentoGridDemo() {
               }}
             >
               <Image
-                priority
-                src="/bento grid/3.svg"
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                unoptimized
+                src={img3}
                 alt="hero"
                 width={380}
                 height={330}
@@ -101,8 +120,10 @@ export default function BentoGridDemo() {
               }}
             >
               <Image
-                priority
-                src="/bento grid/4.svg"
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                unoptimized
+                src={img4}
                 alt="hero"
                 width={280}
                 height={330}
@@ -127,8 +148,10 @@ export default function BentoGridDemo() {
               }}
             >
               <Image
-                priority
-                src="/bento grid/5.svg"
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                unoptimized
+                src={img5}
                 alt="hero"
                 width={150}
                 height={330}
@@ -154,8 +177,10 @@ export default function BentoGridDemo() {
               }}
             >
               <Image
-                priority
-                src="/bento grid/6.svg"
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                unoptimized
+                src={img6}
                 alt="hero"
                 width={140}
                 height={200}
@@ -185,8 +210,10 @@ export default function BentoGridDemo() {
                   className=" z-40"
                 >
                   <Image
-                    priority
-                    src="/bento grid/star1.svg"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    unoptimized
+                    src={star1}
                     alt="hero"
                     width={130}
                     height={400}
@@ -212,8 +239,10 @@ export default function BentoGridDemo() {
                   }}
                 >
                   <Image
-                    priority
-                    src="/bento grid/star2.svg"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    unoptimized
+                    src={star2}
                     alt="hero"
                     width={120}
                     height={400}
@@ -241,8 +270,10 @@ export default function BentoGridDemo() {
                 >
                   {" "}
                   <Image
-                    priority
-                    src="/bento grid/7.svg"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    unoptimized
+                    src={img7}
                     alt="hero"
                     width={450}
                     height={400}
@@ -267,8 +298,10 @@ export default function BentoGridDemo() {
               }}
             >
               <Image
-                priority
-                src="/bento grid/10.svg"
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                unoptimized
+                src={img10}
                 alt="hero"
                 width={150}
                 height={200}
@@ -280,7 +313,9 @@ export default function BentoGridDemo() {
 
             <div className="flex flex-col justify-between -mt-4  gap-1 ">
               <Image
-                priority
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                unoptimized
                 src="/bento grid/toggle.svg"
                 alt="hero"
                 width={90}
@@ -307,8 +342,10 @@ export default function BentoGridDemo() {
                 >
                   {" "}
                   <Image
-                    priority
-                    src="/bento grid/8.svg"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    unoptimized
+                    src={img8}
                     alt="hero"
                     width={370}
                     height={400}
@@ -321,8 +358,10 @@ export default function BentoGridDemo() {
 
             <div className="flex flex-col justify-center items-center mt-14  gap-4 ">
               <Image
-                priority
-                src="/bento grid/9.svg"
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                unoptimized
+                src={img9}
                 alt="hero"
                 width={130}
                 height={400}
@@ -350,8 +389,10 @@ export default function BentoGridDemo() {
               >
                 {" "}
                 <Image
-                  priority
-                  src="/bento grid/star1.svg"
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  unoptimized
+                  src={star1}
                   alt="hero"
                   width={80}
                   height={400}
@@ -364,7 +405,10 @@ export default function BentoGridDemo() {
         </div>
       </div>
       {/* <Image
-        priority
+        
+        loading="lazy"
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        unoptimized
         src="/bento grid/group.svg"
         alt="hero"
         width={200}
@@ -392,8 +436,10 @@ export default function BentoGridDemo() {
               }}
             >
               <Image
-                priority
-                src="/bento grid/1.svg"
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                unoptimized
+                src={img1}
                 alt="hero"
                 width={490}
                 height={400}
@@ -418,8 +464,10 @@ export default function BentoGridDemo() {
               }}
             >
               <Image
-                priority
-                src="/bento grid/2.svg"
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                unoptimized
+                src={img2}
                 alt="hero"
                 width={230}
                 className=" -mt-1 -ml-2"
@@ -444,8 +492,10 @@ export default function BentoGridDemo() {
               }}
             >
               <Image
-                priority
-                src="/bento grid/3.svg"
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                unoptimized
+                src={img3}
                 alt="hero"
                 width={450}
                 height={330}
@@ -469,8 +519,10 @@ export default function BentoGridDemo() {
               }}
             >
               <Image
-                priority
-                src="/bento grid/4.svg"
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                unoptimized
+                src={img4}
                 alt="hero"
                 width={280}
                 height={330}
@@ -494,8 +546,10 @@ export default function BentoGridDemo() {
               }}
             >
               <Image
-                priority
-                src="/bento grid/5.svg"
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                unoptimized
+                src={img5}
                 alt="hero"
                 width={150}
                 height={330}
@@ -521,8 +575,10 @@ export default function BentoGridDemo() {
               }}
             >
               <Image
-                priority
-                src="/bento grid/6.svg"
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                unoptimized
+                src={img6}
                 alt="hero"
                 width={120}
                 height={40}
@@ -552,8 +608,10 @@ export default function BentoGridDemo() {
                   className=" z-40"
                 >
                   <Image
-                    priority
-                    src="/bento grid/star1.svg"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    unoptimized
+                    src={star1}
                     alt="hero"
                     width={50}
                     height={40}
@@ -578,8 +636,10 @@ export default function BentoGridDemo() {
                   }}
                 >
                   <Image
-                    priority
-                    src="/bento grid/star2.svg"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    unoptimized
+                    src={star2}
                     alt="hero"
                     width={50}
                     height={50}
@@ -607,7 +667,9 @@ export default function BentoGridDemo() {
                 >
                   {" "}
                   <Image
-                    priority
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    unoptimized
                     src="/bento grid/11.svg"
                     alt="hero"
                     width={190}
@@ -633,8 +695,10 @@ export default function BentoGridDemo() {
               }}
             >
               <Image
-                priority
-                src="/bento grid/10.svg"
+                loading="lazy"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                unoptimized
+                src={img10}
                 alt="hero"
                 width={50}
                 height={50}
@@ -661,7 +725,9 @@ export default function BentoGridDemo() {
                 }}
               >
                 <Image
-                  priority
+                  loading="lazy"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  unoptimized
                   src="/bento grid/toggle.svg"
                   alt="hero"
                   width={30}
@@ -689,8 +755,10 @@ export default function BentoGridDemo() {
                 >
                   {" "}
                   <Image
-                    priority
-                    src="/bento grid/8.svg"
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                    unoptimized
+                    src={img8}
                     alt="hero"
                     width={200}
                     height={200}

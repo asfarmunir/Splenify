@@ -1,19 +1,46 @@
-"use client";
-import Image from "next/image";
-import localFont from "next/font/local";
 import Testimonials from "@/components/shared/Testimonials";
-const recoleta = localFont({ src: "./recoleta.ttf" });
-import HeroBentoGrid from "@/components/shared/HeroBentoGrid";
-import { motion } from "framer-motion";
-import { containerVariants, fadeInVariants } from "@/lib/animations";
 import Hero from "@/components/shared/Hero";
-import AppsOnDemand from "@/components/shared/AppsOnDemand";
-import Specialization from "@/components/shared/Specialization";
-import Services from "@/components/shared/Services";
-import Projects from "@/components/shared/Projects";
-import ContactUs from "@/components/shared/ContactUs";
-import Footer from "@/components/shared/Footer";
-import ServicesMobile from "@/components/shared/ServicesMobile";
+// import AppsOnDemand from "@/components/shared/AppsOnDemand";
+// import Specialization from "@/components/shared/Specialization";
+// import Services from "@/components/shared/Services";
+// import Projects from "@/components/shared/Projects";
+// import ContactUs from "@/components/shared/ContactUs";
+// import Footer from "@/components/shared/Footer";
+// import ServicesMobile from "@/components/shared/ServicesMobile";
+import dynamic from "next/dynamic";
+
+const AppsOnDemand = dynamic(
+  () => import("../components/shared/AppsOnDemand"),
+  { ssr: false }
+);
+
+// const Hero = dynamic(() => import("../components/shared/Hero"), { ssr: false });
+
+const Specialization = dynamic(
+  () => import("../components/shared/Specialization"),
+  { ssr: false }
+);
+
+const Services = dynamic(() => import("../components/shared/Services"), {
+  ssr: false,
+});
+
+const Projects = dynamic(() => import("../components/shared/Projects"), {
+  ssr: false,
+});
+
+const ContactUs = dynamic(() => import("../components/shared/ContactUs"), {
+  ssr: false,
+});
+
+const Footer = dynamic(() => import("../components/shared/Footer"), {
+  ssr: false,
+});
+
+const ServicesMobile = dynamic(
+  () => import("../components/shared/ServicesMobile"),
+  { ssr: false }
+);
 
 export default function Home() {
   return (
