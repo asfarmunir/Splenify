@@ -2,7 +2,6 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import localFont from "next/font/local";
-import ProjectModal from "./ProjectModal";
 import Modal from "./Modal";
 const recoleta = localFont({ src: "../../app/recoleta.ttf" });
 const Projects = () => {
@@ -122,11 +121,7 @@ const Projects = () => {
                 <p className=" font-thin text-base">Video Animation</p>
                 <h2 className="text-xl font-bold ">AB.S Snack Animation</h2>
               </div>
-              {/* <ProjectModal
-                title="AB.S Snack Animation"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-                projectData=""
-              /> */}
+
               <Modal />
             </div>
           </motion.div>
@@ -164,11 +159,7 @@ const Projects = () => {
                   Gradient Website <br /> Development
                 </h2>
               </div>
-              {/* <ProjectModal
-                title="AB.S Snack Animation"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-                projectData=""
-              /> */}
+
               <Modal />
             </div>
           </motion.div>
@@ -206,11 +197,7 @@ const Projects = () => {
                 </p>
                 <h2 className="text-xl font-bold ">Dashboard Teamify</h2>
               </div>
-              {/* <ProjectModal
-                title="AB.S Snack Animation"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-                projectData=""
-              /> */}
+
               <Modal />
             </div>
           </motion.div>
@@ -297,11 +284,7 @@ const Projects = () => {
                   Aura IOS | Android{" "}
                 </h2>
               </div>
-              {/* <ProjectModal
-                title="AB.S Snack Animation"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-                projectData=""
-              /> */}
+
               <Modal />
             </div>
           </motion.div>
@@ -339,11 +322,7 @@ const Projects = () => {
                   AB.S Snack Animation
                 </h2>
               </div>
-              {/* <ProjectModal
-                title="AB.S Snack Animation"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-                projectData=""
-              /> */}
+
               <Modal />
             </div>
           </motion.div>
@@ -382,11 +361,6 @@ const Projects = () => {
                 </h2>
               </div>
 
-              {/* <ProjectModal
-                title="AB.S Snack Animation"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-                projectData=""
-              /> */}
               <Modal />
             </div>
           </motion.div>
@@ -424,11 +398,7 @@ const Projects = () => {
                   Dashboard Teamify
                 </h2>
               </div>
-              {/* <ProjectModal
-                title="AB.S Snack Animation"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-                projectData=""
-              /> */}
+
               <Modal />
             </div>
           </motion.div>

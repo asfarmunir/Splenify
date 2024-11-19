@@ -249,7 +249,7 @@ const Modal = () => {
               justifyContent: "center",
               position: "relative",
             }}
-            className=" py-40  bg-[#161C2D] "
+            className=" py-80  bg-[#161C2D] "
           >
             <div className=" flex flex-col items-center  space-y-3">
               <h2
