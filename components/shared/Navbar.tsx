@@ -87,7 +87,7 @@ const Navbar = () => {
         src="/images/logoBlack.png"
         alt="Splenify"
         width={150}
-        height={550}
+        height={50}
         priority
         unoptimized
         className=" dark:hidden "

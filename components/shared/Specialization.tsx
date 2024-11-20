@@ -71,7 +71,6 @@ const Specialization = () => {
             <Image
               src="/images/portfolio1.jpg"
               alt="Splenify"
-              unoptimized
               loading="lazy"
               width={225}
               className=" w-full h-full object-cover object-center "
@@ -109,7 +108,6 @@ const Specialization = () => {
             <Image
               src="/images/portfolio1.jpg"
               alt="Splenify"
-              unoptimized
               loading="lazy"
               width={325}
               className=" w-full h-full object-cover  object-center  "
@@ -147,7 +145,6 @@ const Specialization = () => {
             <Image
               src="/images/portfolio1.jpg"
               alt="Splenify"
-              unoptimized
               loading="lazy"
               width={225}
               className=" w-full h-full object-cover object-center "
@@ -185,7 +182,6 @@ const Specialization = () => {
             <Image
               src="/images/portfolio1.jpg"
               alt="Splenify"
-              unoptimized
               loading="lazy"
               width={225}
               className=" w-full h-full object-cover"
@@ -223,7 +219,6 @@ const Specialization = () => {
             <Image
               src="/images/portfolio1.jpg"
               alt="Splenify"
-              unoptimized
               loading="lazy"
               width={225}
               className=" w-full h-full object-cover object-center "
@@ -261,7 +256,6 @@ const Specialization = () => {
             <Image
               src="/images/portfolio1.jpg"
               alt="Splenify"
-              unoptimized
               loading="lazy"
               width={225}
               className=" w-full h-full object-cover"
