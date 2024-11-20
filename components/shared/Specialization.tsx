@@ -4,7 +4,6 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import localFont from "next/font/local";
-import { containerVariants, fadeInVariants } from "@/lib/animations";
 const recoleta = localFont({ src: "../../app/recoleta.ttf" });
 
 const Specialization = () => {
@@ -72,6 +71,8 @@ const Specialization = () => {
             <Image
               src="/images/portfolio1.jpg"
               alt="Splenify"
+              unoptimized
+              loading="lazy"
               width={225}
               className=" w-full h-full object-cover object-center "
               height={123}
@@ -108,6 +109,8 @@ const Specialization = () => {
             <Image
               src="/images/portfolio1.jpg"
               alt="Splenify"
+              unoptimized
+              loading="lazy"
               width={325}
               className=" w-full h-full object-cover  object-center  "
               height={323}
@@ -144,6 +147,8 @@ const Specialization = () => {
             <Image
               src="/images/portfolio1.jpg"
               alt="Splenify"
+              unoptimized
+              loading="lazy"
               width={225}
               className=" w-full h-full object-cover object-center "
               height={123}
@@ -180,6 +185,8 @@ const Specialization = () => {
             <Image
               src="/images/portfolio1.jpg"
               alt="Splenify"
+              unoptimized
+              loading="lazy"
               width={225}
               className=" w-full h-full object-cover"
               height={123}
@@ -216,6 +223,8 @@ const Specialization = () => {
             <Image
               src="/images/portfolio1.jpg"
               alt="Splenify"
+              unoptimized
+              loading="lazy"
               width={225}
               className=" w-full h-full object-cover object-center "
               height={123}
@@ -252,6 +261,8 @@ const Specialization = () => {
             <Image
               src="/images/portfolio1.jpg"
               alt="Splenify"
+              unoptimized
+              loading="lazy"
               width={225}
               className=" w-full h-full object-cover"
               height={123}

@@ -2,18 +2,17 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import img1 from "@/public/images/test.png";
-import img2 from "@/public/bento grid/2.png";
-import img3 from "@/public/bento grid/3.png";
-import img4 from "@/public/bento grid/4.png";
-import img5 from "@/public/bento grid/5.png";
-import img6 from "@/public/bento grid/6.png";
-import img7 from "@/public/bento grid/7.png";
-import img8 from "@/public/bento grid/8.png";
-import img9 from "@/public/bento grid/9.png";
-import img10 from "@/public/bento grid/10.png";
-import img11 from "@/public/bento grid/11.png";
-import star1 from "@/public/bento grid/star1.png";
-import star2 from "@/public/bento grid/star2.png";
+import img2 from "@/public/bento grid/2.webp";
+import img3 from "@/public/bento grid/3.webp";
+import img4 from "@/public/bento grid/4.webp";
+import img5 from "@/public/bento grid/5.webp";
+import img6 from "@/public/bento grid/6.webp";
+import img7 from "@/public/bento grid/7.webp";
+import img8 from "@/public/bento grid/8.webp";
+import img9 from "@/public/bento grid/9.webp";
+import img10 from "@/public/bento grid/10.webp";
+import star1 from "@/public/bento grid/star1.webp";
+import star2 from "@/public/bento grid/star2.webp";
 export default function BentoGridDemo() {
   return (
     <>

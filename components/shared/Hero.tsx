@@ -56,8 +56,8 @@ const Hero = () => {
           viewport={{ once: true }}
           initial={
             {
-              opacity: 0.1,
-              scale: 0.5,
+              opacity: 0,
+              scale: 0.6,
             } /* Set initial properties */
           }
           whileInView={

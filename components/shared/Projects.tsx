@@ -77,6 +77,7 @@ const Projects = () => {
               <Image
                 src="/images/projectCover1.svg"
                 alt="Splenify"
+                loading="lazy"
                 width={995}
                 height={923}
                 className=" w-full h-full object-cover object-top"
@@ -110,7 +111,8 @@ const Projects = () => {
             <div className=" w-full h-full max-h-[490px] rounded-2xl overflow-hidden ">
               <Image
                 src="/images/projectCover.svg"
-                // src="/images/p2.svg"
+                // src="/images
+                loading="lazy"
                 alt="Splenify"
                 width={985}
                 height={923}
@@ -147,6 +149,7 @@ const Projects = () => {
             <div className=" w-full h-full  max-h-[490px] overflow-hidden rounded-2xl">
               <Image
                 src="/images/projectCover2.svg"
+                loading="lazy"
                 // src="/images/p3.svg"
                 alt="Splenify"
                 width={985}
@@ -186,6 +189,7 @@ const Projects = () => {
               <Image
                 src="/images/projectCover3.svg"
                 alt="Splenify"
+                loading="lazy"
                 width={985}
                 height={923}
                 className=" w-full h-full object-cover object-center  "
@@ -272,6 +276,7 @@ const Projects = () => {
               <Image
                 src="/images/projectCover1.svg"
                 alt="Splenify"
+                loading="lazy"
                 width={985}
                 height={923}
                 className=" w-full h-full object-cover object-center "
@@ -310,6 +315,7 @@ const Projects = () => {
               <Image
                 src="/images/projectCover.svg"
                 alt="Splenify"
+                loading="lazy"
                 width={985}
                 height={923}
                 className=" w-full h-full  object-cover object-center "
@@ -348,6 +354,7 @@ const Projects = () => {
               <Image
                 src="/images/projectCover3.svg"
                 alt="Splenify"
+                loading="lazy"
                 width={985}
                 height={923}
                 className=" w-full h-full object-cover object-center "
@@ -385,6 +392,7 @@ const Projects = () => {
             <div className=" w-full h-full rounded-3xl overflow-hidden">
               <Image
                 src="/images/projectCover2.svg"
+                loading="lazy"
                 alt="Splenify"
                 width={985}
                 height={923}

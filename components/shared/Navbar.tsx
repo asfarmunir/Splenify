@@ -80,6 +80,7 @@ const Navbar = () => {
         width={150}
         height={50}
         priority
+        unoptimized
         className=" hidden dark:block "
       />
       <Image
@@ -88,6 +89,7 @@ const Navbar = () => {
         width={150}
         height={550}
         priority
+        unoptimized
         className=" dark:hidden "
       />
       <div className="hidden lg:inline-flex items-center gap-10">
