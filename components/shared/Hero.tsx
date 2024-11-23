@@ -65,8 +65,8 @@ const Hero = () => {
               opacity: 1,
               scale: 1,
               transition: {
-                duration: 0.6,
-                ease: "easeOut",
+                duration: 0.4,
+                ease: "easeInOut",
               },
             } /* Animate when in view */
           }
@@ -82,7 +82,7 @@ const Hero = () => {
         <div className="flex  items-center justify-center gap-3 w-full   md:gap-4 px-5 md:px-12">
           <button
             onClick={() => scrollToSection("contact")}
-            className=" bg-gradient-to-r hover:bg-gradient-to-tr w-full hover:bg-[#DF56FE] transition-colors text-xs  sm:w-48 flex-grow md:flex-grow-0 from-[#DF56FE] to-[#7165FF]   md:text-base 2xl:text-lg text-white font-normal rounded-[20px] px-5 2xl:px-8 py-[1.1rem]  "
+            className=" bg-gradient-to-r hover:bg-gradient-to-tr w-full hover:bg-[#DF56FE] transition-colors text-xs`  sm:w-48 flex-grow md:flex-grow-0 from-[#DF56FE] to-[#7165FF]   md:text-base 2xl:text-lg text-white font-normal rounded-[20px] px-5 2xl:px-8 py-[1.1rem]  "
           >
             Contact Us
           </button>
