@@ -71,7 +71,7 @@ const Services = () => {
           className="  dark:invert hidden md:block  w-[100px] 2xl:w-[170px] absolute right-[1rem] 2xl:right-[0rem] -bottom-1 2xl:-bottom-4   "
         />
       </h1>
-      <div className="grid grid-cols-1 max-w-5xl 2xl:max-w-7xl md:grid-cols-2 lg:grid-cols-3  gap-8 px-8 md:px-4 2xl:px-0  p-2 w-full">
+      <div className="grid grid-cols-1 max-w-5xl 2xl:max-w-7xl sm:grid-cols-2 lg:grid-cols-3  gap-8 px-8 md:px-4 2xl:px-0  p-2 w-full">
         <motion.div
           initial={{
             opacity: 0,

@@ -3,6 +3,8 @@ import React from "react";
 import { motion } from "framer-motion";
 import img1 from "@/public/images/test.png";
 import img2 from "@/public/bento grid/2.webp";
+import new0 from "@/public/bento grid/new.svg";
+import new1 from "@/public/bento grid/new1.svg";
 import img3 from "@/public/bento grid/3.webp";
 import img4 from "@/public/bento grid/4.webp";
 import img5 from "@/public/bento grid/5.webp";
@@ -16,7 +18,7 @@ import star2 from "@/public/bento grid/star2.webp";
 export default function BentoGridDemo() {
   return (
     <>
-      <div className=" w-full     h-fit hidden md:flex items-start my-8   justify-center gap-24">
+      <div className=" w-full     h-fit hidden sm:flex items-start my-8   justify-center gap-24">
         <div className="flex  flex-col items-start gap-4">
           <div className="flex items-start gap-4">
             <motion.div
@@ -66,11 +68,12 @@ export default function BentoGridDemo() {
                 loading="lazy"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 unoptimized
-                src={img2}
+                src={new0}
                 alt="hero"
                 width={150}
                 height={100}
                 objectFit="cover"
+                className=" rounded-lg"
                 objectPosition="center"
               />
             </motion.div>
@@ -94,7 +97,8 @@ export default function BentoGridDemo() {
                 loading="lazy"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 unoptimized
-                src={img3}
+                src={new1}
+                className=" rounded-lg"
                 alt="hero"
                 width={380}
                 height={330}
@@ -403,22 +407,9 @@ export default function BentoGridDemo() {
           </div>
         </div>
       </div>
-      {/* <Image
-        
-        loading="lazy"
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        unoptimized
-        src="/bento grid/group.svg"
-        alt="hero"
-        width={200}
-        height={200}
-        objectFit="cover"
-        objectPosition="center"
-        className="md:hidden w-full px-4"
-      /> */}
-      <div className=" w-full     h-fit flex md:hidden  items-start my-8   justify-center ">
-        <div className="flex  w-full flex-col items-start gap-4">
-          <div className="flex items-start gap-4">
+      <div className=" w-full     h-fit flex sm:hidden  items-start my-8   justify-center ">
+        <div className="flex  w-full flex-col items-start gap-1 ">
+          <div className="flex items-start ">
             <motion.div
               initial={{ opacity: 0, y: 100 }}
               whileInView={{
@@ -437,7 +428,7 @@ export default function BentoGridDemo() {
               <Image
                 loading="lazy"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                unoptimized
+                // unoptimized
                 src={img1}
                 alt="hero"
                 width={490}
@@ -465,11 +456,11 @@ export default function BentoGridDemo() {
               <Image
                 loading="lazy"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                unoptimized
-                src={img2}
+                // unoptimized
+                src={new0}
                 alt="hero"
-                width={230}
-                className=" -mt-1 -ml-2"
+                width={250}
+                className=" -mt-1 -ml-2 rounded-lg"
                 height={100}
                 objectFit="cover"
                 objectPosition="center"
@@ -493,8 +484,9 @@ export default function BentoGridDemo() {
               <Image
                 loading="lazy"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                unoptimized
-                src={img3}
+                // unoptimized
+                src={new1}
+                className="rounded-lg"
                 alt="hero"
                 width={450}
                 height={330}
@@ -520,7 +512,7 @@ export default function BentoGridDemo() {
               <Image
                 loading="lazy"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                unoptimized
+                // unoptimized
                 src={img4}
                 alt="hero"
                 width={280}
@@ -547,7 +539,7 @@ export default function BentoGridDemo() {
               <Image
                 loading="lazy"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                unoptimized
+                // unoptimized
                 src={img5}
                 alt="hero"
                 width={150}
@@ -558,7 +550,7 @@ export default function BentoGridDemo() {
             </motion.div>
           </div>
 
-          <div className="flex gap-4 ml-4 -mt-4 ">
+          <div className="flex  ml-4 -mt-4 ">
             <motion.div
               initial={{ opacity: 0, y: 100 }}
               whileInView={{
@@ -576,7 +568,7 @@ export default function BentoGridDemo() {
               <Image
                 loading="lazy"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                unoptimized
+                // unoptimized
                 src={img6}
                 alt="hero"
                 width={120}
@@ -587,7 +579,7 @@ export default function BentoGridDemo() {
               />
             </motion.div>
 
-            <div className="flex flex-col justify-start gap-8   ">
+            <div className="flex flex-col justify-start gap-8 -ml-2.5  ">
               <div className="flex w-full -mt-2 items-start justify-between">
                 <motion.div
                   initial={{ opacity: 0, y: 150, rotate: 50 }}
@@ -609,7 +601,7 @@ export default function BentoGridDemo() {
                   <Image
                     loading="lazy"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    unoptimized
+                    // unoptimized
                     src={star1}
                     alt="hero"
                     width={50}
@@ -637,7 +629,7 @@ export default function BentoGridDemo() {
                   <Image
                     loading="lazy"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    unoptimized
+                    // unoptimized
                     src={star2}
                     alt="hero"
                     width={50}
@@ -668,8 +660,8 @@ export default function BentoGridDemo() {
                   <Image
                     loading="lazy"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    unoptimized
-                    src="/bento grid/11.svg"
+                    // unoptimized
+                    src={img7}
                     alt="hero"
                     width={190}
                     height={150}
@@ -696,18 +688,18 @@ export default function BentoGridDemo() {
               <Image
                 loading="lazy"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                unoptimized
+                // unoptimized
                 src={img10}
                 alt="hero"
-                width={50}
-                height={50}
+                width={120}
+                height={120}
                 objectFit="cover"
-                className=" -mt-4"
+                className=" -mt-4 px-1 "
                 objectPosition="center"
               />
             </motion.div>
 
-            <div className="flex flex-col justify-between -mt-2  gap-1 ">
+            <div className="flex flex-col justify-start gap-5 -mt-2 -mr-4   ">
               <motion.div
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{
@@ -726,7 +718,7 @@ export default function BentoGridDemo() {
                 <Image
                   loading="lazy"
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                  unoptimized
+                  // unoptimized
                   src="/bento grid/toggle.svg"
                   alt="hero"
                   width={30}
@@ -736,7 +728,7 @@ export default function BentoGridDemo() {
                 />
               </motion.div>
 
-              <div className="flex gap-12 -mr-4">
+              <div className="flex gap-12 -mt-4 -mr-6">
                 <motion.div
                   initial={{ opacity: 0, y: 100 }}
                   whileInView={{
@@ -756,7 +748,7 @@ export default function BentoGridDemo() {
                   <Image
                     loading="lazy"
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    unoptimized
+                    // unoptimized
                     src={img8}
                     alt="hero"
                     width={200}

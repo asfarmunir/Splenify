@@ -70,7 +70,7 @@ const Hero = () => {
               },
             } /* Animate when in view */
           }
-          className={` text-[2.1rem] max-w-[24rem] sm:max-w-full -mt-8   md:-mt-4 leading-snug sm:leading-none text-wrap -tracking-wide md:text-8xl 2xl:text-[7.4rem] px-1.5 text-center ${recoleta.className}`}
+          className={` max-w-[24rem] sm:max-w-full -mt-8   md:-mt-4 leading-snug sm:leading-none text-wrap -tracking-wide [min-width:400px : text-xs]  text-[2.1rem] sm:text-[3.8rem] transition-all md:text-7xl lg:text-8xl 2xl:text-[7.4rem] px-0.5 text-center ${recoleta.className}`}
         >
           Design. <span className="grad_text md:px-4 2xl:px-6 ">Develop.</span>{" "}
           Deploy
@@ -79,16 +79,16 @@ const Hero = () => {
           We’re a modern app-building company that creates apps that your
           customers love and that evolve with your business.
         </p>
-        <div className="flex  items-center justify-center gap-3 w-full   md:gap-4 px-12">
+        <div className="flex  items-center justify-center gap-3 w-full   md:gap-4 px-5 md:px-12">
           <button
             onClick={() => scrollToSection("contact")}
-            className=" bg-gradient-to-r hover:bg-gradient-to-tr w-full hover:bg-[#DF56FE] transition-colors text-xs  md:w-48 flex-grow md:flex-grow-0 from-[#DF56FE] to-[#7165FF]   md:text-base 2xl:text-lg text-white font-normal rounded-[23px] px-5 2xl:px-8 py-[1.1rem]  "
+            className=" bg-gradient-to-r hover:bg-gradient-to-tr w-full hover:bg-[#DF56FE] transition-colors text-xs  sm:w-48 flex-grow md:flex-grow-0 from-[#DF56FE] to-[#7165FF]   md:text-base 2xl:text-lg text-white font-normal rounded-[20px] px-5 2xl:px-8 py-[1.1rem]  "
           >
             Contact Us
           </button>
           <Link
             href={"https://www.cal.com/splenify"}
-            className=" bg-white dark:bg-transparent text-center w-full  tracking-tight hover:shadow-lg    duration-400 transition-shadow  flex-grow md:flex-grow-0 md:w-48 text-xs md:text-base 2xl:text-lg text-[#7165FF] font-semibold rounded-[23px] px-5 2xl:px-8 py-[1rem]  border-[3px] border-[#7165FF]"
+            className=" bg-white dark:bg-transparent text-center w-full  tracking-tight hover:shadow-lg    duration-400 transition-shadow  flex-grow md:flex-grow-0 sm:w-48 text-xs md:text-base 2xl:text-lg text-[#7165FF] font-semibold rounded-[20px] px-5 2xl:px-8 py-[1rem]  border-[3px] border-[#7165FF]"
           >
             Book Meeting
           </Link>

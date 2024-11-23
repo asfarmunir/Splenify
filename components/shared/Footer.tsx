@@ -20,17 +20,18 @@ const Footer = () => {
         </div>
         <Link
           href={"https://www.cal.com/splenify"}
-          className=" bg-[#7165FF] mx-auto md:mx-0 w-full text-center md:w-fit rounded-full text-white py-5 px-6 md:rounded-full 2xl:text-lg"
+          className=" bg-[#7165FF] mx-auto md:mx-0 w-full text-center md:w-fit rounded-[20px] text-white py-5 px-12  2xl:text-lg"
         >
           Get Started with Splenify
         </Link>
       </div>
       <div className="flex items-start md:items-center flex-col-reverse gap-8 md:flex-row justify-between px-3 md:px-0 pt-9 md:pt-16">
-        <div className="flex flex-col items-start  pt-8 md:pt-0  max-w-xs gap-3">
+        <div className="flex  flex-col items-start  pt-8 md:pt-0  max-w-xs gap-3">
           <Image
             src="/images/logoWhite.png"
             alt="Splenify"
             width={160}
+            className=" -ml-1.5"
             height={160}
           />
           <p className=" text-gray-400 my-3 md:my-0 leading-loose text-start md:leading-6 tracking-wide text-sm">

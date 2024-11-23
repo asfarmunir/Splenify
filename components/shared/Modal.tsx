@@ -15,7 +15,7 @@ const Modal = () => {
     <Dialog>
       <DialogTrigger
         className="bg-[#7165FF] text-xs md:text-base
-        px-6    md:px-8 py-4 rounded-full text-white font-thin text-nowrap "
+        px-6    md:px-8 py-4 rounded-[20px] text-white font-thin text-nowrap "
       >
         View Project
       </DialogTrigger>
@@ -249,7 +249,7 @@ const Modal = () => {
               justifyContent: "center",
               position: "relative",
             }}
-            className=" py-80  bg-[#161C2D] "
+            className=" pt-48 pb-40  bg-[#161C2D] "
           >
             <div className=" flex flex-col items-center  space-y-3">
               <h2

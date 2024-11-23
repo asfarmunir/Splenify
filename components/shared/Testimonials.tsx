@@ -94,7 +94,7 @@ const Testimonials = () => {
             review="&quot;Working with Raja and Splenify has been incredible. They &lt;span class='font-bold'&gt;quickly grasped our business model&lt;/span&gt;, transforming our landing page and creating stellar social media assets, pitch decks, and more. &lt;span class='font-bold'&gt;Their versatility and expertise are unmatched&lt;/span&gt;.&quot;"
           />
         </div>
-        <div className="flex flex-col space-y-10">
+        <div className="flex md:hidden lg:flex flex-col space-y-10">
           <TestimonialModal
             logo={"/images/genex.svg"}
             profileImage={"/images/avatar.png"}
@@ -113,6 +113,25 @@ const Testimonials = () => {
             review="&quot;Working with Raja and Splenify has been incredible. They &lt;span class='font-bold'&gt;quickly grasped our business model&lt;/span&gt;, transforming our landing page and creating stellar social media assets, pitch decks, and more. &lt;span class='font-bold'&gt;Their versatility and expertise are unmatched&lt;/span&gt;.&quot;"
           />
         </div>
+      </div>
+      <div className="hidden md:flex lg:hidden  items-start gap-4  ">
+        <TestimonialModal
+          logo={"/images/genex.svg"}
+          profileImage={"/images/avatar.png"}
+          name={"Ruslan Babar"}
+          delayDuration={0.35}
+          role={"Co-Founder of RecruitU"}
+          review="&quot;Working with Raja and Splenify has been incredible. They &lt;span class='font-bold'&gt;quickly grasped our business model&lt;/span&gt;, transforming our landing page and creating stellar social media assets, pitch decks, and more. &lt;span class='font-bold'&gt;Their versatility and expertise are unmatched&lt;/span&gt;.&quot;"
+        />
+        <TestimonialModal
+          logo={"/images/recruitu.svg"}
+          userImage="/images/client3.svg"
+          profileImage={"/images/avatar.png"}
+          name="Ruslan Babar"
+          delayDuration={0.4}
+          role="Co-Founder of RecruitU"
+          review="&quot;Working with Raja and Splenify has been incredible. They &lt;span class='font-bold'&gt;quickly grasped our business model&lt;/span&gt;, transforming our landing page and creating stellar social media assets, pitch decks, and more. &lt;span class='font-bold'&gt;Their versatility and expertise are unmatched&lt;/span&gt;.&quot;"
+        />
       </div>
     </motion.div>
   );

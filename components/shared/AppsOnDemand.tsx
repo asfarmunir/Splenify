@@ -55,7 +55,7 @@ const AppsOnDemand = () => {
           ease: "easeInOut",
         },
       }}
-      className="hidden md:flex flex-col w-full  items-center gap-5  my-[20px] md:pt-[100px] md:my-[30px]"
+      className="hidden md:flex flex-col w-full  items-center gap-5  my-[20px] md:pt-[40px] lg:pt-[100px] md:my-[30px]"
     >
       <h2 className=" text-base   2xl:xl tracking-wide ">See how we do it!</h2>
       <h1
@@ -72,31 +72,33 @@ const AppsOnDemand = () => {
         />
       </h1>
       {/* Mobile version */}
-      {items.map((item, index) => (
-        <div
-          key={index}
-          className=" w-[95%] max-w-md p-3   bg-[#F3F3F9] dark:bg-gray-900 flex lg:hidden  items-center rounded-3xl justify-center"
-        >
+      <div className="grid w-full grid-cols-2 px-5">
+        {items.map((item, index) => (
           <div
-            className={`flex items-center  p-5 gap-4 bg-white dark:bg-slate-800 rounded-3xl  w-full flex-row ${
-              index % 2 == 0
-                ? "justify-start  flex-row"
-                : "justify-start flex-row-reverse"
-            }`}
+            key={index}
+            className=" w-[95%] max-w-md p-3   bg-[#F3F3F9] dark:bg-gray-900 flex lg:hidden  items-center rounded-3xl justify-center"
           >
-            <Image
-              src={item.img}
-              alt="Splenify"
-              width={65}
-              height={65}
-              className=" dark:invert "
-            />
-            <h3 className=" italic text-xl  font-semibold  text-center text-gray-500 dark:text-gray-300">
-              {item.title}
-            </h3>
+            <div
+              className={`flex items-center  p-5 gap-4 bg-white dark:bg-slate-800 rounded-3xl  w-full flex-row ${
+                index % 2 == 0
+                  ? "justify-start  flex-row"
+                  : "justify-start flex-row-reverse"
+              }`}
+            >
+              <Image
+                src={item.img}
+                alt="Splenify"
+                width={65}
+                height={65}
+                className=" dark:invert "
+              />
+              <h3 className=" italic text-xl  font-semibold  text-center text-gray-500 dark:text-gray-300">
+                {item.title}
+              </h3>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
 
       {/* Large Screen Version  */}
       <motion.div
