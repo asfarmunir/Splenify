@@ -65,12 +65,12 @@ const Hero = () => {
               opacity: 1,
               scale: 1,
               transition: {
-                duration: 0.4,
-                ease: "easeInOut",
+                duration: 0.5,
+                ease: "easeOut",
               },
             } /* Animate when in view */
           }
-          className={` max-w-[24rem] sm:max-w-full -mt-8   md:-mt-4 leading-snug sm:leading-none text-wrap -tracking-wide [min-width:400px : text-xs]  text-[2.1rem] sm:text-[3.8rem] transition-all md:text-7xl lg:text-8xl 2xl:text-[7.4rem] px-0.5 text-center ${recoleta.className}`}
+          className={` max-w-[24rem] sm:max-w-full -mt-8   md:-mt-4 leading-snug sm:leading-none text-wrap -tracking-wide  text-[2.1rem] sm:text-[3.8rem]  md:text-7xl lg:text-8xl 2xl:text-[7.4rem] px-0.5 text-center ${recoleta.className}`}
         >
           Design. <span className="grad_text md:px-4 2xl:px-6 ">Develop.</span>{" "}
           Deploy
