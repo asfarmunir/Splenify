@@ -88,7 +88,7 @@ const Hero = () => {
           </button>
           <Link
             href={"https://www.cal.com/splenify"}
-            className=" bg-white dark:bg-transparent text-center w-full  tracking-tight hover:shadow-lg    duration-400 transition-shadow  flex-grow md:flex-grow-0 sm:w-48 text-xs md:text-base 2xl:text-lg text-[#7165FF] font-semibold rounded-[20px] px-5 2xl:px-8 py-[1rem]  border-[3px] border-[#7165FF]"
+            className=" bg-white dark:bg-transparent text-center w-full  tracking-tight hover:shadow-lg    duration-400 transition-shadow  flex-grow md:flex-grow-0 sm:w-48 text-xs md:text-base 2xl:text-lg text-[#7165FF] font-semibold rounded-[20px] px-5 2xl:px-8 py-[1.1rem]  border-[3px] border-[#7165FF]"
           >
             Book Meeting
           </Link>
