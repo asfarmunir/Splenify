@@ -75,7 +75,7 @@ const Projects = () => {
           >
             <div className="  rounded-2xl overflow-hidden max-h-[800px]  w-full h-full ">
               <Image
-                src="/images/projectCover1.svg"
+                src="/projectModal/hero2.webp"
                 alt="Splenify"
                 loading="lazy"
                 width={995}
@@ -110,13 +110,13 @@ const Projects = () => {
           >
             <div className=" w-full h-full max-h-[490px] rounded-2xl overflow-hidden ">
               <Image
-                src="/images/projectCover.svg"
+                src="/projectModal/hero3.webp"
                 // src="/images
                 loading="lazy"
                 alt="Splenify"
                 width={985}
                 height={923}
-                className=" w-full h-full object-cover object-center "
+                className=" w-full h-full object-cover object-top "
               />
             </div>
 
@@ -148,13 +148,13 @@ const Projects = () => {
           >
             <div className=" w-full h-full  max-h-[490px] overflow-hidden rounded-2xl">
               <Image
-                src="/images/projectCover2.svg"
+                src="/projectModal/hero4.webp"
                 loading="lazy"
                 // src="/images/p3.svg"
                 alt="Splenify"
                 width={985}
                 height={923}
-                className=" w-full  h-full object-cover object-center "
+                className=" w-full  h-full object-cover object-top "
               />
             </div>
             <div className="flex items-start w-full pt-6  justify-between">
@@ -187,7 +187,7 @@ const Projects = () => {
           >
             <div className=" w-full h-full max-h-[800px]  rounded-2xl overflow-hidden">
               <Image
-                src="/images/projectCover3.svg"
+                src="/projectModal/hero1.webp"
                 alt="Splenify"
                 loading="lazy"
                 width={985}
@@ -274,7 +274,7 @@ const Projects = () => {
           >
             <div className=" w-full h-full rounded-3xl overflow-hidden">
               <Image
-                src="/images/projectCover1.svg"
+                src="/projectModal/hero1.webp"
                 alt="Splenify"
                 loading="lazy"
                 width={985}
@@ -313,7 +313,7 @@ const Projects = () => {
           >
             <div className=" w-full h-full rounded-3xl overflow-hidden">
               <Image
-                src="/images/projectCover.svg"
+                src="/projectModal/hero2.webp"
                 alt="Splenify"
                 loading="lazy"
                 width={985}
@@ -352,7 +352,7 @@ const Projects = () => {
           >
             <div className=" w-full h-full rounded-3xl overflow-hidden">
               <Image
-                src="/images/projectCover3.svg"
+                src="/projectModal/hero3.webp"
                 alt="Splenify"
                 loading="lazy"
                 width={985}
@@ -391,7 +391,7 @@ const Projects = () => {
           >
             <div className=" w-full h-full rounded-3xl overflow-hidden">
               <Image
-                src="/images/projectCover2.svg"
+                src="/projectModal/hero4.webp"
                 loading="lazy"
                 alt="Splenify"
                 width={985}
