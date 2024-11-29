@@ -10,7 +10,17 @@ import { Button } from "../ui/button";
 import { ArrowUpRight } from "lucide-react";
 import { DialogClose } from "@radix-ui/react-dialog";
 import { InfiniteMovingCards } from "../ui/moving-images";
-const Modal = () => {
+const Modal = ({
+  heroImg,
+  heroBg,
+  heroLogo,
+  testimonialBg,
+}: {
+  heroImg: string;
+  heroBg: string;
+  heroLogo: string;
+  testimonialBg: string;
+}) => {
   return (
     <Dialog>
       <DialogTrigger
@@ -20,35 +30,46 @@ const Modal = () => {
         View Project
       </DialogTrigger>
       <DialogContent className="  border-none     md:rounded-2xl p-0 md:min-w-[900px] 2xl:min-w-[940px] ">
-        <div className=" w-full flex flex-col max-h-[100svh] md:max-h-[95svh] md:rounded-2xl overflow-y-auto [scroll]  [scrollbar-width:none]   ">
+        <div className=" w-full flex flex-col max-h-[100svh] md:max-h-[90svh] md:rounded-2xl overflow-y-auto [scroll]  [scrollbar-width:none]   ">
           <div
-            className=" w-full flex flex-col items-center pt-20 gap-4"
+            className=" w-full flex flex-col items-center pt-16 gap-4"
             style={{
-              backgroundImage: "url(/images/projectBg.svg)",
+              backgroundImage: "url(" + heroBg + ")",
               backgroundSize: "cover",
               backgroundPosition: "center",
               height: "500px",
             }}
           >
-            <h2
+            {/* <h2
               className={` ${recoleta.className} text-5xl 2xl:text-7xl text-white `}
             >
               Efandex
-            </h2>
+            </h2> */}
+            <div className="w-[100px] h-[100px] md:w-[130px] md:h-[120px] 2xl:w-[190px] 2xl:h-[100px]">
+              <Image
+                src={heroLogo}
+                width={10}
+                height={10}
+                alt="efandex"
+                className="w-full h-full"
+              />
+            </div>
             <p className="text-xl 2xl:text-2xl text-white text-center tracking-wide ">
               The <span className=" underline font-bold ">Ultimate</span> Key to
               Fluent <br /> Communication
             </p>
-            <Image
-              src="/images/modalHero.svg"
-              width={10}
-              priority
-              height={10}
-              alt="efandex"
-              className="w-[550px] h-[550px] 2xl:w-[600px] 2xl:h-[600px]"
-            />
+            <div className=" w-[370px] h-[200px] md:w-[600px] md:h-[250px] 2xl:w-[600px] 2xl:h-[340px] ">
+              <Image
+                // src="/images/modalHero.svg"
+                src={heroImg}
+                width={10}
+                height={10}
+                alt="efandex"
+                className=" w-full h-full"
+              />
+            </div>
           </div>
-          <div className=" md:pt-16 space-y-14 2xl:pt-20 ">
+          <div className=" pt-10 md:pt-16 space-y-14 2xl:pt-20 ">
             <div className="flex gap-5 px-8 2xl:px-10 md:py-12 relative">
               <Image
                 src="/images/arrow1.svg"
@@ -186,7 +207,9 @@ const Modal = () => {
               />
             </div>
           </div>
-          <div className="    relative   bg-gradient-to-r from-[#CB71F2] flex flex-col md:flex-row pt-16 md:pt-8   items-center gap-8  justify-center to-[#5C0F97] px-12 md:px-20 border-none ">
+          <div
+            className={` ${testimonialBg}    relative    flex flex-col md:flex-row pt-16 md:pt-8   items-center gap-8  justify-center  px-12 md:px-20 border-none `}
+          >
             <Image
               src="/images/arrow3.svg"
               width={140}

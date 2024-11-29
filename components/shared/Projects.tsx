@@ -88,7 +88,12 @@ const Projects = () => {
                 <p className=" font-thin text-base">Mobile Application</p>
                 <h2 className="text-xl font-bold ">Aura IOS | Android</h2>
               </div>
-              <Modal />
+              <Modal
+                heroImg="/projectModal/modalHero2.svg"
+                heroBg="/projectModal/orangeBg.webp"
+                heroLogo="/projectModal/logo2.svg"
+                testimonialBg=" bg-gradient-to-l from-[#FF796B] to-[#FF5047]"
+              />
             </div>
           </motion.div>
           <motion.div
@@ -125,8 +130,12 @@ const Projects = () => {
                 <p className=" font-thin text-base">Video Animation</p>
                 <h2 className="text-xl font-bold ">AB.S Snack Animation</h2>
               </div>
-
-              <Modal />
+              <Modal
+                heroImg="/projectModal/modalHero3.svg"
+                heroBg="/projectModal/skyBg.webp"
+                heroLogo="/projectModal/logo3.svg"
+                testimonialBg=" bg-gradient-to-l from-[#38B6FF] to-[#0069CA]"
+              />{" "}
             </div>
           </motion.div>
           <motion.div
@@ -164,8 +173,12 @@ const Projects = () => {
                   Gradient Website <br /> Development
                 </h2>
               </div>
-
-              <Modal />
+              <Modal
+                heroImg="/projectModal/modalHero4.svg"
+                heroBg="/projectModal/pinkBg.webp"
+                heroLogo="/projectModal/logo4.svg"
+                testimonialBg=" bg-gradient-to-l from-[#FF1589] to-[#B6005B]"
+              />{" "}
             </div>
           </motion.div>
           <motion.div
@@ -203,8 +216,12 @@ const Projects = () => {
                 </p>
                 <h2 className="text-xl font-bold ">Dashboard Teamify</h2>
               </div>
-
-              <Modal />
+              <Modal
+                heroImg="/projectModal/modalHero1.svg"
+                heroBg="/projectModal/skyBg.webp"
+                heroLogo="/projectModal/logo1.svg"
+                testimonialBg=" bg-gradient-to-l from-[#38B6FF] to-[#0069CA]"
+              />{" "}
             </div>
           </motion.div>
         </div>
@@ -291,8 +308,12 @@ const Projects = () => {
                   Aura IOS | Android{" "}
                 </h2>
               </div>
-
-              <Modal />
+              <Modal
+                heroImg="/projectModal/modalHero1.svg"
+                heroBg="/projectModal/skyBg.webp"
+                heroLogo="/projectModal/logo1.svg"
+                testimonialBg=" bg-gradient-to-l from-[#38B6FF] to-[#0069CA]"
+              />{" "}
             </div>
           </motion.div>
           <motion.div
@@ -330,8 +351,12 @@ const Projects = () => {
                   AB.S Snack Animation
                 </h2>
               </div>
-
-              <Modal />
+              <Modal
+                heroImg="/projectModal/modalHero2.svg"
+                heroBg="/projectModal/orangeBg.webp"
+                heroLogo="/projectModal/logo2.svg"
+                testimonialBg=" bg-gradient-to-l from-[#FF796B] to-[#FF5047]"
+              />{" "}
             </div>
           </motion.div>
           <motion.div
@@ -369,8 +394,12 @@ const Projects = () => {
                   Gradient Website <br /> Development
                 </h2>
               </div>
-
-              <Modal />
+              <Modal
+                heroImg="/projectModal/modalHero3.svg"
+                heroBg="/projectModal/skyBg.webp"
+                heroLogo="/projectModal/logo3.svg"
+                testimonialBg=" bg-gradient-to-l from-[#38B6FF] to-[#0069CA]"
+              />{" "}
             </div>
           </motion.div>
           <motion.div
@@ -408,8 +437,12 @@ const Projects = () => {
                   Dashboard Teamify
                 </h2>
               </div>
-
-              <Modal />
+              <Modal
+                heroImg="/projectModal/modalHero4.svg"
+                heroBg="/projectModal/pinkBg.webp"
+                heroLogo="/projectModal/logo4.svg"
+                testimonialBg=" bg-gradient-to-l from-[#FF1589] to-[#B6005B]"
+              />{" "}
             </div>
           </motion.div>
         </div>
