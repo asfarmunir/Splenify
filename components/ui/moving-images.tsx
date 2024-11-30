@@ -19,7 +19,6 @@ export const InfiniteMovingCards = ({
   pauseOnHover?: boolean;
   className?: string;
 }) => {
-  console.log("🚀 ~ items:", items);
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
 
@@ -27,22 +26,46 @@ export const InfiniteMovingCards = ({
     addAnimation();
   }, []);
   const [start, setStart] = useState(false);
+  // function addAnimation() {
+  //   if (containerRef.current && scrollerRef.current) {
+  //     const scrollerContent = Array.from(scrollerRef.current.children);
+
+  //     scrollerContent.forEach((item) => {
+  //       const duplicatedItem = item.cloneNode(true);
+  //       if (scrollerRef.current) {
+  //         scrollerRef.current.appendChild(duplicatedItem);
+  //       }
+  //     });
+
+  //     getDirection();
+  //     getSpeed();
+  //     setStart(true);
+  //   }
+  // }
   function addAnimation() {
     if (containerRef.current && scrollerRef.current) {
       const scrollerContent = Array.from(scrollerRef.current.children);
 
+      // Duplicate the items
       scrollerContent.forEach((item) => {
         const duplicatedItem = item.cloneNode(true);
-        if (scrollerRef.current) {
-          scrollerRef.current.appendChild(duplicatedItem);
-        }
+        scrollerRef.current?.appendChild(duplicatedItem);
       });
+
+      // Calculate total width and set it explicitly
+      const totalWidth = scrollerContent.reduce((acc, item) => {
+        const itemWidth = (item as HTMLElement).offsetWidth || 0;
+        return acc + itemWidth + 16; // Add the gap (16px)
+      }, 0);
+
+      scrollerRef.current.style.width = `${totalWidth * 2}px`; // Account for duplicated items
 
       getDirection();
       getSpeed();
       setStart(true);
     }
   }
+
   const getDirection = () => {
     if (containerRef.current) {
       if (direction === "left") {
