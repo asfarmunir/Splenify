@@ -50,6 +50,7 @@ const Modal = ({
                 src={heroLogo}
                 width={10}
                 height={10}
+                priority
                 alt="efandex"
                 className="w-full h-full"
               />
@@ -65,6 +66,7 @@ const Modal = ({
                 width={10}
                 height={10}
                 alt="efandex"
+                priority
                 className=" w-full h-full"
               />
             </div>
@@ -162,7 +164,7 @@ const Modal = ({
               </div>
             </div>
           </div>
-          <div className="rounded-md  max-w-4xl my-3 flex flex-col  bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center ">
+          <div className="rounded-md  max-w-4xl 2xl:max-w-5xl my-3 flex flex-col  bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center ">
             <InfiniteMovingCards
               items={images}
               direction="right"

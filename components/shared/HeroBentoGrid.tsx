@@ -387,14 +387,14 @@ export default function BentoGridDemo() {
               </div>
             </div>
 
-            <div className="flex flex-col justify-center items-center mt-14  gap-4 ">
+            <div className="flex flex-col justify-center items-center -mt-8  gap-4 ">
               <Image
                 loading="lazy"
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 unoptimized
                 src={img9}
                 alt="hero"
-                width={130}
+                width={200}
                 height={400}
                 objectFit="cover"
                 objectPosition="center"
@@ -785,7 +785,7 @@ export default function BentoGridDemo() {
                 unoptimized
                 src={img9}
                 alt="hero"
-                width={130}
+                width={190}
                 height={400}
                 objectFit="cover"
                 objectPosition="center"
