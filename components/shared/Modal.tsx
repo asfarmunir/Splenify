@@ -61,8 +61,8 @@ const Modal = ({
             </p>
             <div className=" w-[370px] h-[200px] md:w-[600px] md:h-[250px] 2xl:w-[600px] 2xl:h-[340px] ">
               <Image
-                // src="/images/modalHero.svg"
-                src={heroImg}
+                src="/projectModal/modalHero1.webp"
+                // src={heroImg}
                 width={10}
                 height={10}
                 alt="efandex"
