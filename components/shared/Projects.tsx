@@ -6,6 +6,23 @@ import { motion } from "framer-motion";
 import localFont from "next/font/local";
 import Modal from "./Modal";
 const recoleta = localFont({ src: "../../app/recoleta.ttf" });
+
+import pinkBg from "@/public/projectModal/pinkBg.webp";
+import orangeBg from "@/public/projectModal/orangeBg.webp";
+import skyBg from "@/public/projectModal/skyBg.webp";
+import logo1 from "@/public/projectModal/logo1.svg";
+import logo2 from "@/public/projectModal/logo2.svg";
+import logo3 from "@/public/projectModal/logo3.svg";
+import logo4 from "@/public/projectModal/logo4.svg";
+import hero1 from "@/public/projectModal/hero1.webp";
+import hero2 from "@/public/projectModal/hero2.webp";
+import hero3 from "@/public/projectModal/hero3.webp";
+import hero4 from "@/public/projectModal/hero4.webp";
+import modalHero1 from "@/public/projectModal/modalHero1.webp";
+import modalHero2 from "@/public/projectModal/modalHero2.webp";
+import modalHero3 from "@/public/projectModal/modalHero3.webp";
+import modalHero4 from "@/public/projectModal/modalHero4.webp";
+
 const Projects = () => {
   return (
     <>
@@ -89,7 +106,7 @@ const Projects = () => {
                 <h2 className="text-xl font-bold ">Aura IOS | Android</h2>
               </div>
               <Modal
-                heroImg="/projectModal/modalHero2.svg"
+                heroImg="/projectModal/modalHero2.webp"
                 heroBg="/projectModal/orangeBg.webp"
                 heroLogo="/projectModal/logo2.svg"
                 testimonialBg=" bg-gradient-to-l from-[#FF796B] to-[#FF5047]"
@@ -131,7 +148,7 @@ const Projects = () => {
                 <h2 className="text-xl font-bold ">AB.S Snack Animation</h2>
               </div>
               <Modal
-                heroImg="/projectModal/modalHero3.svg"
+                heroImg="/projectModal/modalHero3.webp"
                 heroBg="/projectModal/skyBg.webp"
                 heroLogo="/projectModal/logo3.svg"
                 testimonialBg=" bg-gradient-to-l from-[#38B6FF] to-[#0069CA]"
@@ -174,7 +191,7 @@ const Projects = () => {
                 </h2>
               </div>
               <Modal
-                heroImg="/projectModal/modalHero4.svg"
+                heroImg="/projectModal/modalHero4.webp"
                 heroBg="/projectModal/pinkBg.webp"
                 heroLogo="/projectModal/logo4.svg"
                 testimonialBg=" bg-gradient-to-l from-[#FF1589] to-[#B6005B]"
@@ -217,7 +234,7 @@ const Projects = () => {
                 <h2 className="text-xl font-bold ">Dashboard Teamify</h2>
               </div>
               <Modal
-                heroImg="/projectModal/modalHero1.svg"
+                heroImg="/projectModal/modalHero1.webp"
                 heroBg="/projectModal/skyBg.webp"
                 heroLogo="/projectModal/logo1.svg"
                 testimonialBg=" bg-gradient-to-l from-[#38B6FF] to-[#0069CA]"
@@ -309,7 +326,7 @@ const Projects = () => {
                 </h2>
               </div>
               <Modal
-                heroImg="/projectModal/modalHero1.svg"
+                heroImg="/projectModal/modalHero1.webp"
                 heroBg="/projectModal/skyBg.webp"
                 heroLogo="/projectModal/logo1.svg"
                 testimonialBg=" bg-gradient-to-l from-[#38B6FF] to-[#0069CA]"
@@ -352,7 +369,7 @@ const Projects = () => {
                 </h2>
               </div>
               <Modal
-                heroImg="/projectModal/modalHero2.svg"
+                heroImg="/projectModal/modalHero2.webp"
                 heroBg="/projectModal/orangeBg.webp"
                 heroLogo="/projectModal/logo2.svg"
                 testimonialBg=" bg-gradient-to-l from-[#FF796B] to-[#FF5047]"
@@ -395,7 +412,7 @@ const Projects = () => {
                 </h2>
               </div>
               <Modal
-                heroImg="/projectModal/modalHero3.svg"
+                heroImg="/projectModal/modalHero3.webp"
                 heroBg="/projectModal/skyBg.webp"
                 heroLogo="/projectModal/logo3.svg"
                 testimonialBg=" bg-gradient-to-l from-[#38B6FF] to-[#0069CA]"
@@ -438,7 +455,7 @@ const Projects = () => {
                 </h2>
               </div>
               <Modal
-                heroImg="/projectModal/modalHero4.svg"
+                heroImg="/projectModal/modalHero4.webp"
                 heroBg="/projectModal/pinkBg.webp"
                 heroLogo="/projectModal/logo4.svg"
                 testimonialBg=" bg-gradient-to-l from-[#FF1589] to-[#B6005B]"

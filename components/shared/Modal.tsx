@@ -2,14 +2,13 @@ import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import localFont from "next/font/local";
 import Image from "next/image";
 import Link from "next/link";
-import ModalFooterBg from "@/public/projects/modal-footer.svg";
 const recoleta = localFont({ src: "../../app/recoleta.ttf" });
-
 import React from "react";
 import { Button } from "../ui/button";
 import { ArrowUpRight } from "lucide-react";
 import { DialogClose } from "@radix-ui/react-dialog";
 import { InfiniteMovingCards } from "../ui/moving-images";
+
 const Modal = ({
   heroImg,
   heroBg,
@@ -32,12 +31,10 @@ const Modal = ({
       <DialogContent className="  border-none     md:rounded-2xl p-0 md:min-w-[900px] 2xl:min-w-[940px] ">
         <div className=" w-full flex flex-col max-h-[100svh] md:max-h-[90svh] md:rounded-2xl overflow-y-auto [scroll]  [scrollbar-width:none]   ">
           <div
-            className=" w-full flex flex-col items-center pt-16 gap-4"
+            className=" w-full flex flex-col items-center pt-16 gap-4 bg-cover bg-center h-[500px]"
             style={{
               backgroundImage: "url(" + heroBg + ")",
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-              height: "500px",
+              // backgroundImage: "url(/projectModal/orangeBg.webp)",
             }}
           >
             {/* <h2
@@ -48,8 +45,10 @@ const Modal = ({
             <div className="w-[100px] h-[100px] md:w-[130px] md:h-[120px] 2xl:w-[190px] 2xl:h-[100px]">
               <Image
                 src={heroLogo}
-                width={10}
-                height={10}
+                // src={"/projectModal/logo1.svg"}
+                width={130}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                height={100}
                 priority
                 alt="efandex"
                 className="w-full h-full"
@@ -61,10 +60,12 @@ const Modal = ({
             </p>
             <div className=" w-[370px] h-[200px] md:w-[600px] md:h-[250px] 2xl:w-[600px] 2xl:h-[340px] ">
               <Image
-                src="/projectModal/modalHero1.webp"
-                // src={heroImg}
-                width={10}
-                height={10}
+                // src="/projectModal/modalHero1.webp"
+                src={heroImg}
+                unoptimized
+                width={600}
+                height={340}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 alt="efandex"
                 priority
                 className=" w-full h-full"
@@ -166,7 +167,7 @@ const Modal = ({
           </div>
           <div className="rounded-md  max-w-4xl 2xl:max-w-5xl my-3 flex flex-col  bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center ">
             <InfiniteMovingCards
-              items={images}
+              // items={images}
               direction="right"
               speed="slow"
             />
