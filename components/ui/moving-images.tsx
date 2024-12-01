@@ -39,52 +39,46 @@ export const InfiniteMovingCards = ({
   }, [isFast]);
 
   function addAnimation() {
-    if (containerRef.current && scrollerRef.current) {
-      const scrollerContent = Array.from(scrollerRef.current.children);
+    const scrollerContent = Array.from(scrollerRef!.current!.children);
 
-      scrollerContent.forEach((item) => {
-        const duplicatedItem = item.cloneNode(true);
-        if (scrollerRef.current) {
-          scrollerRef.current.appendChild(duplicatedItem);
-        }
-      });
+    scrollerContent.forEach((item) => {
+      const duplicatedItem = item.cloneNode(true);
+      if (scrollerRef.current) {
+        scrollerRef.current.appendChild(duplicatedItem);
+      }
+    });
 
-      getDirection();
-      getSpeed();
-      setStart(true);
-    }
+    getDirection();
+    getSpeed();
+    setStart(true);
   }
 
   const getDirection = () => {
-    if (containerRef.current) {
-      if (direction === "left") {
-        containerRef.current.style.setProperty(
-          "--animation-direction",
-          "forwards"
-        );
-      } else {
-        containerRef.current.style.setProperty(
-          "--animation-direction",
-          "reverse"
-        );
-      }
+    if (direction === "left") {
+      containerRef!.current!.style.setProperty(
+        "--animation-direction",
+        "forwards"
+      );
+    } else {
+      containerRef!.current!.style.setProperty(
+        "--animation-direction",
+        "reverse"
+      );
     }
   };
 
   const getSpeed = () => {
-    if (containerRef.current) {
-      let duration;
-      if (isFast) {
-        duration = "0.4s"; // Speed increased by 100x
-      } else if (speed === "fast") {
-        duration = "40s";
-      } else if (speed === "normal") {
-        duration = "60s";
-      } else {
-        duration = "80s";
-      }
-      containerRef.current.style.setProperty("--animation-duration", duration);
+    let duration;
+    if (isFast) {
+      duration = "0.4s"; // Speed increased by 100x
+    } else if (speed === "fast") {
+      duration = "40s";
+    } else if (speed === "normal") {
+      duration = "60s";
+    } else {
+      duration = "80s";
     }
+    containerRef!.current!.style.setProperty("--animation-duration", duration);
   };
 
   useEffect(() => {
