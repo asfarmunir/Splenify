@@ -21,79 +21,64 @@ export const InfiniteMovingCards = ({
   const containerRef = React.useRef<HTMLDivElement>(null);
   const scrollerRef = React.useRef<HTMLUListElement>(null);
 
-  const [start, setStart] = useState(false);
-  const [isFast, setIsFast] = useState(true); // State to track temporary speed boost
-
   useEffect(() => {
     addAnimation();
   }, []);
-
-  useEffect(() => {
-    if (isFast) {
-      // Revert speed back to normal after 1.5 seconds
-      const timeout = setTimeout(() => {
-        setIsFast(false);
-      }, 200);
-      return () => clearTimeout(timeout); // Cleanup on unmount
-    }
-  }, [isFast]);
-
+  const [start, setStart] = useState(false);
   function addAnimation() {
-    const scrollerContent = Array.from(scrollerRef!.current!.children);
+    if (containerRef.current && scrollerRef.current) {
+      const scrollerContent = Array.from(scrollerRef.current.children);
 
-    scrollerContent.forEach((item) => {
-      const duplicatedItem = item.cloneNode(true);
-      if (scrollerRef.current) {
-        scrollerRef.current.appendChild(duplicatedItem);
-      }
-    });
+      scrollerContent.forEach((item) => {
+        const duplicatedItem = item.cloneNode(true);
+        if (scrollerRef.current) {
+          scrollerRef.current.appendChild(duplicatedItem);
+        }
+      });
 
-    getDirection();
-    getSpeed();
-    setStart(true);
+      getDirection();
+      getSpeed();
+      setStart(true);
+    }
   }
-
   const getDirection = () => {
-    if (direction === "left") {
-      containerRef!.current!.style.setProperty(
-        "--animation-direction",
-        "forwards"
-      );
-    } else {
-      containerRef!.current!.style.setProperty(
-        "--animation-direction",
-        "reverse"
-      );
+    if (containerRef.current) {
+      if (direction === "left") {
+        containerRef.current.style.setProperty(
+          "--animation-direction",
+          "forwards"
+        );
+      } else {
+        containerRef.current.style.setProperty(
+          "--animation-direction",
+          "reverse"
+        );
+      }
     }
   };
-
   const getSpeed = () => {
-    let duration;
-    if (isFast) {
-      duration = "0.4s"; // Speed increased by 100x
-    } else if (speed === "fast") {
-      duration = "40s";
-    } else if (speed === "normal") {
-      duration = "60s";
-    } else {
-      duration = "80s";
+    if (containerRef.current) {
+      if (speed === "fast") {
+        containerRef.current.style.setProperty("--animation-duration", "40s");
+      } else if (speed === "normal") {
+        containerRef.current.style.setProperty("--animation-duration", "40s");
+      } else {
+        containerRef.current.style.setProperty("--animation-duration", "40s");
+      }
     }
-    containerRef!.current!.style.setProperty("--animation-duration", duration);
   };
-
-  useEffect(() => {
-    getSpeed();
-  }, [isFast, speed]);
-
   return (
     <div
       ref={containerRef}
-      className={cn("scroller relative z-20 w-full overflow-hidden", className)}
+      className={cn(
+        "scroller relative z-20  w-full    overflow-hidden  ",
+        className
+      )}
     >
       <ul
         ref={scrollerRef}
         className={cn(
-          "flex shrink-0 gap-4 py-4 w-max flex-nowrap",
+          " flex   shrink-0 gap-4 py-4 w-max flex-nowrap",
           "animate-scroll",
           pauseOnHover && "hover:[animation-play-state:paused]"
         )}
