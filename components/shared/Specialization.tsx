@@ -37,7 +37,7 @@ const Specialization = () => {
           alt="Splenify"
           width={380}
           height={380}
-          className="  dark:invert hidden md:block  w-[270px] 2xl:w-[380px] absolute right-28 2xl:right-52  -rotate-4 "
+          className="  dark:invert hidden lg:block  w-[270px] 2xl:w-[380px] absolute right-28 2xl:right-52  -rotate-4 "
         />
       </h1>
       <div className="grid grid-cols-1 max-w-6xl 2xl:max-w-7xl lg:grid-cols-2 gap-8 px-6 md:px-12 2xl:px-0  p-2 w-full">
@@ -56,7 +56,7 @@ const Specialization = () => {
               ease: "easeOut",
             },
           }}
-          className="flex flex-col-reverse md:flex-row w-full   overflow-hidden  rounded-2xl "
+          className="flex flex-col-reverse sm2:flex-row w-full   overflow-hidden  rounded-2xl "
         >
           <div className=" py-5 pb-6 md:py-6 w-full md:w-[50%]  bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-center md:items-start justify-center">
             <h2 className=" text-2xl text-center md:text-start md:text-lg 2xl:text-2xl font-semibold mb-2 px-8">
@@ -93,7 +93,7 @@ const Specialization = () => {
               ease: "easeInOut",
             },
           }}
-          className="flex flex-col-reverse md:flex-row w-full  overflow-hidden  rounded-2xl "
+          className="flex flex-col-reverse sm2:flex-row w-full  overflow-hidden  rounded-2xl "
         >
           <div className=" py-4 pb-6 md:py-6 w-full md:w-[50%]  bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-center md:items-start justify-center">
             <h2 className=" text-center md:text-start text-2xl md:text-lg 2xl:text-2xl px-8 font-semibold mb-2">
@@ -130,7 +130,7 @@ const Specialization = () => {
               ease: "easeOut",
             },
           }}
-          className="flex flex-col-reverse md:flex-row w-full  overflow-hidden  rounded-2xl "
+          className="flex flex-col-reverse sm2:flex-row w-full  overflow-hidden  rounded-2xl "
         >
           <div className=" py-4 pb-6 md:py-6 w-full md:w-[50%]  bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-center md:items-start justify-center">
             <h2 className=" text-2xl md:text-lg 2xl:text-2xl   font-semibold mb-2 px-8">
@@ -167,7 +167,7 @@ const Specialization = () => {
               ease: "easeInOut",
             },
           }}
-          className="flex flex-col-reverse md:flex-row w-full  overflow-hidden  rounded-2xl "
+          className="flex flex-col-reverse sm2:flex-row w-full  overflow-hidden  rounded-2xl "
         >
           <div className=" py-4 pb-6 md:py-6 w-full md:w-[50%]  bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-center md:items-start justify-center">
             <h2 className=" text-2xl md:text-lg 2xl:text-2xl   font-semibold mb-2 px-8">
@@ -204,7 +204,7 @@ const Specialization = () => {
               ease: "easeOut",
             },
           }}
-          className="flex flex-col-reverse md:flex-row w-full  overflow-hidden  rounded-2xl "
+          className="flex flex-col-reverse sm2:flex-row w-full  overflow-hidden  rounded-2xl "
         >
           <div className=" py-4 pb-6 md:py-6 w-full md:w-[50%]  bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-center md:items-start justify-center">
             <h2 className="text-center md:text-start text-2xl md:text-lg 2xl:text-2xl   font-semibold mb-2 px-8">
@@ -241,10 +241,10 @@ const Specialization = () => {
               ease: "easeInOut",
             },
           }}
-          className="flex flex-col-reverse md:flex-row w-full  overflow-hidden  rounded-2xl "
+          className="flex flex-col-reverse sm2:flex-row w-full  overflow-hidden  rounded-2xl "
         >
           <div className=" py-4 pb-6 md:py-6 w-full md:w-[50%]  bg-[#F3F3F9] dark:bg-slate-900  flex flex-col items-center md:items-start justify-center">
-            <h2 className=" text-2xl md:text-lg 2xl:text-2xl   font-semibold mb-2 px-8">
+            <h2 className=" text-2xl text-center md:text-start md:text-lg 2xl:text-2xl   font-semibold mb-2 px-8">
               IT Consultation
             </h2>
             <p className=" md:max-w-[17.5rem] 2xl:max-w-[20rem] px-8 text-sm md:text-xs 2xl:text-sm text-center md:text-start ">

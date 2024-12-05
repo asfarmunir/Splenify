@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import localFont from "next/font/local";
+import { providedServices } from "./Services";
 const recoleta = localFont({ src: "../../app/recoleta.ttf" });
 
 const services = [
@@ -46,7 +47,7 @@ const Services = () => {
           ease: "easeInOut",
         },
       }}
-      className="flex md:hidden flex-col w-full  items-center gap-5 pt-2 pb-12 md:px-8  my-[20px] md:my-[30px]"
+      className="flex lg:hidden flex-col w-full  items-center gap-5 pt-2 pb-12 md:px-8  my-[20px] md:my-[30px]"
     >
       <h2 className=" text-base   2xl:xl tracking-wide ">
         Go beyond just visuals...
@@ -71,8 +72,62 @@ const Services = () => {
           className="  dark:invert hidden md:block  w-[100px] 2xl:w-[170px] absolute right-[1rem] 2xl:right-[0rem] -bottom-1 2xl:-bottom-4   "
         />
       </h1>
-      <div className="grid grid-cols-1 max-w-5xl 2xl:max-w-7xl sm:grid-cols-2 lg:grid-cols-3  gap-8 px-8 md:px-4 2xl:px-0  p-2 w-full">
-        <motion.div
+      <div className="grid grid-cols-1 max-w-5xl 2xl:max-w-7xl sm2:grid-cols-2 lg:grid-cols-3  gap-8 px-8 md:px-4 2xl:px-0  p-2 w-full">
+        {providedServices.map((service, index) => (
+          <motion.div
+            key={index}
+            initial={{
+              opacity: 0,
+              scale: 0.7,
+            }}
+            whileInView={{
+              opacity: 1,
+              scale: 1,
+              transition: {
+                type: "spring",
+              },
+            }}
+            viewport={{ once: true, amount: 0.5 }}
+            className="flex flex-col  w-full bg-[#F3F3F9] dark:bg-slate-900 overflow-hidden  px-4 2xl:px-6 py-8 2xl:py-10 rounded-2xl "
+          >
+            <h2 className=" font-semibold text-xl 2xl:text-2xl mb-4">
+              {service.title}
+            </h2>
+            <div className="flex flex-wrap items-center justify-start gap-2">
+              {/* <div className=" inline-flex items-center gap-1 bg-white dark:bg-slate-800 px-3.5 py-1.5 rounded-full">
+                <Image
+                  src="/icons/audit.svg"
+                  alt="Splenify"
+                  width={22}
+                  height={22}
+                  className=" w-[16px] 2xl:w-[22px] "
+                />
+                <p className="text-[#7165FF]  text-xs   2xl:text-base">
+                  UX Audit
+                </p>
+              </div> */}
+              {service.services.map((service, index) => (
+                <div
+                  key={index}
+                  className=" inline-flex items-center gap-1.5 bg-white dark:bg-slate-800 px-3 py-2 rounded-full"
+                >
+                  <Image
+                    src={service.icon}
+                    alt="Splenify"
+                    width={22}
+                    height={22}
+                    className=" dark:invert w-[16px] 2xl:w-[22px] "
+                  />
+                  <p className="text-[#4E758D] dark:text-slate-300 text-xs   2xl:text-sm">
+                    {service.title}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        ))}
+
+        {/* <motion.div
           initial={{
             opacity: 0,
             scale: 0.7,
@@ -370,7 +425,7 @@ const Services = () => {
               </div>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </motion.div>
   );

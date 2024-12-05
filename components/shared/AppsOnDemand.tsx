@@ -55,7 +55,7 @@ const AppsOnDemand = () => {
           ease: "easeInOut",
         },
       }}
-      className="hidden md:flex flex-col w-full  items-center gap-5  my-[20px] md:pt-[40px] lg:pt-[100px] md:my-[30px]"
+      className="hidden lg:flex flex-col w-full  items-center gap-5  my-[20px] md:pt-[40px] lg:pt-[100px] md:my-[30px]"
     >
       <h2 className=" text-base   2xl:xl tracking-wide ">See how we do it!</h2>
       <h1
@@ -72,7 +72,7 @@ const AppsOnDemand = () => {
         />
       </h1>
       {/* Mobile version */}
-      <div className="grid w-full grid-cols-2 px-5">
+      {/* <div className="grid w-full grid-cols-2 px-5">
         {items.map((item, index) => (
           <div
             key={index}
@@ -98,7 +98,7 @@ const AppsOnDemand = () => {
             </div>
           </div>
         ))}
-      </div>
+      </div> */}
 
       {/* Large Screen Version  */}
       <motion.div

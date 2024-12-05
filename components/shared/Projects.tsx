@@ -260,7 +260,7 @@ const Projects = () => {
           },
         }}
         id="mobile-projects"
-        className="flex flex-col md:hidden w-full relative  items-center  px-6 gap-4 2xl:gap-5   my-[20px] md:my-[30px]"
+        className="flex flex-col md:hidden w-full relative  items-center  px-8 gap-4 2xl:gap-5   my-[20px] md:my-[30px]"
       >
         <Image
           src="/images/left-arrow.svg"
@@ -313,7 +313,7 @@ const Projects = () => {
                 loading="lazy"
                 width={985}
                 height={923}
-                className=" w-full h-full object-cover object-center "
+                className=" w-full h-full object-cover object-top "
               />
             </div>
             <div className="flex items-center w-full pt-4 justify-between">
@@ -356,7 +356,7 @@ const Projects = () => {
                 loading="lazy"
                 width={985}
                 height={923}
-                className=" w-full h-full  object-cover object-center "
+                className=" w-full h-full  object-cover object-top "
               />
             </div>
             <div className="flex items-center w-full pt-4 justify-between">
@@ -399,7 +399,7 @@ const Projects = () => {
                 loading="lazy"
                 width={985}
                 height={923}
-                className=" w-full h-full object-cover object-center "
+                className=" w-full h-full object-cover object-top "
               />
             </div>
             <div className="flex items-center w-full pt-4  justify-between">
@@ -442,7 +442,7 @@ const Projects = () => {
                 alt="Splenify"
                 width={985}
                 height={923}
-                className=" w-full h-full object-cover object-center "
+                className=" w-full h-full object-cover object-top "
               />
             </div>
             <div className="flex items-center w-full pt-4  justify-between">

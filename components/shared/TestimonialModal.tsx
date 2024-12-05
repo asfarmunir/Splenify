@@ -1,5 +1,6 @@
 import {
   Dialog,
+  DialogClose,
   DialogContent,
   DialogDescription,
   DialogHeader,
@@ -11,6 +12,7 @@ import Image from "next/image";
 import React from "react";
 import TestimonialCard from "./TestimonialCard";
 import localFont from "next/font/local";
+import { FaArrowLeftLong } from "react-icons/fa6";
 const recoleta = localFont({ src: "../../app/recoleta.ttf" });
 
 const TestimonialModal = ({
@@ -43,8 +45,15 @@ const TestimonialModal = ({
           delayDuration={delayDuration}
         />
       </DialogTrigger>
-      <DialogContent className=" overflow-hidden max-h-[85svh] md:max-h-[90svh] md:min-w-[900px] 2xl:min-w-[1000px] p-0   bg-gradient-to-r from-[#CB71F2]  to-[#5C0F97]   border-none ">
+      <DialogContent className=" overflow-hidden max-h-[85svh] md:max-h-[90svh] md:min-w-[800px] lg:min-w-[900px] 2xl:min-w-[1000px] p-0   bg-gradient-to-r from-[#CB71F2]  to-[#5C0F97]   border-none ">
         <div className="    relative flex flex-col md:flex-row pt-20 md:pt-8   items-center gap-8  justify-center px-12 md:px-20 border-none ">
+          <DialogClose className=" absolute z-50 flex items-center gap-2 top-6 left-6">
+            <FaArrowLeftLong className="h-8 w-8 lg:block hidden bg-white rounded-full p-2 text-slate-700" />
+            <span className="text-lg lg:inline hidden font-semibold  2xl:text-xl text-white">
+              Backs
+            </span>
+          </DialogClose>
+
           <Image
             src="/images/arrow3.svg"
             width={140}

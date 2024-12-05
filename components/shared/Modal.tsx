@@ -28,7 +28,7 @@ const Modal = ({
       >
         View Project
       </DialogTrigger>
-      <DialogContent className="  border-none     md:rounded-2xl p-0 md:min-w-[900px] 2xl:min-w-[940px] ">
+      <DialogContent className="  border-none     md:rounded-2xl p-0 md:min-w-[650px] lg:min-w-[900px] 2xl:min-w-[940px] ">
         <div className=" w-full flex flex-col max-h-[100svh] md:max-h-[90svh] md:rounded-2xl overflow-y-auto [scroll]  [scrollbar-width:none]   ">
           <div
             className=" w-full flex flex-col items-center pt-16 gap-4 bg-cover bg-center h-[500px]"

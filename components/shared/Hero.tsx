@@ -70,12 +70,12 @@ const Hero = () => {
               },
             } /* Animate when in view */
           }
-          className={` max-w-[24rem] sm:max-w-full -mt-8   md:-mt-4 leading-snug sm:leading-none text-wrap -tracking-wide  text-[2.1rem] sm:text-[3.8rem]  md:text-7xl lg:text-8xl 2xl:text-[7.4rem] px-0.5 text-center ${recoleta.className}`}
+          className={` max-w-[24r sm:max-w-full -mt-8   md:-mt-4 leading-snug sm:leading-none  -tracking-wide  text-[2.15rem] sm2:text-[2.8rem]   sm:text-[3.8rem]  md:text-7xl lg:text-8xl 2xl:text-[7.4rem] px-0.5 text-center ${recoleta.className}`}
         >
           Design. <span className="grad_text md:px-4 2xl:px-6 ">Develop.</span>{" "}
           Deploy
         </motion.div>
-        <p className=" text-sm 2xl:text-[1.2rem] tracking-wide my-1 px-4 text-center max-w-xl  sm:max-w-3xl 2xl:max-w-4xl text-slate-900 dark:text-white">
+        <p className=" text-sm 2xl:text-[1.2rem] tracking-wide my-1 px-4 text-center sm2:max-w-md md:max-w-xl  sm:max-w-3xl 2xl:max-w-4xl text-slate-900 dark:text-white">
           We’re a modern app-building company that creates apps that your
           customers love and that evolve with your business.
         </p>

@@ -21,6 +21,10 @@ const config = {
       },
     },
     extend: {
+       screens: {
+        // Custom breakpoint between the default and sm (example: 500px)
+        'sm2': '500px',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

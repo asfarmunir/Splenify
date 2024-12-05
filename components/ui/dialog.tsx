@@ -5,7 +5,7 @@ import * as DialogPrimitive from "@radix-ui/react-dialog";
 import { X } from "lucide-react";
 
 import { cn } from "@/lib/utils";
-import { FaArrowLeftLong, FaLeftLong } from "react-icons/fa6";
+import { FaArrowLeftLong, FaLeftLong, FaXmark } from "react-icons/fa6";
 
 const Dialog = DialogPrimitive.Root;
 
@@ -45,9 +45,10 @@ const DialogContent = React.forwardRef<
       {...props}
     >
       {children}
-      <DialogPrimitive.Close className=" absolute z-50 left-6 top-6 flex items-center gap-2  rounded-sm  ring-offset-background focus:outline-none focus:ring-0 focus:ring-ring focus:ring-offset-0 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
-        <FaArrowLeftLong className="h-8 w-8 bg-white rounded-full p-2 text-slate-700" />
-        <span className="text-lg font-semibold inline 2xl:text-xl text-white">
+      <DialogPrimitive.Close className=" absolute z-50 left-6 top-6  lg:left-auto  lg:-right-24  2xl:-right-[19rem] lg:-top-4 flex items-center gap-2  rounded-sm  ring-offset-background focus:outline-none focus:ring-0 focus:ring-ring focus:ring-offset-0 disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground">
+        <FaArrowLeftLong className="h-8 w-8 lg:hidden bg-white rounded-full p-2 text-slate-700" />
+        <FaXmark className="h-8 w-8 bg-white hidden lg:block rounded-full p-2 text-slate-700" />
+        <span className="text-lg lg:hidden font-semibold inline 2xl:text-xl text-white">
           Back
         </span>
       </DialogPrimitive.Close>
