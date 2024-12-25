@@ -6,6 +6,57 @@ import { motion } from "framer-motion";
 import localFont from "next/font/local";
 const recoleta = localFont({ src: "../../app/recoleta.ttf" });
 
+const specializations = [
+  {
+    title: "FineTech",
+    description:
+      "Navigate complex technological decisions from industry-vetted IT professionals, and make the best decisions for you and your business today.",
+    image: "/images/avatar2.png",
+    tags: ["Secure Transaction", "Crypto MVP", "Banking"],
+  },
+  {
+    title: "Healthcare",
+    description:
+      "Navigate complex technological decisions from industry-vetted IT professionals, and make the best decisions for you and your business today.",
+    image: "/images/avatar2.png",
+    tags: ["Secure Transaction", "Crypto MVP", "Banking"],
+  },
+  {
+    title: "Education",
+    description:
+      "Navigate complex technological decisions from industry-vetted IT professionals, and make the best decisions for you and your business today.",
+    image: "/images/avatar2.png",
+    tags: ["Secure Transaction", "Crypto MVP", "Banking"],
+  },
+  {
+    title: "Fashion",
+    description:
+      "Navigate complex technological decisions from industry-vetted IT professionals, and make the best decisions for you and your business today.",
+    image: "/images/avatar2.png",
+    tags: ["Secure Transaction", "Crypto MVP", "Banking"],
+  },
+  {
+    title: "Media & Entertainment",
+    description:
+      "Navigate complex technological decisions from industry-vetted IT professionals, and make the best decisions for you and your business today.",
+    image: "/images/avatar2.png",
+    tags: ["Secure Transaction", "Crypto MVP", "Banking"],
+  },
+  {
+    title: "Retail & Ecommerce",
+    description:
+      "Navigate complex technological decisions from industry-vetted IT professionals, and make the best decisions for you and your business today.",
+    image: "/images/avatar2.png",
+    tags: ["Secure Transaction", "Crypto MVP", "Banking"],
+  },
+  // {
+  //   title: '',
+  //   description: '',
+  //   image: '',
+  //   tags: []
+  // }
+];
+
 const Specialization = () => {
   return (
     <motion.div
@@ -25,13 +76,13 @@ const Specialization = () => {
       className="flex flex-col w-full  items-center gap-5  my-[20px] md:my-[30px]"
     >
       <h2 className=" text-base   2xl:xl tracking-wide ">
-        Here’s what we help you do.
+        What do we specialize in?
       </h2>
       <h1
-        className={` text-2xl max-w-4xl px-3.5 relative md:text-3xl 2xl:text-5xl tracking-wide text-center mb-5 md:mb-16 ${recoleta.className}`}
+        className={` text-2xl  px-3.5 relative md:text-3xl 2xl:text-5xl tracking-wide text-center mb-5 md:mb-16 ${recoleta.className}`}
       >
-        Navigate the digital landscape with our app{" "}
-        <span className=" text-[#7165FF] ">building excellence</span>
+        Our partners hire us to{" "}
+        <span className=" text-[#7165FF] "> design & develop</span> their…
         <Image
           src="/images/line_vector2.svg"
           alt="Splenify"
@@ -40,7 +91,7 @@ const Specialization = () => {
           className="  dark:invert hidden lg:block  w-[270px] 2xl:w-[380px] absolute right-28 2xl:right-52  -rotate-4 "
         />
       </h1>
-      <div className="grid grid-cols-1 max-w-6xl 2xl:max-w-7xl lg:grid-cols-2 gap-8 px-6 md:px-12 2xl:px-0  p-2 w-full">
+      {/* <div className="grid grid-cols-1 max-w-6xl 2xl:max-w-7xl lg:grid-cols-2 gap-8 px-6 md:px-12 2xl:px-0  p-2 w-full">
         <motion.div
           initial={{
             opacity: 0,
@@ -263,6 +314,44 @@ const Specialization = () => {
             />
           </div>
         </motion.div>
+      </div> */}
+
+      <div className=" w-full grid max-w-6xl 2xl:max-w-7xl my-4 grid-cols-1 md:grid-cols-2 gap-8 gap-y-12 2xl:gap-12">
+        {specializations.map((item, index) => (
+          <div
+            key={index}
+            className="flex items-center flex-col justify-center md:flex-row gap-6  2xl:gap-8  "
+          >
+            <div className=" w-[230px] h-[225px] ">
+              <Image
+                src={item.image}
+                alt="Splenify"
+                loading="lazy"
+                width={225}
+                className=" w-full h-full object-cover object-center rounded-2xl"
+                height={123}
+              />
+            </div>
+            <div>
+              <h2 className="text-xl 2xl:text-2xl font-bold mb-2 capitalize">
+                {item.title}
+              </h2>
+              <p className="text-sm 2xl:text-base 2xl:leading-7 max-w-xs">
+                {item.description}
+              </p>
+              <div className="flex mt-4  items-center flex-wrap w-full gap-2 ">
+                {item.tags.map((tag, index) => (
+                  <p
+                    key={index}
+                    className="text-xs 2xl:text-sm bg-[#7165FF1A] text-[#7165FF] px-3 font-semibold py-1 2xl:py-1.5 rounded-full"
+                  >
+                    {tag}
+                  </p>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
     </motion.div>
   );

@@ -8,6 +8,7 @@ import Hero from "@/components/shared/Hero";
 // import Footer from "@/components/shared/Footer";
 // import ServicesMobile from "@/components/shared/ServicesMobile";
 import dynamic from "next/dynamic";
+import { Timeline } from "@/components/shared/Timeline";
 
 const AppsOnDemand = dynamic(
   () => import("../components/shared/AppsOnDemand"),
@@ -49,7 +50,8 @@ export default function Home() {
       {/* Hero Section */}
       <Hero />
       {/* Apps on demand */}
-      <AppsOnDemand />
+      {/* <AppsOnDemand /> */}
+      <Timeline />
       {/* services for mobile view  */}
       <ServicesMobile />
       {/* Specialization */}

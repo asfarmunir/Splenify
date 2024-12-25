@@ -5,52 +5,43 @@ import Link from "next/link";
 import ToggleTheme from "@/components/shared/ToggleTheme";
 import { RiMenu3Line } from "react-icons/ri";
 import { FiX } from "react-icons/fi"; // Import Cross Icon
-
-import {
-  Sheet,
-  SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetClose,
-  SheetTitle,
-  SheetTrigger,
-} from "@/components/ui/sheet";
-
+import { useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 const navlinks = [
   {
     name: "Home",
-    link: "home",
+    link: "/",
+    tab: "home",
   },
   {
     name: "Projects",
-    link: "projects",
+    link: "/",
+    tab: "projects",
   },
-  {
-    name: "About",
-    link: "about",
-  },
+
   {
     name: "Contact",
-    link: "contact",
+    link: "/",
+    tab: "contact",
   },
 ];
 
 const mobLinks = [
   {
     name: "Home",
-    link: "home",
+    link: "/",
+    tab: "home",
   },
   {
     name: "Projects",
-    link: "mobile-projects",
+    link: "/",
+    tab: "projects",
   },
-  {
-    name: "About",
-    link: "mobileServices",
-  },
+
   {
     name: "Contact",
-    link: "contact",
+    link: "/",
+    tab: "contact",
   },
 ];
 
@@ -69,7 +60,9 @@ export const scrollToSection = (section: string, offset = 100) => {
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle menu visibility
-
+  const [currentSection, setCurrentSection] = useState("home");
+  const router = useRouter();
+  const pathname = usePathname();
   const toggleMenu = () => {
     setIsMenuOpen((prevState) => !prevState); // Toggle menu state
   };
@@ -98,24 +91,52 @@ const Navbar = () => {
         <div className="hidden lg:inline-flex items-center gap-10">
           {navlinks.map((item, index) => (
             <button
-              onClick={() => scrollToSection(item.link)}
+              onClick={() => {
+                if (pathname === "/") {
+                  scrollToSection(item.tab);
+                } else {
+                  router.push(item.link);
+                  scrollToSection(item.tab);
+                }
+                setCurrentSection(item.tab);
+              }}
               key={index}
               className="text-sm 2xl:text-lg flex flex-col"
             >
               <p
                 className={`${
-                  item.link === "#"
+                  item.link === currentSection
                     ? "text-black font-semibold "
                     : "text-[#878787] dark:text-slate-300"
                 }`}
               >
                 {item.name}
               </p>
-              {item.link === "#" && (
-                <span className="w-[45%] border-2 rounded-md border-[#00FAFE]"></span>
+              {item.tab === currentSection && (
+                <span className="w-[45%] border-2 rounded-md border-[#7165FF]"></span>
               )}
             </button>
           ))}
+          <button
+            onClick={() => {
+              router.push("/about");
+              setCurrentSection("");
+            }}
+            className="text-sm 2xl:text-lg flex flex-col"
+          >
+            <p
+              className={`${
+                pathname === "/about"
+                  ? "text-black font-semibold "
+                  : "text-[#878787] dark:text-slate-300"
+              }`}
+            >
+              About
+            </p>
+            {pathname === "/about" && (
+              <span className="w-[45%] border-2 rounded-md border-[#7165FF]"></span>
+            )}
+          </button>
         </div>
         <div className="hidden lg:flex items-center gap-4">
           <ToggleTheme />
