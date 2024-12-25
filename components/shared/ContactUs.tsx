@@ -29,13 +29,13 @@ const ContactUs = () => {
       className="flex flex-col   w-full items-center px-4 justify-center    gap-4 py-16 2xl:py-20 md:px-8  mt-[20px] md:mt-[30px]"
     >
       <h1
-        className={`text-[27px] mb-7 md:text-[40px] lg:text-[46px]  ${recoleta.className}    text-center `}
+        className={`text-[27px] mb-4 md:mb-7 md:text-[40px] lg:text-[46px]  ${recoleta.className}    text-center `}
       >
         Ready To <span className="text-[#DF56FE]">Start</span> Your{" "}
         <span className="text-[#7165FF]">Flutter Journey</span>?
       </h1>
 
-      <div className=" flex w-full max-w-7xl items-start justify-center  flex-col md:flex-row gap-8">
+      <div className=" flex w-full max-w-7xl items-start justify-center  flex-col md:flex-row gap-4 lg:gap-8">
         <motion.div
           initial={{
             x: -100,
@@ -52,7 +52,7 @@ const ContactUs = () => {
           viewport={{
             once: true,
           }}
-          className="max-w-2xl   px-8 py-16 w-full h-[43rem] rounded-xl gap-5 flex flex-col     "
+          className="max-w-2xl   px-8 py-16 w-full h-[43rem] rounded-xl gap-5 hidden md:flex flex-col     "
         >
           <div className="relative w-fit ">
             <Image

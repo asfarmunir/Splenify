@@ -7,20 +7,20 @@ import { scrollToSection } from "./Navbar";
 
 const Footer = () => {
   return (
-    <footer className=" w-full bg-[#161C2D] py-16 px-4 md:px-[70px] pt-[70px] 2xl:pt-[90px]">
+    <footer className=" w-full  max-w-6xl 2xl:max-w-7xl  md:rounded-[16px] md:mb-16 bg-[#161C2D] py-16 px-4 md:px-[70px] pt-[70px] 2xl:pt-[90px]">
       <div className="flex flex-col md:flex-row gap-8 items-start px-3 md:px-0  md:items-center justify-between pb-16 border-b border-gray-600">
-        <div className="flex flex-col items-center md:items-start max-w-md gap-3">
-          <h2 className=" text-2xl text-center md:text-start md:text-xl 2xl:text-3xl text-white font-semibold">
+        <div className="flex flex-col items-center md:items-start max-w-lg gap-3">
+          <h2 className=" text-2xl mb-8 text-center md:text-start md:text-xl 2xl:text-3xl text-white font-semibold">
             Ready to launch your next project?
           </h2>
-          <p className=" text-gray-400 text-center md:text-start my-2 md:my-0 leading-loose md:leading-6 tracking-wide">
+          <p className=" text-gray-400 2xl:text-lg text-center md:text-start my-2 md:my-0 leading-loose md:leading-6 tracking-wide">
             With lots of unique blocks, you can easily build a page without
             coding. Build your next landing page.
           </p>
         </div>
         <Link
           href={"https://www.cal.com/splenify"}
-          className=" bg-[#7165FF] mx-auto md:mx-0 w-full text-center md:w-fit rounded-[20px] text-white py-5 px-12  2xl:text-lg"
+          className=" bg-[#7165FF] mx-auto md:mx-0 w-full text-center md:w-fit rounded-[8px] text-white py-5 px-12  2xl:text-lg"
         >
           Get Started with Splenify
         </Link>
