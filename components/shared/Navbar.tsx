@@ -76,7 +76,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="w-full relative z-40  bg-background items-center flex justify-between shadow-2xl shadow-gray-200/50 dark:shadow-gray-900/60 px-8 md:px-12 py-4 2xl:py-5">
+      <div className="w-full max-w-7xl rounded-xl drop-shadow-sm  relative z-40 m-4   bg-background items-center flex justify-between shadow-2xl shadow-gray-200/50 dark:shadow-gray-900/60 px-8 md:px-12 py-4 2xl:py-5">
         <Image
           src="/images/logoWhite.png"
           alt="Splenify"
@@ -122,7 +122,7 @@ const Navbar = () => {
 
           <Link
             href={"https://www.cal.com/splenify"}
-            className="bg-white dark:bg-transparent text-sm 2xl:text-base text-[#7165FF] font-semibold rounded-[20px] px-5 2xl:px-6 py-2.5 2xl:py-3 border-[3px] text-center border-[#7165FF]"
+            className="text-white  text-sm 2xl:text-base bg-[#7165FF] font-semibold rounded-[8px] px-5 2xl:px-6 py-2.5 2xl:py-3 border-[3px] text-center border-[#7165FF]"
           >
             Schedule a call
           </Link>
@@ -166,7 +166,7 @@ const Navbar = () => {
           <div className="flex items-center gap-3">
             <Link
               href={"https://www.cal.com/splenify"}
-              className="bg-white dark:bg-transparent text-[#7165FF] text-sm 2xl:text-base font-semibold rounded-[20px] px-5 2xl:px-6 py-2.5 2xl:py-3 border-[3px] text-center border-[#7165FF]"
+              className="text-white  text-sm 2xl:text-base bg-[#7165FF] font-semibold rounded-[8px] px-5 2xl:px-6 py-2.5 2xl:py-3 border-[3px] text-center border-[#7165FF]"
             >
               Schedule a call
             </Link>

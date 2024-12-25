@@ -15,7 +15,7 @@ const Hero = () => {
     <section>
       <header
         id="home"
-        className="flex flex-col items-center gap-8 2xl:mt-10 mb-14 md:mb-10"
+        className="flex flex-col items-center gap-8 2xl:mt-6 mb-14 md:mb-10"
       >
         <div className="flex items-center relative gap-3 md:gap-3 2xl:gap-5">
           <Image
@@ -82,13 +82,13 @@ const Hero = () => {
         <div className="flex  items-center justify-center gap-3 w-full   md:gap-4 px-5 md:px-12">
           <button
             onClick={() => scrollToSection("contact")}
-            className=" bg-gradient-to-r hover:bg-gradient-to-tr w-full hover:bg-[#DF56FE] transition-colors text-xs`  sm:w-48 flex-grow md:flex-grow-0 from-[#DF56FE] to-[#7165FF]   md:text-base 2xl:text-lg text-white font-normal rounded-[20px] px-5 2xl:px-8 py-[1.1rem]  "
+            className=" bg-gradient-to-r hover:bg-gradient-to-tr w-full hover:bg-[#DF56FE] transition-colors text-xs`  sm:w-48 flex-grow md:flex-grow-0 from-[#DF56FE] to-[#7165FF]   md:text-base 2xl:text-lg text-white font-normal rounded-[8px] px-5 2xl:px-8 py-[1.1rem]  "
           >
             Contact Us
           </button>
           <Link
             href={"https://www.cal.com/splenify"}
-            className=" bg-white dark:bg-transparent text-center w-full  tracking-tight hover:shadow-lg    duration-400 transition-shadow  flex-grow md:flex-grow-0 sm:w-48 text-xs md:text-base 2xl:text-lg text-[#7165FF] font-semibold rounded-[20px] px-5 2xl:px-8 py-[1.1rem] sm:py-[0.95rem]  border-[3px] border-[#7165FF]"
+            className=" bg-white dark:bg-transparent text-center w-full  tracking-tight hover:shadow-lg    duration-400 transition-shadow  flex-grow md:flex-grow-0 sm:w-48 text-xs md:text-base 2xl:text-lg text-[#7165FF] font-semibold rounded-[8px] px-5 2xl:px-8 py-[1.1rem] sm:py-[0.95rem]  border-[3px] border-[#7165FF]"
           >
             Book Meeting
           </Link>
