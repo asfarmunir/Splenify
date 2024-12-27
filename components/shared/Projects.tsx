@@ -42,14 +42,14 @@ const Projects = () => {
           },
         }}
         id="projects"
-        className="hidden md:flex flex-col w-full relative  items-center gap-3 2xl:gap-5   my-[20px] md:my-[30px]"
+        className="hidden md:flex flex-col overflow-x-hidden w-full relative  items-center gap-3 2xl:gap-5  pt-12 my-[20px] md:my-[40px]"
       >
         <Image
           src="/images/left-arrow.svg"
           alt="Splenify"
           width={300}
           height={300}
-          className=" absolute hidden md:block   top-1 rotate-1 right-0 
+          className=" absolute hidden md:block  top-12  2xl:top-6 rotate-1 right-0 
           w-[340px] 2xl:w-[420px] dark:invert
 
            "
@@ -59,8 +59,8 @@ const Projects = () => {
           alt="Splenify"
           width={160}
           height={140}
-          className=" absolute left-0 hidden md:block -top-7 2xl:-top-10 rotate-1  
-          w-[340px] 2xl:w-[410px] dark:invert
+          className=" absolute left-0 hidden md:block top-4 rotate-1  
+          w-[340px] 2xl:w-[400px] dark:invert
           "
         />
         <h2 className=" text-base   2xl:xl tracking-wide ">Catch the latest</h2>

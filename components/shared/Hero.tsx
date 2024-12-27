@@ -12,7 +12,7 @@ const recoleta = localFont({ src: "../../app/recoleta.ttf" });
 
 const Hero = () => {
   return (
-    <section>
+    <section className=" overflow-x-hidden">
       <header
         id="home"
         className="flex flex-col items-center gap-8 2xl:mt-6 mb-14 md:mb-10"

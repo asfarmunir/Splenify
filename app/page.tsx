@@ -46,26 +46,28 @@ const ServicesMobile = dynamic(
 export default function Home() {
   return (
     // <main className="flex min-h-screen  flex-col items-center pt-36  overflow-x-hidden 2xl:pt-40">
-    <main className="flex min-h-screen  flex-col items-center pt-16  overflow-x-hidden ">
+    <main className="  pt-16     ">
       {/* Hero Section */}
       <Hero />
-      {/* Apps on demand */}
       {/* <AppsOnDemand /> */}
       <Timeline />
       {/* services for mobile view  */}
-      <ServicesMobile />
+      {/* <ServicesMobile /> */}
       {/* Specialization */}
-      <Specialization />
-      {/* Services */}
-      <Services />
-      {/* Projects */}
-      <Projects />
-      {/* Testimonials */}
-      <Testimonials />
-      {/* Contact Us */}
-      <div className=" px-4 md:px-0">
-        <ContactUs />
-      </div>
+      <section className=" overflow-x-hidden">
+        <Specialization />
+        {/* Services */}
+        {/* <Services /> */}
+        {/* Projects */}
+        <Projects />
+        {/* Testimonials */}
+        <Testimonials />
+        {/* Contact Us */}
+        <div className=" px-4 md:px-0">
+          <ContactUs />
+        </div>
+      </section>
+
       {/* footer  */}
     </main>
   );
