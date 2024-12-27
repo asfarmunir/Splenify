@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Mulish } from "next/font/google";
 import localFont from "next/font/local";
 import { FaArrowRightLong } from "react-icons/fa6";
+import Link from "next/link";
 
 const recoleta = localFont({ src: "../../app/recoleta.ttf" });
 
@@ -26,7 +27,7 @@ const ContactUs = () => {
         },
       }}
       id="contact"
-      className="flex flex-col   w-full items-center px-4 justify-center    gap-4 py-16 2xl:py-20 md:px-8  mt-[20px] md:mt-[30px]"
+      className="flex flex-col   w-full items-center  justify-center    gap-4 py-16 2xl:py-20 md:px-8  mt-[20px] md:mt-[30px]"
     >
       <h1
         className={`text-[27px] mb-4 md:mb-7 md:text-[40px] lg:text-[46px]  ${recoleta.className}    text-center `}
@@ -64,7 +65,7 @@ const ContactUs = () => {
             />
             <div className=" absolute  -bottom-12 -right-28  p-4 px-6 shadow rounded-lg backdrop-blur  ">
               <h2 className="text-2xl font-bold">Musa</h2>
-              <p className="text-sm text-[#747576]">
+              <p className="text-sm text-[#747576] dark:text-slate-400 ">
                 Head of Technology Solution
               </p>
             </div>
@@ -85,10 +86,13 @@ const ContactUs = () => {
             <p className="mb-6">
               Feel free to select a time at your convenience!
             </p>
-            <button className="text-[#7165FF]  inline-flex items-center gap-2  font-semibold">
+            <Link
+              href={"https://www.cal.com/splenify"}
+              className="text-[#7165FF]  inline-flex items-center gap-2  font-semibold"
+            >
               Lets Talk
               <FaArrowRightLong className="text-lg" />
-            </button>
+            </Link>
           </div>
         </motion.div>
         <motion.div

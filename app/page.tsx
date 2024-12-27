@@ -63,9 +63,10 @@ export default function Home() {
       {/* Testimonials */}
       <Testimonials />
       {/* Contact Us */}
-      <ContactUs />
+      <div className=" px-4 md:px-0">
+        <ContactUs />
+      </div>
       {/* footer  */}
-      <Footer />
     </main>
   );
 }

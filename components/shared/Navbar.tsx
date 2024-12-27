@@ -35,7 +35,7 @@ const mobLinks = [
   {
     name: "Projects",
     link: "/",
-    tab: "projects",
+    tab: "mobile-projects",
   },
 
   {
@@ -60,9 +60,11 @@ export const scrollToSection = (section: string, offset = 100) => {
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle menu visibility
-  const [currentSection, setCurrentSection] = useState("home");
-  const router = useRouter();
   const pathname = usePathname();
+  const [currentSection, setCurrentSection] = useState(
+    pathname === "/" ? "home" : ""
+  );
+  const router = useRouter();
   const toggleMenu = () => {
     setIsMenuOpen((prevState) => !prevState); // Toggle menu state
   };
@@ -105,7 +107,7 @@ const Navbar = () => {
             >
               <p
                 className={`${
-                  item.link === currentSection
+                  item.tab === currentSection
                     ? "text-black font-semibold "
                     : "text-[#878787] dark:text-slate-300"
                 }`}
@@ -168,22 +170,60 @@ const Navbar = () => {
       </div>
       <div
         className={` absolute shadow-sm rounded-xl   top-[6rem] left-1/2  -translate-x-1/2     min-h-[330px] w-[290px]  bg-white/95 dark:bg-slate-950/95 transition-all duration-500 ease-in-out transform ${
-          isMenuOpen ? "translate-y-0" : "-translate-y-[110%]"
+          isMenuOpen ? "translate-y-0" : "-translate-y-[120%]"
         } z-10`}
       >
         <div className="flex flex-col items-center gap-5 py-9">
           {mobLinks.map((item, index) => (
             <button
               onClick={() => {
-                scrollToSection(item.link);
+                if (pathname === "/") {
+                  scrollToSection(item.tab);
+                } else {
+                  router.push(item.link);
+                  scrollToSection(item.tab);
+                }
+                setCurrentSection(item.tab);
                 toggleMenu();
               }}
               key={index}
-              className=" font-semibold text-gray-800 dark:text-white"
+              className="text-sm 2xl:text-lg flex flex-col"
             >
-              {item.name}
+              <p
+                className={`${
+                  item.tab === currentSection
+                    ? "text-black font-semibold "
+                    : "text-[#878787] dark:text-slate-300"
+                }`}
+              >
+                {item.name}
+              </p>
+              {item.tab === currentSection && (
+                <span className="w-[45%] border-2 rounded-md border-[#7165FF]"></span>
+              )}
             </button>
           ))}
+          <button
+            onClick={() => {
+              router.push("/about");
+              setCurrentSection("");
+              toggleMenu();
+            }}
+            className="text-sm 2xl:text-lg flex flex-col"
+          >
+            <p
+              className={`${
+                pathname === "/about"
+                  ? "text-black font-semibold "
+                  : "text-[#878787] dark:text-slate-300"
+              }`}
+            >
+              About
+            </p>
+            {pathname === "/about" && (
+              <span className="w-[45%] border-2 rounded-md border-[#7165FF]"></span>
+            )}
+          </button>
           <div className="flex items-center gap-3">
             <Link
               href={"https://www.cal.com/splenify"}

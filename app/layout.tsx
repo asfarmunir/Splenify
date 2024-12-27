@@ -4,6 +4,7 @@ import "./globals.css";
 import NextTopLoader from "nextjs-toploader";
 import Navbar from "@/components/shared/Navbar";
 import { ThemeProvider } from "@/components/shared/ThemeProvider";
+import Footer from "@/components/shared/Footer";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -48,6 +49,7 @@ export default function RootLayout({
             <Navbar />
           </div>
           {children}
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
