@@ -24,7 +24,7 @@ const Modal = ({
     <Dialog>
       <DialogTrigger
         className="bg-[#7165FF] text-xs md:text-base
-        px-6    md:px-8 py-4 rounded-[20px] text-white font-thin text-nowrap "
+        px-6    md:px-8 py-4 rounded-[8px] text-white font-thin text-nowrap "
       >
         View Project
       </DialogTrigger>

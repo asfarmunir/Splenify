@@ -95,7 +95,7 @@ const Hero = () => {
         </div>
         <HeroBentoGrid />
       </section>
-      <div className="flex gap-1 px-3 md:gap-10 my-[50px] pt-8 md:pt-0 md:my-[60px] justify-center items-center  md:items-start  relative ">
+      <div className="flex gap-1 max-w-7xl mx-auto px-3 md:gap-8 my-[50px] pt-8 md:pt-0 md:my-[60px] justify-center items-center  md:items-start  relative ">
         <h2 className=" block  md:hidden text-lg  2xl:text-xl text-center absolute top-0">
           Our long list of happy clients include:
         </h2>
@@ -137,7 +137,7 @@ const Hero = () => {
                     alt="Clients"
                     width={130}
                     className={` dark:invert dark:opacity-70 opacity-40 
-              w-[80px] md:w-[120px] 2xl:w-[150px] `}
+              w-[80px] md:w-[120px] 2xl:w-[130px] `}
                     height={130}
                   />
                 </motion.div>

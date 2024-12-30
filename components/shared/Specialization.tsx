@@ -79,7 +79,7 @@ const Specialization = () => {
         What do we specialize in?
       </h2>
       <h1
-        className={` text-2xl  px-3.5 relative md:text-3xl 2xl:text-5xl tracking-wide text-center mb-5 md:mb-16 ${recoleta.className}`}
+        className={` text-5xl  px-3.5 relative md:text-3xl 2xl:text-5xl tracking-wide text-center mb-5 md:mb-16 ${recoleta.className}`}
       >
         Our partners hire us to{" "}
         <span className=" text-[#7165FF] "> design & develop</span> their…
@@ -320,9 +320,9 @@ const Specialization = () => {
         {specializations.map((item, index) => (
           <div
             key={index}
-            className="flex items-center flex-col justify-center md:flex-row gap-6  2xl:gap-8  "
+            className="flex items-center p-4 flex-col justify-center sm2:flex-row gap-6  2xl:gap-8  "
           >
-            <div className=" w-[230px] h-[225px] ">
+            <div className=" w-full ">
               <Image
                 src={item.image}
                 alt="Splenify"
@@ -332,18 +332,18 @@ const Specialization = () => {
                 height={123}
               />
             </div>
-            <div>
+            <div className=" w-full flex flex-col justify-center  ">
               <h2 className="text-xl 2xl:text-2xl font-bold mb-2 capitalize">
                 {item.title}
               </h2>
-              <p className="text-sm 2xl:text-base 2xl:leading-7 max-w-xs">
+              <p className="text-xs lg:text-sm  max-w-xs 2xl:max-w-sm">
                 {item.description}
               </p>
-              <div className="flex mt-4  items-center flex-wrap w-full gap-2 ">
+              <div className="flex mt-2  items-center flex-wrap w-full gap-2 ">
                 {item.tags.map((tag, index) => (
                   <p
                     key={index}
-                    className="text-xs 2xl:text-sm bg-[#7165FF1A] text-[#7165FF] px-3 font-semibold py-1 2xl:py-1.5 rounded-full"
+                    className="text-xs  bg-[#7165FF1A] text-[#7165FF] px-3 font-semibold py-1 2xl:py-1.5 rounded-full"
                   >
                     {tag}
                   </p>

@@ -30,7 +30,7 @@ const ContactUs = () => {
       className="flex flex-col   w-full items-center overflow-x-hidden  justify-center    gap-4 py-16 2xl:py-20 md:px-8  mt-[20px] md:mt-[30px]"
     >
       <h1
-        className={`text-[27px] mb-4 md:mb-7 md:text-[40px] lg:text-[46px]  ${recoleta.className}    text-center `}
+        className={`text-[47px] mb-4 md:mb-7 md:text-[40px] lg:text-[46px]  ${recoleta.className}   text-start sm2:text-center `}
       >
         Ready To <span className="text-[#DF56FE]">Start</span> Your{" "}
         <span className="text-[#7165FF]">Flutter Journey</span>?
@@ -113,6 +113,32 @@ const ContactUs = () => {
           }}
           className="max-w-2xl w-full"
         >
+          <div className="flex flex-col gap-3 md:hidden">
+            <div className="relative w-fit ">
+              <Image
+                src="/images/contact_hero.png"
+                alt="contact"
+                width={200}
+                height={200}
+                className=" "
+              />
+              <div className=" absolute  -bottom-12 -right-28  p-4 px-6 shadow rounded-lg backdrop-blur  ">
+                <h2 className="text-2xl font-bold">Musa</h2>
+                <p className="text-sm text-[#747576] dark:text-slate-400 ">
+                  Head of Technology Solution
+                </p>
+              </div>
+            </div>
+            <h2 className="2xl:text-lg  mt-16  text-[#4E4E4E] dark:text-slate-400">
+              I would love to talk to you about your project or needs.
+            </h2>
+            <h2 className="2xl:text-lg   text-[#4E4E4E] dark:text-slate-400">
+              Fill in the form or send us an email to <br /> hello@splenify.com{" "}
+            </h2>
+            <h1 className="text-2xl pb-5 font-bold capitalize tracking-wide">
+              Talk to you in less than 24hs.
+            </h1>
+          </div>
           <form
             action=""
             className=" bg-white  dark:bg-slate-900 dark:shadow-inner border dark:border-none border-[#D9D9D9] dark:shadow-gray-800 p-8   rounded-xl  flex flex-col gap-2"
@@ -227,6 +253,21 @@ const ContactUs = () => {
               Submit{" "}
             </button>
           </form>
+          <div className=" w-full block md:hidden p-5 mt-12 2xl:p-7 rounded-lg bg-[#7165FF33]">
+            <h2 className="text-xl mb-4 2xl:text-2xl font-bold ">
+              Schedule A Call
+            </h2>
+            <p className="mb-6">
+              Feel free to select a time at your convenience!
+            </p>
+            <Link
+              href={"https://www.cal.com/splenify"}
+              className="text-[#7165FF]  inline-flex items-center gap-2  font-semibold"
+            >
+              Lets Talk
+              <FaArrowRightLong className="text-lg" />
+            </Link>
+          </div>
         </motion.div>
       </div>
     </motion.div>
