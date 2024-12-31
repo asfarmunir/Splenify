@@ -341,10 +341,10 @@ export const Timeline = () => {
       className="w-full bg-white  dark:bg-neutral-950 font-sans md:px-10"
       ref={containerRef}
     >
-      <div className="max-w-7xl mx-auto flex  flex-col items-center py-12 md:py-16 2xl:py-20 px-4 md:px-8 lg:px-10">
+      <div className="max-w-7xl mx-auto flex  flex-col items-center py-12  px-4 md:px-8 lg:px-10">
         <h2 className=" text-base   2xl:xl tracking-wide ">How we do it?</h2>
         <h1
-          className={` px-2 relative text-5xl md:text-3xl 2xl:text-5xl tracking-wide text-center mb-5 md:mb-16 ${recoleta.className}`}
+          className={` px-2 relative text-5xl md:text-3xl 2xl:text-5xl tracking-wide text-center mb-5 md:mb-7 ${recoleta.className}`}
         >
           World-class apps on demand, with our{" "}
           <span className=" text-[#DF56FE] "> process!</span>
