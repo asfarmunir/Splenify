@@ -341,21 +341,23 @@ export const Timeline = () => {
       className="w-full bg-white  dark:bg-neutral-950 font-sans md:px-10"
       ref={containerRef}
     >
-      <div className="max-w-7xl mx-auto flex  flex-col items-center py-12  px-4 md:px-8 lg:px-10">
+      <div className="mb-12 2xl:mb-16 flex flex-col items-center gap-3 2xl:gap-5">
         <h2 className=" text-base   2xl:xl tracking-wide ">How we do it?</h2>
         <h1
-          className={` px-2 relative text-5xl md:text-3xl 2xl:text-5xl tracking-wide text-center mb-5 md:mb-7 ${recoleta.className}`}
+          className={` px-2 relative text-5xl md:text-4xl 2xl:text-5xl tracking-wide text-center  ${recoleta.className}`}
         >
           World-class apps on demand, with our{" "}
           <span className=" text-[#DF56FE] "> process!</span>
         </h1>
       </div>
 
-      <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
+      <div ref={ref} className="relative max-w-7xl mx-auto ">
         {data.map((item, index) => (
           <div
             key={index}
-            className="flex justify-start  pb-20 2xl:pb-24 md:gap-4"
+            className={`flex justify-start ${
+              index !== data.length - 1 ? "pb-20 2xl:pb-24" : ""
+            } md:gap-4`}
           >
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
               <div className="h-12 2xl:h-16 absolute border-8 border-white dark:border-slate-950 left-3  md:left-2 2xl:left-1 w-12 2xl:w-1/6 rounded-full bg-white dark:bg-black flex items-center justify-center">

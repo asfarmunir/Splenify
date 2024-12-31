@@ -42,7 +42,7 @@ const Projects = () => {
           },
         }}
         id="projects"
-        className="hidden md:flex flex-col overflow-x-hidden w-full relative  items-center gap-3 2xl:gap-5  pt-12 my-[20px] md:my-[40px]"
+        className="hidden md:flex flex-col overflow-x-hidden w-full relative  items-center gap-3 2xl:gap-5  "
       >
         <Image
           src="/images/left-arrow.svg"

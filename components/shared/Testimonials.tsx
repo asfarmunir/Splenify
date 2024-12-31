@@ -26,7 +26,7 @@ const Testimonials = () => {
           ease: "easeInOut",
         },
       }}
-      className={`flex flex-col mx-auto  w-full relative px-4  items-center gap-3 2xl:gap-5 max-w-5xl 2xl:max-w-7xl  my-[30px] md:my-[50px]`}
+      className={`flex flex-col mx-auto  w-full relative px-4  items-center gap-3 2xl:gap-5 max-w-5xl 2xl:max-w-7xl  `}
     >
       <div className="space-y-3 w-full">
         <p className="text-center text-base md:text-lg font-normal">
@@ -55,7 +55,7 @@ const Testimonials = () => {
           />
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4 md:mt-10">
         <div className="flex flex-col space-y-10">
           <TestimonialModal
             logo="/images/recruitu.svg"

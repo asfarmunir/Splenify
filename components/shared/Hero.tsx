@@ -70,7 +70,7 @@ const Hero = () => {
               },
             } /* Animate when in view */
           }
-          className={` max-w-[24r sm:max-w-full -mt-8   md:-mt-4 leading-snug sm:leading-none  -tracking-wide  text-[2.15rem] sm2:text-[2.8rem]   sm:text-[3.8rem]  md:text-7xl lg:text-8xl 2xl:text-[7.4rem] px-0.5 text-center ${recoleta.className}`}
+          className={`  sm:max-w-full -mt-8   md:-mt-4 leading-snug sm:leading-none  -tracking-wide  text-[2.15rem] sm2:text-[2.8rem]   sm:text-[3.8rem]  md:text-7xl lg:text-8xl 2xl:text-[7.4rem] px-0.5 text-center ${recoleta.className}`}
         >
           Design. <span className="grad_text md:px-4 2xl:px-6 ">Develop.</span>{" "}
           Deploy
@@ -95,7 +95,7 @@ const Hero = () => {
         </div>
         <HeroBentoGrid />
       </section>
-      <div className="flex gap-1 max-w-7xl mx-auto px-3 md:gap-8 my-[50px] pt-8 md:pt-0 md:my-[60px] justify-center items-center  md:items-start  relative ">
+      {/* <div className="flex gap-1 max-w-7xl mx-auto px-3 md:gap-8  justify-center items-center  md:items-start  relative ">
         <h2 className=" block  md:hidden text-lg  2xl:text-xl text-center absolute top-0">
           Our long list of happy clients include:
         </h2>
@@ -159,7 +159,7 @@ const Hero = () => {
             App Built
           </h3>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

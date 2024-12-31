@@ -73,24 +73,27 @@ const Specialization = () => {
           ease: "easeInOut",
         },
       }}
-      className="flex flex-col w-full  items-center gap-5  my-[20px] md:my-[30px]"
+      className="flex flex-col w-full  items-center gap-5  "
     >
-      <h2 className=" text-base   2xl:xl tracking-wide ">
-        What do we specialize in?
-      </h2>
-      <h1
-        className={` text-5xl  px-3.5 relative md:text-3xl 2xl:text-5xl tracking-wide text-center mb-5 md:mb-7 ${recoleta.className}`}
-      >
-        Our partners hire us to{" "}
-        <span className=" text-[#7165FF] "> design & develop</span> their…
-        <Image
-          src="/images/line_vector2.svg"
-          alt="Splenify"
-          width={380}
-          height={380}
-          className="  dark:invert hidden lg:block  w-[270px] 2xl:w-[380px] absolute right-28 2xl:right-52  -rotate-4 "
-        />
-      </h1>
+      <div className="mb-7 2xl:mb-10 flex flex-col items-center gap-3 2xl:gap-5">
+        <h2 className=" text-base   2xl:xl tracking-wide ">
+          What do we specialize in?
+        </h2>
+        <h1
+          className={` text-5xl  px-3.5 relative md:text-3xl 2xl:text-5xl tracking-wide text-center  ${recoleta.className}`}
+        >
+          Our partners hire us to{" "}
+          <span className=" text-[#7165FF] "> design & develop</span> their…
+          <Image
+            src="/images/line_vector2.svg"
+            alt="Splenify"
+            width={380}
+            height={380}
+            className="  dark:invert hidden lg:block  w-[270px] 2xl:w-[380px] absolute right-28 2xl:right-52  -rotate-4 "
+          />
+        </h1>
+      </div>
+
       {/* <div className="grid grid-cols-1 max-w-6xl 2xl:max-w-7xl lg:grid-cols-2 gap-8 px-6 md:px-12 2xl:px-0  p-2 w-full">
         <motion.div
           initial={{
@@ -316,7 +319,7 @@ const Specialization = () => {
         </motion.div>
       </div> */}
 
-      <div className=" w-full grid max-w-6xl 2xl:max-w-7xl my-4 grid-cols-1 md:grid-cols-2 gap-8 gap-y-12 2xl:gap-12">
+      <div className=" w-full grid max-w-6xl 2xl:max-w-7xl  grid-cols-1 md:grid-cols-2 gap-8 gap-y-12 2xl:gap-12">
         {specializations.map((item, index) => (
           <div
             key={index}
@@ -336,10 +339,10 @@ const Specialization = () => {
               <h2 className="text-xl 2xl:text-2xl font-bold mb-2 capitalize">
                 {item.title}
               </h2>
-              <p className="text-xs lg:text-sm  max-w-xs 2xl:max-w-sm">
+              <p className="text-sm sm:text-xs lg:text-sm  max-w-xs 2xl:max-w-sm">
                 {item.description}
               </p>
-              <div className="flex mt-2  items-center flex-wrap w-full gap-2 ">
+              <div className="flex mt-3 sm:mt-2  items-center flex-wrap w-full gap-2 ">
                 {item.tags.map((tag, index) => (
                   <p
                     key={index}
