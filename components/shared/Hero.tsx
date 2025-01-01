@@ -7,8 +7,29 @@ import { containerVariants, fadeInVariants } from "@/lib/animations";
 import HeroBentoGrid from "@/components/shared/HeroBentoGrid";
 import Link from "next/link";
 import { scrollToSection } from "./Navbar";
+import Partners from "./Partners";
 
 const recoleta = localFont({ src: "../../app/recoleta.ttf" });
+
+const acheivments = [
+  {
+    title: "Happy Clients",
+    number: "300+",
+  },
+
+  {
+    title: "Year of Market",
+    number: "10+",
+  },
+  {
+    title: "App Built",
+    number: "80+",
+  },
+  {
+    title: "Skillful Talent",
+    number: "50+",
+  },
+];
 
 const Hero = () => {
   return (
@@ -93,8 +114,28 @@ const Hero = () => {
             Book Meeting
           </Link>
         </div>
-        <HeroBentoGrid />
+        {/* <HeroBentoGrid /> */}
       </section>
+      <div className="w-full mt-6 px-4 2xl:px-0 max-w-6xl 2xl:max-w-7xl gap-2 md:gap-4 2xl:gap-6 mx-auto grid grid-cols-2  lg:grid-cols-4  justify-items-center">
+        {acheivments.map((acheivment, index) => (
+          <div
+            key={index}
+            className="px-7 md:px-12 2xl:px-16 p-3 md:pt-5 pb-4 border-[2px] w-full   border-[#DF56FE]  rounded-[12px] md:rounded-[26.5px] flex items-center justify-center gap-1.5 md:gap-3 flex-col "
+          >
+            <h1 className="text-2xl sm:text-4xl 2xl:text-5xl grad_text font-semibold">
+              {acheivment.number}
+            </h1>
+
+            <p className=" text-xs sm:text-sm md:text-base font-[600] font-roboto">
+              {acheivment.title}
+            </p>
+          </div>
+        ))}
+      </div>
+      <div className=" w-full flex flex-col mt-12 2xl:mt-16 items-center gap-5">
+        <h2 className="text-3xl 2xl:text-4xl">We have worked with</h2>
+        <Partners />
+      </div>
       {/* <div className="flex gap-1 max-w-7xl mx-auto px-3 md:gap-8  justify-center items-center  md:items-start  relative ">
         <h2 className=" block  md:hidden text-lg  2xl:text-xl text-center absolute top-0">
           Our long list of happy clients include:

@@ -25,6 +25,9 @@ const config = {
         // Custom breakpoint between the default and sm (example: 500px)
         'sm2': '500px',
       },
+      fontFamily:{
+        roboto: ['Roboto', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
