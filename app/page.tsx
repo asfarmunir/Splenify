@@ -63,7 +63,7 @@ export default function Home() {
         {/* Testimonials */}
         <Testimonials />
         {/* Contact Us */}
-        <div className=" px-4 md:px-0 pb-[80px]">
+        <div className=" px-4 md:px-0">
           <ContactUs />
         </div>
       </section>

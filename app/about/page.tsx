@@ -4,9 +4,8 @@ import localFont from "next/font/local";
 import Image from "next/image";
 import ContactUs from "@/components/shared/ContactUs";
 import { useInView } from "react-intersection-observer";
-
-import Footer from "@/components/shared/Footer";
 import { motion } from "framer-motion";
+import { Story } from "@/components/shared/Story";
 const recoleta = localFont({ src: "../../app/recoleta.ttf" });
 
 interface RoadmapItem {
@@ -14,45 +13,6 @@ interface RoadmapItem {
   items: string[];
 }
 
-const roadmapItems: RoadmapItem[] = [
-  {
-    number: 1,
-    items: [
-      "Team internally purchases two 1.5 megawatt containers. Once filled each earning 10%-20% ROI per month.",
-      "Brand and go to market strategy development.",
-      "Visit Logic Mining headquarters in Alberta.",
-      "Site, socials, and white paper launch.",
-    ],
-  },
-  {
-    number: 2,
-    items: [
-      "Social FI campaign launch.",
-      "Seed Round launch.",
-      "Massive multi platform marketing campaign kickoff.",
-      "Private ICO sale start",
-      "Pre TGE Staking launch",
-      "TGE",
-    ],
-  },
-  {
-    number: 3,
-    items: [
-      "Token Launch",
-      "Play To Earn Game development begins",
-      "Hosting Business Channel Opens",
-      "Containers & Operational Expansion",
-    ],
-  },
-  {
-    number: 4,
-    items: [
-      "Play To Earn game launch",
-      "Second phase marketing push",
-      "Strategic Partnership Expansion",
-    ],
-  },
-];
 const values = [
   {
     title: "Innovation",
@@ -94,15 +54,15 @@ const values = [
 
 const page = () => {
   const [ref1, inView1, entry1] = useInView({ threshold: 0.8 });
-  const [ref2, inView2, entry2] = useInView({ threshold: 0.65 });
-  const [ref3, inView3, entry3] = useInView({ threshold: 0.65 });
-  const [ref4, inView4, entry4] = useInView({ threshold: 0.65 });
+  const [ref2, inView2, entry2] = useInView({ threshold: 0.8 });
+  const [ref3, inView3, entry3] = useInView({ threshold: 0.8 });
+  const [ref4, inView4, entry4] = useInView({ threshold: 0.8 });
 
   const [height, setHeight] = React.useState(0);
 
   useEffect(() => {
     if (inView1) {
-      setHeight(12);
+      setHeight(11);
     }
   }, [inView1, entry1]);
 
@@ -114,16 +74,17 @@ const page = () => {
 
   useEffect(() => {
     if (inView3) {
-      setHeight(63);
+      setHeight(61);
     }
   }, [inView3, entry3]);
 
   useEffect(() => {
     if (inView4) {
       setHeight(89);
-    } else {
-      setHeight(0);
     }
+    // } else {
+    //   setHeight(0);
+    // }
   }, [inView4, entry4]);
   return (
     <div className=" w-full flex flex-col px-6 sm:px-12 items-center overflow-x-hidden  ">
@@ -147,13 +108,13 @@ const page = () => {
           className="space-y-5 w-full "
         >
           <h3
-            className={`${recoleta.className} text-3xl md:text-4xl 2xl:text-5xl  max-w-lg 2xl:max-w-2xl`}
+            className={`${recoleta.className} text-5xl  max-w-lg 2xl:max-w-2xl`}
           >
             Top-tier{" "}
             <span className={`text-[#5956E9] `}>mobile development</span>{" "}
             company that serves global entrepreneurs.
           </h3>
-          <p className="text-sm md:text-base 2xl:text-lg tracking-wide ">
+          <p className="text-lg md:text-base 2xl:text-lg tracking-wide ">
             The heart of Splenify is a true-passion for all things tech. We’re a
             cross-platform, hybrid mobile development company that has created a
             series of world-class solutions for our clients, and consistently
@@ -209,11 +170,11 @@ const page = () => {
           {" "}
           <p className="text-sm font-bold text-[#5956E9]">From Zero to Hero</p>
           <h3
-            className={`${recoleta.className} text-3xl md:text-4xl 2xl:text-5xl  max-w-xl 2xl:max-w-2xl`}
+            className={`${recoleta.className} text-5xl  max-w-xl 2xl:max-w-2xl`}
           >
             Building Your App’s Success Story
           </h3>
-          <p className="text-sm md:text-base 2xl:text-lg tracking-wide leading-snug ">
+          <p className="text-lg md:text-base 2xl:text-lg tracking-wide  ">
             At <strong>Splenify,</strong> we transform your ideas into powerful,
             <strong>high-performing</strong> mobile apps that stand out in a
             crowded digital world. Starting from ground zero, we guide your app
@@ -255,22 +216,53 @@ const page = () => {
           />
         </motion.div>
       </div>
-      <div className=" w-full mx-auto max-w-6xl 2xl:max-w-7xl py-10 2xl:py-16 space-y-4">
+      <div className=" w-full mx-auto max-w-6xl 2xl:max-w-7xl py-10 2xl:py-16 ">
         <h1
           className={`text-3xl md:text-4xl 2xl:text-5xl ${recoleta.className} `}
         >
           Our <span className="text-[#5956E9]">Story</span>
         </h1>{" "}
-        <div className="flex gap-7 sm:gap-16 2xl:gap-20 py-6 md:py-12 2xl:py-16 w-full">
+        <div className="flex gap-9 sm:gap-12 2xl:gap-20 py-6 md:py-12 2xl:py-16 w-full">
           <div className="bg-[#5956E9] bg-opacity-[12%] ml-4 sm:mx-12 2xl:mx-20 w-2 rounded-full relative">
             <motion.div
-              className="absolute top-0 transition-all duration-500 ease-out delay-200  w-full rounded-full  bg-[#5956E9] " /* roadmapProgressBar */
+              className="absolute top-0 transition-all duration-700 ease-out   w-full rounded-full  bg-[#5956E9] " /* roadmapProgressBar */
               style={{
                 height: `${height}%`,
               }}
             >
-              <div className=" absolute w-5 h-5 2xl:w-6 2xl:h-6 2xl:-left-[0.51rem] progressPointer bg-[#5956E9] border-4 border-white dark:border-white/10 rounded-full bottom-0 -left-[0.4rem] "></div>
+              {/* <div className=" absolute w-5 h-5 2xl:w-6 2xl:h-6 2xl:-left-[0.51rem] progressPointer bg-[#5956E9] border-4 border-white dark:border-white/10 rounded-full bottom-0 -left-[0.4rem] "></div> */}
             </motion.div>
+            <div className="z-[1] absolute top-[11%] left-1/2 transform -translate-x-1/2">
+              <div className="glassContainerContainerRoundHowToBuy">
+                <div className="howToBuyOrangeCircle">
+                  <div className=" absolute w-8 h-8   -left-[1rem] progressPointer bg-[#5956E9] border-4 border-white dark:border-white/10 rounded-full bottom-0  "></div>
+                </div>
+              </div>
+            </div>
+            {/* item 2 number circle */}
+            <div className="z-[1] absolute top-[38%] left-1/2 transform -translate-x-1/2">
+              <div className="glassContainerContainerRoundHowToBuy">
+                <div className="howToBuyOrangeCircle">
+                  <div className=" absolute w-8 h-8   -left-[1rem] progressPointer bg-[#5956E9] border-4 border-white dark:border-white/10 rounded-full bottom-0  "></div>
+                </div>
+              </div>
+            </div>
+            {/* item 3 number circle */}
+            <div className="z-[1] absolute top-[61%]  left-1/2 transform -translate-x-1/2">
+              <div className="glassContainerContainerRoundHowToBuy">
+                <div className="howToBuyOrangeCircle">
+                  <div className=" absolute w-8 h-8   -left-[1rem] progressPointer bg-[#5956E9] border-4 border-white dark:border-white/10 rounded-full bottom-0  "></div>
+                </div>
+              </div>
+            </div>
+            {/* item 4 number circle */}
+            <div className="z-[1] absolute top-[89%]  left-1/2 transform -translate-x-1/2">
+              <div className="glassContainerContainerRoundHowToBuy">
+                <div className="howToBuyOrangeCircle">
+                  <div className=" absolute w-8 h-8   -left-[1rem] progressPointer bg-[#5956E9] border-4 border-white dark:border-white/10 rounded-full bottom-0  "></div>
+                </div>
+              </div>
+            </div>
           </div>
           <div className="flex flex-col gap-6 w-full">
             <div
@@ -291,11 +283,12 @@ const page = () => {
                 viewport={{
                   once: true,
                 }}
-                className="space-y-5 w-full max-w-2xl"
+                className="space-y-5 w-full flex flex-col justify-center  max-w-2xl relative"
               >
                 {" "}
+                {/* <div className=" absolute w-8 h-8  -left-[5rem] md:-left-[12rem] progressPointer bg-[#5956E9] border-4 border-white dark:border-white/10 rounded-full   "></div> */}
                 <h3
-                  className={`${recoleta.className} text-2xl 2xl:text-4xl  max-w-2xl`}
+                  className={`${recoleta.className} text-4xl md:text-3xl 2xl:text-4xl  max-w-2xl`}
                 >
                   Four graduates,{" "}
                   <span className="text-[#DB14F1]">one shared vision</span>
@@ -323,12 +316,13 @@ const page = () => {
                 viewport={{
                   once: true,
                 }}
-                className=""
+                className=" w-full sm:w-fit"
               >
                 <Image
                   src="/images/about.png"
                   alt="about"
                   width={300}
+                  className=" w-full"
                   height={300}
                 />
               </motion.div>
@@ -355,7 +349,7 @@ const page = () => {
               >
                 {" "}
                 <h3
-                  className={`${recoleta.className} text-2xl 2xl:text-4xl  max-w-2xl`}
+                  className={`${recoleta.className} text-4xl md:text-3xl 2xl:text-4xl  max-w-2xl`}
                 >
                   A place to learn, grow, and thrive
                 </h3>
@@ -382,7 +376,7 @@ const page = () => {
                 viewport={{
                   once: true,
                 }}
-                className=""
+                className=" w-full sm:w-fit"
               >
                 <Image
                   src="/images/about.png"
@@ -414,7 +408,7 @@ const page = () => {
               >
                 {" "}
                 <h3
-                  className={`${recoleta.className} text-2xl 2xl:text-4xl  max-w-2xl`}
+                  className={`${recoleta.className} text-4xl md:text-3xl 2xl:text-4xl  max-w-2xl`}
                 >
                   100+ applications and counting
                 </h3>
@@ -440,7 +434,7 @@ const page = () => {
                 viewport={{
                   once: true,
                 }}
-                className=""
+                className=" w-full sm:w-fit"
               >
                 <Image
                   src="/images/about.png"
@@ -472,7 +466,7 @@ const page = () => {
               >
                 {" "}
                 <h3
-                  className={`${recoleta.className} text-2xl 2xl:text-4xl  max-w-2xl`}
+                  className={`${recoleta.className} text-4xl md:text-3xl 2xl:text-4xl  max-w-2xl`}
                 >
                   Splenify:{" "}
                   <span className="text-[#7165FF]">
@@ -502,7 +496,7 @@ const page = () => {
                 viewport={{
                   once: true,
                 }}
-                className=""
+                className=" w-full sm:w-fit"
               >
                 <Image
                   src="/images/about.png"
@@ -515,13 +509,14 @@ const page = () => {
           </div>
         </div>
       </div>
+      {/* <Story /> */}
       <div className=" w-full mx-auto max-w-6xl 2xl:max-w-7xl py-10 2xl:py-16 space-y-4">
         <h1
-          className={`text-3xl md:text-4xl 2xl:text-5xl ${recoleta.className} `}
+          className={`text-5xl md:text-4xl 2xl:text-5xl ${recoleta.className} `}
         >
           Our <span className="text-[#CA67FC]">Core Values</span>
         </h1>
-        <p className="text-sm 2xl:text-base max-w-xl">
+        <p className=" 2xl:text-lg max-w-xl">
           At Splenify, our core values guide everything we do, shaping our
           culture, work ethic, and commitment to delivering exceptional mobile
           solutions.
@@ -530,32 +525,27 @@ const page = () => {
           {values.map((value, index) => (
             <motion.div
               key={index}
-              className="flex gap-4"
+              className="flex items-start  gap-4"
               initial={{ opacity: 0, y: 20 }} // Start with 0 opacity and slight offset on Y-axis
               whileInView={{ opacity: 1, y: 0 }} // End with full opacity and original position
               transition={{
-                delay: index * 0.2, // Stagger the delay for each item
-                duration: 0.6, // Duration for fade-in
+                delay: index * 0.15, // Stagger the delay for each item
+                duration: 0.5, // Duration for fade-in
                 ease: "easeOut", // Easing for smooth animation
               }}
               viewport={{ once: true }} // Trigger the animation once the item comes into view
             >
-              <div className="bg-[#E9E8FF] flex items-center justify-center rounded-full w-[50px] p-2 h-[42px] overflow-hidden   ">
-                <Image
-                  src={`/images/${value.icon}`}
-                  alt="quality"
-                  width={50}
-                  className="object-contain object-center w-full h-full"
-                  height={50}
-                />
-              </div>
+              <Image
+                src={`/images/${value.icon}`}
+                alt="quality"
+                width={50}
+                height={50}
+              />
               <div>
-                <h2 className="text-lg capitalize 2xl:text-xl font-semibold">
+                <h2 className="text-lg capitalize mb-1 2xl:text-xl font-semibold">
                   {value.title}
                 </h2>
-                <p className="text-sm 2xl:text-base max-w-2xl">
-                  {value.description}
-                </p>
+                <p className="text-base max-w-2xl">{value.description}</p>
               </div>
             </motion.div>
           ))}
@@ -563,12 +553,12 @@ const page = () => {
       </div>
       <div className=" w-full mx-auto max-w-6xl 2xl:max-w-7xl py-10 2xl:py-16 space-y-4">
         <h1
-          className={`text-3xl md:text-4xl 2xl:text-5xl ${recoleta.className} `}
+          className={`text-5xl md:text-4xl 2xl:text-5xl ${recoleta.className} `}
         >
           Meet the heart of <span className="text-[#CA67FC]">Splenify</span>
         </h1>
 
-        <div className=" w-full grid grid-cols-1 md:grid-cols-2  lg:grid-cols-4 gap-4 lg:gap-7  gap-y-12 py-6">
+        <div className=" w-full grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-4 lg:gap-7  gap-y-12 py-6">
           {Array.from({ length: 8 }).map((_, index) => (
             <motion.div
               key={index}
@@ -576,22 +566,23 @@ const page = () => {
               whileInView={{ opacity: 1, y: 0 }} // End with full opacity and original position
               transition={{
                 delay: index * 0.1, // Stagger the delay for each item
-                duration: 0.6, // Duration for fade-in
+                duration: 0.5, // Duration for fade-in
                 ease: "easeOut", // Easing for smooth animation
               }}
               viewport={{ once: true }} // Trigger the animation once the item comes into view
+              className="flex flex-col items-center sm:items-start"
             >
               <div className="   w-full mb-5 rounded-2xl">
                 <Image
                   src="/images/about.png"
                   alt="quality"
                   width={100}
-                  className=" w-full h-full object-cover object-center rounded-2xl"
+                  className=" w-full h-full object-cover object-center rounded-[16px]"
                   height={100}
                 />
               </div>
               <h2 className="text-lg font-bold mb-2">Olivia Rhye</h2>
-              <p className="text-sm text-[#747576] dark:text-slate-300 mb-4">
+              <p className="text-sm text-center sm:text-start text-[#747576] dark:text-slate-300 mb-4">
                 Co-founder splenidy. Senior Graphics Designer
               </p>
               <div className=" inline-flex items-center gap-4">

@@ -71,7 +71,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="w-full max-w-6xl  2xl:max-w-7xl rounded-xl drop-shadow-sm  relative z-40 my-4   bg-background items-center flex justify-between shadow-2xl shadow-gray-200/50 dark:shadow-gray-900/60 px-8 md:px-12 py-4 2xl:py-5">
+      <div className="w-full max-w-6xl 2xl:max-w-7xl rounded-[14px] drop-shadow-sm relative z-40 my-4 bg-white bg-opacity-55 backdrop-blur-lg items-center flex justify-between shadow-2xl shadow-gray-200/50 dark:shadow-gray-900/60 px-8 md:px-12 py-4 2xl:py-5">
         <Image
           src="/images/logoWhite.png"
           alt="Splenify"
@@ -169,13 +169,13 @@ const Navbar = () => {
         {/* Mobile Menu */}
       </div>
       <div
-        className={` absolute shadow-sm rounded-xl   top-[6rem] left-1/2  -translate-x-1/2     min-h-[330px] w-[290px]  bg-white/95 dark:bg-slate-950/95 transition-all duration-500 ease-in-out transform ${
+        className={` absolute shadow-sm rounded-[14px]  drop-shadow-md  top-[6rem] left-1/2  -translate-x-1/2     min-h-[250px] w-[350px]  bg-white/95 dark:bg-slate-950/95 transition-all duration-500 ease-in-out transform ${
           isMenuOpen
-            ? "translate-y-0 opacity-100 "
-            : "-translate-y-[120%] opacity-100"
+            ? "translate-y-5 opacity-100 "
+            : "-translate-y-[150%] opacity-100"
         } z-10`}
       >
-        <div className="flex flex-col items-center gap-5 py-9">
+        <div className="flex flex-col items-start gap-4 w-full  px-6 py-9">
           {mobLinks.map((item, index) => (
             <button
               onClick={() => {
@@ -226,14 +226,13 @@ const Navbar = () => {
               <span className="w-[45%] border-2 rounded-md border-[#7165FF]"></span>
             )}
           </button>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 w-full">
             <Link
               href={"https://www.cal.com/splenify"}
-              className="text-white  text-sm 2xl:text-base bg-[#7165FF] font-semibold rounded-[8px] px-5 2xl:px-6 py-2.5 2xl:py-3 border-[3px] text-center border-[#7165FF]"
+              className="text-white w-full  text-sm 2xl:text-base bg-[#7165FF] font-semibold rounded-[8px] px-5 2xl:px-6 py-3 2xl:py-3.5 border-[3px] text-center border-[#7165FF]"
             >
               Schedule a call
             </Link>
-            <ToggleTheme />
           </div>
         </div>
       </div>

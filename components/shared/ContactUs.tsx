@@ -27,7 +27,7 @@ const ContactUs = () => {
         },
       }}
       id="contact"
-      className="flex flex-col   w-full items-center overflow-x-hidden  justify-center    gap-4 md:px-8  mt"
+      className="flex flex-col  pb-[80px]  w-full items-center overflow-x-hidden  justify-center    gap-4 md:px-2  mt"
     >
       <h1
         className={`text-[47px] mb-4 md:mb-7 md:text-[40px] lg:text-[46px]  ${recoleta.className}   text-start sm2:text-center `}
@@ -53,7 +53,7 @@ const ContactUs = () => {
           viewport={{
             once: true,
           }}
-          className="max-w-2xl   px-8 py-16 w-full h-[43rem] rounded-xl gap-5 hidden md:flex flex-col     "
+          className="max-w-2xl   md:px-8 py-16 w-full h-[43rem] rounded-xl gap-5 hidden md:flex flex-col     "
         >
           <div className="relative w-fit ">
             <Image
