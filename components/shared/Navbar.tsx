@@ -169,11 +169,9 @@ const Navbar = () => {
         {/* Mobile Menu */}
       </div>
       <div
-        className={` absolute shadow-sm rounded-[14px]  drop-shadow-md  top-[6rem] left-1/2  -translate-x-1/2     min-h-[250px] w-[350px]  bg-white/95 dark:bg-slate-950/95 transition-all duration-500 ease-in-out transform ${
-          isMenuOpen
-            ? "translate-y-5 opacity-100 "
-            : "-translate-y-[150%] opacity-100"
-        } z-10`}
+        className={`absolute shadow-sm rounded-[14px] drop-shadow-md top-[7rem] left-1/2 -translate-x-1/2 w-[350px] bg-white/95 dark:bg-slate-950/95 transition-all duration-700 ease-out transform ${
+          isMenuOpen ? "max-h-[450px] opacity-100" : "max-h-0 opacity-100"
+        } z-10 overflow-hidden`}
       >
         <div className="flex flex-col items-start gap-4 w-full  px-6 py-9">
           {mobLinks.map((item, index) => (

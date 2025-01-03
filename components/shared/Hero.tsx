@@ -8,6 +8,7 @@ import HeroBentoGrid from "@/components/shared/HeroBentoGrid";
 import Link from "next/link";
 import { scrollToSection } from "./Navbar";
 import Partners from "./Partners";
+import BentoGrid from "./BentoGrid";
 
 const recoleta = localFont({ src: "../../app/recoleta.ttf" });
 
@@ -115,6 +116,7 @@ const Hero = () => {
           </Link>
         </div>
         {/* <HeroBentoGrid /> */}
+        <BentoGrid />
       </section>
       <div className="w-full mt-6 px-4 2xl:px-0 max-w-6xl 2xl:max-w-7xl gap-2 md:gap-4 2xl:gap-6 mx-auto grid grid-cols-2  lg:grid-cols-4  justify-items-center">
         {acheivments.map((acheivment, index) => (

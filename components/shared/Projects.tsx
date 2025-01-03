@@ -110,6 +110,7 @@ const Projects = () => {
                 heroBg="/projectModal/orangeBg.webp"
                 heroLogo="/projectModal/logo2.svg"
                 testimonialBg=" bg-gradient-to-l from-[#FF796B] to-[#FF5047]"
+                color="orange"
               />
             </div>
           </motion.div>
@@ -152,6 +153,7 @@ const Projects = () => {
                 heroBg="/projectModal/skyBg.webp"
                 heroLogo="/projectModal/logo3.svg"
                 testimonialBg=" bg-gradient-to-l from-[#38B6FF] to-[#0069CA]"
+                color="blue"
               />{" "}
             </div>
           </motion.div>
@@ -195,6 +197,7 @@ const Projects = () => {
                 heroBg="/projectModal/pinkBg.webp"
                 heroLogo="/projectModal/logo4.svg"
                 testimonialBg=" bg-gradient-to-l from-[#FF1589] to-[#B6005B]"
+                color="pink"
               />{" "}
             </div>
           </motion.div>
@@ -238,6 +241,7 @@ const Projects = () => {
                 heroBg="/projectModal/skyBg.webp"
                 heroLogo="/projectModal/logo1.svg"
                 testimonialBg=" bg-gradient-to-l from-[#38B6FF] to-[#0069CA]"
+                color="blue"
               />{" "}
             </div>
           </motion.div>
@@ -330,6 +334,7 @@ const Projects = () => {
                 heroBg="/projectModal/skyBg.webp"
                 heroLogo="/projectModal/logo1.svg"
                 testimonialBg=" bg-gradient-to-l from-[#38B6FF] to-[#0069CA]"
+                color="orange"
               />{" "}
             </div>
           </motion.div>
@@ -373,6 +378,7 @@ const Projects = () => {
                 heroBg="/projectModal/orangeBg.webp"
                 heroLogo="/projectModal/logo2.svg"
                 testimonialBg=" bg-gradient-to-l from-[#FF796B] to-[#FF5047]"
+                color="blue"
               />{" "}
             </div>
           </motion.div>
@@ -416,6 +422,7 @@ const Projects = () => {
                 heroBg="/projectModal/skyBg.webp"
                 heroLogo="/projectModal/logo3.svg"
                 testimonialBg=" bg-gradient-to-l from-[#38B6FF] to-[#0069CA]"
+                color="pink"
               />{" "}
             </div>
           </motion.div>
@@ -459,6 +466,7 @@ const Projects = () => {
                 heroBg="/projectModal/pinkBg.webp"
                 heroLogo="/projectModal/logo4.svg"
                 testimonialBg=" bg-gradient-to-l from-[#FF1589] to-[#B6005B]"
+                color="blue"
               />{" "}
             </div>
           </motion.div>

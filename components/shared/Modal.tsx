@@ -1,25 +1,39 @@
+"use client";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import localFont from "next/font/local";
 import Image from "next/image";
 import Link from "next/link";
 const recoleta = localFont({ src: "../../app/recoleta.ttf" });
-import React from "react";
+import React, { useState } from "react";
 import { Button } from "../ui/button";
 import { ArrowUpRight } from "lucide-react";
 import { DialogClose } from "@radix-ui/react-dialog";
 import { InfiniteMovingCards } from "../ui/moving-images";
+import { motion } from "framer-motion";
 
 const Modal = ({
   heroImg,
   heroBg,
   heroLogo,
   testimonialBg,
+  color,
 }: {
   heroImg: string;
   heroBg: string;
   heroLogo: string;
   testimonialBg: string;
+  color: string;
 }) => {
+  const slides = [
+    { number: 1 },
+    { number: 2 },
+    { number: 3 },
+    { number: 4 },
+    { number: 5 },
+  ];
+  const duplicatedSlides = [...slides, ...slides];
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <Dialog>
       <DialogTrigger
@@ -54,6 +68,7 @@ const Modal = ({
                 className="w-full h-full"
               />
             </div>
+
             <p className="text-xl 2xl:text-2xl text-white text-center tracking-wide ">
               The <span className=" underline font-bold ">Ultimate</span> Key to
               Fluent <br /> Communication
@@ -75,15 +90,41 @@ const Modal = ({
           <div className=" pt-10 md:pt-16 space-y-14 2xl:pt-20 ">
             <div className="flex gap-5 px-8 2xl:px-10 md:py-12 relative">
               <Image
-                src="/images/arrow1.svg"
+                src={
+                  color === "blue"
+                    ? "/images/arrow-blue1.svg"
+                    : color === "pink"
+                    ? "/images/arrow-pink1.svg"
+                    : "/images/arrow-orange1.svg"
+                }
                 width={790}
                 height={790}
                 alt="shape"
                 className="absolute  w-[340px] rotate-12 md:rotate-0 sm:w-[450px] md:w-[790px]  left-4 -bottom-20  md:-bottom-32 md:left-12 2xl:left-16 z-50
               "
               />
-              <div className="  2xl:w-20 2xl:h-20 w-16 h-16  rounded-full flex items-center justify-center bg-[#EDCCFE]  p-2 2xl:p-3">
-                <p className="text-2xl  2xl:w-16 2xl:h-14 w-14 h-12 text-center font-semibold text-white rounded-full flex items-center justify-center bg-[#CA67FC]">
+              <div
+                className={`
+              ${
+                color === "blue"
+                  ? "bg-[#1281DB1A] "
+                  : color === "pink"
+                  ? "bg-[#F712841A]"
+                  : "bg-[#FF76681A]"
+              }
+                 2xl:w-20 2xl:h-20 w-16 h-16  rounded-full flex items-center justify-center   p-2 2xl:p-3`}
+              >
+                <p
+                  className={`
+                    ${
+                      color === "blue"
+                        ? "bg-[#1281DB] "
+                        : color === "pink"
+                        ? "bg-[#F71284]"
+                        : "bg-[#FF7668]"
+                    }
+                  text-2xl  2xl:w-16 2xl:h-14 w-14 h-12 text-center font-semibold text-white rounded-full flex items-center justify-center `}
+                >
                   1
                 </p>
               </div>
@@ -108,7 +149,13 @@ const Modal = ({
             </div>
             <div className="flex ml-auto w-full bg-[#FCF7FF] dark:bg-slate-900 py-16 2xl:px-10 px-8 justify-end gap-5 relative">
               <Image
-                src="/images/arrow2.svg"
+                src={
+                  color === "blue"
+                    ? "/images/arrow-blue2.svg"
+                    : color === "pink"
+                    ? "/images/arrow-pink2.svg"
+                    : "/images/arrow-orange2.svg"
+                }
                 width={780}
                 height={780}
                 alt="shape"
@@ -133,15 +180,57 @@ const Modal = ({
                   results."
                 </p>
               </div>
-              <div className=" 2xl:w-20 2xl:h-20 w-16 h-16  rounded-full flex items-center justify-center bg-[#EDCCFE]  p-2 2xl:p-3">
-                <p className="text-2xl  2xl:w-16 2xl:h-14 w-14 h-12 text-center font-semibold text-white rounded-full flex items-center justify-center bg-[#CA67FC]">
+              <div
+                className={`
+              ${
+                color === "blue"
+                  ? "bg-[#1281DB1A] "
+                  : color === "pink"
+                  ? "bg-[#F712841A]"
+                  : "bg-[#FF76681A]"
+              }
+                 2xl:w-20 2xl:h-20 w-16 h-16  rounded-full flex items-center justify-center   p-2 2xl:p-3`}
+              >
+                <p
+                  className={`
+                    ${
+                      color === "blue"
+                        ? "bg-[#1281DB] "
+                        : color === "pink"
+                        ? "bg-[#F71284]"
+                        : "bg-[#FF7668]"
+                    }
+                  text-2xl  2xl:w-16 2xl:h-14 w-14 h-12 text-center font-semibold text-white rounded-full flex items-center justify-center `}
+                >
+                  {" "}
                   2
                 </p>
               </div>
             </div>
             <div className="flex gap-5 px-8 2xl:px-10 pb-12 md:py-12">
-              <div className=" 2xl:w-20 2xl:h-20 w-16 h-16  rounded-full flex items-center justify-center bg-[#EDCCFE]  p-2 2xl:p-3">
-                <p className="text-2xl  2xl:w-16 2xl:h-14 w-14 h-12 text-center font-semibold text-white rounded-full flex items-center justify-center bg-[#CA67FC]">
+              <div
+                className={`
+              ${
+                color === "blue"
+                  ? "bg-[#1281DB1A] "
+                  : color === "pink"
+                  ? "bg-[#F712841A]"
+                  : "bg-[#FF76681A]"
+              }
+                 2xl:w-20 2xl:h-20 w-16 h-16  rounded-full flex items-center justify-center   p-2 2xl:p-3`}
+              >
+                <p
+                  className={`
+                    ${
+                      color === "blue"
+                        ? "bg-[#1281DB] "
+                        : color === "pink"
+                        ? "bg-[#F71284]"
+                        : "bg-[#FF7668]"
+                    }
+                  text-2xl  2xl:w-16 2xl:h-14 w-14 h-12 text-center font-semibold text-white rounded-full flex items-center justify-center `}
+                >
+                  {" "}
                   3
                 </p>
               </div>
@@ -166,11 +255,40 @@ const Modal = ({
             </div>
           </div>
           <div className="rounded-md  max-w-4xl 2xl:max-w-5xl my-3 flex flex-col  bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center ">
-            <InfiniteMovingCards
+            {/* <InfiniteMovingCards
               items={images}
               direction="right"
               speed="slow"
-            />
+            /> */}
+            <div className="relative w-full overflow-hidden">
+              {/* Wrapping div for seamless looping */}
+              <motion.div
+                className="flex"
+                animate={{
+                  x: ["-100%", "0%"], // Pause the animation on hover
+                  transition: {
+                    ease: "linear",
+                    duration: isHovered ? 600 : 6, // Set the duration to 10 seconds
+                    repeat: Infinity,
+                  },
+                }}
+              >
+                {/* Render duplicated slides */}
+                {duplicatedSlides.map((slide, index) => (
+                  <div
+                    key={index}
+                    className="flex-shrink-0 h-80 z-50"
+                    style={{ width: `${100 / slides.length}%` }}
+                    onMouseEnter={() => setIsHovered(true)} // Set hover state to true
+                    onMouseLeave={() => setIsHovered(false)} // Set hover state to false
+                  >
+                    <div className="flex flex-col items-center bg-red-400 justify-center h-full text-6xl">
+                      {slide.number}
+                    </div>
+                  </div>
+                ))}
+              </motion.div>
+            </div>
           </div>
           <div className="px-4 py-12 flex flex-col items-center w-full  space-y-3">
             <h2
