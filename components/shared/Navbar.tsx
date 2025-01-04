@@ -19,11 +19,11 @@ const navlinks = [
     tab: "projects",
   },
 
-  {
-    name: "Contact",
-    link: "/",
-    tab: "contact",
-  },
+  // {
+  //   name: "Contact",
+  //   link: "/",
+  //   tab: "contact",
+  // },
 ];
 
 const mobLinks = [
@@ -38,11 +38,11 @@ const mobLinks = [
     tab: "mobile-projects",
   },
 
-  {
-    name: "Contact",
-    link: "/",
-    tab: "contact",
-  },
+  // {
+  //   name: "Contact",
+  //   link: "/",
+  //   tab: "contact",
+  // },
 ];
 
 export const scrollToSection = (section: string, offset = 100) => {
@@ -71,7 +71,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="w-full max-w-6xl 2xl:max-w-7xl rounded-[14px] drop-shadow-sm relative z-40 my-4 bg-white bg-opacity-55 backdrop-blur-lg items-center flex justify-between shadow-2xl shadow-gray-200/50 dark:shadow-gray-900/60 px-8 md:px-12 py-4 2xl:py-5">
+      <div className="w-full mx-[28px] lg:mx-0 max-w-6xl 2xl:max-w-7xl rounded-[8px] drop-shadow-sm relative z-40 my-4 bg-[#F8F4FE] bg-opacity-55 backdrop-blur-lg items-center flex justify-between  dark:shadow-gray-900/60 px-8 md:pl-12 md:pr-8 py-3 ">
         <Image
           src="/images/logoWhite.png"
           alt="Splenify"
@@ -109,7 +109,7 @@ const Navbar = () => {
                 className={`${
                   item.tab === currentSection
                     ? "text-black font-semibold "
-                    : "text-[#878787] dark:text-slate-300"
+                    : "text-black dark:text-slate-300"
                 }`}
               >
                 {item.name}
@@ -130,10 +130,30 @@ const Navbar = () => {
               className={`${
                 pathname === "/about"
                   ? "text-black font-semibold "
-                  : "text-[#878787] dark:text-slate-300"
+                  : "text-black dark:text-slate-300"
               }`}
             >
               About
+            </p>
+            {pathname === "/about" && (
+              <span className="w-[45%] border-2 rounded-md border-[#7165FF]"></span>
+            )}
+          </button>
+          <button
+            onClick={() => {
+              router.push("/about");
+              setCurrentSection("");
+            }}
+            className="text-sm 2xl:text-lg flex flex-col"
+          >
+            <p
+              className={`${
+                pathname === "/about"
+                  ? "text-black font-semibold "
+                  : "text-black dark:text-slate-300"
+              }`}
+            >
+              Contact
             </p>
             {pathname === "/about" && (
               <span className="w-[45%] border-2 rounded-md border-[#7165FF]"></span>
@@ -221,6 +241,27 @@ const Navbar = () => {
               }`}
             >
               About
+            </p>
+            {pathname === "/about" && (
+              <span className="w-[45%] border-2 rounded-md border-[#7165FF]"></span>
+            )}
+          </button>
+          <button
+            onClick={() => {
+              router.push("/about");
+              setCurrentSection("");
+              toggleMenu();
+            }}
+            className="text-sm 2xl:text-lg flex flex-col"
+          >
+            <p
+              className={`${
+                pathname === "/about"
+                  ? "text-black font-semibold "
+                  : "text-[#878787] dark:text-slate-300"
+              }`}
+            >
+              Contact
             </p>
             {pathname === "/about" && (
               <span className="w-[45%] border-2 rounded-md border-[#7165FF]"></span>

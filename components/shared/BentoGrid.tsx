@@ -183,7 +183,7 @@ const BentoGrid = () => {
               width={180}
               height={140}
               objectFit="cover"
-              className=" shadow-sm 
+              className=" 
             w-[150px] sm:w-[180px] md:w-[200px] lg:w-[250px] xl:w-[340px] "
               objectPosition="center"
             />

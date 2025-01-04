@@ -8,8 +8,13 @@ import {
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import localFont from "next/font/local";
+import { Poppins } from "next/font/google";
 const recoleta = localFont({ src: "../../app/recoleta.ttf" });
-
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
+  variable: "--font-poppins",
+});
 interface TimelineEntry {
   title: string;
   content: React.ReactNode;
@@ -19,8 +24,23 @@ const data = [
   {
     title: "Discovery Call",
     content: (
-      <div>
-        <p className="text-neutral-600  font-poppins dark:text-neutral-200 text-sm 2xl:text-lg font-semibold mb-8">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 0.55,
+            ease: "easeOut",
+          },
+        }}
+        viewport={{
+          once: true,
+        }}
+      >
+        <p
+          className={`text-neutral-600  ${poppins.className} dark:text-neutral-200 text-[22px] 2xl:text-lg  mb-8`}
+        >
           We thrive on pushing boundaries and exploring new ideas. By embracing
           the latest technologies and creative approaches, we ensure that every
           app we build is not only functional but also future-ready.{" "}
@@ -41,14 +61,31 @@ const data = [
             className="rounded-lg object-cover h-44 lg:h-72 2xl:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
-      </div>
+      </motion.div>
     ),
   },
   {
     title: "Research",
     content: (
-      <div>
-        <p className="text-neutral-600  font-poppins dark:text-neutral-200 text-sm 2xl:text-lg font-semibold mb-8">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 0.55,
+            ease: "easeOut",
+          },
+        }}
+        viewport={{
+          once: true,
+        }}
+      >
+        {" "}
+        <p
+          className={`text-neutral-600  ${poppins.className} dark:text-neutral-200 text-[22px] 2xl:text-lg  mb-8`}
+        >
+          {" "}
           We thrive on pushing boundaries and exploring new ideas. By embracing
           the latest technologies and creative approaches, we ensure that every
           app we build is not only functional but also future-ready.{" "}
@@ -69,14 +106,31 @@ const data = [
             className="rounded-lg object-cover h-44 lg:h-72 2xl:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
-      </div>
+      </motion.div>
     ),
   },
   {
     title: "UI/UX Design",
     content: (
-      <div>
-        <p className="text-neutral-600  font-poppins dark:text-neutral-200 text-sm 2xl:text-lg font-semibold mb-8">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 0.55,
+            ease: "easeOut",
+          },
+        }}
+        viewport={{
+          once: true,
+        }}
+      >
+        {" "}
+        <p
+          className={`text-neutral-600  ${poppins.className} dark:text-neutral-200 text-[22px] 2xl:text-lg  mb-8`}
+        >
+          {" "}
           We thrive on pushing boundaries and exploring new ideas. By embracing
           the latest technologies and creative approaches, we ensure that every
           app we build is not only functional but also future-ready.{" "}
@@ -97,14 +151,31 @@ const data = [
             className="rounded-lg object-cover h-44 lg:h-72 2xl:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
-      </div>
+      </motion.div>
     ),
   },
   {
     title: "Front-End Development",
     content: (
-      <div>
-        <p className="text-neutral-600  font-poppins dark:text-neutral-200 text-sm 2xl:text-lg font-semibold mb-8">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 0.55,
+            ease: "easeOut",
+          },
+        }}
+        viewport={{
+          once: true,
+        }}
+      >
+        {" "}
+        <p
+          className={`text-neutral-600  ${poppins.className} dark:text-neutral-200 text-[22px] 2xl:text-lg  mb-8`}
+        >
+          {" "}
           We thrive on pushing boundaries and exploring new ideas. By embracing
           the latest technologies and creative approaches, we ensure that every
           app we build is not only functional but also future-ready.{" "}
@@ -125,14 +196,31 @@ const data = [
             className="rounded-lg object-cover h-44 lg:h-72 2xl:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
-      </div>
+      </motion.div>
     ),
   },
   {
     title: "Back-End Development",
     content: (
-      <div>
-        <p className="text-neutral-600  font-poppins dark:text-neutral-200 text-sm 2xl:text-lg font-semibold mb-8">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 0.55,
+            ease: "easeOut",
+          },
+        }}
+        viewport={{
+          once: true,
+        }}
+      >
+        {" "}
+        <p
+          className={`text-neutral-600  ${poppins.className} dark:text-neutral-200 text-[22px] 2xl:text-lg  mb-8`}
+        >
+          {" "}
           We thrive on pushing boundaries and exploring new ideas. By embracing
           the latest technologies and creative approaches, we ensure that every
           app we build is not only functional but also future-ready.{" "}
@@ -153,14 +241,31 @@ const data = [
             className="rounded-lg object-cover h-44 lg:h-72 2xl:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
-      </div>
+      </motion.div>
     ),
   },
   {
     title: "Deployement",
     content: (
-      <div>
-        <p className="text-neutral-600  font-poppins dark:text-neutral-200 text-sm 2xl:text-lg font-semibold mb-8">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 0.55,
+            ease: "easeOut",
+          },
+        }}
+        viewport={{
+          once: true,
+        }}
+      >
+        {" "}
+        <p
+          className={`text-neutral-600  ${poppins.className} dark:text-neutral-200 text-[22px] 2xl:text-lg  mb-8`}
+        >
+          {" "}
           We thrive on pushing boundaries and exploring new ideas. By embracing
           the latest technologies and creative approaches, we ensure that every
           app we build is not only functional but also future-ready.{" "}
@@ -181,14 +286,31 @@ const data = [
             className="rounded-lg object-cover h-44 lg:h-72 2xl:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
-      </div>
+      </motion.div>
     ),
   },
   {
     title: "Maintenance",
     content: (
-      <div>
-        <p className="text-neutral-600  font-poppins dark:text-neutral-200 text-sm 2xl:text-lg font-semibold mb-8">
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{
+          opacity: 1,
+          y: 0,
+          transition: {
+            duration: 0.55,
+            ease: "easeOut",
+          },
+        }}
+        viewport={{
+          once: true,
+        }}
+      >
+        {" "}
+        <p
+          className={`text-neutral-600  ${poppins.className} dark:text-neutral-200 text-[22px] 2xl:text-lg  mb-8`}
+        >
+          {" "}
           We thrive on pushing boundaries and exploring new ideas. By embracing
           the latest technologies and creative approaches, we ensure that every
           app we build is not only functional but also future-ready.{" "}
@@ -209,7 +331,7 @@ const data = [
             className="rounded-lg object-cover h-44 lg:h-72 2xl:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
-      </div>
+      </motion.div>
     ),
   },
   // {
@@ -389,7 +511,7 @@ export const Timeline = () => {
 
             <div className="relative pl-[4.1rem]  md:pl-4 w-full pr-4 md:pr-0 ">
               <h3
-                className={` ${recoleta.className} md:hidden block text-3xl mb-4 text-left   dark:text-slate-200`}
+                className={` ${recoleta.className} md:hidden block text-5xl mb-4 text-left   dark:text-slate-200`}
               >
                 {item.title}
               </h3>

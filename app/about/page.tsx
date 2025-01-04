@@ -216,9 +216,9 @@ const page = () => {
           />
         </motion.div>
       </div>
-      <div className=" w-full mx-auto max-w-6xl 2xl:max-w-7xl py-10 2xl:py-16 ">
+      <div className=" w-full mx-auto max-w-6xl 2xl:max-w-7xl py-10 2xl:py-[5rem] ">
         <h1
-          className={`text-3xl md:text-4xl 2xl:text-5xl ${recoleta.className} `}
+          className={`text-5xl md:text-4xl 2xl:text-5xl ${recoleta.className} `}
         >
           Our <span className="text-[#5956E9]">Story</span>
         </h1>{" "}
@@ -293,7 +293,7 @@ const page = () => {
                   Four graduates,{" "}
                   <span className="text-[#DB14F1]">one shared vision</span>
                 </h3>
-                <p className="text-sm 2xl:text-lg tracking-wide leading-snug ">
+                <p className="text-[18px] 2xl:text-lg tracking-wide leading-snug ">
                   Splenify was born in 2019, when four software graduate
                   students came together with a shared passion for technology
                   and a mission to build applications that deliver real
@@ -353,7 +353,7 @@ const page = () => {
                 >
                   A place to learn, grow, and thrive
                 </h3>
-                <p className="text-sm 2xl:text-lg tracking-wide leading-snug ">
+                <p className="text-[18px] 2xl:text-lg tracking-wide leading-snug ">
                   At Splenify, we believe that success is a team effort. Our
                   growing family of 25+ developers, designers, strategists, and
                   creatives is united by a drive to learn, improve, and innovate
@@ -412,7 +412,7 @@ const page = () => {
                 >
                   100+ applications and counting
                 </h3>
-                <p className="text-sm 2xl:text-lg tracking-wide leading-snug ">
+                <p className="text-[18px] 2xl:text-lg tracking-wide leading-snug ">
                   Over the years, we’ve designed, developed, and launched 100+
                   applications, each tailored to deliver real results. From
                   seamless user experiences to robust, scalable solutions, we’ve
@@ -473,7 +473,7 @@ const page = () => {
                     Turning visions into reality
                   </span>
                 </h3>
-                <p className="text-sm 2xl:text-lg tracking-wide leading-snug ">
+                <p className="text-[18px] 2xl:text-lg tracking-wide leading-snug ">
                   Our name reflects what we aim to do: "Splenify"—to transform
                   and elevate. Every app we develop is more than just code—it’s
                   a blend of strategy, design, and technology, crafted to bring

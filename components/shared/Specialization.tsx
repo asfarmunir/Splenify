@@ -323,7 +323,7 @@ const Specialization = () => {
         {specializations.map((item, index) => (
           <div
             key={index}
-            className="flex items-center p-4 flex-col justify-center sm2:flex-row gap-6  2xl:gap-8  "
+            className="flex items-center py-4 flex-col justify-center sm2:flex-row gap-6 px-5 sm:px-0  2xl:gap-8  "
           >
             <div className=" w-full ">
               <Image
@@ -339,7 +339,7 @@ const Specialization = () => {
               <h2 className="text-xl 2xl:text-2xl font-bold mb-2 capitalize">
                 {item.title}
               </h2>
-              <p className="text-sm sm:text-xs lg:text-sm  max-w-xs 2xl:max-w-sm">
+              <p className="text-[18px] sm:text-xs lg:text-sm  max-w-xs 2xl:max-w-sm">
                 {item.description}
               </p>
               <div className="flex mt-3 sm:mt-2  items-center flex-wrap w-full gap-2 ">

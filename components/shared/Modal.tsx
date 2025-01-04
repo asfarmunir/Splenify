@@ -321,7 +321,7 @@ const Modal = ({
             </div>
           </div>
           <div
-            className={` ${testimonialBg}    relative    flex flex-col md:flex-row pt-16 md:pt-8   items-center gap-8  justify-center  px-12 md:px-20 border-none `}
+            className={` ${testimonialBg}    relative    flex flex-col lg:flex-row pt-16 md:pt-8   items-center lg:gap-8  justify-center  px-12 md:px-20 border-none `}
           >
             <Image
               src="/images/arrow3.svg"
@@ -333,11 +333,11 @@ const Modal = ({
             />
             <div className="flex flex-col gap-4 md:pb-8 ">
               <h2
-                className={`text-3xl 2xl:text-4xl text-white font-bold  ${recoleta.className}`}
+                className={`text-4xl text-white font-bold  ${recoleta.className}`}
               >
                 Hear it from our client
               </h2>
-              <p className="text-xs 2xl:text-sm  max-w-lg text-white  ">
+              <p className="text-[14px] 2xl:text-sm  max-w-lg text-white  ">
                 "Working with Raja and Splenify has been incredible. They
                 quickly grasped our business model and vision, transforming our
                 landing page and creating stellar social media assets, pitch
@@ -389,18 +389,18 @@ const Modal = ({
           >
             <div className=" flex flex-col items-center  space-y-3">
               <h2
-                className={`${recoleta.className} font-bold font-mulish px-3 text-2xl 2xl:text-4xl text-white`}
+                className={`${recoleta.className} font-bold font-mulish px-6  text-4xl text-white`}
               >
                 Have A Project In Mind? Let's Get Start.
               </h2>
-              <p className="text-center font-mulish text-gray-400  text-sm 2xl:text-base font-medium  ">
+              <p className="text-center font-mulish text-gray-400  text-sm 2xl:text-base font-medium max-w-sm md:max-w-lg  ">
                 You're looking for a solid partner for the project having in
-                your mind. <br /> Connect with us to make your work easier.
+                your mind. Connect with us to make your work easier.
               </p>
 
               <DialogClose className="w-full max-w-[260px]" asChild>
                 <Link href="#contact" className="w-full max-w-[260px]">
-                  <Button className="bg-[#6447F9] rounded-full text-white hover:bg-[#6447F9]/80 font-mulish text-sm font-bold px-7 py-4    ">
+                  <Button className="bg-[#6447F9] rounded-[8px] text-white hover:bg-[#6447F9]/80 font-mulish text-sm font-bold px-9 py-4    ">
                     Get Started
                     <ArrowUpRight className="w-5 h-5 ml-2  text-white " />
                   </Button>

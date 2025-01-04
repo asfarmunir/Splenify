@@ -123,7 +123,7 @@ const Projects = () => {
               x: 0,
               opacity: 1,
               transition: {
-                duration: 1.2,
+                duration: 0.7,
                 ease: "easeInOut",
               },
             }}
@@ -165,7 +165,7 @@ const Projects = () => {
               x: 0,
               opacity: 1,
               transition: {
-                duration: 1.2,
+                duration: 0.7,
                 ease: "easeInOut",
               },
             }}
@@ -209,7 +209,7 @@ const Projects = () => {
               x: 0,
               opacity: 1,
               transition: {
-                duration: 1.2,
+                duration: 0.7,
                 ease: "easeInOut",
               },
             }}
@@ -254,7 +254,7 @@ const Projects = () => {
               x: 0,
               opacity: 1,
               transition: {
-                duration: 1.2,
+                duration: 0.7,
                 ease: "easeInOut",
               },
             }}
@@ -348,7 +348,7 @@ const Projects = () => {
               x: 0,
               opacity: 1,
               transition: {
-                duration: 1.2,
+                duration: 0.7,
                 ease: "easeInOut",
               },
             }}
@@ -393,7 +393,7 @@ const Projects = () => {
               x: 0,
               opacity: 1,
               transition: {
-                duration: 1.2,
+                duration: 0.7,
                 ease: "easeInOut",
               },
             }}
@@ -438,7 +438,7 @@ const Projects = () => {
               x: 0,
               opacity: 1,
               transition: {
-                duration: 1.2,
+                duration: 0.7,
                 ease: "easeInOut",
               },
             }}
@@ -483,7 +483,7 @@ const Projects = () => {
               x: 0,
               opacity: 1,
               transition: {
-                duration: 1.2,
+                duration: 0.7,
                 ease: "easeInOut",
               },
             }}
