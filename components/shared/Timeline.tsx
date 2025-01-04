@@ -341,7 +341,18 @@ export const Timeline = () => {
       className="w-full bg-white  dark:bg-neutral-950 font-sans md:px-10"
       ref={containerRef}
     >
-      <div className="mb-12 2xl:mb-16 flex flex-col items-center gap-3 2xl:gap-5">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{
+          opacity: 1,
+          transition: {
+            duration: 1,
+            ease: "easeOut",
+          },
+        }}
+        viewport={{ once: true, amount: 0.5 }}
+        className="mb-12 2xl:mb-16 flex flex-col items-center gap-3 2xl:gap-5"
+      >
         <h2 className=" text-base   2xl:xl tracking-wide ">How we do it?</h2>
         <h1
           className={` px-2 relative text-5xl md:text-4xl 2xl:text-5xl tracking-wide text-center  ${recoleta.className}`}
@@ -349,7 +360,7 @@ export const Timeline = () => {
           World-class apps on demand, with our{" "}
           <span className=" text-[#DF56FE] "> process!</span>
         </h1>
-      </div>
+      </motion.div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto ">
         {data.map((item, index) => (

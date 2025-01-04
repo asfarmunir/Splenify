@@ -17,34 +17,17 @@ const Modal = ({
   heroLogo,
   testimonialBg,
   color,
+  imgs = [], // Default to empty array if imgs is not provided
 }: {
   heroImg: string;
   heroBg: string;
   heroLogo: string;
   testimonialBg: string;
   color: string;
+  imgs: string[];
 }) => {
-  const slides = [
-    { number: 1 },
-    { number: 2 },
-    { number: 3 },
-    { number: 4 },
-    { number: 5 },
-  ];
-  const [isHovered, setIsHovered] = useState(false);
-
-  const imgs = [
-    "/projectMockups/o1.webp",
-    "/projectMockups/o2.webp",
-    "/projectMockups/o3.webp",
-    "/projectMockups/o4.webp",
-    "/projectMockups/o5.webp",
-    "/projectMockups/o6.webp",
-    "/projectMockups/o7.webp",
-    "/projectMockups/o8.webp",
-  ];
-
   const duplicatedSlides = [...imgs, ...imgs];
+
   return (
     <Dialog>
       <DialogTrigger

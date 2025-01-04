@@ -7,6 +7,46 @@ import localFont from "next/font/local";
 import Modal from "./Modal";
 const recoleta = localFont({ src: "../../app/recoleta.ttf" });
 
+const blink = [
+  "/projectMockups/o1.webp",
+  "/projectMockups/o2.webp",
+  "/projectMockups/o3.webp",
+  "/projectMockups/o4.webp",
+  "/projectMockups/o5.webp",
+  "/projectMockups/o6.webp",
+  "/projectMockups/o7.webp",
+  "/projectMockups/o8.webp",
+];
+
+const bluepro = [
+  "/projectMockups/1.webp",
+  "/projectMockups/2.webp",
+  "/projectMockups/3.webp",
+  "/projectMockups/4.webp",
+  "/projectMockups/5.webp",
+  "/projectMockups/6.webp",
+  "/projectMockups/7.webp",
+];
+
+const media = [
+  "/projectMockups/p1.webp",
+  "/projectMockups/p2.webp",
+  "/projectMockups/p3.webp",
+  "/projectMockups/p4.webp",
+  // "/projectMockups/p5.webp",
+  "/projectMockups/p6.webp",
+  "/projectMockups/p7.webp",
+];
+const gregbet = [
+  "/projectMockups/b1.webp",
+  "/projectMockups/b2.webp",
+  "/projectMockups/b3.webp",
+  "/projectMockups/b4.webp",
+  "/projectMockups/b5.webp",
+  "/projectMockups/b6.webp",
+  "/projectMockups/b7.webp",
+];
+
 import pinkBg from "@/public/projectModal/pinkBg.webp";
 import orangeBg from "@/public/projectModal/orangeBg.webp";
 import skyBg from "@/public/projectModal/skyBg.webp";
@@ -111,6 +151,7 @@ const Projects = () => {
                 heroLogo="/projectModal/logo2.svg"
                 testimonialBg=" bg-gradient-to-l from-[#FF796B] to-[#FF5047]"
                 color="orange"
+                imgs={blink}
               />
             </div>
           </motion.div>
@@ -154,6 +195,7 @@ const Projects = () => {
                 heroLogo="/projectModal/logo3.svg"
                 testimonialBg=" bg-gradient-to-l from-[#38B6FF] to-[#0069CA]"
                 color="blue"
+                imgs={gregbet}
               />{" "}
             </div>
           </motion.div>
@@ -198,6 +240,7 @@ const Projects = () => {
                 heroLogo="/projectModal/logo4.svg"
                 testimonialBg=" bg-gradient-to-l from-[#FF1589] to-[#B6005B]"
                 color="pink"
+                imgs={media}
               />{" "}
             </div>
           </motion.div>
@@ -242,6 +285,7 @@ const Projects = () => {
                 heroLogo="/projectModal/logo1.svg"
                 testimonialBg=" bg-gradient-to-l from-[#38B6FF] to-[#0069CA]"
                 color="blue"
+                imgs={bluepro}
               />{" "}
             </div>
           </motion.div>
@@ -334,7 +378,8 @@ const Projects = () => {
                 heroBg="/projectModal/skyBg.webp"
                 heroLogo="/projectModal/logo1.svg"
                 testimonialBg=" bg-gradient-to-l from-[#38B6FF] to-[#0069CA]"
-                color="orange"
+                color="blue"
+                imgs={bluepro}
               />{" "}
             </div>
           </motion.div>
@@ -378,7 +423,8 @@ const Projects = () => {
                 heroBg="/projectModal/orangeBg.webp"
                 heroLogo="/projectModal/logo2.svg"
                 testimonialBg=" bg-gradient-to-l from-[#FF796B] to-[#FF5047]"
-                color="blue"
+                color="orange"
+                imgs={blink}
               />{" "}
             </div>
           </motion.div>
@@ -422,7 +468,8 @@ const Projects = () => {
                 heroBg="/projectModal/skyBg.webp"
                 heroLogo="/projectModal/logo3.svg"
                 testimonialBg=" bg-gradient-to-l from-[#38B6FF] to-[#0069CA]"
-                color="pink"
+                color="blue"
+                imgs={gregbet}
               />{" "}
             </div>
           </motion.div>
@@ -466,7 +513,8 @@ const Projects = () => {
                 heroBg="/projectModal/pinkBg.webp"
                 heroLogo="/projectModal/logo4.svg"
                 testimonialBg=" bg-gradient-to-l from-[#FF1589] to-[#B6005B]"
-                color="blue"
+                color="pink"
+                imgs={media}
               />{" "}
             </div>
           </motion.div>

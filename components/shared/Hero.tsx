@@ -118,26 +118,44 @@ const Hero = () => {
         {/* <HeroBentoGrid /> */}
         <BentoGrid />
       </section>
-      <div className="w-full mb-16 2xl:mb-20 mt-5 2xl:mt-6 px-4 2xl:px-0 max-w-6xl 2xl:max-w-7xl gap-2 md:gap-4 2xl:gap-6 mx-auto grid grid-cols-2  lg:grid-cols-4  justify-items-center">
+      <div className="w-full mb-16 2xl:mb-20 mt-5 2xl:mt-6 px-4 2xl:px-0 max-w-6xl 2xl:max-w-7xl gap-2 md:gap-4 2xl:gap-6 mx-auto grid grid-cols-2 lg:grid-cols-4 justify-items-center">
         {acheivments.map((acheivment, index) => (
-          <div
+          <motion.div
             key={index}
-            className="px-7 md:px-12 2xl:px-16 p-3 md:pt-5 pb-4 border-[2px] w-full   border-[#DF56FE]  rounded-[12px] md:rounded-[26.5px] flex items-center justify-center gap-1.5 md:gap-3 flex-col "
+            className="px-7 md:px-12 2xl:px-16 p-2 md:pt-5 pb-2 border-[2px] w-full border-[#DF56FE] rounded-[12px] md:rounded-[26.5px] flex items-center justify-center gap-1 md:gap-3 flex-col"
+            initial={{ opacity: 0 }} // Initial state (opacity 0, positioned left)
+            whileInView={{ opacity: 1 }} // Final state (fully visible, at normal position)
+            transition={{
+              duration: 0.6, // Duration of the animation
+              delay: index * 0.1, // Staggering the animation for each item
+              ease: "easeInOut", // Ease effect
+            }}
+            viewport={{ once: true, amount: 1 }}
           >
             <h1 className="text-2xl sm:text-4xl 2xl:text-5xl grad_text font-semibold">
               {acheivment.number}
             </h1>
-
-            <p className=" text-xs sm:text-sm md:text-base 2xl:text-xl  text-slate-700 font-roboto">
+            <p className="text-xs sm:text-sm md:text-base 2xl:text-xl text-slate-700 font-roboto">
               {acheivment.title}
             </p>
-          </div>
+          </motion.div>
         ))}
       </div>
-      <div className=" w-full flex flex-col  items-center gap-5">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{
+          opacity: 1,
+          transition: {
+            duration: 1.3,
+            ease: "easeOut",
+          },
+        }}
+        viewport={{ once: true, amount: 0.8 }}
+        className=" w-full flex flex-col  items-center gap-5"
+      >
         <h2 className="text-3xl 2xl:text-4xl">We have worked with</h2>
         <Partners />
-      </div>
+      </motion.div>
       {/* <div className="flex gap-1 max-w-7xl mx-auto px-3 md:gap-8  justify-center items-center  md:items-start  relative ">
         <h2 className=" block  md:hidden text-lg  2xl:text-xl text-center absolute top-0">
           Our long list of happy clients include:
