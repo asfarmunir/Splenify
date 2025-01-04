@@ -31,9 +31,20 @@ const Modal = ({
     { number: 4 },
     { number: 5 },
   ];
-  const duplicatedSlides = [...slides, ...slides];
   const [isHovered, setIsHovered] = useState(false);
 
+  const imgs = [
+    "/projectMockups/o1.webp",
+    "/projectMockups/o2.webp",
+    "/projectMockups/o3.webp",
+    "/projectMockups/o4.webp",
+    "/projectMockups/o5.webp",
+    "/projectMockups/o6.webp",
+    "/projectMockups/o7.webp",
+    "/projectMockups/o8.webp",
+  ];
+
+  const duplicatedSlides = [...imgs, ...imgs];
   return (
     <Dialog>
       <DialogTrigger
@@ -263,28 +274,26 @@ const Modal = ({
             <div className="relative w-full overflow-hidden">
               {/* Wrapping div for seamless looping */}
               <motion.div
-                className="flex"
+                className="flex -space-x-5"
                 animate={{
                   x: ["-100%", "0%"], // Pause the animation on hover
                   transition: {
                     ease: "linear",
-                    duration: isHovered ? 600 : 6, // Set the duration to 10 seconds
+                    duration: 40,
                     repeat: Infinity,
                   },
                 }}
               >
                 {/* Render duplicated slides */}
                 {duplicatedSlides.map((slide, index) => (
-                  <div
-                    key={index}
-                    className="flex-shrink-0 h-80 z-50"
-                    style={{ width: `${100 / slides.length}%` }}
-                    onMouseEnter={() => setIsHovered(true)} // Set hover state to true
-                    onMouseLeave={() => setIsHovered(false)} // Set hover state to false
-                  >
-                    <div className="flex flex-col items-center bg-red-400 justify-center h-full text-6xl">
-                      {slide.number}
-                    </div>
+                  <div key={index} className="flex-shrink-0 w-[200px] z-50">
+                    <Image
+                      src={slide}
+                      width={500}
+                      height={500}
+                      alt="project"
+                      className="w-full h-full"
+                    />
                   </div>
                 ))}
               </motion.div>
