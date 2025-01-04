@@ -141,7 +141,7 @@ const Navbar = () => {
           </button>
         </div>
         <div className="hidden lg:flex items-center gap-4">
-          <ToggleTheme />
+          {/* <ToggleTheme /> */}
 
           <Link
             href={"https://www.cal.com/splenify"}
@@ -170,7 +170,9 @@ const Navbar = () => {
       </div>
       <div
         className={`absolute shadow-sm rounded-[14px] drop-shadow-md top-[7rem] left-1/2 -translate-x-1/2 w-[350px] bg-white/95 dark:bg-slate-950/95 transition-all duration-700 ease-out transform ${
-          isMenuOpen ? "max-h-[450px] opacity-100" : "max-h-0 opacity-100"
+          isMenuOpen
+            ? "max-h-[450px] translate-y-0 opacity-100"
+            : "max-h-0 -translate-y-16 opacity-100"
         } z-10 overflow-hidden`}
       >
         <div className="flex flex-col items-start gap-4 w-full  px-6 py-9">

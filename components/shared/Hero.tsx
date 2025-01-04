@@ -118,7 +118,7 @@ const Hero = () => {
         {/* <HeroBentoGrid /> */}
         <BentoGrid />
       </section>
-      <div className="w-full mt-6 px-4 2xl:px-0 max-w-6xl 2xl:max-w-7xl gap-2 md:gap-4 2xl:gap-6 mx-auto grid grid-cols-2  lg:grid-cols-4  justify-items-center">
+      <div className="w-full mb-16 2xl:mb-20 mt-5 2xl:mt-6 px-4 2xl:px-0 max-w-6xl 2xl:max-w-7xl gap-2 md:gap-4 2xl:gap-6 mx-auto grid grid-cols-2  lg:grid-cols-4  justify-items-center">
         {acheivments.map((acheivment, index) => (
           <div
             key={index}
@@ -128,13 +128,13 @@ const Hero = () => {
               {acheivment.number}
             </h1>
 
-            <p className=" text-xs sm:text-sm md:text-base font-[600] font-roboto">
+            <p className=" text-xs sm:text-sm md:text-base 2xl:text-xl  text-slate-700 font-roboto">
               {acheivment.title}
             </p>
           </div>
         ))}
       </div>
-      <div className=" w-full flex flex-col mt-12 2xl:mt-16 items-center gap-5">
+      <div className=" w-full flex flex-col  items-center gap-5">
         <h2 className="text-3xl 2xl:text-4xl">We have worked with</h2>
         <Partners />
       </div>
