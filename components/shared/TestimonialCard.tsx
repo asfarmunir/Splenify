@@ -59,7 +59,7 @@ const TestimonialCard = ({
           />
         </div>
       )}
-      <h1 className="font-roboto font-normal text-start text-base dark:text-slate-400">
+      <h1 className=" font-normal text-start text-base dark:text-slate-400">
         <p dangerouslySetInnerHTML={{ __html: review }} />
       </h1>
       <div className="flex justify-start items-center space-x-4">

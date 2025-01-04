@@ -189,7 +189,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
       </div>
       <div
-        className={`absolute shadow-sm rounded-[14px] drop-shadow-md top-[7rem] left-1/2 -translate-x-1/2 w-[350px] bg-white/95 dark:bg-slate-950/95 transition-all duration-700 ease-out transform ${
+        className={`absolute shadow-sm rounded-[14px] drop-shadow-md top-[7rem] left-1/2 -translate-x-1/2 w-[350px] bg-white/95 dark:bg-slate-950/95 transition-all duration-500 ease-out transform ${
           isMenuOpen
             ? "max-h-[450px] translate-y-0 opacity-100"
             : "max-h-0 -translate-y-16 opacity-100"

@@ -141,7 +141,7 @@ const Modal = ({
                 </p>
               </div>
             </div>
-            <div className="flex ml-auto w-full bg-[#FCF7FF] dark:bg-slate-900 py-16 2xl:px-10 px-8 justify-end gap-5 relative">
+            <div className="flex ml-auto w-full  dark:bg-slate-900 py-16 2xl:px-10 px-8 justify-end gap-5 relative">
               <Image
                 src={
                   color === "blue"
