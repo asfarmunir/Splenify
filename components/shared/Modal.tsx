@@ -50,7 +50,7 @@ const Modal = ({
             >
               Efandex
             </h2> */}
-            <div className="w-[100px] h-[100px] md:w-[130px] md:h-[120px] 2xl:w-[190px] 2xl:h-[100px]">
+            <div className="w-[100px] h-[100px] md:w-[130px] md:h-[120px] 2xl:w-[190px] 2xl:h-[100px] ">
               <Image
                 src={heroLogo}
                 // src={"/projectModal/logo1.svg"}
@@ -59,7 +59,7 @@ const Modal = ({
                 height={100}
                 priority
                 alt="efandex"
-                className="w-full h-full"
+                className="w-full h-full object-contain object-center"
               />
             </div>
 
@@ -77,7 +77,7 @@ const Modal = ({
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 alt="efandex"
                 priority
-                className=" w-full h-full"
+                className=" w-full h-full object-contain object-center "
               />
             </div>
           </div>

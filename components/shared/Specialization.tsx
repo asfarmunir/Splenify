@@ -321,7 +321,20 @@ const Specialization = () => {
 
       <div className=" w-full grid max-w-6xl 2xl:max-w-7xl  grid-cols-1 md:grid-cols-2 gap-8 gap-y-12 2xl:gap-12">
         {specializations.map((item, index) => (
-          <div
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: 100,
+            }}
+            viewport={{ once: true, amount: 0.05 }}
+            whileInView={{
+              y: 0,
+              opacity: 1,
+              transition: {
+                duration: 0.8,
+                ease: "easeOut",
+              },
+            }}
             key={index}
             className="flex items-center py-4 flex-col justify-center sm2:flex-row gap-6 px-5 sm:px-0  2xl:gap-8  "
           >
@@ -353,7 +366,7 @@ const Specialization = () => {
                 ))}
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </motion.div>

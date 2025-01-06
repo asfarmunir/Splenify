@@ -141,21 +141,21 @@ const Navbar = () => {
           </button>
           <button
             onClick={() => {
-              router.push("/about");
+              router.push("/contact");
               setCurrentSection("");
             }}
             className="text-sm 2xl:text-lg flex flex-col"
           >
             <p
               className={`${
-                pathname === "/about"
+                pathname === "/contact"
                   ? "text-black font-semibold "
                   : "text-black dark:text-slate-300"
               }`}
             >
               Contact
             </p>
-            {pathname === "/about" && (
+            {pathname === "/contact" && (
               <span className="w-[45%] border-2 rounded-md border-[#7165FF]"></span>
             )}
           </button>
@@ -248,22 +248,21 @@ const Navbar = () => {
           </button>
           <button
             onClick={() => {
-              router.push("/about");
+              router.push("/contact");
               setCurrentSection("");
-              toggleMenu();
             }}
             className="text-sm 2xl:text-lg flex flex-col"
           >
             <p
               className={`${
-                pathname === "/about"
+                pathname === "/contact"
                   ? "text-black font-semibold "
-                  : "text-[#878787] dark:text-slate-300"
+                  : "text-black dark:text-slate-300"
               }`}
             >
               Contact
             </p>
-            {pathname === "/about" && (
+            {pathname === "/contact" && (
               <span className="w-[45%] border-2 rounded-md border-[#7165FF]"></span>
             )}
           </button>
