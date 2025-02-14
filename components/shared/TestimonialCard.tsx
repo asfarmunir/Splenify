@@ -40,13 +40,13 @@ const TestimonialCard = ({
       }}
       className="bg-white w-full dark:bg-slate-900 shadow  dark:shadow-none rounded-[16px] gap-4 p-6 border-[1px] border-white dark:border-slate-800 space-y-4"
     >
-      <Image
+      {/* <Image
         src={logo}
         width={10}
         height={10}
         alt="review-img"
         className="w-[86px] h-[28px] dark:invert"
-      />
+      /> */}
       {userImage && (
         <div className="w-full">
           <Image

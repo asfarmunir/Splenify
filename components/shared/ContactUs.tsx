@@ -63,32 +63,41 @@ const ContactUs = () => {
               height={200}
               className=" "
             />
-            <div className=" absolute  -bottom-12 -right-28  p-4 px-6 shadow rounded-lg backdrop-blur  ">
-              <h2 className="text-2xl font-bold">Musa</h2>
+            <div className=" absolute  -bottom-12 -right-20  p-4 px-6 shadow rounded-lg backdrop-blur  ">
+              <h2 className="text-2xl font-bold">Shayan</h2>
               <p className="text-sm text-[#747576] dark:text-slate-400 ">
-                Head of Technology Solution
+                Solution Specialist
               </p>
             </div>
           </div>
-          <h2 className="2xl:text-lg  mt-16  text-[#4E4E4E] dark:text-slate-400">
-            I would love to talk to you about your project or needs.
+          <h2 className="2xl:text-lg  mt-16 dark:text-slate-400">
+            Got a mobile app that needs <br /> to be taken care of?
           </h2>
-          <h2 className="2xl:text-lg   text-[#4E4E4E] dark:text-slate-400">
-            Fill in the form or send us an email to <br /> hello@splenify.com{" "}
+          <h2 className="2xl:text-lg    dark:text-slate-400">
+            We’ve got your back.
           </h2>
-          <h1 className="text-xl 2xl:text-2xl font-bold capitalize tracking-wide">
-            Talk to you in less than 24hs.
+          <h2 className="2xl:text-lg    dark:text-slate-400">
+            Schedule a call below, or send a quick <br /> email to
+            <span className="text-[#7165FF]"> teamsplenify@splenify.com</span>
+          </h2>
+          <h1
+            className={` ${recoleta.className} mt-4 text-xl xl:text-[40px]  capitalize tracking-wide`}
+          >
+            Talk to you in less than{" "}
+            <span className="text-[#DF56FE]">24hs.</span>
           </h1>
-          <div className=" w-full p-5 mt-12 2xl:p-7 rounded-lg bg-[#7165FF33]">
-            <h2 className="text-xl mb-4 2xl:text-2xl font-bold ">
+          <div className=" w-full p-5 mt-12 xl:p-7 rounded-lg bg-[#7165FF33]">
+            <h2
+              className={`${recoleta.className} text-xl mb-4 xl:text-[28px] font-semibold `}
+            >
               Schedule A Call
             </h2>
-            <p className="mb-6">
+            <p className="mb-6 xl:text-[20px]">
               Feel free to select a time at your convenience!
             </p>
             <Link
               href={"https://www.cal.com/splenify"}
-              className="text-[#7165FF]  inline-flex items-center gap-2  font-semibold"
+              className="text-[#7165FF]  inline-flex items-center gap-2 xl:text-[20px]  font-semibold"
             >
               Lets Talk
               <FaArrowRightLong className="text-lg" />
@@ -129,10 +138,10 @@ const ContactUs = () => {
                 </p>
               </div>
             </div>
-            <h2 className="2xl:text-lg  mt-16  text-[#4E4E4E] dark:text-slate-400">
+            <h2 className="2xl:text-lg  mt-16   dark:text-slate-400">
               I would love to talk to you about your project or needs.
             </h2>
-            <h2 className="2xl:text-lg   text-[#4E4E4E] dark:text-slate-400">
+            <h2 className="2xl:text-lg    dark:text-slate-400">
               Fill in the form or send us an email to <br /> hello@splenify.com{" "}
             </h2>
             <h1 className="text-2xl pb-5 font-bold capitalize tracking-wide">
@@ -143,16 +152,19 @@ const ContactUs = () => {
             action=""
             className=" bg-white  dark:bg-slate-900 dark:shadow-inner border dark:border-none border-[#D9D9D9] dark:shadow-gray-800 p-8   rounded-xl  flex flex-col gap-2"
           >
-            <h2 className={`text-2xl 2xl:text-3xl font-bold mb-2`}>
-              Got an idea? We’ve got the skills.
+            <h2
+              className={`text-2xl xl:text-[28px]  mb-2 ${recoleta.className}`}
+            >
+              Got an idea?{" "}
+              <span className="text-[#DF56FE]">We’ve got the skills.</span>
             </h2>
-            <p className="text-sm 2xl:text-base capitalize text-slate-800 dark:text-slate-300 tracking-wide leading-loose  ">
+            <p className="text-sm xl:text-[20px] capitalize text-slate-800 dark:text-slate-300 tracking-wide leading-loose  ">
               Fill out our contact form and we’ll get in touch!
             </p>
             <div className="flex flex-col gap-1 mt-3">
               <label
                 htmlFor=""
-                className=" text-sm 2xl:text-base mb-1 font-semibold text-[#4E4E4E] dark:text-slate-400"
+                className=" text-sm 2xl:text-base mb-1   dark:text-slate-400"
               >
                 Name
               </label>
@@ -166,7 +178,7 @@ const ContactUs = () => {
             <div className="flex flex-col gap-1 mt-3">
               <label
                 htmlFor=""
-                className=" text-sm 2xl:text-base mb-1 font-semibold text-[#4E4E4E] dark:text-slate-400"
+                className=" text-sm 2xl:text-base mb-1   dark:text-slate-400"
               >
                 Last Name
               </label>
@@ -180,7 +192,7 @@ const ContactUs = () => {
             <div className="flex flex-col gap-1 mt-3">
               <label
                 htmlFor=""
-                className=" text-sm 2xl:text-base mb-1 font-semibold text-[#4E4E4E] dark:text-slate-400"
+                className=" text-sm 2xl:text-base mb-1   dark:text-slate-400"
               >
                 Email
               </label>
@@ -194,7 +206,7 @@ const ContactUs = () => {
             <div className="flex flex-col gap-1 mt-3">
               <label
                 htmlFor=""
-                className=" text-sm 2xl:text-base mb-1 font-semibold text-[#4E4E4E] dark:text-slate-400"
+                className=" text-sm 2xl:text-base mb-1   dark:text-slate-400"
               >
                 Phone Number
               </label>
@@ -208,7 +220,7 @@ const ContactUs = () => {
             <div className="flex flex-col gap-1 mt-2">
               <label
                 htmlFor=""
-                className=" text-sm 2xl:text-base mb-1 font-semibold text-[#4E4E4E] dark:text-slate-400"
+                className=" text-sm 2xl:text-base mb-1   dark:text-slate-400"
               >
                 Solution
               </label>
@@ -222,7 +234,7 @@ const ContactUs = () => {
             <div className="flex flex-col gap-1 mt-2">
               <label
                 htmlFor=""
-                className=" text-sm 2xl:text-base mb-1 font-semibold text-[#4E4E4E] dark:text-slate-400"
+                className=" text-sm 2xl:text-base mb-1   dark:text-slate-400"
               >
                 How did you hear about us?
               </label>
@@ -236,7 +248,7 @@ const ContactUs = () => {
             <div className="flex flex-col gap-1 mt-2">
               <label
                 htmlFor=""
-                className=" text-sm 2xl:text-base mb-1 font-semibold text-[#4E4E4E] dark:text-slate-400"
+                className=" text-sm 2xl:text-base mb-1   dark:text-slate-400"
               >
                 Tell us about your project
               </label>

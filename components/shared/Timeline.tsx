@@ -475,9 +475,9 @@ export const Timeline = () => {
         viewport={{ once: true, amount: 0.5 }}
         className="mb-12 2xl:mb-16 flex flex-col items-center gap-3 2xl:gap-5"
       >
-        <h2 className=" text-base   2xl:xl tracking-wide ">How we do it?</h2>
+        <h2 className=" text-base  xl:text-[32px] mb-4 ">How we do it?</h2>
         <h1
-          className={` px-2 relative text-5xl md:text-4xl 2xl:text-5xl tracking-wide text-center  ${recoleta.className}`}
+          className={` px-2 relative text-5xl md:text-4xl mb-4 xl:text-[48px] tracking-wide text-center  ${recoleta.className}`}
         >
           World-class apps on demand, with our{" "}
           <span className=" text-[#DF56FE] "> process!</span>

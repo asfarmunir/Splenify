@@ -47,22 +47,6 @@ const gregbet = [
   "/projectMockups/b7.webp",
 ];
 
-import pinkBg from "@/public/projectModal/pinkBg.webp";
-import orangeBg from "@/public/projectModal/orangeBg.webp";
-import skyBg from "@/public/projectModal/skyBg.webp";
-import logo1 from "@/public/projectModal/logo1.svg";
-import logo2 from "@/public/projectModal/logo2.svg";
-import logo3 from "@/public/projectModal/logo3.svg";
-import logo4 from "@/public/projectModal/logo4.svg";
-import hero1 from "@/public/projectModal/hero1.webp";
-import hero2 from "@/public/projectModal/hero2.webp";
-import hero3 from "@/public/projectModal/hero3.webp";
-import hero4 from "@/public/projectModal/hero4.webp";
-import modalHero1 from "@/public/projectModal/modalHero1.webp";
-import modalHero2 from "@/public/projectModal/modalHero2.webp";
-import modalHero3 from "@/public/projectModal/modalHero3.webp";
-import modalHero4 from "@/public/projectModal/modalHero4.webp";
-
 const Projects = () => {
   return (
     <>
@@ -103,15 +87,18 @@ const Projects = () => {
           w-[340px] 2xl:w-[400px] dark:invert
           "
         />
-        <h2 className=" text-base   2xl:xl tracking-wide ">Catch the latest</h2>
+        <h2 className=" text-base   xl:text-[32px] mb-4 tracking-wide ">
+          Catch the latest
+        </h2>
         <h1
-          className={` text-3xl relative capitalize md:text-4xl 2xl:text-5xl tracking-wide text-center mb-6 ${recoleta.className}`}
+          className={` text-3xl relative   md:text-4xl xl:text-[48px] tracking-wide text-center mb-6 ${recoleta.className}`}
         >
-          Browse our most recent projects{" "}
+          Browse our most{" "}
+          <span className="text-[#7165FF]">recent projects</span>
         </h1>
         <div
           style={styles.gridContainer}
-          className=" w-full max-w-5xl mt-8 justify-items-start  2xl:max-w-7xl gap-12 2xl:gap-16 "
+          className=" w-full max-w-5xl    2xl:max-w-7xl gap-12 2xl:gap-16 "
         >
           <motion.div
             initial={{
@@ -128,7 +115,7 @@ const Projects = () => {
               },
             }}
             style={{ ...styles.gridItem, ...styles.item1 }}
-            className="flex flex-col  mt-11 2xl:-mt-2.5 "
+            className="flex flex-col   "
           >
             <div className="  rounded-2xl overflow-hidden max-h-[800px]  w-full h-full ">
               <Image
@@ -137,7 +124,7 @@ const Projects = () => {
                 loading="lazy"
                 width={995}
                 height={923}
-                className=" w-full h-full object-cover object-top"
+                className=" w-full h-full object-cover  object-top"
               />
             </div>
             <div className="flex items-start w-full pt-6 justify-between">
@@ -539,7 +526,7 @@ const styles = {
     display: "flex",
     // backgroundColor: "#F3F3F9",
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "start",
 
     fontSize: "20px",
     fontWeight: "bold",

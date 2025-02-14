@@ -29,7 +29,7 @@ const Testimonials = () => {
       className={`flex flex-col mx-auto  w-full relative px-4  items-center gap-3 2xl:gap-5 max-w-5xl 2xl:max-w-7xl  `}
     >
       <div className="space-y-3 w-full">
-        <p className="text-center text-base md:text-lg font-normal">
+        <p className="text-center text-base md:text-lg xl:text-[32px] font-normal">
           Don&apos;t take our word for it!
         </p>
         <div className="flex md:space-x-4 w-full justify-center items-center whitespace-nowrap">
@@ -42,9 +42,10 @@ const Testimonials = () => {
           />
 
           <h1
-            className={`text-[27px] md:text-[40px] lg:text-[46px]  ${recoleta.className}    text-center `}
+            className={`text-[27px] md:text-[40px] xl:text-[48px]  ${recoleta.className}    text-center `}
           >
-            Hear it from our <span className="text-[#7165FF]">clients</span>
+            Here’s what our 100+ <span className="text-[#7165FF]">clients</span>{" "}
+            say
           </h1>
           <Image
             src={"/images/leafr.svg"}

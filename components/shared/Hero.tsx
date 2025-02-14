@@ -97,7 +97,7 @@ const Hero = () => {
           Design. <span className="grad_text md:px-4 2xl:px-6 ">Develop.</span>{" "}
           Deploy
         </motion.div>
-        <p className=" text-sm 2xl:text-[1.2rem] tracking-wide my-1 px-4 text-center sm2:max-w-md md:max-w-xl  sm:max-w-3xl 2xl:max-w-4xl text-slate-900 dark:text-white">
+        <p className=" text-sm 2xl:text-[1.2rem] tracking-wide my-1 px-4 text-center sm2:max-w-md md:max-w-xl   xl:max-w-2xl text-slate-900 dark:text-white">
           We’re a modern app-building company that creates apps that your
           customers love and that evolve with your business.
         </p>
@@ -122,7 +122,7 @@ const Hero = () => {
         {acheivments.map((acheivment, index) => (
           <motion.div
             key={index}
-            className="px-7 md:px-12 2xl:px-16 p-2 md:pt-5 pb-2 border-[2px] w-full border-[#DF56FE] rounded-[12px] md:rounded-[26.5px] flex items-center justify-center gap-1 md:gap-3 flex-col"
+            className="px-7 md:px-12 xl:px-[16px] p-2 md:pt-5 pb-2 xl:py-[16px] border-[2px] w-full border-[#DF56FE] rounded-[12px] md:rounded-[20px] flex items-center justify-center gap-1 md:gap-3 flex-col"
             initial={{ opacity: 0 }} // Initial state (opacity 0, positioned left)
             whileInView={{ opacity: 1 }} // Final state (fully visible, at normal position)
             transition={{
@@ -132,10 +132,12 @@ const Hero = () => {
             }}
             viewport={{ once: true, amount: 1 }}
           >
-            <h1 className="text-2xl sm:text-4xl 2xl:text-5xl grad_text font-semibold">
+            <h1
+              className={` ${recoleta.className} text-2xl sm:text-4xl xl:text-[48px] grad_text font-semibold`}
+            >
               {acheivment.number}
             </h1>
-            <p className="text-xs sm:text-sm md:text-base 2xl:text-xl text-slate-700 font-roboto">
+            <p className="text-xs sm:text-sm md:text-base xl:text-[24px] text-slate-700 font-roboto">
               {acheivment.title}
             </p>
           </motion.div>
