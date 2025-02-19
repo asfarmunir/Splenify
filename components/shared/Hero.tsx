@@ -73,7 +73,7 @@ const Hero = () => {
           We help you
         </h2>
       </header>
-      <section className="flex  flex-col   items-center gap-6 ">
+      <section className="flex  flex-col   items-center gap-6  ">
         <motion.div
           viewport={{ once: true }}
           initial={
@@ -92,16 +92,16 @@ const Hero = () => {
               },
             } /* Animate when in view */
           }
-          className={`  sm:max-w-full -mt-8   md:-mt-4 leading-snug sm:leading-none  -tracking-wide  text-[2.15rem] sm2:text-[2.8rem]   sm:text-[3.8rem]  md:text-7xl lg:text-8xl 2xl:text-[7.4rem] px-0.5 text-center ${recoleta.className}`}
+          className={`  sm:max-w-full -mt-8   md:-mt-4 leading-snug sm:leading-none  -tracking-wide  text-[2.15rem] sm2:text-[2.8rem]   sm:text-[3.8rem]  md:text-7xl lg:text-[80px] xl:text-[98px] px-0.5 text-center ${recoleta.className}`}
         >
           Design. <span className="grad_text md:px-4 2xl:px-6 ">Develop.</span>{" "}
           Deploy
         </motion.div>
-        <p className=" text-sm 2xl:text-[1.2rem] tracking-wide my-1 px-4 text-center sm2:max-w-md md:max-w-xl   xl:max-w-2xl text-slate-900 dark:text-white">
+        <p className=" text-sm lg:text-[17px] tracking-wide my-1 px-4 text-center sm2:max-w-md md:max-w-2xl text-[#000000AD] dark:text-white">
           We’re a modern app-building company that creates apps that your
           customers love and that evolve with your business.
         </p>
-        <div className="flex  items-center justify-center gap-3 w-full   md:gap-4 px-5 md:px-12">
+        <div className="flex xl:mb-[40px] items-center justify-center gap-3 w-full   md:gap-4 px-5 md:px-12">
           <button
             onClick={() => scrollToSection("contact")}
             className=" bg-gradient-to-r hover:bg-gradient-to-tr w-full hover:bg-[#DF56FE] transition-colors text-xs`  sm:w-48 flex-grow md:flex-grow-0 from-[#DF56FE] to-[#7165FF]   md:text-base 2xl:text-lg text-white font-normal rounded-[8px] px-5 2xl:px-8 py-[1.1rem]  "
@@ -118,7 +118,7 @@ const Hero = () => {
         {/* <HeroBentoGrid /> */}
         <BentoGrid />
       </section>
-      <div className="w-full mb-16 2xl:mb-20 mt-5 2xl:mt-6 px-4 2xl:px-0 max-w-6xl 2xl:max-w-7xl gap-2 md:gap-4 2xl:gap-6 mx-auto grid grid-cols-2 lg:grid-cols-4 justify-items-center">
+      <div className="w-full mb-16 lg:mb-[120px] lg:mt-[112px] xl:mt-[224px]  px-4 2xl:px-0 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl gap-2 md:gap-4 2xl:gap-6 mx-auto grid grid-cols-2 lg:grid-cols-4 justify-items-center">
         {acheivments.map((acheivment, index) => (
           <motion.div
             key={index}
@@ -133,7 +133,7 @@ const Hero = () => {
             viewport={{ once: true, amount: 1 }}
           >
             <h1
-              className={` ${recoleta.className} text-2xl sm:text-4xl xl:text-[48px] grad_text font-semibold`}
+              className={` ${recoleta.className} text-2xl sm:text-4xl lg:text-[46px] xl:text-[48px] grad_text font-semibold`}
             >
               {acheivment.number}
             </h1>
@@ -155,7 +155,9 @@ const Hero = () => {
         viewport={{ once: true, amount: 0.8 }}
         className=" w-full flex flex-col  items-center gap-5"
       >
-        <h2 className="text-3xl 2xl:text-4xl">We have worked with</h2>
+        <h2 className={` ${recoleta.className} text-3xl lg:text-[48px]`}>
+          We have <span className="text-[#DF56FE]">worked</span> with
+        </h2>
         <Partners />
       </motion.div>
       {/* <div className="flex gap-1 max-w-7xl mx-auto px-3 md:gap-8  justify-center items-center  md:items-start  relative ">

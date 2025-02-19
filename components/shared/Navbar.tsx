@@ -71,7 +71,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="w-full mx-[28px] lg:mx-0 max-w-6xl 2xl:max-w-7xl rounded-[8px] drop-shadow-sm relative z-40 my-4 bg-[#F8F4FE] bg-opacity-55 backdrop-blur-lg items-center flex justify-between  dark:shadow-gray-900/60 px-8 md:pl-12 md:pr-8 py-3 ">
+      <div className="w-full mx-[28px] lg:mx-0 lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl rounded-[8px] drop-shadow-sm relative z-40 my-4 bg-[#F8F4FE] bg-opacity-55 backdrop-blur-lg items-center flex justify-between  dark:shadow-gray-900/60 px-8 md:pl-12 md:pr-8 py-3 ">
         <Image
           src="/images/logoWhite.png"
           alt="Splenify"

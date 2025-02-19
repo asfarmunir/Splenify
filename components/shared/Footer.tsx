@@ -20,7 +20,7 @@ const Footer = () => {
           <h2 className=" text-3xl mb-4 text-center  md:text-3xl  text-white font-semibold">
             Ready to launch your next project?
           </h2>
-          <p className=" text-white 2xl:text-lg max-w-lg text-center  my-2 md:my-0 leading-loose md:leading-6 tracking-wide">
+          <p className=" text-white xl:text-[16px] max-w-lg text-center  my-2 md:my-0 leading-loose md:leading-6 tracking-wide">
             With lots of unique blocks, you can easily build a page without
             coding. Build your next landing page.
           </p>
@@ -33,29 +33,29 @@ const Footer = () => {
         </Link>
       </div>
       <div className="flex items-center flex-col gap-8 px-3 md:px-0 pt-9 md:pt-12">
-        <ul className=" flex items-center justify-center gap-4 text-start">
+        <ul className=" flex items-center justify-center gap-10 text-start">
           <li
             onClick={() => scrollToSection("home")}
-            className=" text-sm 2xl:text-base text-gray-200 hover:cursor-pointer"
+            className=" text-sm xl:text-[16px] text-[#FFFFFFE0] hover:cursor-pointer"
           >
             Home
           </li>
           <li
             onClick={() => scrollToSection("about")}
-            className=" text-sm 2xl:text-base text-gray-200 hover:cursor-pointer"
+            className=" text-sm xl:text-[16px] text-[#FFFFFFE0] hover:cursor-pointer"
           >
-            About
+            About Us
           </li>
 
           <li
             onClick={() => scrollToSection("projects")}
-            className=" text-sm 2xl:text-base text-gray-200 hover:cursor-pointer"
+            className=" text-sm xl:text-[16px] text-[#FFFFFFE0] hover:cursor-pointer"
           >
             Project
           </li>
           <li
             onClick={() => scrollToSection("contact")}
-            className=" text-sm 2xl:text-base text-gray-200 hover:cursor-pointer"
+            className=" text-sm xl:text-[16px] text-[#FFFFFFE0] hover:cursor-pointer"
           >
             Contact Us
           </li>

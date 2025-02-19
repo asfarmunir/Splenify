@@ -73,8 +73,8 @@ const Projects = () => {
           alt="Splenify"
           width={300}
           height={300}
-          className=" absolute hidden md:block  top-12  2xl:top-6 rotate-1 right-0 
-          w-[340px] 2xl:w-[420px] dark:invert
+          className=" absolute hidden md:block  top-0   rotate-1 right-0 
+          xl:w-[340px] lg:w-[230px] 2xl:w-[420px] dark:invert
 
            "
         />
@@ -83,22 +83,22 @@ const Projects = () => {
           alt="Splenify"
           width={160}
           height={140}
-          className=" absolute left-0 hidden md:block top-4 rotate-1  
-          w-[340px] 2xl:w-[400px] dark:invert
+          className=" absolute left-0   hidden md:block  xl:rotate-1  
+          lg:w-[230px] xl:w-[340px] 2xl:w-[400px] dark:invert
           "
         />
-        <h2 className=" text-base   xl:text-[32px] mb-4 tracking-wide ">
+        <h2 className=" text-base   lg:text-[32px] mb-4 tracking-wide ">
           Catch the latest
         </h2>
         <h1
-          className={` text-3xl relative   md:text-4xl xl:text-[48px] tracking-wide text-center mb-6 ${recoleta.className}`}
+          className={` text-3xl relative   md:text-4xl lg:text-[48px] tracking-wide text-center mb-[50px] ${recoleta.className}`}
         >
           Browse our most{" "}
           <span className="text-[#7165FF]">recent projects</span>
         </h1>
         <div
           style={styles.gridContainer}
-          className=" w-full max-w-5xl    2xl:max-w-7xl gap-12 2xl:gap-16 "
+          className=" w-full max-w-5xl xl:max-w-6xl    2xl:max-w-7xl gap-12 2xl:gap-16 "
         >
           <motion.div
             initial={{

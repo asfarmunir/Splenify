@@ -75,12 +75,12 @@ const Specialization = () => {
       }}
       className="flex flex-col w-full  items-center gap-5  "
     >
-      <div className="mb-7 2xl:mb-10 flex flex-col items-center gap-3  2xl:gap-5">
-        <h2 className=" text-base   xl:text-[32px] tracking-wide mb-4 ">
+      <div className="mb-7 xl:mb-[60px] flex flex-col items-center gap-3  2xl:gap-5">
+        <h2 className=" text-base   lg:text-[32px] tracking-wide mb-4 ">
           What do we specialize in?
         </h2>
         <h1
-          className={` text-5xl  px-3.5 relative md:text-3xl mb-4 xl:text-[48px] tracking-wide text-center  ${recoleta.className}`}
+          className={` text-5xl  px-3.5 relative lg:leading-[65px] md:text-3xl mb-4 max-w-3xl xl:max-w-7xl lg:text-[48px] tracking-wide text-center  ${recoleta.className}`}
         >
           Our partners hire us to{" "}
           <span className=" text-[#7165FF] "> design & develop</span> their…
@@ -89,7 +89,7 @@ const Specialization = () => {
             alt="Splenify"
             width={380}
             height={380}
-            className="  dark:invert hidden lg:block  w-[270px] 2xl:w-[380px] absolute right-28 2xl:right-52  -rotate-4 "
+            className="  dark:invert hidden lg:block lg:bottom-16 xl:bottom-0  lg:w-[190px]  2xl:w-[380px] absolute lg:right-8 2xl:right-52  -rotate-4 "
           />
         </h1>
       </div>
@@ -319,7 +319,7 @@ const Specialization = () => {
         </motion.div>
       </div> */}
 
-      <div className=" w-full grid max-w-6xl 2xl:max-w-7xl  grid-cols-1 md:grid-cols-2 gap-8 gap-y-12 2xl:gap-12">
+      <div className=" w-full grid max-w-5xl xl:max-w-6xl 2xl:max-w-7xl  grid-cols-1 md:grid-cols-2 gap-8 gap-y-12 2xl:gap-12">
         {specializations.map((item, index) => (
           <motion.div
             initial={{

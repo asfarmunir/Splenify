@@ -38,7 +38,7 @@ const TestimonialCard = ({
           ease: "easeOut",
         },
       }}
-      className="bg-white w-full dark:bg-slate-900 shadow  dark:shadow-none rounded-[16px] gap-4 p-6 border-[1px] border-white dark:border-slate-800 space-y-4"
+      className="bg-white w-full dark:bg-slate-900 shadow  dark:shadow-none rounded-[16px] gap-4 xl:gap-5 p-6 border-[1px] border-white dark:border-slate-800 space-y-4"
     >
       {/* <Image
         src={logo}
@@ -59,7 +59,7 @@ const TestimonialCard = ({
           />
         </div>
       )}
-      <h1 className=" font-normal text-start text-base dark:text-slate-400">
+      <h1 className=" font-normal text-start text-[20px] dark:text-slate-400">
         <p dangerouslySetInnerHTML={{ __html: review }} />
       </h1>
       <div className="flex justify-start items-center space-x-4">
@@ -71,10 +71,10 @@ const TestimonialCard = ({
           className="w-[50px] h-[50px] rounded-[72px]"
         />
         <div className="flex flex-col items-start">
-          <h1 className="font-semibold text-base dark:text-slate-200">
+          <h1 className="font-semibold text-[20px] dark:text-slate-200">
             {name}
           </h1>
-          <p className="font-roboto font-normal text-sm text-center dark:text-slate-200">
+          <p className="font-roboto font-normal text-[16px] text-center dark:text-slate-200">
             {role}
           </p>
         </div>

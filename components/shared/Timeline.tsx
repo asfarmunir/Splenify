@@ -39,7 +39,7 @@ const data = [
         }}
       >
         <p
-          className={`text-neutral-600  ${poppins.className} dark:text-neutral-200 text-[22px] 2xl:text-lg  mb-8`}
+          className={`text-black ${poppins.className} dark:text-neutral-200 text-[20px]   mb-8`}
         >
           We thrive on pushing boundaries and exploring new ideas. By embracing
           the latest technologies and creative approaches, we ensure that every
@@ -83,7 +83,7 @@ const data = [
       >
         {" "}
         <p
-          className={`text-neutral-600  ${poppins.className} dark:text-neutral-200 text-[22px] 2xl:text-lg  mb-8`}
+          className={`text-black ${poppins.className} dark:text-neutral-200 text-[20px]   mb-8`}
         >
           {" "}
           We thrive on pushing boundaries and exploring new ideas. By embracing
@@ -128,7 +128,7 @@ const data = [
       >
         {" "}
         <p
-          className={`text-neutral-600  ${poppins.className} dark:text-neutral-200 text-[22px] 2xl:text-lg  mb-8`}
+          className={`text-black ${poppins.className} dark:text-neutral-200 text-[20px]   mb-8`}
         >
           {" "}
           We thrive on pushing boundaries and exploring new ideas. By embracing
@@ -173,7 +173,7 @@ const data = [
       >
         {" "}
         <p
-          className={`text-neutral-600  ${poppins.className} dark:text-neutral-200 text-[22px] 2xl:text-lg  mb-8`}
+          className={`text-black  ${poppins.className} dark:text-neutral-200 text-[20px]   mb-8`}
         >
           {" "}
           We thrive on pushing boundaries and exploring new ideas. By embracing
@@ -218,7 +218,7 @@ const data = [
       >
         {" "}
         <p
-          className={`text-neutral-600  ${poppins.className} dark:text-neutral-200 text-[22px] 2xl:text-lg  mb-8`}
+          className={`text-black ${poppins.className} dark:text-neutral-200 text-[20px]   mb-8`}
         >
           {" "}
           We thrive on pushing boundaries and exploring new ideas. By embracing
@@ -263,7 +263,7 @@ const data = [
       >
         {" "}
         <p
-          className={`text-neutral-600  ${poppins.className} dark:text-neutral-200 text-[22px] 2xl:text-lg  mb-8`}
+          className={`text-black ${poppins.className} dark:text-neutral-200 text-[20px]   mb-8`}
         >
           {" "}
           We thrive on pushing boundaries and exploring new ideas. By embracing
@@ -308,7 +308,7 @@ const data = [
       >
         {" "}
         <p
-          className={`text-neutral-600  ${poppins.className} dark:text-neutral-200 text-[22px] 2xl:text-lg  mb-8`}
+          className={`text-black ${poppins.className} dark:text-neutral-200 text-[20px]   mb-8`}
         >
           {" "}
           We thrive on pushing boundaries and exploring new ideas. By embracing
@@ -460,7 +460,7 @@ export const Timeline = () => {
 
   return (
     <div
-      className="w-full bg-white  dark:bg-neutral-950 font-sans md:px-10"
+      className="w-full bg-white max-w-6xl mx-auto  dark:bg-neutral-950 font-sans  "
       ref={containerRef}
     >
       <motion.div
@@ -475,16 +475,16 @@ export const Timeline = () => {
         viewport={{ once: true, amount: 0.5 }}
         className="mb-12 2xl:mb-16 flex flex-col items-center gap-3 2xl:gap-5"
       >
-        <h2 className=" text-base  xl:text-[32px] mb-4 ">How we do it?</h2>
+        <h2 className=" text-base  lg:text-[32px] mb-4 ">How we do it?</h2>
         <h1
-          className={` px-2 relative text-5xl md:text-4xl mb-4 xl:text-[48px] tracking-wide text-center  ${recoleta.className}`}
+          className={` px-2 relative text-5xl md:text-4xl mb-4 max-w-2xl xl:max-w-7xl lg:leading-[65px] lg:text-[48px] tracking-wide text-center  ${recoleta.className}`}
         >
           World-class apps on demand, with our{" "}
           <span className=" text-[#DF56FE] "> process!</span>
         </h1>
       </motion.div>
 
-      <div ref={ref} className="relative max-w-7xl mx-auto ">
+      <div ref={ref} className="relative max-w-5xl xl:max-w-7xl mx-auto ">
         {data.map((item, index) => (
           <div
             key={index}
@@ -493,29 +493,29 @@ export const Timeline = () => {
             } md:gap-4`}
           >
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
-              <div className="h-12 2xl:h-16 absolute border-8 border-white dark:border-slate-950 left-3  md:left-2 2xl:left-1 w-12 2xl:w-1/6 rounded-full bg-white dark:bg-black flex items-center justify-center">
+              <div className=" absolute border-8 border-white dark:border-slate-950 left-3  md:left-2 2xl:left-1 rounded-full bg-[#E9E8FF] dark:bg-black flex items-center justify-center">
                 {/* <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" /> */}
                 <Image
-                  src="/images/inovation2.svg"
+                  src={`icons/timeline${index + 1}.svg`}
                   alt="circle"
                   width={40}
                   height={40}
                 />
               </div>
               <h3
-                className={`hidden md:block text-2xl md:pl-20 2xl:text-4xl   dark:text-slate-200 ${recoleta.className}`}
+                className={`hidden md:block text-2xl md:pl-20 lg:text-[40px]   dark:text-slate-200 ${recoleta.className}`}
               >
                 {item.title}
               </h3>
             </div>
 
-            <div className="relative pl-[4.1rem]  md:pl-4 w-full pr-4 md:pr-0 ">
+            <div className="relative  xl:pl-[4.1rem]  md:pl-4 w-full pr-4 md:pr-0 ">
               <h3
                 className={` ${recoleta.className} md:hidden block text-5xl mb-4 text-left   dark:text-slate-200`}
               >
                 {item.title}
               </h3>
-              {item.content}{" "}
+              <p className="text-black text-[20px]">{item.content} </p>
             </div>
           </div>
         ))}
@@ -524,7 +524,7 @@ export const Timeline = () => {
             height: "100%",
             // height: height + "px"
           }}
-          className="absolute md:left-8 left-8 top-0 overflow-hidden w-[4px] bg-neutral-200 dark:bg-neutral-400  "
+          className="absolute md:left-8 left-8 top-0 overflow-hidden w-[4px] bg-[#5956E9] dark:bg-neutral-400  "
         >
           <motion.div
             style={{

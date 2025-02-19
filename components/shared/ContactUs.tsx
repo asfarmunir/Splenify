@@ -27,16 +27,16 @@ const ContactUs = () => {
         },
       }}
       id="contact"
-      className="flex flex-col  pb-[80px]  w-full items-center overflow-x-hidden  justify-center    gap-4 md:px-2  mt"
+      className="flex flex-col  pb-[80px] max-w-6xl mx-auto  w-full items-center overflow-x-hidden  justify-center    gap-4 md:px-2  mt"
     >
       <h1
-        className={`text-[47px] mb-4 md:mb-7 md:text-[40px] lg:text-[46px]  ${recoleta.className}   text-start sm2:text-center `}
+        className={`text-[47px] mb-4 md:mb-[60px] md:text-[40px] lg:text-[46px]  ${recoleta.className}   text-start sm2:text-center `}
       >
         Ready To <span className="text-[#DF56FE]">Start</span> Your{" "}
         <span className="text-[#7165FF]">Flutter Journey</span>?
       </h1>
 
-      <div className=" flex w-full max-w-7xl items-start justify-center  flex-col md:flex-row gap-4 lg:gap-8">
+      <div className=" flex w-full max-w-5xl xl:max-w-7xl  items-start justify-center  flex-col md:flex-row gap-4 lg:gap-8">
         <motion.div
           initial={{
             x: -100,
@@ -53,7 +53,7 @@ const ContactUs = () => {
           viewport={{
             once: true,
           }}
-          className="max-w-2xl   md:px-8 py-16 w-full h-[43rem] rounded-xl gap-5 hidden md:flex flex-col     "
+          className="max-w-2xl   w-full h-[43rem] rounded-xl gap-5 hidden md:flex flex-col     "
         >
           <div className="relative w-fit ">
             <Image
@@ -70,21 +70,21 @@ const ContactUs = () => {
               </p>
             </div>
           </div>
-          <h2 className="2xl:text-lg  mt-16 dark:text-slate-400">
+          <h2 className="xl:text-[20px]  mt-16 dark:text-slate-400">
             Got a mobile app that needs <br /> to be taken care of?
           </h2>
-          <h2 className="2xl:text-lg    dark:text-slate-400">
+          <h2 className="xl:text-[20px]    dark:text-slate-400">
             We’ve got your back.
           </h2>
-          <h2 className="2xl:text-lg    dark:text-slate-400">
+          <h2 className="xl:text-[20px]    dark:text-slate-400">
             Schedule a call below, or send a quick <br /> email to
             <span className="text-[#7165FF]"> teamsplenify@splenify.com</span>
           </h2>
           <h1
-            className={` ${recoleta.className} mt-4 text-xl xl:text-[40px]  capitalize tracking-wide`}
+            className={` ${recoleta.className} mt-4 text-xl lg:text-[33px] xl:text-[36px]  capitalize tracking-wide`}
           >
-            Talk to you in less than{" "}
-            <span className="text-[#DF56FE]">24hs.</span>
+            Talk to you in less than
+            <span className="text-[#DF56FE] px-1">24hs.</span>
           </h1>
           <div className=" w-full p-5 mt-12 xl:p-7 rounded-lg bg-[#7165FF33]">
             <h2
@@ -138,10 +138,10 @@ const ContactUs = () => {
                 </p>
               </div>
             </div>
-            <h2 className="2xl:text-lg  mt-16   dark:text-slate-400">
+            <h2 className="xl:text-[20px]  mt-16   dark:text-slate-400">
               I would love to talk to you about your project or needs.
             </h2>
-            <h2 className="2xl:text-lg    dark:text-slate-400">
+            <h2 className="xl:text-[20px]    dark:text-slate-400">
               Fill in the form or send us an email to <br /> hello@splenify.com{" "}
             </h2>
             <h1 className="text-2xl pb-5 font-bold capitalize tracking-wide">
@@ -260,7 +260,7 @@ const ContactUs = () => {
             </div>
             <button
               type="submit"
-              className="bg-[#7165FF]  p-4 w-full rounded-[8px] font-semibold mt-4 2xl:text-lg text-white"
+              className="bg-[#7165FF]  p-4 w-full rounded-[8px] font-semibold mt-4 xl:text-[20px] text-white"
             >
               Submit{" "}
             </button>
