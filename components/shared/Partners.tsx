@@ -68,7 +68,7 @@ const Partners = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20 max-w-5xl xl:max-w-6xl 2xl:max-w-7xl  overflow-hidden  ",
+        "scroller relative z-20  sm:max-w-2xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl  overflow-hidden  ",
         className
       )}
     >
@@ -87,7 +87,7 @@ const Partners = ({
               alt="Clients"
               width={320}
               className={` dark:invert dark:opacity-100 opacity-60
-                w-[160px] md:w-[240px] 2xl:w-[320px]
+                w-[160px] sm:w-[240px] 2xl:w-[320px]
                `}
               height={240}
             />

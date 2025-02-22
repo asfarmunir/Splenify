@@ -27,7 +27,7 @@ const ContactUs = () => {
         },
       }}
       id="contact"
-      className="flex flex-col  pb-[80px] max-w-6xl mx-auto  w-full items-center overflow-x-hidden  justify-center    gap-4 md:px-2  mt"
+      className="flex flex-col  pb-[80px] max-w-2xl md:max-w-6xl mx-auto  w-full items-center overflow-x-hidden  justify-center    gap-4 md:px-2  mt"
     >
       <h1
         className={`text-[47px] mb-4 md:mb-[60px] md:text-[40px] lg:text-[46px]  ${recoleta.className}   text-start sm2:text-center `}

@@ -41,9 +41,10 @@ const data = [
         <p
           className={`text-black ${poppins.className} dark:text-neutral-200 text-[20px]   mb-8`}
         >
-          We thrive on pushing boundaries and exploring new ideas. By embracing
-          the latest technologies and creative approaches, we ensure that every
-          app we build is not only functional but also future-ready.{" "}
+          We start with a friendly discovery call to understand your vision,
+          goals, and challenges. This step lays the foundation for a clear and
+          focused roadmap, ensuring we’re aligned with your objectives from day
+          one.
         </p>
         <div className="grid grid-cols-2 gap-4">
           <Image
@@ -85,10 +86,9 @@ const data = [
         <p
           className={`text-black ${poppins.className} dark:text-neutral-200 text-[20px]   mb-8`}
         >
-          {" "}
-          We thrive on pushing boundaries and exploring new ideas. By embracing
-          the latest technologies and creative approaches, we ensure that every
-          app we build is not only functional but also future-ready.{" "}
+          Our team dives deep into market research and user analysis to uncover
+          insights that shape your app. We identify key opportunities and craft
+          a strategy to ensure your app stands out in a competitive landscape.
         </p>
         <div className="grid grid-cols-2 gap-4">
           <Image
@@ -130,10 +130,10 @@ const data = [
         <p
           className={`text-black ${poppins.className} dark:text-neutral-200 text-[20px]   mb-8`}
         >
-          {" "}
-          We thrive on pushing boundaries and exploring new ideas. By embracing
-          the latest technologies and creative approaches, we ensure that every
-          app we build is not only functional but also future-ready.{" "}
+          With your vision in mind, we create intuitive, eye-catching designs
+          that deliver exceptional user experiences. Every screen and
+          interaction is crafted to delight users while keeping functionality at
+          the forefront.
         </p>
         <div className="grid grid-cols-2 gap-4">
           <Image
@@ -175,10 +175,9 @@ const data = [
         <p
           className={`text-black  ${poppins.className} dark:text-neutral-200 text-[20px]   mb-8`}
         >
-          {" "}
-          We thrive on pushing boundaries and exploring new ideas. By embracing
-          the latest technologies and creative approaches, we ensure that every
-          app we build is not only functional but also future-ready.{" "}
+          Our developers bring your designs to life with pixel-perfect
+          precision. Using cutting-edge technologies, we ensure your app is
+          fast, responsive, and performs seamlessly across all devices.
         </p>
         <div className="grid grid-cols-2 gap-4">
           <Image
@@ -220,10 +219,9 @@ const data = [
         <p
           className={`text-black ${poppins.className} dark:text-neutral-200 text-[20px]   mb-8`}
         >
-          {" "}
-          We thrive on pushing boundaries and exploring new ideas. By embracing
-          the latest technologies and creative approaches, we ensure that every
-          app we build is not only functional but also future-ready.{" "}
+          Behind the scenes, we build a robust and scalable back-end that powers
+          your app. From APIs to database management, we ensure your app is
+          secure, efficient, and ready to grow with your business.
         </p>
         <div className="grid grid-cols-2 gap-4">
           <Image
@@ -265,10 +263,9 @@ const data = [
         <p
           className={`text-black ${poppins.className} dark:text-neutral-200 text-[20px]   mb-8`}
         >
-          {" "}
-          We thrive on pushing boundaries and exploring new ideas. By embracing
-          the latest technologies and creative approaches, we ensure that every
-          app we build is not only functional but also future-ready.{" "}
+          Once the app is perfected, we handle the deployment process, ensuring
+          a smooth launch on all relevant app stores. We make sure your app
+          meets all requirements and is ready to impress users.
         </p>
         <div className="grid grid-cols-2 gap-4">
           <Image
@@ -310,10 +307,9 @@ const data = [
         <p
           className={`text-black ${poppins.className} dark:text-neutral-200 text-[20px]   mb-8`}
         >
-          {" "}
-          We thrive on pushing boundaries and exploring new ideas. By embracing
-          the latest technologies and creative approaches, we ensure that every
-          app we build is not only functional but also future-ready.{" "}
+          Our support doesn’t stop after launch. We offer ongoing maintenance
+          and updates, ensuring your app remains secure, optimized, and aligned
+          with evolving user needs and industry trends.
         </p>
         <div className="grid grid-cols-2 gap-4">
           <Image
@@ -475,7 +471,7 @@ export const Timeline = () => {
         viewport={{ once: true, amount: 0.5 }}
         className="mb-12 2xl:mb-16 flex flex-col items-center gap-3 2xl:gap-5"
       >
-        <h2 className=" text-base  lg:text-[32px] mb-4 ">How we do it?</h2>
+        <h2 className=" text-base  sm:text-[32px] mb-4 ">How we do it?</h2>
         <h1
           className={` px-2 relative text-5xl md:text-4xl mb-4 max-w-2xl xl:max-w-7xl lg:leading-[65px] lg:text-[48px] tracking-wide text-center  ${recoleta.className}`}
         >
@@ -484,7 +480,10 @@ export const Timeline = () => {
         </h1>
       </motion.div>
 
-      <div ref={ref} className="relative max-w-5xl xl:max-w-7xl mx-auto ">
+      <div
+        ref={ref}
+        className="relative max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto "
+      >
         {data.map((item, index) => (
           <div
             key={index}
@@ -493,7 +492,7 @@ export const Timeline = () => {
             } md:gap-4`}
           >
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
-              <div className=" absolute border-8 border-white dark:border-slate-950 left-3  md:left-2 2xl:left-1 rounded-full bg-[#E9E8FF] dark:bg-black flex items-center justify-center">
+              <div className=" absolute border-8 border-white dark:border-slate-950 left-0 rounded-full bg-[#E9E8FF] dark:bg-black flex items-center justify-center">
                 {/* <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" /> */}
                 <Image
                   src={`icons/timeline${index + 1}.svg`}
@@ -509,7 +508,7 @@ export const Timeline = () => {
               </h3>
             </div>
 
-            <div className="relative  xl:pl-[4.1rem]  md:pl-4 w-full pr-4 md:pr-0 ">
+            <div className="relative  xl:pl-[4.1rem]  sm:pl-[4.5rem] w-full pr-4 md:pr-0 ">
               <h3
                 className={` ${recoleta.className} md:hidden block text-5xl mb-4 text-left   dark:text-slate-200`}
               >
@@ -524,7 +523,7 @@ export const Timeline = () => {
             height: "100%",
             // height: height + "px"
           }}
-          className="absolute md:left-8 left-8 top-0 overflow-hidden w-[4px] bg-[#5956E9] dark:bg-neutral-400  "
+          className="absolute left-6 top-0 overflow-hidden w-[4px] bg-[#5956E9] dark:bg-neutral-400  "
         >
           <motion.div
             style={{

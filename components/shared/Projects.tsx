@@ -297,32 +297,12 @@ const Projects = () => {
         id="mobile-projects"
         className="flex flex-col md:hidden w-full relative  items-center  px-8 gap-4 2xl:gap-5   my-[20px] md:my-[30px]"
       >
-        <Image
-          src="/images/left-arrow.svg"
-          alt="Splenify"
-          width={300}
-          height={300}
-          className=" absolute    top-12 rotate-3 -right-4 
-          w-[100px] dark:invert
-
-           "
-        />
-        <Image
-          src="/images/right-arrow.svg"
-          alt="Splenify"
-          width={160}
-          height={140}
-          className=" absolute -left-4 top-8 rotate-1  
-          w-[100px]  dark:invert
-          "
-        />
-        <h2 className=" text-base   2xl:xl tracking-wide ">
-          Catch the latest...
-        </h2>
+        <h2 className=" text-[32px] tracking-wide ">Catch the latest...</h2>
         <h1
-          className={` text-3xl relative md:text-4xl 2xl:text-5xl tracking-wide text-center mb-6 ${recoleta.className}`}
+          className={` text-[48px] relative  tracking-wide text-center mb-6 ${recoleta.className}`}
         >
-          Browse our latest <br /> projects
+          Browse our most <br />{" "}
+          <span className="text-[#7165FF]">recent projects</span>
         </h1>
         <div className=" w-full max-w-5xl 2xl:max-w-7xl space-y-8  2xl:gap-16 ">
           <motion.div
@@ -518,7 +498,6 @@ const styles = {
     display: "grid",
     gridTemplateRows: "repeat(5, 1fr)",
     gridTemplateColumns: "repeat(4, 1fr)",
-    padding: "10px",
     // rowGap: "40px",
     // columnGap: "70px",
   },

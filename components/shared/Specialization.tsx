@@ -10,44 +10,52 @@ const specializations = [
   {
     title: "FineTech",
     description:
-      "Navigate complex technological decisions from industry-vetted IT professionals, and make the best decisions for you and your business today.",
+      "Navigate complex technological decisions with the help of our industry-vetted IT professionals and create  innovative solutions tailored to your financial business needs.",
     image: "/images/avatar2.png",
     tags: ["Secure Transaction", "Crypto MVP", "Banking"],
   },
   {
-    title: "Healthcare",
+    title: "Healthcare/Fitness",
     description:
-      "Navigate complex technological decisions from industry-vetted IT professionals, and make the best decisions for you and your business today.",
+      "Revolutionize healthcare and keep fitness on top with applications designed for HIPAA compliance, OSHA regulations and easy integrations with medical systems",
     image: "/images/avatar2.png",
-    tags: ["Secure Transaction", "Crypto MVP", "Banking"],
+    tags: ["Patient Management", "Telemedicine Apps", "Health Data Analytics"],
   },
   {
     title: "Education",
     description:
-      "Navigate complex technological decisions from industry-vetted IT professionals, and make the best decisions for you and your business today.",
+      "Empower learners and educators with intuitive and engaging platforms, from e-learning apps to classroom tools that drive interaction and foster growth",
     image: "/images/avatar2.png",
-    tags: ["Secure Transaction", "Crypto MVP", "Banking"],
+    tags: ["E-Learning Platforms", "Virtual Classrooms", "Student Analytics"],
   },
   {
     title: "Fashion",
     description:
-      "Navigate complex technological decisions from industry-vetted IT professionals, and make the best decisions for you and your business today.",
+      "Transform your fashion business mobile apps that bridge the gap between creativity and commerce,  user experiences that captivate audiences.",
     image: "/images/avatar2.png",
-    tags: ["Secure Transaction", "Crypto MVP", "Banking"],
+    tags: [
+      "Virtual Try-Ons",
+      "Inventory Management",
+      "Personalized Style Recommendations",
+    ],
   },
   {
-    title: "Media & Entertainment",
+    title: "Social Media",
     description:
-      "Navigate complex technological decisions from industry-vetted IT professionals, and make the best decisions for you and your business today.",
+      "Bring content to life with applications that redefine user engagement. From streaming to social tools, we connect and entertain.",
     image: "/images/avatar2.png",
-    tags: ["Secure Transaction", "Crypto MVP", "Banking"],
+    tags: ["Streaming Services", "Content Management", "Social Media Features"],
   },
   {
     title: "Retail & Ecommerce",
     description:
-      "Navigate complex technological decisions from industry-vetted IT professionals, and make the best decisions for you and your business today.",
+      "Reimagine the shopping experience with mobile solutions  simplify transactions, & drive sales through intelligent features and seamless design.",
     image: "/images/avatar2.png",
-    tags: ["Secure Transaction", "Crypto MVP", "Banking"],
+    tags: [
+      "Mobile E-Commerce",
+      "Loyalty Programs",
+      "AI-Powered Recommendations",
+    ],
   },
   // {
   //   title: '',
@@ -76,11 +84,11 @@ const Specialization = () => {
       className="flex flex-col w-full  items-center gap-5  "
     >
       <div className="mb-7 xl:mb-[60px] flex flex-col items-center gap-3  2xl:gap-5">
-        <h2 className=" text-base   lg:text-[32px] tracking-wide mb-4 ">
+        <h2 className=" text-base   sm:text-[32px] tracking-wide mb-4 ">
           What do we specialize in?
         </h2>
         <h1
-          className={` text-5xl  px-3.5 relative lg:leading-[65px] md:text-3xl mb-4 max-w-3xl xl:max-w-7xl lg:text-[48px] tracking-wide text-center  ${recoleta.className}`}
+          className={` text-5xl  px-3.5 relative lg:leading-[65px] md:text-3xl mb-4 max-w-2xl lg:max-w-3xl xl:max-w-7xl lg:text-[48px] tracking-wide text-center  ${recoleta.className}`}
         >
           Our partners hire us to{" "}
           <span className=" text-[#7165FF] "> design & develop</span> their…
@@ -89,7 +97,7 @@ const Specialization = () => {
             alt="Splenify"
             width={380}
             height={380}
-            className="  dark:invert hidden lg:block lg:bottom-16 xl:bottom-0  lg:w-[190px]  2xl:w-[380px] absolute lg:right-8 2xl:right-52  -rotate-4 "
+            className="  dark:invert hidden lg:block lg:bottom-16 xl:-bottom-5  lg:w-[190px]  xl:w-[380px] absolute lg:right-8 xl:right-40  -rotate-4 "
           />
         </h1>
       </div>
@@ -319,7 +327,7 @@ const Specialization = () => {
         </motion.div>
       </div> */}
 
-      <div className=" w-full grid max-w-5xl xl:max-w-6xl 2xl:max-w-7xl  grid-cols-1 md:grid-cols-2 gap-8 gap-y-12 2xl:gap-12">
+      <div className=" w-full grid max-w-2xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl  grid-cols-1 sm:grid-cols-2 gap-8 gap-y-12 2xl:gap-12">
         {specializations.map((item, index) => (
           <motion.div
             initial={{
@@ -336,7 +344,7 @@ const Specialization = () => {
               },
             }}
             key={index}
-            className="flex items-center py-4 flex-col justify-center sm2:flex-row gap-6 px-5 sm:px-0  2xl:gap-8  "
+            className="flex items-center py-4 flex-col justify-center md:flex-row gap-6 px-5 sm:px-0  2xl:gap-8  "
           >
             <div className=" w-full ">
               <Image
@@ -349,17 +357,17 @@ const Specialization = () => {
               />
             </div>
             <div className=" w-full flex flex-col justify-center  ">
-              <h2 className="text-xl 2xl:text-2xl font-semibold mb-2 capitalize">
+              <h2 className="text-xl xl:text-[24px] font-semibold mb-2 capitalize">
                 {item.title}
               </h2>
-              <p className="text-[18px] sm:text-xs lg:text-sm  max-w-xs 2xl:max-w-sm">
+              <p className="text-[15px]   max-w-xs 2xl:max-w-lg">
                 {item.description}
               </p>
               <div className="flex mt-3 sm:mt-2  items-center flex-wrap w-full gap-2 ">
                 {item.tags.map((tag, index) => (
                   <p
                     key={index}
-                    className="text-xs  bg-[#7165FF1A] text-[#7165FF] px-3 font-semibold py-1 2xl:py-1.5 rounded-full"
+                    className="text-[12px]  bg-[#7165FF1A] text-[#7165FF] px-3  py-1 2xl:py-1.5 rounded-full"
                   >
                     {tag}
                   </p>
