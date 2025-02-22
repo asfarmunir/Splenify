@@ -491,8 +491,8 @@ export const Timeline = () => {
               index !== data.length - 1 ? "pb-20 2xl:pb-24" : ""
             } md:gap-4`}
           >
-            <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
-              <div className=" absolute border-8 border-white dark:border-slate-950 left-0 rounded-full bg-[#E9E8FF] dark:bg-black flex items-center justify-center">
+            <div className=" sticky flex flex-col md:flex-row z-40 items-center top-40    self-start max-w-xs lg:max-w-sm md:w-full">
+              <div className="  lg:absolute border-8 border-white dark:border-slate-950 left-0 rounded-full bg-[#E9E8FF] dark:bg-black flex items-center justify-center">
                 {/* <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" /> */}
                 <Image
                   src={`icons/timeline${index + 1}.svg`}
@@ -508,7 +508,7 @@ export const Timeline = () => {
               </h3>
             </div>
 
-            <div className="relative  xl:pl-[4.1rem]  sm:pl-[4.5rem] w-full pr-4 md:pr-0 ">
+            <div className="relative  xl:pl-[4.1rem]  sm:pl-[2.5rem] w-full pr-4 md:pr-0 ">
               <h3
                 className={` ${recoleta.className} md:hidden block text-5xl mb-4 text-left   dark:text-slate-200`}
               >

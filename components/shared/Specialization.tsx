@@ -88,7 +88,7 @@ const Specialization = () => {
           What do we specialize in?
         </h2>
         <h1
-          className={` text-5xl  px-3.5 relative lg:leading-[65px] md:text-3xl mb-4 max-w-2xl lg:max-w-3xl xl:max-w-7xl lg:text-[48px] tracking-wide text-center  ${recoleta.className}`}
+          className={` text-5xl  px-3.5 relative sm:leading-[65px] md:text-3xl mb-4 max-w-2xl lg:max-w-3xl xl:max-w-7xl lg:text-[48px] tracking-wide text-center  ${recoleta.className}`}
         >
           Our partners hire us to{" "}
           <span className=" text-[#7165FF] "> design & develop</span> their…

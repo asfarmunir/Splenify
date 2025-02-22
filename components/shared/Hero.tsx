@@ -118,11 +118,11 @@ const Hero = () => {
         {/* <HeroBentoGrid /> */}
         <BentoGrid />
       </section>
-      <div className="w-full mb-16 lg:mb-[120px] sm:mt-[64px]  lg:mt-[112px]  xl:mt-[224px]  px-4 2xl:px-0 max-w-2xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl gap-2 md:gap-4 2xl:gap-6 mx-auto grid grid-cols-2 lg:grid-cols-4 justify-items-center">
+      <div className="w-full mb-16 sm:mb-[120px] sm:mt-[64px] lg:mt-[112px]  xl:mt-[224px]  px-4 2xl:px-0 max-w-2xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl gap-2 sm:gap-4 2xl:gap-6 mx-auto grid grid-cols-2 lg:grid-cols-4 justify-items-center p-2">
         {acheivments.map((acheivment, index) => (
           <motion.div
             key={index}
-            className="px-7 md:px-12 xl:px-[16px] p-2  pb-2 sm:py-[16px] border-[2px] w-full border-[#DF56FE] rounded-[12px] md:rounded-[20px] flex items-center justify-center gap-1 md:gap-3 flex-col"
+            className="px-7 md:px-12 xl:px-[16px] p-2 h-[145px] pb-2 md:py-[16px] border-[2px] w-full border-[#DF56FE] rounded-[12px] sm:rounded-[20px] flex items-center justify-center gap-1 md:gap-3 flex-col"
             initial={{ opacity: 0 }} // Initial state (opacity 0, positioned left)
             whileInView={{ opacity: 1 }} // Final state (fully visible, at normal position)
             transition={{
@@ -133,7 +133,7 @@ const Hero = () => {
             viewport={{ once: true, amount: 1 }}
           >
             <h1
-              className={` ${recoleta.className} text-2xl sm:text-[46px] xl:text-[48px] grad_text font-semibold`}
+              className={` ${recoleta.className} text-2xl sm:text-[46px] xl:text-[48px] grad_text py-2  font-semibold`}
             >
               {acheivment.number}
             </h1>
