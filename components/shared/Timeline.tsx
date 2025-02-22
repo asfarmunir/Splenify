@@ -39,7 +39,7 @@ const data = [
         }}
       >
         <p
-          className={`text-black ${poppins.className} dark:text-neutral-200 text-[20px]   mb-8`}
+          className={`text-black ${poppins.className} dark:text-neutral-200 text-[14px] sm:text-[20px]   mb-8`}
         >
           We start with a friendly discovery call to understand your vision,
           goals, and challenges. This step lays the foundation for a clear and
@@ -84,7 +84,7 @@ const data = [
       >
         {" "}
         <p
-          className={`text-black ${poppins.className} dark:text-neutral-200 text-[20px]   mb-8`}
+          className={`text-black ${poppins.className} dark:text-neutral-200 text-[14px] sm:text-[20px]   mb-8`}
         >
           Our team dives deep into market research and user analysis to uncover
           insights that shape your app. We identify key opportunities and craft
@@ -128,7 +128,7 @@ const data = [
       >
         {" "}
         <p
-          className={`text-black ${poppins.className} dark:text-neutral-200 text-[20px]   mb-8`}
+          className={`text-black ${poppins.className} dark:text-neutral-200 text-[14px] sm:text-[20px]   mb-8`}
         >
           With your vision in mind, we create intuitive, eye-catching designs
           that deliver exceptional user experiences. Every screen and
@@ -173,7 +173,7 @@ const data = [
       >
         {" "}
         <p
-          className={`text-black  ${poppins.className} dark:text-neutral-200 text-[20px]   mb-8`}
+          className={`text-black  ${poppins.className} dark:text-neutral-200 text-[14px] sm:text-[20px]   mb-8`}
         >
           Our developers bring your designs to life with pixel-perfect
           precision. Using cutting-edge technologies, we ensure your app is
@@ -217,7 +217,7 @@ const data = [
       >
         {" "}
         <p
-          className={`text-black ${poppins.className} dark:text-neutral-200 text-[20px]   mb-8`}
+          className={`text-black ${poppins.className} dark:text-neutral-200 text-[14px] sm:text-[20px]   mb-8`}
         >
           Behind the scenes, we build a robust and scalable back-end that powers
           your app. From APIs to database management, we ensure your app is
@@ -261,7 +261,7 @@ const data = [
       >
         {" "}
         <p
-          className={`text-black ${poppins.className} dark:text-neutral-200 text-[20px]   mb-8`}
+          className={`text-black ${poppins.className} dark:text-neutral-200 text-[14px] sm:text-[20px]   mb-8`}
         >
           Once the app is perfected, we handle the deployment process, ensuring
           a smooth launch on all relevant app stores. We make sure your app
@@ -305,7 +305,7 @@ const data = [
       >
         {" "}
         <p
-          className={`text-black ${poppins.className} dark:text-neutral-200 text-[20px]   mb-8`}
+          className={`text-black ${poppins.className} dark:text-neutral-200 text-[14px] sm:text-[20px]   mb-8`}
         >
           Our support doesn’t stop after launch. We offer ongoing maintenance
           and updates, ensuring your app remains secure, optimized, and aligned
@@ -471,9 +471,11 @@ export const Timeline = () => {
         viewport={{ once: true, amount: 0.5 }}
         className="mb-12 2xl:mb-16 flex flex-col items-center gap-3 2xl:gap-5"
       >
-        <h2 className=" text-base  sm:text-[32px] mb-4 ">How we do it?</h2>
+        <h2 className=" text-[16px]  sm:text-[32px] mb-2 sm:mb-4 ">
+          How we do it?
+        </h2>
         <h1
-          className={` px-2 relative text-5xl md:text-4xl mb-4 max-w-2xl xl:max-w-7xl lg:leading-[65px] lg:text-[48px] tracking-wide text-center  ${recoleta.className}`}
+          className={` px-4 relative text-[25px] md:text-4xl mb-4 max-w-2xl xl:max-w-7xl lg:leading-[65px] lg:text-[48px] tracking-wide text-center  ${recoleta.className}`}
         >
           World-class apps on demand, with our{" "}
           <span className=" text-[#DF56FE] "> process!</span>
@@ -482,7 +484,7 @@ export const Timeline = () => {
 
       <div
         ref={ref}
-        className="relative max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto "
+        className="relative max-w-2xl px-4 lg:max-w-5xl xl:max-w-7xl mx-auto "
       >
         {data.map((item, index) => (
           <div
@@ -502,15 +504,15 @@ export const Timeline = () => {
                 />
               </div>
               <h3
-                className={`hidden md:block text-2xl md:pl-20 lg:text-[40px]   dark:text-slate-200 ${recoleta.className}`}
+                className={`hidden md:block  md:pl-20 lg:text-[40px]   dark:text-slate-200 ${recoleta.className}`}
               >
                 {item.title}
               </h3>
             </div>
 
-            <div className="relative  xl:pl-[4.1rem]  sm:pl-[2.5rem] w-full pr-4 md:pr-0 ">
+            <div className="relative  xl:pl-[4.1rem] pl-3  sm:pl-[2.5rem] w-full pr-4 md:pr-0 ">
               <h3
-                className={` ${recoleta.className} md:hidden block text-5xl mb-4 text-left   dark:text-slate-200`}
+                className={` ${recoleta.className} md:hidden block text-[28px] sm:text-5xl mb-4 text-left   dark:text-slate-200`}
               >
                 {item.title}
               </h3>
@@ -523,7 +525,7 @@ export const Timeline = () => {
             height: "100%",
             // height: height + "px"
           }}
-          className="absolute left-6 top-0 overflow-hidden w-[4px] bg-[#5956E9] dark:bg-neutral-400  "
+          className="absolute left-9 sm:left-6 top-0 overflow-hidden w-[4px] bg-[#5956E9] dark:bg-neutral-400  "
         >
           <motion.div
             style={{

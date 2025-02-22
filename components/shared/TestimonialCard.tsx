@@ -59,7 +59,7 @@ const TestimonialCard = ({
           />
         </div>
       )}
-      <h1 className=" font-normal pb-2 text-start text-[20px] dark:text-slate-400">
+      <h1 className=" font-normal pb-2 text-start text-[12px] sm:text-[20px] dark:text-slate-400">
         <p dangerouslySetInnerHTML={{ __html: review }} />
       </h1>
       <div className="flex justify-start  items-center space-x-4">
@@ -68,13 +68,13 @@ const TestimonialCard = ({
           width={100}
           height={100}
           alt="profile"
-          className="w-[50px] h-[50px] rounded-[72px]"
+          className="w-[30px] h-[30px] sm:w-[50px] sm:h-[50px] rounded-[72px]"
         />
         <div className="flex flex-col items-start">
-          <h1 className="font-semibold text-[20px] dark:text-slate-200">
+          <h1 className="font-semibold text-[14px] sm:text-[20px] dark:text-slate-200">
             {name}
           </h1>
-          <p className="font-roboto font-normal text-[16px] text-center dark:text-slate-200">
+          <p className="font-roboto font-normal text-[12px] sm:text-[16px] text-center dark:text-slate-200">
             {role}
           </p>
         </div>

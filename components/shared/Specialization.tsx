@@ -83,12 +83,12 @@ const Specialization = () => {
       }}
       className="flex flex-col w-full  items-center gap-5  "
     >
-      <div className="mb-7 xl:mb-[60px] flex flex-col items-center gap-3  2xl:gap-5">
-        <h2 className=" text-base   sm:text-[32px] tracking-wide mb-4 ">
+      <div className=" mb-[24px] sm:mb-7 xl:mb-[60px] flex flex-col items-center gap-3  2xl:gap-5">
+        <h2 className=" text-[16px]   sm:text-[32px] tracking-wide mb-2 sm:mb-4 ">
           What do we specialize in?
         </h2>
         <h1
-          className={` text-5xl  px-3.5 relative sm:leading-[65px] md:text-3xl mb-4 max-w-2xl lg:max-w-3xl xl:max-w-7xl lg:text-[48px] tracking-wide text-center  ${recoleta.className}`}
+          className={` text-[28px] sm:text-5xl  px-3.5 relative sm:leading-[65px] md:text-3xl sm:mb-4 max-w-2xl lg:max-w-3xl xl:max-w-7xl lg:text-[48px] tracking-wide text-center  ${recoleta.className}`}
         >
           Our partners hire us to{" "}
           <span className=" text-[#7165FF] "> design & develop</span> their…
@@ -344,7 +344,7 @@ const Specialization = () => {
               },
             }}
             key={index}
-            className="flex items-center py-4 flex-col justify-center md:flex-row gap-6 px-5 sm:px-0  2xl:gap-8  "
+            className="flex items-center sm:py-4 flex-col justify-center md:flex-row gap-6 px-5 sm:px-0  2xl:gap-8  "
           >
             <div className=" w-full ">
               <Image
@@ -357,7 +357,7 @@ const Specialization = () => {
               />
             </div>
             <div className=" w-full flex flex-col justify-center  ">
-              <h2 className="text-xl xl:text-[24px] font-semibold mb-2 capitalize">
+              <h2 className="text-[20] xl:text-[24px] font-semibold mb-2 capitalize">
                 {item.title}
               </h2>
               <p className="text-[15px]   max-w-xs 2xl:max-w-lg">

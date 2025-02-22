@@ -28,8 +28,8 @@ const Testimonials = () => {
       }}
       className={`flex flex-col mx-auto  w-full relative   items-center gap-3 2xl:gap-5 max-w-6xl 2xl:max-w-7xl  `}
     >
-      <div className="space-y-3 bg w-full">
-        <p className="text-center text-base sm:text-[32px] font-normal">
+      <div className="space-y-1 sm:space-y-3 bg w-full">
+        <p className="text-center text-[16px] sm:text-[32px] font-normal">
           Don&apos;t take our word for it!
         </p>
         <div className="flex md:space-x-4 w-full justify-center items-center whitespace-nowrap">
