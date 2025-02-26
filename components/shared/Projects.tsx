@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import localFont from "next/font/local";
 import Modal from "./Modal";
 const recoleta = localFont({ src: "../../app/recoleta.ttf" });
+import "./projects.css";
 
 const blink = [
   "/projectMockups/o1.webp",
@@ -96,10 +97,7 @@ const Projects = () => {
           Browse our most{" "}
           <span className="text-[#7165FF]">recent projects</span>
         </h1>
-        <div
-          style={styles.gridContainer}
-          className=" w-full max-w-5xl xl:max-w-6xl    2xl:max-w-7xl gap-12 2xl:gap-16 "
-        >
+        <div className=" w-full gridContainer max-w-5xl xl:max-w-6xl    2xl:max-w-7xl gap-12 2xl:gap-16 ">
           <motion.div
             initial={{
               x: -150,
@@ -114,8 +112,7 @@ const Projects = () => {
                 ease: "easeInOut",
               },
             }}
-            style={{ ...styles.gridItem, ...styles.item1 }}
-            className="flex flex-col   "
+            className="flex flex-col  gridItem item1 "
           >
             <div className="  rounded-2xl overflow-hidden max-h-[800px]  w-full h-full ">
               <Image
@@ -156,8 +153,7 @@ const Projects = () => {
                 ease: "easeInOut",
               },
             }}
-            style={{ ...styles.gridItem, ...styles.item2 }}
-            className="  flex flex-col w-full  "
+            className="  flex flex-col w-full gridItem item2  "
           >
             <div className=" w-full h-full max-h-[490px] rounded-2xl overflow-hidden ">
               <Image
@@ -200,8 +196,7 @@ const Projects = () => {
                 ease: "easeInOut",
               },
             }}
-            style={{ ...styles.gridItem, ...styles.item3 }}
-            className="flex flex-col w-full -mt-1"
+            className="flex flex-col w-full -mt-1 gridItem item3 "
           >
             <div className=" w-full h-full  max-h-[490px] overflow-hidden rounded-2xl">
               <Image
@@ -245,8 +240,7 @@ const Projects = () => {
                 ease: "easeInOut",
               },
             }}
-            style={{ ...styles.gridItem, ...styles.item4 }}
-            className=" flex flex-col "
+            className=" flex flex-col gridItem item4 "
           >
             <div className=" w-full h-full max-h-[800px]  rounded-2xl overflow-hidden">
               <Image
@@ -295,63 +289,39 @@ const Projects = () => {
           },
         }}
         id="mobile-projects"
-        className="flex flex-col md:hidden w-full relative  items-center  px-8 gap-4 2xl:gap-5   my-[20px] md:my-[30px]"
+        className="flex  flex-col md:hidden w-full relative  items-center  px-8 gap-4 2xl:gap-5   my-[20px] md:my-[30px]"
       >
         <h2 className=" text-[16px] sm:text-[32px] tracking-wide ">
-          Catch the latest...
+          Catch the latest
         </h2>
         <h1
           className={` text-[28px] sm:text-[48px] relative  tracking-wide text-center mb-6 ${recoleta.className}`}
         >
-          Browse our <br />{" "}
+          Browse our most <br className="hidden sm:block" />
           <span className="text-[#7165FF]">recent projects</span>
         </h1>
-        <div className=" w-full max-w-5xl 2xl:max-w-7xl space-y-8  2xl:gap-16 ">
-          <motion.div
-            initial={{
-              x: -150,
-              opacity: 0,
-            }}
-            viewport={{ amount: 0.15, once: true }}
-            whileInView={{
-              x: 0,
-              opacity: 1,
-              transition: {
-                duration: 0.7,
-                ease: "easeInOut",
-              },
-            }}
-            className=" flex h-[400px] flex-col  "
-          >
-            <div className=" w-full h-full rounded-3xl overflow-hidden">
-              <Image
-                src="/projectModal/hero1.webp"
-                alt="Splenify"
-                loading="lazy"
-                width={985}
-                height={923}
-                className=" w-full h-full object-cover object-top "
-              />
-            </div>
-            <div className="flex items-center w-full pt-4 justify-between">
-              <div className="flex flex-col">
-                <p className=" text-sm font-thin md:text-base">
-                  Mobile Application{" "}
-                </p>
-                <h2 className="text-base md:text-xl font-bold ">
-                  Aura IOS | Android{" "}
-                </h2>
-              </div>
-              <Modal
-                heroImg="/projectModal/modalHero1.webp"
-                heroBg="/projectModal/skyBg.webp"
-                heroLogo="/projectModal/logo1.svg"
-                testimonialBg=" bg-gradient-to-l from-[#38B6FF] to-[#0069CA]"
-                color="blue"
-                imgs={bluepro}
-              />{" "}
-            </div>
-          </motion.div>
+
+        <Image
+          src="/images/left-arrow.svg"
+          alt="Splenify"
+          width={300}
+          height={300}
+          className=" absolute  top-12   rotate-1 right-0 
+          w-[190px] dark:invert
+
+           "
+        />
+        <Image
+          src="/images/right-arrow.svg"
+          alt="Splenify"
+          width={160}
+          height={140}
+          className=" absolute left-0  top-16  -rotate-6
+          w-[150px] dark:invert
+          "
+        />
+
+        <div className=" w-full max-w-5xl 2xl:max-w-7xl space-y-8   2xl:gap-16 ">
           <motion.div
             initial={{
               x: 150,
@@ -366,7 +336,7 @@ const Projects = () => {
                 ease: "easeInOut",
               },
             }}
-            className=" flex max-h-[400px]  flex-col  "
+            className=" flex h-[400px] sm:h-[800px]   flex-col  "
           >
             <div className=" w-full h-full rounded-3xl overflow-hidden">
               <Image
@@ -411,7 +381,7 @@ const Projects = () => {
                 ease: "easeInOut",
               },
             }}
-            className=" flex max-h-[400px]  flex-col  "
+            className=" flex h-[400px] sm:h-[558px]   flex-col  "
           >
             <div className=" w-full h-full rounded-3xl overflow-hidden">
               <Image
@@ -456,7 +426,7 @@ const Projects = () => {
                 ease: "easeInOut",
               },
             }}
-            className=" flex max-h-[400px]  flex-col  "
+            className=" flex h-[400px] sm:h-[558px]   flex-col  "
           >
             <div className=" w-full h-full rounded-3xl overflow-hidden">
               <Image
@@ -487,6 +457,51 @@ const Projects = () => {
               />{" "}
             </div>
           </motion.div>
+          <motion.div
+            initial={{
+              x: -150,
+              opacity: 0,
+            }}
+            viewport={{ amount: 0.15, once: true }}
+            whileInView={{
+              x: 0,
+              opacity: 1,
+              transition: {
+                duration: 0.7,
+                ease: "easeInOut",
+              },
+            }}
+            className=" flex h-[400px] sm:h-[820px]  flex-col  "
+          >
+            <div className=" w-full h-full  rounded-3xl overflow-hidden">
+              <Image
+                src="/projectModal/hero1.webp"
+                alt="Splenify"
+                loading="lazy"
+                width={985}
+                height={923}
+                className=" w-full h-full object-cover object-top "
+              />
+            </div>
+            <div className="flex items-center w-full pt-4 justify-between">
+              <div className="flex flex-col">
+                <p className=" text-sm font-thin md:text-base">
+                  Mobile Application{" "}
+                </p>
+                <h2 className="text-base md:text-xl font-bold ">
+                  Aura IOS | Android{" "}
+                </h2>
+              </div>
+              <Modal
+                heroImg="/projectModal/modalHero1.webp"
+                heroBg="/projectModal/skyBg.webp"
+                heroLogo="/projectModal/logo1.svg"
+                testimonialBg=" bg-gradient-to-l from-[#38B6FF] to-[#0069CA]"
+                color="blue"
+                imgs={bluepro}
+              />{" "}
+            </div>
+          </motion.div>
         </div>
       </motion.div>
     </>
@@ -494,38 +509,135 @@ const Projects = () => {
 };
 
 export default Projects;
-
 const styles = {
   gridContainer: {
     display: "grid",
     gridTemplateRows: "repeat(5, 1fr)",
     gridTemplateColumns: "repeat(4, 1fr)",
+    // Default gaps (optional)
     // rowGap: "40px",
     // columnGap: "70px",
+
+    // Media query for tablets (e.g., screens less than 1024px)
+    "@media (max-width: 1024px)": {
+      gridTemplateRows: "repeat(4, 1fr)",
+      gridTemplateColumns: "repeat(3, 1fr)",
+    },
+
+    // Media query for mobile devices (e.g., screens less than 768px)
+    "@media (max-width: 768px)": {
+      gridTemplateRows: "repeat(3, 1fr)",
+      gridTemplateColumns: "repeat(2, 1fr)",
+    },
+
+    // Media query for small mobile devices (e.g., screens less than 480px)
+    "@media (max-width: 480px)": {
+      gridTemplateRows: "repeat(2, 1fr)",
+      gridTemplateColumns: "1fr",
+    },
   },
   gridItem: {
     display: "flex",
     // backgroundColor: "#F3F3F9",
     alignItems: "center",
     justifyContent: "start",
-
     fontSize: "20px",
     fontWeight: "bold",
+
+    // Adjust font size for smaller screens
+    "@media (max-width: 768px)": {
+      fontSize: "16px",
+    },
+    "@media (max-width: 480px)": {
+      fontSize: "14px",
+    },
   },
   item1: {
     gridRow: "1 / span 3",
     gridColumn: "1 / span 2",
+
+    // Adjust for tablets
+    "@media (max-width: 1024px)": {
+      gridRow: "1 / span 2",
+      gridColumn: "1 / span 2",
+    },
+
+    // Adjust for mobile
+    "@media (max-width: 768px)": {
+      gridRow: "1 / span 1",
+      gridColumn: "1 / span 2",
+    },
+
+    // Adjust for small mobile
+    "@media (max-width: 480px)": {
+      gridRow: "auto",
+      gridColumn: "auto",
+    },
   },
   item2: {
     gridRow: "1 / span 2",
     gridColumn: "3 / span 2",
+
+    // Adjust for tablets
+    "@media (max-width: 1024px)": {
+      gridRow: "1 / span 2",
+      gridColumn: "3 / span 1",
+    },
+
+    // Adjust for mobile
+    "@media (max-width: 768px)": {
+      gridRow: "2 / span 1",
+      gridColumn: "1 / span 2",
+    },
+
+    // Adjust for small mobile
+    "@media (max-width: 480px)": {
+      gridRow: "auto",
+      gridColumn: "auto",
+    },
   },
   item3: {
     gridRow: "4 / span 2",
     gridColumn: "1 / span 2",
+
+    // Adjust for tablets
+    "@media (max-width: 1024px)": {
+      gridRow: "3 / span 2",
+      gridColumn: "1 / span 2",
+    },
+
+    // Adjust for mobile
+    "@media (max-width: 768px)": {
+      gridRow: "3 / span 1",
+      gridColumn: "1 / span 2",
+    },
+
+    // Adjust for small mobile
+    "@media (max-width: 480px)": {
+      gridRow: "auto",
+      gridColumn: "auto",
+    },
   },
   item4: {
     gridRow: "3 / span 3",
     gridColumn: "3 / span 2",
+
+    // Adjust for tablets
+    "@media (max-width: 1024px)": {
+      gridRow: "3 / span 2",
+      gridColumn: "3 / span 1",
+    },
+
+    // Adjust for mobile
+    "@media (max-width: 768px)": {
+      gridRow: "4 / span 1",
+      gridColumn: "1 / span 2",
+    },
+
+    // Adjust for small mobile
+    "@media (max-width: 480px)": {
+      gridRow: "auto",
+      gridColumn: "auto",
+    },
   },
 };
