@@ -39,37 +39,37 @@ const Hero = () => {
         id="home"
         className="flex flex-col items-center gap-8 2xl:mt-6 mb-14 md:mb-10"
       >
-        <div className="flex items-center relative gap-3 md:gap-3 2xl:gap-5">
+        <div className="flex items-center py-1 relative gap-3 md:gap-3 2xl:gap-5">
           <Image
             src="/icons/left-arrow.svg"
             alt="Splenify"
-            className="  absolute -left-1 md:left-14 top-10 2xl:top-14"
+            className="  absolute w-[43px] sm:w-[50px]  left-6 md:left-14 top-12 2xl:top-14"
             width={50}
             height={50}
           />
           <Image
             src="/icons/right-arrow.svg"
             alt="Splenify"
-            className=" absolute -right-2 md:right-14 top-10 2xl:top-14
+            className=" absolute w-[35px] sm:w-[42px] right-8 md:right-14 top-10 2xl:top-14
             
             "
             width={42}
             height={42}
           />
-          <h3 className=" text-xs sm:text-sm px-2 py-1.5 sm:px-6 sm:py-2  2xl:py-2  2xl:px-8 border   -rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-slate-700 dark:bg-slate-900 2xl:text-lg">
+          <h3 className=" text-xs sm:text-sm px-2.5 py-1.5 sm:px-6 sm:py-2  2xl:py-2  2xl:px-8 border   -rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-slate-700 dark:bg-slate-900 2xl:text-lg">
             App Dev
           </h3>
-          <h3 className=" text-xs sm:text-sm px-2 py-1.5 sm:px-6 sm:py-2   2xl:py-2  2xl:px-8 border   rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-slate-700 dark:bg-slate-900 2xl:text-lg">
+          <h3 className=" text-xs sm:text-sm px-2.5 py-1.5 sm:px-6 sm:py-2   2xl:py-2  2xl:px-8 border   rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-slate-700 dark:bg-slate-900 2xl:text-lg">
             UI | UX
           </h3>
-          <h3 className=" text-xs sm:text-sm px-2 py-1.5 sm:px-6 sm:py-2  2xl:py-2  2xl:px-8 border   -rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-slate-700 dark:bg-slate-900 2xl:text-lg">
+          <h3 className=" text-xs sm:text-sm px-2.5 py-1.5 sm:px-6 sm:py-2  2xl:py-2  2xl:px-8 border   -rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-slate-700 dark:bg-slate-900 2xl:text-lg">
             Design
           </h3>
-          <h3 className=" text-xs sm:text-sm px-2 py-1.5 sm:px-6 sm:py-2   2xl:py-2  2xl:px-8 border   rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-slate-700 dark:bg-slate-900 2xl:text-lg">
+          <h3 className=" text-xs sm:text-sm px-2.5 py-1.5 sm:px-6 sm:py-2   2xl:py-2  2xl:px-8 border   rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-slate-700 dark:bg-slate-900 2xl:text-lg">
             Writing
           </h3>
         </div>
-        <h2 className=" text-[1.6rem] sm:text-[35px] mt-2  md:text-[1.9rem] font-normal 2xl:text-[2.3rem]  ">
+        <h2 className=" text-[18px] sm:text-[35px] mt-2  md:text-[1.9rem] font-normal 2xl:text-[2.3rem]  ">
           We help you
         </h2>
       </header>
@@ -92,7 +92,7 @@ const Hero = () => {
               },
             } /* Animate when in view */
           }
-          className={`  sm:max-w-full -mt-8   md:-mt-4 leading-snug sm:leading-none  -tracking-wide  text-[32px] sm2:text-[2.8rem]   sm:text-[64px]  md:text-7xl lg:text-[80px] xl:text-[98px] px-0.5 text-center ${recoleta.className}`}
+          className={`  sm:max-w-full -mt-10   md:-mt-4 leading-snug sm:leading-none  -tracking-wide  text-[32px] sm2:text-[2.8rem]   sm:text-[64px]  md:text-7xl lg:text-[80px] xl:text-[98px] px-0.5 text-center ${recoleta.className}`}
         >
           Design. <span className="grad_text md:px-4 2xl:px-6 ">Develop.</span>{" "}
           Deploy

@@ -46,7 +46,7 @@ const ServicesMobile = dynamic(
 export default function Home() {
   return (
     // <main className="flex min-h-screen  flex-col items-center pt-36  overflow-x-hidden 2xl:pt-40">
-    <main className="  pt-16 space-y-[64px] lg:space-y-[112px] xl:space-y-[224px]">
+    <main className="  pt-8 sm:pt-16 space-y-[64px] lg:space-y-[112px] xl:space-y-[224px]">
       {/* Hero Section */}
       <Hero />
       {/* <AppsOnDemand /> */}
