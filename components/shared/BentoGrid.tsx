@@ -180,11 +180,11 @@ const BentoGrid = () => {
               unoptimized
               src={img6}
               alt="hero"
-              width={180}
+              width={340}
               height={140}
               objectFit="cover"
               className=" 
-            w-[150px] sm:w-[180px] md:w-[200px] lg:w-[250px] xl:w-[340px] "
+            w-[150px] sm:w-[180px] md:w-[200px] lg:w-[319px] xl:w-[340px] "
               objectPosition="center"
             />
           </motion.div>

@@ -45,7 +45,7 @@ export default function BentoGridDemo() {
   }, [breakpoint]);
 
   return (
-    <div key={key}>
+    <div>
       <div className=" w-full     h-fit hidden lg:flex items-start my-8   justify-center gap-24">
         <div className="flex  flex-col items-start gap-4">
           <div className="flex items-start gap-4">

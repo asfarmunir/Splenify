@@ -62,33 +62,33 @@ const page = () => {
 
   useEffect(() => {
     if (inView1) {
-      setHeight(11);
+      setHeight(0);
     }
   }, [inView1, entry1]);
 
   useEffect(() => {
     if (inView2) {
-      setHeight(38);
+      setHeight(27);
     }
   }, [inView2, entry2]);
 
   useEffect(() => {
     if (inView3) {
-      setHeight(61);
+      setHeight(56);
     }
   }, [inView3, entry3]);
 
   useEffect(() => {
     if (inView4) {
-      setHeight(89);
+      setHeight(81);
     }
     // } else {
     //   setHeight(0);
     // }
   }, [inView4, entry4]);
   return (
-    <div className=" w-full flex flex-col px-6 sm:px-12 items-center overflow-x-hidden  ">
-      <div className=" w-full gap-12 2xl:gap-20 mx-auto flex flex-col md:flex-row items-center justify-between py-10 2xl:py-16 max-w-6xl 2xl:max-w-7xl">
+    <div className=" w-full flex flex-col  xl:gap-[224px] pt-[48px]   items-center overflow-x-hidden sm:max-w-2xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto ">
+      <div className=" w-full mx-auto gap-8 xl:gap-[48px]    flex flex-col md:flex-row items-center justify-between  max-w-6xl 2xl:max-w-7xl">
         <motion.div
           initial={{
             x: -100,
@@ -105,16 +105,16 @@ const page = () => {
           viewport={{
             once: true,
           }}
-          className="space-y-5 w-full "
+          className="space-y-5 xl:space-y-7 w-full "
         >
           <h3
-            className={`${recoleta.className} text-5xl  max-w-lg 2xl:max-w-2xl`}
+            className={`${recoleta.className} text-[57px] xl:leading-[59px]  `}
           >
             Top-tier{" "}
             <span className={`text-[#5956E9] `}>mobile development</span>{" "}
             company that serves global entrepreneurs.
           </h3>
-          <p className="text-lg md:text-base 2xl:text-lg tracking-wide ">
+          <p className="text-lg md:text-base xl:text-[20px] xl:leading-[30px] tracking-wide ">
             The heart of Splenify is a true-passion for all things tech. We’re a
             cross-platform, hybrid mobile development company that has created a
             series of world-class solutions for our clients, and consistently
@@ -143,12 +143,13 @@ const page = () => {
             src="/images/about.png"
             alt="about"
             width={450}
-            className=" w-full "
+            className=" w-full xl:h-[548px] "
             height={450}
           />
         </motion.div>
       </div>
-      <div className=" w-full gap-12 2xl:gap-20 mx-auto flex flex-col md:flex-row-reverse items-center justify-between py-10 2xl:py-16 max-w-6xl 2xl:max-w-7xl">
+
+      <div className=" w-full gap-12 2xl:gap-20 mx-auto flex flex-col md:flex-row-reverse items-center justify-between  max-w-6xl 2xl:max-w-7xl">
         <motion.div
           initial={{
             x: 100,
@@ -168,24 +169,26 @@ const page = () => {
           className="space-y-5 w-full "
         >
           {" "}
-          <p className="text-sm font-bold text-[#5956E9]">From Zero to Hero</p>
+          <p className="text-sm xl:text-[18px] font-bold text-[#5956E9]">
+            From Zero to Hero
+          </p>
           <h3
-            className={`${recoleta.className} text-5xl  max-w-xl 2xl:max-w-2xl`}
+            className={`${recoleta.className} text-5xl xl:text-[57px]  max-w-xl 2xl:max-w-2xl`}
           >
             Building Your App’s Success Story
           </h3>
-          <p className="text-lg md:text-base 2xl:text-lg tracking-wide  ">
-            At <strong>Splenify,</strong> we transform your ideas into powerful,
-            <strong>high-performing</strong> mobile apps that stand out in a
-            crowded digital world. Starting from ground zero, we guide your app
-            through every stage of its journey—from concept to launch and
-            beyond—ensuring it reaches its <strong>full potential.</strong>{" "}
-            <br /> Our team of expert developers, designers, and{" "}
-            <strong>strategists</strong> combine cutting-edge{" "}
-            <strong>technology</strong> with a deep understanding of user needs.
+          <p className="text-lg xl:text-[20px] xl:leading-[30px] md:text-base 2xl:text-lg tracking-wide  ">
+            At Splenify, we transform your ideas into powerful, high-performing
+            mobile apps that stand out in a crowded digital world. Starting from
+            ground zero, we guide your app through every stage of its
+            journey—from concept to launch and beyond—ensuring it reaches its
+            full potential. <br /> <br /> Our team of expert developers,
+            designers, and strategists combine cutting-edge technology with a
+            deep understanding of user needs. <br />
+            <br />
             Whether it’s crafting flawless interfaces, building seamless
-            functionality, or <strong>optimizing</strong> performance, we create
-            apps that deliver real impact. <br /> Start your success story with
+            functionality, or optimizing performance, we create apps that
+            deliver real impact. <br /> <br /> Start your success story with
             Splenify, today.
           </p>
         </motion.div>
@@ -205,25 +208,25 @@ const page = () => {
           viewport={{
             once: true,
           }}
-          className=" w-full"
+          className=" w-full h-max"
         >
           <Image
             src="/images/about.png"
             alt="about"
             width={450}
-            className=" w-full "
+            className=" w-full  xl:h-[634px] "
             height={450}
           />
         </motion.div>
       </div>
-      <div className=" w-full mx-auto max-w-6xl 2xl:max-w-7xl py-10 2xl:py-[5rem] ">
+      <div className=" w-full mx-auto max-w-6xl 2xl:max-w-7xl ">
         <h1
-          className={`text-5xl md:text-4xl 2xl:text-5xl ${recoleta.className} `}
+          className={`text-5xl md:text-4xl xl:text-[57px]  ${recoleta.className} `}
         >
           Our <span className="text-[#5956E9]">Story</span>
         </h1>{" "}
         <div className="flex gap-9 sm:gap-12 2xl:gap-20 py-6 md:py-12 2xl:py-16 w-full">
-          <div className="bg-[#5956E9] bg-opacity-[12%] ml-4 sm:mx-12 2xl:mx-20 w-2 rounded-full relative">
+          <div className="bg-[#5956E9] bg-opacity-[12%] ml-4 sm:mx-12 2xl:mx-20 w-2 rounded-full mt-16 relative">
             <motion.div
               className="absolute top-0 transition-all duration-700 ease-out   w-full rounded-full  bg-[#5956E9] " /* roadmapProgressBar */
               style={{
@@ -232,7 +235,7 @@ const page = () => {
             >
               {/* <div className=" absolute w-5 h-5 2xl:w-6 2xl:h-6 2xl:-left-[0.51rem] progressPointer bg-[#5956E9] border-4 border-white dark:border-white/10 rounded-full bottom-0 -left-[0.4rem] "></div> */}
             </motion.div>
-            <div className="z-[1] absolute top-[11%] left-1/2 transform -translate-x-1/2">
+            <div className="z-[1] absolute top-[0%] left-1/2 transform -translate-x-1/2">
               <div className="glassContainerContainerRoundHowToBuy">
                 <div className="howToBuyOrangeCircle">
                   <div className=" absolute w-8 h-8   -left-[1rem] progressPointer bg-[#5956E9] border-4 border-white dark:border-white/10 rounded-full bottom-0  "></div>
@@ -240,7 +243,7 @@ const page = () => {
               </div>
             </div>
             {/* item 2 number circle */}
-            <div className="z-[1] absolute top-[38%] left-1/2 transform -translate-x-1/2">
+            <div className="z-[1] absolute top-[27%] left-1/2 transform -translate-x-1/2">
               <div className="glassContainerContainerRoundHowToBuy">
                 <div className="howToBuyOrangeCircle">
                   <div className=" absolute w-8 h-8   -left-[1rem] progressPointer bg-[#5956E9] border-4 border-white dark:border-white/10 rounded-full bottom-0  "></div>
@@ -248,7 +251,7 @@ const page = () => {
               </div>
             </div>
             {/* item 3 number circle */}
-            <div className="z-[1] absolute top-[61%]  left-1/2 transform -translate-x-1/2">
+            <div className="z-[1] absolute top-[56%]  left-1/2 transform -translate-x-1/2">
               <div className="glassContainerContainerRoundHowToBuy">
                 <div className="howToBuyOrangeCircle">
                   <div className=" absolute w-8 h-8   -left-[1rem] progressPointer bg-[#5956E9] border-4 border-white dark:border-white/10 rounded-full bottom-0  "></div>
@@ -256,7 +259,7 @@ const page = () => {
               </div>
             </div>
             {/* item 4 number circle */}
-            <div className="z-[1] absolute top-[89%]  left-1/2 transform -translate-x-1/2">
+            <div className="z-[1] absolute top-[81%]  left-1/2 transform -translate-x-1/2">
               <div className="glassContainerContainerRoundHowToBuy">
                 <div className="howToBuyOrangeCircle">
                   <div className=" absolute w-8 h-8   -left-[1rem] progressPointer bg-[#5956E9] border-4 border-white dark:border-white/10 rounded-full bottom-0  "></div>
@@ -264,10 +267,10 @@ const page = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-6 w-full">
+          <div className="flex flex-col gap-6 xl:gap-10 w-full">
             <div
               ref={ref1}
-              className=" w-full gap-5 mx-auto flex flex-col md:flex-row items-center justify-between py-10 2xl:py-16 max-w-6xl 2xl:max-w-7xl"
+              className=" w-full gap-5 xl:gap-10 mx-auto flex flex-col md:flex-row items-center justify-between  max-w-6xl 2xl:max-w-7xl"
             >
               <motion.div
                 initial={{
@@ -288,12 +291,12 @@ const page = () => {
                 {" "}
                 {/* <div className=" absolute w-8 h-8  -left-[5rem] md:-left-[12rem] progressPointer bg-[#5956E9] border-4 border-white dark:border-white/10 rounded-full   "></div> */}
                 <h3
-                  className={`${recoleta.className} text-4xl md:text-3xl 2xl:text-4xl  max-w-2xl`}
+                  className={`${recoleta.className} text-4xl md:text-3xl xl:text-[40px]  max-w-2xl`}
                 >
                   Four graduates,{" "}
                   <span className="text-[#DB14F1]">one shared vision</span>
                 </h3>
-                <p className="text-[18px] 2xl:text-lg tracking-wide leading-snug ">
+                <p className="text-[18px] xl:text-[20px] tracking-wide leading-snug xl:leading-[30px] ">
                   Splenify was born in 2019, when four software graduate
                   students came together with a shared passion for technology
                   and a mission to build applications that deliver real
@@ -316,20 +319,20 @@ const page = () => {
                 viewport={{
                   once: true,
                 }}
-                className=" w-full sm:w-fit"
+                className=" w-full sm:w-fit xl:w[295px] h-[295px]"
               >
                 <Image
                   src="/images/about.png"
                   alt="about"
                   width={300}
-                  className=" w-full"
+                  className=" w-full h-full "
                   height={300}
                 />
               </motion.div>
             </div>
             <div
               ref={ref2}
-              className=" w-full gap-5 mx-auto flex flex-col md:flex-row-reverse items-center justify-between py-10 2xl:py-16 max-w-6xl 2xl:max-w-7xl"
+              className=" w-full gap-5 xl:gap-10 mx-auto flex flex-col md:flex-row-reverse items-center justify-between  max-w-6xl 2xl:max-w-7xl"
             >
               <motion.div
                 initial={{
@@ -349,17 +352,17 @@ const page = () => {
               >
                 {" "}
                 <h3
-                  className={`${recoleta.className} text-4xl md:text-3xl 2xl:text-4xl  max-w-2xl`}
+                  className={`${recoleta.className} text-4xl md:text-3xl xl:text-[40px]  max-w-2xl`}
                 >
                   A place to learn, grow, and thrive
                 </h3>
-                <p className="text-[18px] 2xl:text-lg tracking-wide leading-snug ">
+                <p className="text-[18px] xl:text-[20px] tracking-wide leading-snug xl:leading-[30px] ">
                   At Splenify, we believe that success is a team effort. Our
                   growing family of 25+ developers, designers, strategists, and
                   creatives is united by a drive to learn, improve, and innovate
-                  together. We foster a culture of collaboration and growth,
-                  where every challenge is an opportunity to elevate ourselves
-                  and our work.
+                  together. <br /> <br /> We foster a culture of collaboration
+                  and growth, where every challenge is an opportunity to elevate
+                  ourselves and our work.
                 </p>
               </motion.div>
               <motion.div
@@ -376,19 +379,20 @@ const page = () => {
                 viewport={{
                   once: true,
                 }}
-                className=" w-full sm:w-fit"
+                className=" w-full sm:w-fit xl:w[295px] h-[295px]"
               >
                 <Image
                   src="/images/about.png"
                   alt="about"
                   width={300}
+                  className=" w-full h-full "
                   height={300}
                 />
               </motion.div>
             </div>
             <div
               ref={ref3}
-              className=" w-full gap-5 mx-auto flex flex-col md:flex-row items-center justify-between py-10 2xl:py-16 max-w-6xl 2xl:max-w-7xl"
+              className=" w-full gap-5 xl:gap-10 mx-auto flex flex-col md:flex-row items-center justify-between  max-w-6xl 2xl:max-w-7xl"
             >
               <motion.div
                 initial={{
@@ -408,11 +412,15 @@ const page = () => {
               >
                 {" "}
                 <h3
-                  className={`${recoleta.className} text-4xl md:text-3xl 2xl:text-4xl  max-w-2xl`}
+                  className={`${recoleta.className} text-4xl md:text-3xl xl:text-[40px]  max-w-2xl`}
                 >
-                  100+ applications and counting
+                  {" "}
+                  <span className="text-[#DB14F1] px-1 ">
+                    100+ applications
+                  </span>
+                  and counting
                 </h3>
-                <p className="text-[18px] 2xl:text-lg tracking-wide leading-snug ">
+                <p className="text-[18px] xl:text-[20px] tracking-wide leading-snug xl:leading-[30px] ">
                   Over the years, we’ve designed, developed, and launched 100+
                   applications, each tailored to deliver real results. From
                   seamless user experiences to robust, scalable solutions, we’ve
@@ -434,19 +442,20 @@ const page = () => {
                 viewport={{
                   once: true,
                 }}
-                className=" w-full sm:w-fit"
+                className=" w-full sm:w-fit xl:w[295px] h-[295px]"
               >
                 <Image
                   src="/images/about.png"
                   alt="about"
                   width={300}
+                  className=" w-full h-full "
                   height={300}
                 />
               </motion.div>
             </div>
             <div
               ref={ref4}
-              className=" w-full gap-5 mx-auto flex flex-col md:flex-row-reverse items-center justify-between py-10 2xl:py-16 max-w-6xl 2xl:max-w-7xl"
+              className=" w-full gap-5 xl:gap-10 mx-auto flex flex-col md:flex-row-reverse items-center justify-between  max-w-6xl 2xl:max-w-7xl"
             >
               <motion.div
                 initial={{
@@ -466,14 +475,14 @@ const page = () => {
               >
                 {" "}
                 <h3
-                  className={`${recoleta.className} text-4xl md:text-3xl 2xl:text-4xl  max-w-2xl`}
+                  className={`${recoleta.className} text-4xl md:text-3xl xl:text-[40px]  max-w-2xl`}
                 >
                   Splenify:{" "}
                   <span className="text-[#7165FF]">
                     Turning visions into reality
                   </span>
                 </h3>
-                <p className="text-[18px] 2xl:text-lg tracking-wide leading-snug ">
+                <p className="text-[18px] xl:text-[20px] tracking-wide leading-snug xl:leading-[30px] ">
                   Our name reflects what we aim to do: "Splenify"—to transform
                   and elevate. Every app we develop is more than just code—it’s
                   a blend of strategy, design, and technology, crafted to bring
@@ -496,12 +505,13 @@ const page = () => {
                 viewport={{
                   once: true,
                 }}
-                className=" w-full sm:w-fit"
+                className=" w-full sm:w-fit xl:w[295px] h-[295px]"
               >
                 <Image
                   src="/images/about.png"
                   alt="about"
                   width={300}
+                  className=" w-full h-full "
                   height={300}
                 />
               </motion.div>
@@ -510,18 +520,18 @@ const page = () => {
         </div>
       </div>
       {/* <Story /> */}
-      <div className=" w-full mx-auto max-w-6xl 2xl:max-w-7xl py-10 2xl:py-16 space-y-4">
+      <div className=" w-full mx-auto max-w-6xl 2xl:max-w-7xl  space-y-4">
         <h1
-          className={`text-5xl md:text-4xl 2xl:text-5xl ${recoleta.className} `}
+          className={`text-5xl md:text-4xl xl:text-[48px] ${recoleta.className} `}
         >
           Our <span className="text-[#CA67FC]">Core Values</span>
         </h1>
-        <p className=" 2xl:text-lg max-w-xl">
+        <p className=" xl:text-[24px] ">
           At Splenify, our core values guide everything we do, shaping our
           culture, work ethic, and commitment to delivering exceptional mobile
           solutions.
         </p>
-        <div className=" w-full grid grid-cols-1 md:grid-cols-2 gap-6 2xl:gap-10 py-6">
+        <div className=" w-full grid grid-cols-1 md:grid-cols-2 gap-6 xl:gap-10 pt-6">
           {values.map((value, index) => (
             <motion.div
               key={index}
@@ -542,23 +552,23 @@ const page = () => {
                 height={50}
               />
               <div>
-                <h2 className="text-lg capitalize mb-1 2xl:text-xl font-semibold">
+                <h2 className="text-lg capitalize mb-1 xl:text-[24px] font-semibold">
                   {value.title}
                 </h2>
-                <p className="text-base max-w-2xl">{value.description}</p>
+                <p className="text-[20px] max-w-2xl">{value.description}</p>
               </div>
             </motion.div>
           ))}
         </div>
       </div>
-      <div className=" w-full mx-auto max-w-6xl 2xl:max-w-7xl py-10 2xl:py-16 space-y-4">
+      <div className=" w-full mx-auto max-w-6xl 2xl:max-w-7xl  space-y-4">
         <h1
-          className={`text-5xl md:text-4xl 2xl:text-5xl ${recoleta.className} `}
+          className={`text-5xl md:text-4xl xl:text-[48px] ${recoleta.className} `}
         >
           Meet the heart of <span className="text-[#CA67FC]">Splenify</span>
         </h1>
 
-        <div className=" w-full grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-4 lg:gap-7  gap-y-12 py-6">
+        <div className=" w-full grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-4   gap-y-12 pt-7">
           {Array.from({ length: 8 }).map((_, index) => (
             <motion.div
               key={index}
@@ -572,7 +582,7 @@ const page = () => {
               viewport={{ once: true }} // Trigger the animation once the item comes into view
               className="flex flex-col items-center sm:items-start"
             >
-              <div className="   w-full mb-5 rounded-2xl">
+              <div className="   w-full  xl:h-[298px] mb-5 rounded-2xl">
                 <Image
                   src="/images/about.png"
                   alt="quality"
@@ -581,8 +591,8 @@ const page = () => {
                   height={100}
                 />
               </div>
-              <h2 className="text-lg font-bold mb-2">Olivia Rhye</h2>
-              <p className="text-sm text-center sm:text-start text-[#747576] dark:text-slate-300 mb-4">
+              <h2 className="text-[24px] font-bold mb-2">Olivia Rhye</h2>
+              <p className="text-[20px] text-center sm:text-start text-[#747576] dark:text-slate-300 mb-4">
                 Co-founder splenidy. Senior Graphics Designer
               </p>
               <div className=" inline-flex items-center gap-4">
@@ -603,7 +613,9 @@ const page = () => {
           ))}
         </div>
       </div>
-      <ContactUs />
+      <div className="pb-[120px]">
+        <ContactUs />
+      </div>
     </div>
   );
 };

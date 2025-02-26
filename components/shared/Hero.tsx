@@ -122,7 +122,7 @@ const Hero = () => {
         {acheivments.map((acheivment, index) => (
           <motion.div
             key={index}
-            className="px-7 md:px-12 xl:px-[16px] p-2 h-[81px] sm:h-[145px] pb-2 md:py-[16px] border-[2px] w-full border-[#DF56FE] rounded-[12px] sm:rounded-[20px] flex items-center justify-center gap-1 md:gap-3 flex-col"
+            className="px-7 md:px-12 xl:px-[16px] p-2 h-[81px] sm:h-[145px] pb-2 md:py-[16px] border-[2px] w-full border-[#DF56FE] rounded-[12px] sm:rounded-[20px] flex items-center justify-center  flex-col"
             initial={{ opacity: 0 }} // Initial state (opacity 0, positioned left)
             whileInView={{ opacity: 1 }} // Final state (fully visible, at normal position)
             transition={{
@@ -133,11 +133,11 @@ const Hero = () => {
             viewport={{ once: true, amount: 1 }}
           >
             <h1
-              className={` ${recoleta.className} text-[24px] sm:text-[46px] xl:text-[48px] grad_text sm:py-2  font-semibold`}
+              className={` ${recoleta.className} text-[24px] text-center sm:text-[46px] xl:text-[48px] grad_text   font-semibold`}
             >
               {acheivment.number}
             </h1>
-            <p className="text-[14px] sm:text-[20px]  xl:text-[24px] text-slate-700 font-roboto">
+            <p className="text-[14px] sm:text-[20px]  text-center xl:text-[24px] text-slate-700 font-roboto">
               {acheivment.title}
             </p>
           </motion.div>

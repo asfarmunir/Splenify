@@ -9,6 +9,15 @@ import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 import localFont from "next/font/local";
 import { Poppins } from "next/font/google";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
+import { Card, CardContent } from "../ui/card";
+
 const recoleta = localFont({ src: "../../app/recoleta.ttf" });
 const poppins = Poppins({
   subsets: ["latin"],
@@ -46,22 +55,39 @@ const data = [
           focused roadmap, ensuring we’re aligned with your objectives from day
           one.
         </p>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="hidden sm:grid grid-cols-2 gap-4">
           <Image
             src="/images/about.png"
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-lg object-cover h-44 lg:h-72 2xl:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
             src="/images/about.png"
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-lg object-cover h-44 lg:h-72 2xl:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
+        <Carousel className=" sm:hidden ">
+          <CarouselContent>
+            {Array.from({ length: 5 }).map((_, index) => (
+              <CarouselItem key={index}>
+                <Image
+                  src="/images/about.png"
+                  alt="startup template"
+                  width={500}
+                  height={500}
+                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
       </motion.div>
     ),
   },
@@ -90,22 +116,39 @@ const data = [
           insights that shape your app. We identify key opportunities and craft
           a strategy to ensure your app stands out in a competitive landscape.
         </p>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="hidden sm:grid grid-cols-2 gap-4">
           <Image
             src="/images/about.png"
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-lg object-cover h-44 lg:h-72 2xl:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
             src="/images/about.png"
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-lg object-cover h-44 lg:h-72 2xl:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
+        <Carousel className=" sm:hidden ">
+          <CarouselContent>
+            {Array.from({ length: 5 }).map((_, index) => (
+              <CarouselItem key={index}>
+                <Image
+                  src="/images/about.png"
+                  alt="startup template"
+                  width={500}
+                  height={500}
+                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
       </motion.div>
     ),
   },
@@ -135,22 +178,39 @@ const data = [
           interaction is crafted to delight users while keeping functionality at
           the forefront.
         </p>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="hidden sm:grid grid-cols-2 gap-4">
           <Image
             src="/images/about.png"
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-lg object-cover h-44 lg:h-72 2xl:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
             src="/images/about.png"
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-lg object-cover h-44 lg:h-72 2xl:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
+        <Carousel className=" sm:hidden ">
+          <CarouselContent>
+            {Array.from({ length: 5 }).map((_, index) => (
+              <CarouselItem key={index}>
+                <Image
+                  src="/images/about.png"
+                  alt="startup template"
+                  width={500}
+                  height={500}
+                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
       </motion.div>
     ),
   },
@@ -179,22 +239,39 @@ const data = [
           precision. Using cutting-edge technologies, we ensure your app is
           fast, responsive, and performs seamlessly across all devices.
         </p>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="hidden sm:grid grid-cols-2 gap-4">
           <Image
             src="/images/about.png"
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-lg object-cover h-44 lg:h-72 2xl:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
             src="/images/about.png"
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-lg object-cover h-44 lg:h-72 2xl:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
+        <Carousel className=" sm:hidden ">
+          <CarouselContent>
+            {Array.from({ length: 5 }).map((_, index) => (
+              <CarouselItem key={index}>
+                <Image
+                  src="/images/about.png"
+                  alt="startup template"
+                  width={500}
+                  height={500}
+                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
       </motion.div>
     ),
   },
@@ -223,22 +300,39 @@ const data = [
           your app. From APIs to database management, we ensure your app is
           secure, efficient, and ready to grow with your business.
         </p>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="hidden sm:grid grid-cols-2 gap-4">
           <Image
             src="/images/about.png"
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-lg object-cover h-44 lg:h-72 2xl:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
             src="/images/about.png"
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-lg object-cover h-44 lg:h-72 2xl:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
+        <Carousel className=" sm:hidden ">
+          <CarouselContent>
+            {Array.from({ length: 5 }).map((_, index) => (
+              <CarouselItem key={index}>
+                <Image
+                  src="/images/about.png"
+                  alt="startup template"
+                  width={500}
+                  height={500}
+                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
       </motion.div>
     ),
   },
@@ -267,22 +361,39 @@ const data = [
           a smooth launch on all relevant app stores. We make sure your app
           meets all requirements and is ready to impress users.
         </p>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="hidden sm:grid grid-cols-2 gap-4">
           <Image
             src="/images/about.png"
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-lg object-cover h-44 lg:h-72 2xl:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
             src="/images/about.png"
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-lg object-cover h-44 lg:h-72 2xl:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
+        <Carousel className=" sm:hidden ">
+          <CarouselContent>
+            {Array.from({ length: 5 }).map((_, index) => (
+              <CarouselItem key={index}>
+                <Image
+                  src="/images/about.png"
+                  alt="startup template"
+                  width={500}
+                  height={500}
+                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
       </motion.div>
     ),
   },
@@ -311,22 +422,39 @@ const data = [
           and updates, ensuring your app remains secure, optimized, and aligned
           with evolving user needs and industry trends.
         </p>
-        <div className="grid grid-cols-2 gap-4">
+        <div className="hidden sm:grid grid-cols-2 gap-4">
           <Image
             src="/images/about.png"
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-lg object-cover h-44 lg:h-72 2xl:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
             src="/images/about.png"
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-lg object-cover h-44 lg:h-72 2xl:h-80 w-full shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
+        <Carousel className=" sm:hidden ">
+          <CarouselContent>
+            {Array.from({ length: 5 }).map((_, index) => (
+              <CarouselItem key={index}>
+                <Image
+                  src="/images/about.png"
+                  alt="startup template"
+                  width={500}
+                  height={500}
+                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                />
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+          <CarouselPrevious />
+          <CarouselNext />
+        </Carousel>
       </motion.div>
     ),
   },
@@ -475,7 +603,7 @@ export const Timeline = () => {
           How we do it?
         </h2>
         <h1
-          className={` px-4 relative text-[25px] md:text-4xl mb-4 max-w-2xl xl:max-w-7xl lg:leading-[65px] lg:text-[48px] tracking-wide text-center  ${recoleta.className}`}
+          className={` px-4 relative text-[25px] sm:text-[48px] mb-4 max-w-2xl xl:max-w-7xl lg:leading-[65px] lg:text-[48px] tracking-wide text-center  ${recoleta.className}`}
         >
           World-class apps on demand, with our{" "}
           <span className=" text-[#DF56FE] "> process!</span>
@@ -494,23 +622,23 @@ export const Timeline = () => {
             } md:gap-4`}
           >
             <div className=" sticky flex flex-col md:flex-row z-40 items-center top-40    self-start max-w-xs lg:max-w-sm md:w-full">
-              <div className="  lg:absolute border-8 border-white dark:border-slate-950 left-0 rounded-full bg-[#E9E8FF] dark:bg-black flex items-center justify-center">
+              <div className=" -ml-1 sm:-ml-5 lg:ml-0  lg:absolute border-8 border-white dark:border-slate-950 top-0 -left-5   rounded-full bg-[#E9E8FF] dark:bg-black flex items-center justify-center">
                 {/* <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" /> */}
                 <Image
                   src={`icons/timeline${index + 1}.svg`}
                   alt="circle"
-                  width={40}
-                  height={40}
+                  width={50}
+                  height={50}
                 />
               </div>
               <h3
-                className={`hidden md:block  md:pl-20 lg:text-[40px]   dark:text-slate-200 ${recoleta.className}`}
+                className={`hidden md:block  md:pl-20 text-[40px]   dark:text-slate-200 ${recoleta.className}`}
               >
                 {item.title}
               </h3>
             </div>
 
-            <div className="relative  xl:pl-[4.1rem] pl-3  sm:pl-[2.5rem] w-full pr-4 md:pr-0 ">
+            <div className="relative  xl:pl-[4.1rem] pl-3  sm:pl-[1.8rem] w-full pr-4 md:pr-0 ">
               <h3
                 className={` ${recoleta.className} md:hidden block text-[28px] sm:text-5xl mb-4 text-left   dark:text-slate-200`}
               >
