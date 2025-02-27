@@ -53,7 +53,7 @@ const ContactUs = () => {
           viewport={{
             once: true,
           }}
-          className="max-w-2xl    w-full h-full xl:h-[850px] rounded-xl gap-5 flex flex-col  justify-between     "
+          className="max-w-2xl    w-full h-full lg:h-[850px] rounded-xl gap-5 flex flex-col  justify-between     "
         >
           <div className="flex flex-col sm:flex-row items-start sm:items-center lg:items-start lg:flex-col gap-24 lg:gap-4 ">
             <div className="relative w-fit ">
