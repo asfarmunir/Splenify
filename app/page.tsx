@@ -30,6 +30,9 @@ const Projects = dynamic(() => import("../components/shared/Projects"), {
   ssr: false,
 });
 
+const Faqs = dynamic(() => import("../components/shared/Faqs"), {
+  ssr: false,
+});
 const ContactUs = dynamic(() => import("../components/shared/ContactUs"), {
   ssr: false,
 });
@@ -63,6 +66,7 @@ export default function Home() {
         {/* Testimonials */}
         <Testimonials />
         {/* Contact Us */}
+        <Faqs />
         <div className=" px-4 md:px-0">
           <ContactUs />
         </div>
