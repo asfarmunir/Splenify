@@ -38,7 +38,7 @@ const TestimonialCard = ({
           ease: "easeOut",
         },
       }}
-      className="bg-white w-full dark:bg-slate-900 shadow  dark:shadow-none rounded-[16px] gap-4 xl:gap-5 p-6 border-[1px] border-white dark:border-slate-800 space-y-4"
+      className="bg-white w-full dark:bg-slate-900  shadow-[0_2px_20px_10px_rgba(0,0,0,0.03)]   dark:shadow-none rounded-[16px] gap-4 xl:gap-5 p-6 border-[1px] border-white dark:border-slate-800 space-y-4"
     >
       {/* <Image
         src={logo}

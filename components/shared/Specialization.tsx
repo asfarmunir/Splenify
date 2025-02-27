@@ -91,13 +91,16 @@ const Specialization = () => {
           className={` text-[28px] sm:text-5xl  px-3.5 relative sm:leading-[65px] md:text-3xl sm:mb-4 max-w-2xl lg:max-w-3xl xl:max-w-7xl lg:text-[48px] tracking-wide text-center  ${recoleta.className}`}
         >
           Our partners hire us to{" "}
-          <span className=" text-[#7165FF] "> design & develop</span> their…
+          <span className="text-[#7165FF]">
+            design<span className="mx-1">&</span>develop
+          </span>{" "}
+          their…
           <Image
             src="/images/line_vector2.svg"
             alt="Splenify"
             width={380}
             height={380}
-            className="  dark:invert hidden lg:block lg:bottom-16 xl:-bottom-5  lg:w-[190px]  xl:w-[380px] absolute lg:right-8 xl:right-40  -rotate-4 "
+            className="  dark:invert hidden lg:block lg:bottom-16 xl:-bottom-6  lg:w-[190px]  xl:w-[380px] absolute lg:right-8 xl:right-40  -rotate-4 "
           />
         </h1>
       </div>

@@ -7,7 +7,7 @@ import { scrollToSection } from "./Navbar";
 
 const Footer = () => {
   return (
-    <footer className=" w-[90%] mx-auto  max-w-6xl 2xl:max-w-7xl mb-6 ms:mb-8 rounded-[16px] md:mb-16 bg-[#161C2D] py-16 px-2.5 md:px-[70px] pt-[70px] 2xl:pt-[90px]">
+    <footer className=" w-[90%] mx-auto  max-w-6xl 2xl:max-w-7xl mb-6 ms:mb-8 rounded-[16px] md:mb-16 bg-[#161C2D] py-[42px] xl:py-[52px]  px-2.5 md:px-[70px] ">
       <div className="flex flex-col  gap-8 items-center px-3 md:px-0   pb-16 border-b border-gray-600">
         <div className="flex flex-col items-center lg:items-start  gap-3">
           <Image

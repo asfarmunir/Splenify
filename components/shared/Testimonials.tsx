@@ -42,11 +42,19 @@ const Testimonials = () => {
           />
 
           <h1
-            className={`text-[27px] text-wrap max-w-lg md:max-w-5xl  sm:text-[48px]  ${recoleta.className}    text-center `}
+            className={`text-[27px] text-wrap relative max-w-lg md:max-w-5xl  sm:text-[48px]  ${recoleta.className}    text-center `}
           >
-            Here’s what our 100+ <span className="text-[#7165FF]">clients</span>{" "}
-            say
+            Here’s what our 100+{" "}
+            <span className="text-[#7165FF] ">clients</span> say
+            <Image
+              src="/images/line_vector2.svg"
+              alt="Splenify"
+              width={380}
+              height={380}
+              className="  dark:invert hidden lg:block lg:bottom-0 xl:-bottom-2  lg:w-[160px]  xl:w-[220px] absolute lg:right-16 xl:right-8  -rotate-4 "
+            />
           </h1>
+
           <Image
             src={"/images/leafr.svg"}
             width={10}

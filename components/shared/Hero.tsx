@@ -39,7 +39,7 @@ const Hero = () => {
         id="home"
         className="flex flex-col items-center gap-8 2xl:mt-6 mb-14 md:mb-10"
       >
-        <div className="flex items-center py-1 relative gap-3 md:gap-3 2xl:gap-5">
+        <div className="flex items-center py-1 sm:pt-2  relative gap-3 md:gap-3 2xl:gap-5">
           <Image
             src="/icons/left-arrow.svg"
             alt="Splenify"
@@ -50,7 +50,7 @@ const Hero = () => {
           <Image
             src="/icons/right-arrow.svg"
             alt="Splenify"
-            className=" absolute w-[35px] sm:w-[42px] right-8 md:right-14 top-10 2xl:top-14
+            className=" absolute w-[35px] sm:w-[42px] right-8 md:right-14 top-10 sm:top-12 2xl:top-14
             
             "
             width={42}

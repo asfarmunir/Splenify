@@ -11,7 +11,7 @@ import img6 from "@/public/bento/6.webp";
 const BentoGrid = () => {
   return (
     <div className=" w-full flex  justify-center items-start  ">
-      <div className="flex flex-col -space-y-4 sm:-space-y-6 -ml-32 sm:-ml-16 2xl:ml-0   ">
+      <div className="flex flex-col -space-y-4 sm:-space-y-6 -ml-32 sm:-ml-16 xl:ml-0   ">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           whileInView={{
@@ -103,7 +103,7 @@ const BentoGrid = () => {
           objectPosition="center"
         />
       </motion.div>
-      <div className="flex flex-col  -space-y-4 sm:-space-y-6 -mr-32 sm:-mr-16 2xl:-mr-0  ">
+      <div className="flex flex-col  -space-y-4 sm:-space-y-6 -mr-32 sm:-mr-16 xl:-mr-0  ">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           whileInView={{

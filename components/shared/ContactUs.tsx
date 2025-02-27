@@ -89,9 +89,9 @@ const ContactUs = () => {
           </div>
 
           <h1
-            className={` ${recoleta.className} mt-7 sm:mt-16 lg:mt-4 text-[28px] text-center sm:text-[33px] xl:text-[36px]  capitalize tracking-wide`}
+            className={` ${recoleta.className} mt-7 sm:mt-16 lg:mt-4 text-[28px] text-center  sm:text-start sm:text-[33px] xl:text-[36px]  capitalize tracking-wide`}
           >
-            Talk to you <br className="block sm:hidden" /> in less than
+            Talk to you <br className="block sm:hidden" /> in less than{" "}
             <span className="text-[#DF56FE] px-1">24hs.</span>
           </h1>
           <div className=" hidden sm:block w-full p-6 sm:mt-12 mb-[15px] lg:mb-[0px] xl:p-7 rounded-lg bg-[#7165FF33]">
@@ -267,7 +267,7 @@ const ContactUs = () => {
               <textarea
                 placeholder="enter message..."
                 required
-                className=" w-full md:h-24 border-2 p-2 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-lg"
+                className=" w-full border-2 p-2 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-lg"
               />
             </div>
             <button

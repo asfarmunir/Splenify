@@ -67,15 +67,15 @@ const Projects = () => {
           },
         }}
         id="projects"
-        className="hidden md:flex flex-col overflow-x-hidden w-full relative  items-center gap-3 2xl:gap-5  "
+        className="hidden md:flex flex-col overflow-x w-full relative  items-center gap-3 2xl:gap-5  "
       >
         <Image
           src="/images/left-arrow.svg"
           alt="Splenify"
           width={300}
           height={300}
-          className=" absolute hidden md:block  top-0   rotate-1 right-0 
-          xl:w-[340px] lg:w-[230px] 2xl:w-[420px] dark:invert
+          className=" absolute hidden md:block  lg:-top-8 xl:-top-11   rotate-1 right-0 
+           lg:w-[370px] xl:w-[480px] dark:invert
 
            "
         />
@@ -84,11 +84,11 @@ const Projects = () => {
           alt="Splenify"
           width={160}
           height={140}
-          className=" absolute left-0   hidden md:block  xl:rotate-1  
-          lg:w-[230px] xl:w-[340px] 2xl:w-[400px] dark:invert
+          className=" absolute left-0 lg:-top-16  xl:-top-20  hidden md:block  xl:rotate-1  
+          lg:w-[370px] xl:w-[420px] dark:invert
           "
         />
-        <h2 className=" text-base   lg:text-[32px] mb-4 tracking-wide ">
+        <h2 className=" text-base   lg:text-[32px] mb-5 tracking-wide ">
           Catch the latest
         </h2>
         <h1
@@ -97,7 +97,7 @@ const Projects = () => {
           Browse our most{" "}
           <span className="text-[#7165FF]">recent projects</span>
         </h1>
-        <div className=" w-full gridContainer max-w-5xl xl:max-w-6xl    2xl:max-w-7xl gap-12 2xl:gap-16 ">
+        <div className=" w-full gridContainer overflow-x-hidden max-w-5xl xl:max-w-6xl    2xl:max-w-7xl gap-12 2xl:gap-16 ">
           <motion.div
             initial={{
               x: -150,
@@ -124,10 +124,14 @@ const Projects = () => {
                 className=" w-full h-full object-cover  object-top"
               />
             </div>
-            <div className="flex items-start w-full pt-6 justify-between">
+            <div className="flex  items-start w-full pt-6 justify-between">
               <div className="flex flex-col">
-                <p className=" font-thin text-base">Mobile Application</p>
-                <h2 className="text-xl font-bold ">Aura IOS | Android</h2>
+                <p className=" font-thin text-[#161C2D] text-base">
+                  Mobile Application
+                </p>
+                <h2 className="text-xl text-[#161C2D] font-semibold ">
+                  Aura IOS | Android
+                </h2>
               </div>
               <Modal
                 heroImg="/projectModal/modalHero2.webp"
@@ -169,8 +173,12 @@ const Projects = () => {
 
             <div className="flex items-start w-full pt-6 justify-between">
               <div className="flex flex-col">
-                <p className=" font-thin text-base">Video Animation</p>
-                <h2 className="text-xl font-bold ">AB.S Snack Animation</h2>
+                <p className=" font-thin text-[#161C2D] text-base">
+                  Video Animation
+                </p>
+                <h2 className="text-xl text-[#161C2D] font-semibold ">
+                  AB.S Snack Animation
+                </h2>
               </div>
               <Modal
                 heroImg="/projectModal/modalHero3.webp"
@@ -211,9 +219,11 @@ const Projects = () => {
             </div>
             <div className="flex items-start w-full pt-6  justify-between">
               <div className="flex flex-col">
-                <p className=" font-thin text-base">Web Development</p>
-                <h2 className="text-xl font-bold ">
-                  Gradient Website <br /> Development
+                <p className=" font-thin text-[#161C2D] text-base">
+                  Web Development
+                </p>
+                <h2 className="text-xl text-[#161C2D] font-semibold ">
+                  Gradient Website <br className="xl:hidden " /> Development
                 </h2>
               </div>
               <Modal
@@ -255,10 +265,12 @@ const Projects = () => {
 
             <div className="flex items-start w-full pt-6  justify-between">
               <div className="flex flex-col">
-                <p className=" font-thin text-base">
+                <p className=" font-thin text-[#161C2D] text-base">
                   Full Stack Web Development
                 </p>
-                <h2 className="text-xl font-bold ">Dashboard Teamify</h2>
+                <h2 className="text-xl font-semibold  text-[#161C2D] ">
+                  Dashboard Teamify
+                </h2>
               </div>
               <Modal
                 heroImg="/projectModal/modalHero1.webp"
@@ -306,8 +318,8 @@ const Projects = () => {
           alt="Splenify"
           width={300}
           height={300}
-          className=" absolute  top-12   rotate-1 right-0 
-          w-[190px] dark:invert
+          className=" absolute  top-16   rotate-1 -right-[4.5rem] 
+          hidden sm:block sm:w-[240px] dark:invert
 
            "
         />
@@ -316,8 +328,8 @@ const Projects = () => {
           alt="Splenify"
           width={160}
           height={140}
-          className=" absolute left-0  top-16  -rotate-6
-          w-[150px] dark:invert
+          className="   hidden sm:block absolute -left-24  top-16  -rotate-6
+          w-[250px] dark:invert
           "
         />
 
