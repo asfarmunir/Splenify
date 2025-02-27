@@ -27,7 +27,7 @@ const ContactUs = () => {
         },
       }}
       id="contact"
-      className="flex flex-col  pb-[80px] max-w-2xl md:max-w-6xl mx-auto  w-full items-center overflow-x-hidden  justify-center    gap-4 md:px-2  mt"
+      className="flex  flex-col  pb-[80px] max-w-2xl md:max-w-6xl mx-auto  w-full items-center overflow-x-hidden  justify-center    gap-4 md:px-2  mt"
     >
       <h1
         className={`text-[28px]   sm:text-[47px] mb-4 md:mb-[60px] md:text-[40px] lg:text-[46px]  ${recoleta.className}    text-center `}
@@ -36,7 +36,7 @@ const ContactUs = () => {
         <span className="text-[#7165FF]">Flutter Journey</span>?
       </h1>
 
-      <div className=" flex w-full max-w-5xl xl:max-w-7xl  items-start justify-center  flex-col md:flex-row gap-4 lg:gap-8">
+      <div className=" flex w-full  max-w-5xl xl:max-w-7xl  items-start  justify-center   md:flex-row gap-4 lg:gap-8">
         <motion.div
           initial={{
             x: -100,
@@ -53,7 +53,7 @@ const ContactUs = () => {
           viewport={{
             once: true,
           }}
-          className="max-w-2xl   w-full lg:h-[43rem] rounded-xl gap-5 flex flex-col     "
+          className="max-w-2xl    w-full h-full xl:h-[850px] rounded-xl gap-5 flex flex-col  justify-between     "
         >
           <div className="flex flex-col sm:flex-row items-start sm:items-center lg:items-start lg:flex-col gap-24 lg:gap-4 ">
             <div className="relative w-fit ">
@@ -162,7 +162,7 @@ const ContactUs = () => {
           </div> */}
           <form
             action=""
-            className=" bg-white  dark:bg-slate-900 dark:shadow-inner border dark:border-none border-[#D9D9D9] dark:shadow-gray-800 p-4 sm:p-8   rounded-xl  flex flex-col gap-2"
+            className=" bg-white  dark:bg-slate-900 dark:shadow-inner border dark:border-none border-[#D9D9D9] dark:shadow-gray-800 p-4 sm:p-8   rounded-xl  flex flex-col gap-1"
           >
             <h2
               className={` text-center sm:text-start text-[28px]  mb-2 ${recoleta.className}`}
@@ -184,7 +184,7 @@ const ContactUs = () => {
                 placeholder="enter name..."
                 type="text"
                 required
-                className=" w-full border-2 p-2 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-lg"
+                className=" w-full border p-1.5 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-[8px]"
               />
             </div>
             <div className="flex flex-col gap-1 mt-3">
@@ -198,7 +198,7 @@ const ContactUs = () => {
                 placeholder="enter last name..."
                 type="text"
                 required
-                className=" w-full border-2 p-2 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-lg"
+                className=" w-full border p-1.5 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-[8px]"
               />
             </div>
             <div className="flex flex-col gap-1 mt-3">
@@ -212,7 +212,7 @@ const ContactUs = () => {
                 placeholder="email@gmail.com"
                 type="text"
                 required
-                className=" w-full border-2 p-2 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-lg"
+                className=" w-full border p-1.5 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-[8px]"
               />
             </div>
             <div className="flex flex-col gap-1 mt-3">
@@ -226,7 +226,7 @@ const ContactUs = () => {
                 placeholder=" +1 234 567 890"
                 type="text"
                 required
-                className=" w-full border-2 p-2 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-lg"
+                className=" w-full border p-1.5 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-[8px]"
               />
             </div>
             <div className="flex flex-col gap-1 mt-2">
@@ -240,7 +240,7 @@ const ContactUs = () => {
                 placeholder="enter here..."
                 type="text"
                 required
-                className=" w-full border-2 p-2 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-lg"
+                className=" w-full border p-1.5 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-[8px]"
               />
             </div>
             <div className="flex flex-col gap-1 mt-2">
@@ -254,7 +254,7 @@ const ContactUs = () => {
                 placeholder="add details..."
                 type="text"
                 required
-                className=" w-full border-2 p-2 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-lg"
+                className=" w-full border p-1.5 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-[8px]"
               />
             </div>
             <div className="flex flex-col gap-1 mt-2">
@@ -267,7 +267,7 @@ const ContactUs = () => {
               <textarea
                 placeholder="enter message..."
                 required
-                className=" w-full border-2 p-2 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-lg"
+                className=" w-full border p-1.5 h-12 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-[8px]"
               />
             </div>
             <button
