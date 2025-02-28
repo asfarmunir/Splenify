@@ -64,7 +64,7 @@ const ContactUs = () => {
                 height={200}
                 className=" "
               />
-              <div className=" absolute  -bottom-12 -right-20  p-4 px-6 shadow rounded-lg backdrop-blur  ">
+              <div className=" absolute  -bottom-12 -right-20  p-4 px-6 shadow-custom2 rounded-lg backdrop-blur  ">
                 <h2 className="text-2xl font-bold">Shayan</h2>
                 <p className="text-sm text-[#747576] dark:text-slate-400 ">
                   Solution Specialist

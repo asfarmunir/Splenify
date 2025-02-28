@@ -26,6 +26,7 @@ const config = {
   		},
 		boxShadow: {
         'custom': '0 5px 44px 0 rgba(152, 152, 152, 0.1)', // #9898981A with 10% opacity
+        'custom2': '0 5px 44px 0 rgba(152, 152, 152, 0.2)', // #9898981A with 10% opacity
       	},
 		maxWidth:{
 			"5xl":"960px",

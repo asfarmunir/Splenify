@@ -4,17 +4,17 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { scrollToSection } from "./Navbar";
-
+import logo from "@/public/icons/logo.svg";
 const Footer = () => {
   return (
-    <footer className=" w-[90%] mx-auto  max-w-6xl 2xl:max-w-7xl mb-6 ms:mb-8 rounded-[21px] md:mb-16 bg-[#161C2D] py-[42px] xl:py-[52px]  px-2.5 md:px-[70px] ">
-      <div className="flex flex-col  gap-8 items-center px-3 md:px-0  w-fit mx-auto  pb-10  border-b border-gray-600">
+    <footer className=" mx-[18px] sm:mx-auto sm:max-w-2xl  lg:max-w-5xl xl:max-w-6xl mb-6 ms:mb-8 rounded-[21px] md:mb-16 bg-[#161C2D] py-[42px] xl:py-[52px]  px-2.5 md:px-[70px] ">
+      <div className="flex flex-col  gap-8 items-center px-3 md:px-0  w-fit mx-auto  pb-10  border-b border-[#272B39]">
         <div className="flex flex-col items-center lg:items-start  gap-3">
           <Image
-            src="/icons/logo.svg"
+            src={logo}
             alt="Splenify"
             width={160}
-            className=" mx-auto mb-2"
+            className=" mx-auto mb-3"
             height={160}
           />
           <h2 className=" text-[28px] xl:text-[32px] sm:text-3xl mb-4 text-center  md:text-3xl  text-white font-semibold">
