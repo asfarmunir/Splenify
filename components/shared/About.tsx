@@ -88,7 +88,7 @@ const page = () => {
   }, [inView4, entry4]);
   return (
     <div className=" w-full px-[18px] sm:px-0 flex flex-col gap-[64px] lg:gap-[112px] xl:gap-[224px] pt-[48px]   items-center overflow-x-hidden sm:max-w-2xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mx-auto ">
-      <div className=" w-full mx-auto gap-8 xl:gap-[48px]    flex flex-col md:flex-row items-center justify-between  max-w-6xl 2xl:max-w-7xl">
+      <div className=" w-full mx-auto gap-8 xl:gap-[48px]    flex flex-col lg:flex-row items-start xl:items-center justify-between  max-w-6xl 2xl:max-w-7xl">
         <motion.div
           initial={{
             x: -100,
@@ -149,7 +149,7 @@ const page = () => {
         </motion.div>
       </div>
 
-      <div className=" w-full gap-12 2xl:gap-20 mx-auto flex flex-col md:flex-row xl:flex-row-reverse items-center justify-between  max-w-6xl 2xl:max-w-7xl">
+      <div className=" w-full gap-12 2xl:gap-20 mx-auto flex flex-col lg:flex-row xl:flex-row-reverse items-start xl:items-center justify-between  max-w-6xl 2xl:max-w-7xl">
         <motion.div
           initial={{
             x: 100,
@@ -182,14 +182,17 @@ const page = () => {
             mobile apps that stand out in a crowded digital world. Starting from
             ground zero, we guide your app through every stage of its
             journey—from concept to launch and beyond—ensuring it reaches its
-            full potential. <br /> <br /> Our team of expert developers,
-            designers, and strategists combine cutting-edge technology with a
-            deep understanding of user needs. <br />
-            <br />
-            Whether it’s crafting flawless interfaces, building seamless
-            functionality, or optimizing performance, we create apps that
-            deliver real impact. <br /> <br /> Start your success story with
-            Splenify, today.
+            full potential. <br /> <br />{" "}
+            <span className="block lg:hidden xl:block">
+              Our team of expert developers, designers, and strategists combine
+              cutting-edge technology with a deep understanding of user needs.{" "}
+              <br />
+              <br />
+              Whether it’s crafting flawless interfaces, building seamless
+              functionality, or optimizing performance, we create apps that
+              deliver real impact. <br /> <br /> Start your success story with
+              Splenify, today.{" "}
+            </span>
           </p>
         </motion.div>
         <motion.div
@@ -214,17 +217,26 @@ const page = () => {
             src="/about/2.webp"
             alt="about"
             width={450}
-            className=" w-full  xl:h-[634px] rounded-[24px] "
+            className=" w-full lg:h-[391px]  xl:h-[634px] rounded-[24px] "
             height={450}
           />
         </motion.div>
       </div>
+      <p className="text-[16px] hidden -mt-[112px]  lg:block xl:hidden leading-[24px] sm:text-[20px] sm:leading-[30px]  2xl:text-lg tracking-wide  ">
+        Our team of expert developers, designers, and strategists combine
+        cutting-edge technology with a deep understanding of user needs. <br />
+        <br />
+        Whether it’s crafting flawless interfaces, building seamless
+        functionality, or optimizing performance, we create apps that deliver
+        real impact. <br /> <br /> Start your success story with Splenify,
+        today.{" "}
+      </p>
       <div className=" w-full mx-auto max-w-6xl 2xl:max-w-7xl ">
         <h1 className={`text-[36px]  sm:text-[57px]  ${recoleta.className} `}>
           Our <span className="text-[#5956E9]">Story</span>
         </h1>{" "}
         <div className="flex gap-5 lg:gap-12 2xl:gap-20 py-6 sm:py-12 2xl:py-16 w-full">
-          <div className="bg-[#5956E9] bg-opacity-[12%] ml-4 sm:mx-12 2xl:mx-20 w-2 rounded-full mt-10 lg:mt-16 relative">
+          <div className="bg-[#5956E9] bg-opacity-[12%] ml-4 sm:mx-12 lg:mx-10 xl:mx-20 w-2 rounded-full mt-10 lg:mt-16 relative">
             <motion.div
               className="absolute top-0 transition-all duration-700 ease-out   w-full rounded-full  bg-[#5956E9] " /* roadmapProgressBar */
               style={{
@@ -268,7 +280,7 @@ const page = () => {
           <div className="flex flex-col gap-[30px] sm:gap-[64px] w-full">
             <div
               ref={ref1}
-              className=" w-full gap-5 sm:gap-10 mx-auto flex flex-col md:flex-row items-start lg:items-center justify-between  max-w-6xl 2xl:max-w-7xl"
+              className=" w-full gap-5 sm:gap-10 mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between  max-w-6xl 2xl:max-w-7xl"
             >
               <motion.div
                 initial={{
@@ -330,7 +342,7 @@ const page = () => {
             </div>
             <div
               ref={ref2}
-              className=" w-full gap-5 sm:gap-10 mx-auto flex flex-col md:flex-row-reverse items-start lg:items-center justify-between  max-w-6xl 2xl:max-w-7xl"
+              className=" w-full gap-5 sm:gap-10 mx-auto flex flex-col lg:flex-row-reverse items-start lg:items-center justify-between  max-w-6xl 2xl:max-w-7xl"
             >
               <motion.div
                 initial={{
@@ -390,7 +402,7 @@ const page = () => {
             </div>
             <div
               ref={ref3}
-              className=" w-full gap-5 sm:gap-10 mx-auto flex flex-col md:flex-row items-start lg:items-center justify-between  max-w-6xl 2xl:max-w-7xl"
+              className=" w-full gap-5 sm:gap-10 mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between  max-w-6xl 2xl:max-w-7xl"
             >
               <motion.div
                 initial={{
@@ -454,7 +466,7 @@ const page = () => {
             </div>
             <div
               ref={ref4}
-              className=" w-full gap-5 sm:gap-10 mx-auto flex flex-col md:flex-row-reverse items-start lg:items-center justify-between  max-w-6xl 2xl:max-w-7xl"
+              className=" w-full gap-5 sm:gap-10 mx-auto flex flex-col lg:flex-row-reverse items-start lg:items-center justify-between  max-w-6xl 2xl:max-w-7xl"
             >
               <motion.div
                 initial={{
@@ -528,7 +540,7 @@ const page = () => {
           culture, work ethic, and commitment to delivering exceptional mobile
           solutions.
         </p>
-        <div className=" w-full grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10 pt-6">
+        <div className=" w-full grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10 pt-6">
           {values.map((value, index) => (
             <motion.div
               key={index}
@@ -565,7 +577,7 @@ const page = () => {
           Meet the heart of <span className="text-[#CA67FC]">Splenify</span>
         </h1>
 
-        <div className=" w-full grid grid-cols-2 md:grid-cols-3  lg:grid-cols-4 gap-3 sm:gap-6   gap-y-12 pt-7">
+        <div className=" w-full grid grid-cols-2   lg:grid-cols-4 gap-3 sm:gap-6   gap-y-12 pt-7">
           {Array.from({ length: 8 }).map((_, index) => (
             <motion.div
               key={index}

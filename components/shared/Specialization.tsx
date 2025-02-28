@@ -357,15 +357,15 @@ const Specialization = () => {
                 alt="Splenify"
                 loading="lazy"
                 width={225}
-                className=" w-full h-full lg:h-[206px] xl:h-[234px] object-cover object-center rounded-2xl"
+                className=" w-full h-full lg:h-[206px] xl:h-[254px] object-cover object-center rounded-2xl"
                 height={123}
               />
             </div>
             <div className=" w-full flex flex-col justify-center  ">
-              <h2 className="text-[20px] xl:text-[24px] font-semibold mb-2 capitalize">
+              <h2 className="text-[20px] xl:text-[24px] xl:leading-[36px] font-semibold mb-2 capitalize">
                 {item.title}
               </h2>
-              <p className="text-[14px] lg:text-[12px] xl:text-[15px]   max-w-xs 2xl:max-w-lg">
+              <p className="text-[14px] lg:text-[12px] xl:text-[14px]   ">
                 {item.description}
               </p>
               <div

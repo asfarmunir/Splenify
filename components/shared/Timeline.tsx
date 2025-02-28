@@ -667,7 +667,9 @@ export const Timeline = () => {
           <div
             key={index}
             className={`flex justify-start ${
-              index !== data.length - 1 ? "pb-20 2xl:pb-24" : ""
+              index !== data.length - 1
+                ? "pb-[30px] sm:pb-[60px] 2xl:pb-24"
+                : ""
             } md:gap-4`}
           >
             <div className=" sticky flex flex-col md:flex-row z-40 items-center top-40    self-start max-w-xs lg:max-w-sm lg:w-full">

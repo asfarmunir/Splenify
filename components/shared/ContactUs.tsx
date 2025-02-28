@@ -36,7 +36,7 @@ const ContactUs = () => {
         <span className="text-[#7165FF]">Flutter Journey</span>?
       </h1>
 
-      <div className=" flex flex-col lg:h-[839px] xl:px-[60px]  w-full  max-w-2xl lg:max-w-5xl xl:max-w-6xl  items-start  justify-center   lg:flex-row gap-4 lg:gap-4 xl:gap-8">
+      <div className=" flex flex-col lg:h-[855px] xl:h-[860px] 2xl:h-[900px]  xl:px-[60px]  w-full  max-w-2xl lg:max-w-5xl xl:max-w-6xl  items-start  justify-center   lg:flex-row gap-4 lg:gap-4 xl:gap-8">
         <motion.div
           initial={{
             x: -100,
@@ -133,19 +133,19 @@ const ContactUs = () => {
           viewport={{
             once: true,
           }}
-          className="max-w-2xl w-full xl:w-[90%]  h-full "
+          className="max-w-2xl w-full   h-full "
         >
           <form
             action=""
-            className=" bg-white h-full  dark:bg-slate-900 dark:shadow-inner border dark:border-none border-[#D9D9D9] dark:shadow-gray-800 p-4 sm:p-8   rounded-xl  flex flex-col gap-1"
+            className=" bg-white h-full  dark:bg-slate-900 dark:shadow-inner border dark:border-none border-[#D9D9D9] dark:shadow-gray-800 p-4 sm:p-8   rounded-xl  flex flex-col gap-1 xl:gap-2"
           >
             <h2
-              className={` text-center sm:text-start text-[28px]  mb-2 ${recoleta.className}`}
+              className={` text-center capitalize sm:text-start text-[28px]  mb-2 ${recoleta.className}`}
             >
-              Got an idea?{" "}
+              Got an idea? <br className=" sm:hidden" />
               <span className="text-[#DF56FE] ">We’ve got the skills.</span>
             </h2>
-            <p className="text-sm text-center sm:text-start sm:text-[20px] capitalize text-slate-800 dark:text-slate-300 tracking-wide leading-loose  ">
+            <p className="text-sm text-center sm:text-start sm:text-[20px] capitalize text-slate-800 dark:text-slate-300 tracking-wide leading-[30px]  ">
               Fill out our contact form and we’ll get in touch!
             </p>
             <div className="flex flex-col gap-1 mt-3">
@@ -211,12 +211,19 @@ const ContactUs = () => {
               >
                 Solution
               </label>
-              <input
-                placeholder="enter here..."
-                type="text"
+              <select
+                name=""
+                id=""
                 required
                 className=" w-full text-[#B3B3B3] placeholder:text-[#B3B3B3] border p-1.5 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-[8px]"
-              />
+              >
+                <option value="Mobile App Development">
+                  Mobile App Development
+                </option>
+                <option value="Web Development">Web Development</option>
+                <option value="UI/UX Design">UI/UX Design</option>
+                <option value="Other">Other</option>
+              </select>
             </div>
             <div className="flex flex-col gap-1 mt-2">
               <label
@@ -239,7 +246,7 @@ const ContactUs = () => {
               >
                 Tell us about your project
               </label>
-              <textarea
+              <input
                 placeholder="enter message..."
                 required
                 className=" w-full border p-1.5 h-12 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-[8px]"

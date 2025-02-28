@@ -301,15 +301,19 @@ const Projects = () => {
           },
         }}
         id="mobile-projects"
-        className="flex  flex-col lg:hidden w-full relative max-w-2xl mx-auto  items-center  px-8 sm:px-0 gap-4 2xl:gap-5   my-[20px] md:my-[30px]"
+        className="flex  flex-col lg:hidden w-full relative max-w-2xl mx-auto  items-center   gap-4 2xl:gap-5   my-[20px] md:my-[30px]"
       >
-        <h2 className=" text-[16px] sm:text-[32px] tracking-wide ">
+        <h2 className=" hidden sm:block text-[16px] sm:text-[32px] tracking-wide ">
           Catch the latest
         </h2>
+        <h2 className=" sm:hidden text-[16px] sm:text-[32px] tracking-wide ">
+          We go beyond just visuals
+        </h2>
         <h1
-          className={` text-[28px] sm:text-[48px] relative  tracking-wide text-center mb-6 ${recoleta.className}`}
+          className={` text-[27px] sm:text-[48px] relative  tracking-wide text-center mb-6 ${recoleta.className}`}
         >
-          Browse our most <br className="hidden sm:block" />
+          Browse our <span className="px-1 hidden sm:block">most</span>{" "}
+          <br className="hidden sm:block" />
           <span className="text-[#7165FF]">recent projects</span>
         </h1>
 
@@ -333,7 +337,7 @@ const Projects = () => {
           "
         />
 
-        <div className=" w-full max-w-5xl 2xl:max-w-7xl space-y-8   2xl:gap-16 ">
+        <div className=" w-full max-w-5xl 2xl:max-w-7xl space-y-8 px-8 sm:px-0   2xl:gap-16 ">
           <motion.div
             initial={{
               x: 150,
