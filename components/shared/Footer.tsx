@@ -4,7 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { scrollToSection } from "./Navbar";
-import logo from "@/public/icons/logo.svg";
+import logo from "../../public/icons/Logo.svg";
+
 const Footer = () => {
   return (
     <footer className=" mx-[18px] sm:mx-auto sm:max-w-2xl  lg:max-w-5xl xl:max-w-6xl mb-6 ms:mb-8 rounded-[21px] md:mb-16 bg-[#161C2D] py-[42px] xl:py-[52px]  px-2.5 md:px-[70px] ">
