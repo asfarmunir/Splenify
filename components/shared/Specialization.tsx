@@ -11,28 +11,28 @@ const specializations = [
     title: "FineTech",
     description:
       "Navigate complex technological decisions with the help of our industry-vetted IT professionals and create  innovative solutions tailored to your financial business needs.",
-    image: "/images/avatar2.png",
+    image: "/main/Fintech.webp",
     tags: ["Secure Transaction", "Crypto MVP", "Banking"],
   },
   {
     title: "Healthcare/Fitness",
     description:
       "Revolutionize healthcare and keep fitness on top with applications designed for HIPAA compliance, OSHA regulations and easy integrations with medical systems",
-    image: "/images/avatar2.png",
+    image: "/main/healthcare.webp",
     tags: ["Patient Management", "Telemedicine Apps", "Health Data Analytics"],
   },
   {
     title: "Education",
     description:
       "Empower learners and educators with intuitive and engaging platforms, from e-learning apps to classroom tools that drive interaction and foster growth",
-    image: "/images/avatar2.png",
+    image: "/main/Education.webp",
     tags: ["E-Learning Platforms", "Virtual Classrooms", "Student Analytics"],
   },
   {
     title: "Fashion",
     description:
       "Transform your fashion business mobile apps that bridge the gap between creativity and commerce,  user experiences that captivate audiences.",
-    image: "/images/avatar2.png",
+    image: "/main/Fashion.webp",
     tags: [
       "Virtual Try-Ons",
       "Inventory Management",
@@ -43,14 +43,14 @@ const specializations = [
     title: "Social Media",
     description:
       "Bring content to life with applications that redefine user engagement. From streaming to social tools, we connect and entertain.",
-    image: "/images/avatar2.png",
+    image: "/main/SocialMedia.webp",
     tags: ["Streaming Services", "Content Management", "Social Media Features"],
   },
   {
     title: "Retail & Ecommerce",
     description:
       "Reimagine the shopping experience with mobile solutions  simplify transactions, & drive sales through intelligent features and seamless design.",
-    image: "/images/avatar2.png",
+    image: "/main/Retail.webp",
     tags: [
       "Mobile E-Commerce",
       "Loyalty Programs",
@@ -357,7 +357,7 @@ const Specialization = () => {
                 alt="Splenify"
                 loading="lazy"
                 width={225}
-                className=" w-full h-full lg:h-[206px] object-cover object-center rounded-2xl"
+                className=" w-full h-full lg:h-[206px] xl:h-[234px] object-cover object-center rounded-2xl"
                 height={123}
               />
             </div>

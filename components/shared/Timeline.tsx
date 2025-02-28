@@ -57,14 +57,14 @@ const data = [
         </p>
         <div className="hidden sm:grid grid-cols-2 gap-4">
           <Image
-            src="/images/about.png"
+            src="/main/d1.webp"
             alt="startup template"
             width={500}
             height={500}
             className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
-            src="/images/about.png"
+            src="/main/d2.webp"
             alt="startup template"
             width={500}
             height={500}
@@ -73,17 +73,24 @@ const data = [
         </div>
         <Carousel className=" sm:hidden ">
           <CarouselContent>
-            {Array.from({ length: 5 }).map((_, index) => (
-              <CarouselItem key={index}>
-                <Image
-                  src="/images/about.png"
-                  alt="startup template"
-                  width={500}
-                  height={500}
-                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-                />
-              </CarouselItem>
-            ))}
+            <CarouselItem>
+              <Image
+                src="/main/d1.webp"
+                alt="startup template"
+                width={500}
+                height={500}
+                className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              />
+            </CarouselItem>
+            <CarouselItem>
+              <Image
+                src="/main/d2.webp"
+                alt="startup template"
+                width={500}
+                height={500}
+                className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              />
+            </CarouselItem>
           </CarouselContent>
           <CarouselPrevious />
           <CarouselNext />
@@ -118,14 +125,14 @@ const data = [
         </p>
         <div className="hidden sm:grid grid-cols-2 gap-4">
           <Image
-            src="/images/about.png"
+            src="/main/r1.webp"
             alt="startup template"
             width={500}
             height={500}
             className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
-            src="/images/about.png"
+            src="/main/r2.webp"
             alt="startup template"
             width={500}
             height={500}
@@ -134,17 +141,24 @@ const data = [
         </div>
         <Carousel className=" sm:hidden ">
           <CarouselContent>
-            {Array.from({ length: 5 }).map((_, index) => (
-              <CarouselItem key={index}>
-                <Image
-                  src="/images/about.png"
-                  alt="startup template"
-                  width={500}
-                  height={500}
-                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-                />
-              </CarouselItem>
-            ))}
+            <CarouselItem>
+              <Image
+                src="/main/r1.webp"
+                alt="startup template"
+                width={500}
+                height={500}
+                className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              />
+            </CarouselItem>
+            <CarouselItem>
+              <Image
+                src="/main/r2.webp"
+                alt="startup template"
+                width={500}
+                height={500}
+                className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              />
+            </CarouselItem>
           </CarouselContent>
           <CarouselPrevious />
           <CarouselNext />
@@ -180,14 +194,14 @@ const data = [
         </p>
         <div className="hidden sm:grid grid-cols-2 gap-4">
           <Image
-            src="/images/about.png"
+            src="/main/u1.webp"
             alt="startup template"
             width={500}
             height={500}
             className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
-            src="/images/about.png"
+            src="/main/u2.webp"
             alt="startup template"
             width={500}
             height={500}
@@ -196,17 +210,24 @@ const data = [
         </div>
         <Carousel className=" sm:hidden ">
           <CarouselContent>
-            {Array.from({ length: 5 }).map((_, index) => (
-              <CarouselItem key={index}>
-                <Image
-                  src="/images/about.png"
-                  alt="startup template"
-                  width={500}
-                  height={500}
-                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-                />
-              </CarouselItem>
-            ))}
+            <CarouselItem>
+              <Image
+                src="/main/u1.webp"
+                alt="startup template"
+                width={500}
+                height={500}
+                className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              />
+            </CarouselItem>
+            <CarouselItem>
+              <Image
+                src="/main/u2.webp"
+                alt="startup template"
+                width={500}
+                height={500}
+                className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              />
+            </CarouselItem>
           </CarouselContent>
           <CarouselPrevious />
           <CarouselNext />
@@ -241,14 +262,14 @@ const data = [
         </p>
         <div className="hidden sm:grid grid-cols-2 gap-4">
           <Image
-            src="/images/about.png"
+            src="/main/f1.webp"
             alt="startup template"
             width={500}
             height={500}
             className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
-            src="/images/about.png"
+            src="/main/f2.webp"
             alt="startup template"
             width={500}
             height={500}
@@ -257,17 +278,24 @@ const data = [
         </div>
         <Carousel className=" sm:hidden ">
           <CarouselContent>
-            {Array.from({ length: 5 }).map((_, index) => (
-              <CarouselItem key={index}>
-                <Image
-                  src="/images/about.png"
-                  alt="startup template"
-                  width={500}
-                  height={500}
-                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-                />
-              </CarouselItem>
-            ))}
+            <CarouselItem>
+              <Image
+                src="/main/f1.webp"
+                alt="startup template"
+                width={500}
+                height={500}
+                className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              />
+            </CarouselItem>
+            <CarouselItem>
+              <Image
+                src="/main/f2.webp"
+                alt="startup template"
+                width={500}
+                height={500}
+                className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              />
+            </CarouselItem>
           </CarouselContent>
           <CarouselPrevious />
           <CarouselNext />
@@ -302,14 +330,14 @@ const data = [
         </p>
         <div className="hidden sm:grid grid-cols-2 gap-4">
           <Image
-            src="/images/about.png"
+            src="/main/b1.webp"
             alt="startup template"
             width={500}
             height={500}
             className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
-            src="/images/about.png"
+            src="/main/b2.webp"
             alt="startup template"
             width={500}
             height={500}
@@ -318,17 +346,24 @@ const data = [
         </div>
         <Carousel className=" sm:hidden ">
           <CarouselContent>
-            {Array.from({ length: 5 }).map((_, index) => (
-              <CarouselItem key={index}>
-                <Image
-                  src="/images/about.png"
-                  alt="startup template"
-                  width={500}
-                  height={500}
-                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-                />
-              </CarouselItem>
-            ))}
+            <CarouselItem>
+              <Image
+                src="/main/b1.webp"
+                alt="startup template"
+                width={500}
+                height={500}
+                className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              />
+            </CarouselItem>
+            <CarouselItem>
+              <Image
+                src="/main/b2.webp"
+                alt="startup template"
+                width={500}
+                height={500}
+                className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              />
+            </CarouselItem>
           </CarouselContent>
           <CarouselPrevious />
           <CarouselNext />
@@ -363,14 +398,14 @@ const data = [
         </p>
         <div className="hidden sm:grid grid-cols-2 gap-4">
           <Image
-            src="/images/about.png"
+            src="/main/dd1.webp"
             alt="startup template"
             width={500}
             height={500}
             className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
-            src="/images/about.png"
+            src="/main/dd2.webp"
             alt="startup template"
             width={500}
             height={500}
@@ -379,17 +414,24 @@ const data = [
         </div>
         <Carousel className=" sm:hidden ">
           <CarouselContent>
-            {Array.from({ length: 5 }).map((_, index) => (
-              <CarouselItem key={index}>
-                <Image
-                  src="/images/about.png"
-                  alt="startup template"
-                  width={500}
-                  height={500}
-                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-                />
-              </CarouselItem>
-            ))}
+            <CarouselItem>
+              <Image
+                src="/main/dd1.webp"
+                alt="startup template"
+                width={500}
+                height={500}
+                className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              />
+            </CarouselItem>
+            <CarouselItem>
+              <Image
+                src="/main/dd2.webp"
+                alt="startup template"
+                width={500}
+                height={500}
+                className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              />
+            </CarouselItem>
           </CarouselContent>
           <CarouselPrevious />
           <CarouselNext />
@@ -424,14 +466,14 @@ const data = [
         </p>
         <div className="hidden sm:grid grid-cols-2 gap-4">
           <Image
-            src="/images/about.png"
+            src="/main/m1.webp"
             alt="startup template"
             width={500}
             height={500}
             className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
-            src="/images/about.png"
+            src="/main/m2.webp"
             alt="startup template"
             width={500}
             height={500}
@@ -440,17 +482,24 @@ const data = [
         </div>
         <Carousel className=" sm:hidden ">
           <CarouselContent>
-            {Array.from({ length: 5 }).map((_, index) => (
-              <CarouselItem key={index}>
-                <Image
-                  src="/images/about.png"
-                  alt="startup template"
-                  width={500}
-                  height={500}
-                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
-                />
-              </CarouselItem>
-            ))}
+            <CarouselItem>
+              <Image
+                src="/main/m1.webp"
+                alt="startup template"
+                width={500}
+                height={500}
+                className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              />
+            </CarouselItem>
+            <CarouselItem>
+              <Image
+                src="/main/m2.webp"
+                alt="startup template"
+                width={500}
+                height={500}
+                className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+              />
+            </CarouselItem>
           </CarouselContent>
           <CarouselPrevious />
           <CarouselNext />
