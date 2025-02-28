@@ -64,7 +64,7 @@ const Testimonials = () => {
           />
         </div>
       </div>
-      <div className="grid max-w-2xl md:max-w-6xl  grid-cols-1 md:grid-cols-2 lg:px-12 xl:px-0 xl:grid-cols-3 gap-6 mt-4 md:mt-[60px]">
+      <div className="grid max-w-2xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl  grid-cols-1 md:grid-cols-2 lg:px-12 xl:px-0 xl:grid-cols-3 gap-6 mt-4 md:mt-[60px]">
         <div className="flex flex-col space-y-10">
           <TestimonialModal
             logo="/images/recruitu.svg"
@@ -123,7 +123,7 @@ const Testimonials = () => {
           />
         </div>
       </div>
-      <div className="hidden md:flex lg:hidden  items-start gap-4  ">
+      <div className="hidden sm:flex flex-col md:flex-row max-w-2xl lg:hidden  items-start gap-4  ">
         <TestimonialModal
           logo={"/images/genex.svg"}
           profileImage={"/images/avatar.png"}

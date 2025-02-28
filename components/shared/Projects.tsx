@@ -67,7 +67,7 @@ const Projects = () => {
           },
         }}
         id="projects"
-        className="hidden md:flex flex-col overflow-x w-full relative  items-center gap-3 2xl:gap-5  "
+        className="hidden lg:flex flex-col overflow-x w-full relative  items-center gap-3 2xl:gap-5  "
       >
         <Image
           src="/images/left-arrow.svg"
@@ -97,7 +97,7 @@ const Projects = () => {
           Browse our most{" "}
           <span className="text-[#7165FF]">recent projects</span>
         </h1>
-        <div className=" w-full gridContainer overflow-x-hidden max-w-5xl xl:max-w-6xl    2xl:max-w-7xl gap-12 2xl:gap-16 ">
+        <div className=" w-full gridContainer overflow-x-hidden max-w-2xl lg:max-w-5xl xl:max-w-6xl    2xl:max-w-7xl gap-12 2xl:gap-16 ">
           <motion.div
             initial={{
               x: -150,
@@ -301,7 +301,7 @@ const Projects = () => {
           },
         }}
         id="mobile-projects"
-        className="flex  flex-col md:hidden w-full relative  items-center  px-8 gap-4 2xl:gap-5   my-[20px] md:my-[30px]"
+        className="flex  flex-col lg:hidden w-full relative max-w-2xl mx-auto  items-center  px-8 sm:px-0 gap-4 2xl:gap-5   my-[20px] md:my-[30px]"
       >
         <h2 className=" text-[16px] sm:text-[32px] tracking-wide ">
           Catch the latest
@@ -318,8 +318,8 @@ const Projects = () => {
           alt="Splenify"
           width={300}
           height={300}
-          className=" absolute  top-16   rotate-1 -right-[4.5rem] 
-          hidden sm:block sm:w-[240px] dark:invert
+          className=" absolute  top-16   rotate-1 -right-[4.5rem]  
+          hidden sm:block sm:w-[200px] dark:invert
 
            "
         />
@@ -329,7 +329,7 @@ const Projects = () => {
           width={160}
           height={140}
           className="   hidden sm:block absolute -left-24  top-16  -rotate-6
-          w-[250px] dark:invert
+          w-[210px] dark:invert
           "
         />
 

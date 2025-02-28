@@ -349,7 +349,7 @@ const Specialization = () => {
               },
             }}
             key={index}
-            className="flex items-center sm:py-4 flex-col justify-center md:flex-row gap-6 px-5 sm:px-0  2xl:gap-8  "
+            className="flex items-center sm:py-4 flex-col justify-center lg:flex-row gap-6 px-5 sm:px-0  2xl:gap-8  "
           >
             <div className=" w-full ">
               <Image

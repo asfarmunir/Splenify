@@ -633,7 +633,7 @@ export const Timeline = () => {
 
   return (
     <div
-      className="w-full bg-white max-w-6xl mx-auto  dark:bg-neutral-950 font-sans  "
+      className="w-full bg-white max-w-6xl 2xl:max-w-7xl mx-auto  dark:bg-neutral-950 font-sans  "
       ref={containerRef}
     >
       <motion.div
@@ -670,7 +670,7 @@ export const Timeline = () => {
               index !== data.length - 1 ? "pb-20 2xl:pb-24" : ""
             } md:gap-4`}
           >
-            <div className=" sticky flex flex-col md:flex-row z-40 items-center top-40    self-start max-w-xs lg:max-w-sm md:w-full">
+            <div className=" sticky flex flex-col md:flex-row z-40 items-center top-40    self-start max-w-xs lg:max-w-sm lg:w-full">
               <div className=" -ml-1 sm:-ml-5 lg:ml-0  lg:absolute border-8 border-white dark:border-slate-950 top-0 -left-5   rounded-full bg-[#E9E8FF] dark:bg-black flex items-center justify-center">
                 {/* <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" /> */}
                 <Image
@@ -681,7 +681,7 @@ export const Timeline = () => {
                 />
               </div>
               <h3
-                className={`hidden md:block  md:pl-20 text-[40px]   dark:text-slate-200 ${recoleta.className}`}
+                className={`hidden lg:block  lg:pl-20 text-[40px]   dark:text-slate-200 ${recoleta.className}`}
               >
                 {item.title}
               </h3>
@@ -689,7 +689,7 @@ export const Timeline = () => {
 
             <div className="relative  xl:pl-[4.1rem] pl-3  sm:pl-[1.8rem] w-full pr-4 md:pr-0 ">
               <h3
-                className={` ${recoleta.className} md:hidden block text-[28px] sm:text-5xl mb-4 text-left   dark:text-slate-200`}
+                className={` ${recoleta.className} lg:hidden block text-[28px] sm:text-5xl mb-4 text-left   dark:text-slate-200`}
               >
                 {item.title}
               </h3>

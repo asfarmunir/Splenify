@@ -36,7 +36,7 @@ const ContactUs = () => {
         <span className="text-[#7165FF]">Flutter Journey</span>?
       </h1>
 
-      <div className=" flex flex-col lg:h-[839px] xl:px-[60px]  w-full  max-w-5xl xl:max-w-7xl  items-start  justify-center   md:flex-row gap-4 lg:gap-4 xl:gap-8">
+      <div className=" flex flex-col lg:h-[839px] xl:px-[60px]  w-full  max-w-2xl lg:max-w-5xl xl:max-w-6xl  items-start  justify-center   lg:flex-row gap-4 lg:gap-4 xl:gap-8">
         <motion.div
           initial={{
             x: -100,
