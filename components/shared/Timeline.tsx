@@ -61,14 +61,14 @@ const data = [
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
             src="/images/about.png"
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
         <Carousel className=" sm:hidden ">
@@ -80,7 +80,7 @@ const data = [
                   alt="startup template"
                   width={500}
                   height={500}
-                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
                 />
               </CarouselItem>
             ))}
@@ -122,14 +122,14 @@ const data = [
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
             src="/images/about.png"
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
         <Carousel className=" sm:hidden ">
@@ -141,7 +141,7 @@ const data = [
                   alt="startup template"
                   width={500}
                   height={500}
-                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
                 />
               </CarouselItem>
             ))}
@@ -184,14 +184,14 @@ const data = [
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
             src="/images/about.png"
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
         <Carousel className=" sm:hidden ">
@@ -203,7 +203,7 @@ const data = [
                   alt="startup template"
                   width={500}
                   height={500}
-                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
                 />
               </CarouselItem>
             ))}
@@ -245,14 +245,14 @@ const data = [
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
             src="/images/about.png"
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
         <Carousel className=" sm:hidden ">
@@ -264,7 +264,7 @@ const data = [
                   alt="startup template"
                   width={500}
                   height={500}
-                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
                 />
               </CarouselItem>
             ))}
@@ -306,14 +306,14 @@ const data = [
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
             src="/images/about.png"
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
         <Carousel className=" sm:hidden ">
@@ -325,7 +325,7 @@ const data = [
                   alt="startup template"
                   width={500}
                   height={500}
-                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
                 />
               </CarouselItem>
             ))}
@@ -367,14 +367,14 @@ const data = [
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
             src="/images/about.png"
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
         <Carousel className=" sm:hidden ">
@@ -386,7 +386,7 @@ const data = [
                   alt="startup template"
                   width={500}
                   height={500}
-                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
                 />
               </CarouselItem>
             ))}
@@ -428,14 +428,14 @@ const data = [
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
           <Image
             src="/images/about.png"
             alt="startup template"
             width={500}
             height={500}
-            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+            className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
           />
         </div>
         <Carousel className=" sm:hidden ">
@@ -447,7 +447,7 @@ const data = [
                   alt="startup template"
                   width={500}
                   height={500}
-                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-72 2xl:h-80  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
+                  className="rounded-[10px] object-cover xl:w-[350px] w-[275px] h-[220px] lg:h-[217px] xl:h-[295px]  shadow-[0_0_24px_rgba(34,_42,_53,_0.06),_0_1px_1px_rgba(0,_0,_0,_0.05),_0_0_0_1px_rgba(34,_42,_53,_0.04),_0_0_4px_rgba(34,_42,_53,_0.08),_0_16px_68px_rgba(47,_48,_55,_0.05),_0_1px_0_rgba(255,_255,_255,_0.1)_inset]"
                 />
               </CarouselItem>
             ))}
@@ -612,7 +612,7 @@ export const Timeline = () => {
 
       <div
         ref={ref}
-        className="relative max-w-2xl px-4 lg:max-w-5xl xl:max-w-7xl mx-auto "
+        className="relative max-w-2xl pl-4 lg:max-w-5xl xl:max-w-7xl mx-auto "
       >
         {data.map((item, index) => (
           <div

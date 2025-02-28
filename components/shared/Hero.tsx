@@ -118,7 +118,7 @@ const Hero = () => {
         {/* <HeroBentoGrid /> */}
         <BentoGrid />
       </section>
-      <div className="w-full mb-[30px] sm:mb-[120px] sm:mt-[64px] lg:mt-[112px]  xl:mt-[224px]  px-4 2xl:px-0 max-w-2xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl gap-2 sm:gap-4 2xl:gap-6 mx-auto grid grid-cols-2 lg:grid-cols-4 justify-items-center p-2">
+      <div className="w-full px-[18px] sm:px-0 mb-[30px] sm:mb-[120px] sm:mt-[64px] lg:mt-[112px]  xl:mt-[224px]  max-w-2xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl gap-2 sm:gap-4 2xl:gap-6 mx-auto grid grid-cols-2 lg:grid-cols-4 justify-items-center ">
         {acheivments.map((acheivment, index) => (
           <motion.div
             key={index}
@@ -137,7 +137,7 @@ const Hero = () => {
             >
               {acheivment.number}
             </h1>
-            <p className="text-[14px] sm:text-[20px]  text-center xl:text-[24px] text-slate-700 font-roboto">
+            <p className="text-[14px] sm:text-[19px]  text-center xl:text-[24px] text-slate-700 font-roboto">
               {acheivment.title}
             </p>
           </motion.div>

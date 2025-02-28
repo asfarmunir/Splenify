@@ -62,7 +62,7 @@ const Faqs = () => {
         },
       }}
       id="contact"
-      className="flex  flex-col  max-w-2xl md:max-w-6xl mx-auto  w-full items-center overflow-x-hidden  justify-center    gap-4 md:px-2  mt"
+      className="flex  flex-col px-[18px] sm:px-0 max-w-2xl md:max-w-6xl mx-auto  w-full items-center overflow-x-hidden  justify-center    gap-4 md:px-2  mt"
     >
       <h1
         className={`text-[28px]   sm:text-[47px] mb-4 md:mb-[60px] md:text-[40px] lg:text-[46px]  ${recoleta.className}    text-center `}
@@ -76,10 +76,10 @@ const Faqs = () => {
             type="single"
             key={index}
             collapsible
-            className="w-[95%] p-2 px-4 rounded-md shadow-[0_2px_20px_10px_rgba(0,0,0,0.02)] "
+            className=" w-[98%] mx-auto p-2 px-4 rounded-md shadow-custom "
           >
             <AccordionItem value="item-1">
-              <AccordionTrigger className="xl:text-[20px]  xl:leading-[30px] ">
+              <AccordionTrigger className="text-[14px] text-start xl:text-[20px]  xl:leading-[30px] ">
                 {faq.question}
               </AccordionTrigger>
               <AccordionContent className="border-t pt-[16px] xl:text-[20px] text-[#575757] xl:leading-[30px] border-[#E0E0E0]">

@@ -26,7 +26,7 @@ const Testimonials = () => {
           ease: "easeInOut",
         },
       }}
-      className={`flex flex-col mx-auto  w-full relative   items-center gap-3 2xl:gap-5 max-w-6xl 2xl:max-w-7xl  `}
+      className={`flex flex-col px-[18px] sm:px-0 mx-auto  w-full relative   items-center gap-3 2xl:gap-5 max-w-6xl 2xl:max-w-7xl  `}
     >
       <div className="space-y-1 sm:space-y-3 bg w-full">
         <p className="text-center text-[16px] sm:text-[32px] font-normal">
@@ -51,7 +51,7 @@ const Testimonials = () => {
               alt="Splenify"
               width={380}
               height={380}
-              className="  dark:invert hidden lg:block lg:bottom-0 xl:-bottom-2  lg:w-[160px]  xl:w-[220px] absolute lg:right-16 xl:right-8  -rotate-4 "
+              className="  dark:invert hidden lg:block lg:bottom-0   lg:w-[150px]  xl:w-[150px] absolute lg:right-[5rem] xl:right-[5rem]  -rotate-4 "
             />
           </h1>
 

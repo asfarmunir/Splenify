@@ -88,11 +88,13 @@ const Specialization = () => {
           What do we specialize in?
         </h2>
         <h1
-          className={` text-[28px] sm:text-5xl  px-3.5 relative sm:leading-[65px] md:text-3xl sm:mb-4 max-w-2xl lg:max-w-3xl xl:max-w-7xl lg:text-[48px] tracking-wide text-center  ${recoleta.className}`}
+          className={` text-[28px] sm:text-5xl  px-3.5 relative sm:leading-[65px] md:text-3xl sm:mb-4 max-w-2xl lg:max-w-5xl xl:max-w-7xl lg:text-[48px] lg:leading-[65px] tracking-wide text-center  ${recoleta.className}`}
         >
           Our partners hire us to{" "}
           <span className="text-[#7165FF]">
-            design<span className="mx-1">&</span>develop
+            design<span className="mx-1">&</span>{" "}
+            <br className="hidden lg:block xl:hidden" />
+            develop
           </span>{" "}
           their…
           <Image
@@ -355,22 +357,25 @@ const Specialization = () => {
                 alt="Splenify"
                 loading="lazy"
                 width={225}
-                className=" w-full h-full object-cover object-center rounded-2xl"
+                className=" w-full h-full lg:h-[206px] object-cover object-center rounded-2xl"
                 height={123}
               />
             </div>
             <div className=" w-full flex flex-col justify-center  ">
-              <h2 className="text-[20] xl:text-[24px] font-semibold mb-2 capitalize">
+              <h2 className="text-[20px] xl:text-[24px] font-semibold mb-2 capitalize">
                 {item.title}
               </h2>
-              <p className="text-[15px]   max-w-xs 2xl:max-w-lg">
+              <p className="text-[14px] lg:text-[12px] xl:text-[15px]   max-w-xs 2xl:max-w-lg">
                 {item.description}
               </p>
-              <div className="flex mt-3 sm:mt-2  items-center flex-wrap w-full gap-2 ">
+              <div
+                className="flex pt-4 lg:pt-0
+               sm:mt-2  items-center flex-wrap w-full gap-2 "
+              >
                 {item.tags.map((tag, index) => (
                   <p
                     key={index}
-                    className="text-[12px]  bg-[#7165FF1A] text-[#7165FF] px-3  py-1 2xl:py-1.5 rounded-full"
+                    className=" text-[10px] text-center xl:text-[12px]  bg-[#7165FF1A] text-[#7165FF] px-3  py-1 2xl:py-1.5 rounded-full"
                   >
                     {tag}
                   </p>

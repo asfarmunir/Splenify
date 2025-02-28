@@ -7,17 +7,17 @@ import { scrollToSection } from "./Navbar";
 
 const Footer = () => {
   return (
-    <footer className=" w-[90%] mx-auto  max-w-6xl 2xl:max-w-7xl mb-6 ms:mb-8 rounded-[16px] md:mb-16 bg-[#161C2D] py-[42px] xl:py-[52px]  px-2.5 md:px-[70px] ">
-      <div className="flex flex-col  gap-8 items-center px-3 md:px-0   pb-16 border-b border-gray-600">
+    <footer className=" w-[90%] mx-auto  max-w-6xl 2xl:max-w-7xl mb-6 ms:mb-8 rounded-[21px] md:mb-16 bg-[#161C2D] py-[42px] xl:py-[52px]  px-2.5 md:px-[70px] ">
+      <div className="flex flex-col  gap-8 items-center px-3 md:px-0  w-fit mx-auto  pb-10  border-b border-gray-600">
         <div className="flex flex-col items-center lg:items-start  gap-3">
           <Image
-            src="/images/logoWhite.png"
+            src="/icons/logo.svg"
             alt="Splenify"
             width={160}
             className=" mx-auto mb-2"
             height={160}
           />
-          <h2 className=" text-[28px] sm:text-3xl mb-4 text-center  md:text-3xl  text-white font-semibold">
+          <h2 className=" text-[28px] xl:text-[32px] sm:text-3xl mb-4 text-center  md:text-3xl  text-white font-semibold">
             Ready to launch your next project?
           </h2>
           <p className=" text-white text-[16px] max-w-lg text-center  my-2 md:my-0 leading-loose md:leading-6 tracking-wide">
@@ -32,7 +32,7 @@ const Footer = () => {
           Get Started with Splenify
         </Link>
       </div>
-      <div className="flex items-center flex-col gap-8 px-3 md:px-0 pt-9 md:pt-12">
+      <div className="flex items-center flex-col gap-8 px-3 md:px-0 pt-9 md:pt-10">
         <ul className=" flex items-center justify-center gap-5 sm:gap-10 text-start">
           <li
             onClick={() => scrollToSection("home")}
@@ -61,7 +61,7 @@ const Footer = () => {
           </li>
         </ul>
         <div className="flex  flex-col items-start  sm:pt-8 md:pt-0  max-w-xs gap-3">
-          <div className="flex gap-6 sm:mb-8">
+          <div className="flex gap-6 ">
             <Link
               href={"https://www.facebook.com/profile.php?id=61557079645268"}
             >
@@ -74,10 +74,10 @@ const Footer = () => {
             </Link>
             <Link href={"https://www.instagram.com/splenify/"}>
               <Image
-                src="/icons/insta.svg"
+                src="/icons/insta3.svg"
                 alt="Splenify"
-                width={22}
-                height={22}
+                width={28}
+                height={25}
               />
             </Link>
             <Link href={"https://www.linkedin.com/company/splenify"}>

@@ -24,6 +24,12 @@ const config = {
   		screens: {
   			sm2: '500px'
   		},
+		boxShadow: {
+        'custom': '0 5px 44px 0 rgba(152, 152, 152, 0.1)', // #9898981A with 10% opacity
+      	},
+		maxWidth:{
+			"5xl":"960px",
+		},
   		fontFamily: {
   			roboto: [
   				'Roboto',
@@ -92,29 +98,27 @@ const config = {
   					height: '0'
   				}
   			},
-  			'accordion-down': {
-  				from: {
-  					height: '0'
-  				},
-  				to: {
-  					height: 'var(--radix-accordion-content-height)'
-  				}
-  			},
-  			'accordion-up': {
-  				from: {
-  					height: 'var(--radix-accordion-content-height)'
-  				},
-  				to: {
-  					height: '0'
-  				}
-  			}
+  			// 'accordion-down': {
+  			// 	from: {
+  			// 		height: '0'
+  			// 	},
+  			// 	to: {
+  			// 		height: 'var(--radix-accordion-content-height)'
+  			// 	}
+  			// },
+  			// 'accordion-up': {
+  			// 	from: {
+  			// 		height: 'var(--radix-accordion-content-height)'
+  			// 	},
+  			// 	to: {
+  			// 		height: '0'
+  			// 	}
+  			// }
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out',
   			scroll: 'scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite',
-  			'accordion-down': 'accordion-down 0.2s ease-out',
-  			'accordion-up': 'accordion-up 0.2s ease-out'
   		}
   	}
   },

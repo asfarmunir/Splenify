@@ -75,7 +75,7 @@ const Projects = () => {
           width={300}
           height={300}
           className=" absolute hidden md:block  lg:-top-8 xl:-top-11   rotate-1 right-0 
-           lg:w-[370px] xl:w-[480px] dark:invert
+           lg:w-[340px] xl:w-[480px] dark:invert
 
            "
         />
@@ -85,7 +85,7 @@ const Projects = () => {
           width={160}
           height={140}
           className=" absolute left-0 lg:-top-16  xl:-top-20  hidden md:block  xl:rotate-1  
-          lg:w-[370px] xl:w-[420px] dark:invert
+          lg:w-[340px] xl:w-[420px] dark:invert
           "
         />
         <h2 className=" text-base   lg:text-[32px] mb-5 tracking-wide ">

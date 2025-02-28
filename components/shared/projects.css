@@ -33,7 +33,7 @@
 }
 
 /* Media Queries for Tablets (max-width: 1024px) */
-@media (max-width: 1024px) {
+@media (max-width: 965px) {
     .gridContainer {
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: repeat(3, 1fr);
