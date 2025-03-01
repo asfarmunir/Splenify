@@ -36,7 +36,7 @@ const ContactUs = () => {
         <span className="text-[#7165FF]">Flutter Journey</span>?
       </h1>
 
-      <div className=" flex flex-col lg:h-[855px] xl:h-[860px] 2xl:h-[900px]  xl:px-[60px]  w-full  max-w-2xl lg:max-w-5xl xl:max-w-6xl  items-start  justify-center   lg:flex-row gap-4 lg:gap-4 xl:gap-8">
+      <div className=" flex flex-col lg:h-[855px] xl:h-[860px] 2xl:h-[900px]  xl:px-[60px] 2xl:px-0  w-full  max-w-2xl lg:max-w-5xl xl:max-w-6xl  items-start  justify-center   lg:flex-row gap-4 lg:gap-4 xl:gap-8">
         <motion.div
           initial={{
             x: -100,
@@ -192,17 +192,35 @@ const ContactUs = () => {
             </div>
             <div className="flex flex-col gap-1 mt-3">
               <label
-                htmlFor=""
-                className=" text-sm 2xl:text-base mb-1   dark:text-slate-400"
+                htmlFor="phone"
+                className="text-sm 2xl:text-base mb-1 dark:text-slate-400"
               >
                 Phone Number
               </label>
-              <input
-                placeholder=" +1 234 567 890"
-                type="text"
-                required
-                className=" w-full text-[#B3B3B3] placeholder:text-[#B3B3B3] border p-1.5 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-[8px]"
-              />
+              <div className="flex flex-col md:flex-row gap-2">
+                {" "}
+                {/* Responsive container */}
+                {/* Country Code Dropdown */}
+                <select
+                  required
+                  className="w-full md:w-1/4 text-[#B3B3B3] border p-1.5 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-[8px] appearance-none"
+                >
+                  <option value="+1">+1 (USA)</option>
+                  <option value="+44">+44 (UK)</option>
+                  <option value="+91">+91 (India)</option>
+                  <option value="+91">+92 (Pk)</option>
+                  <option value="+61">+61 (Aus)</option>
+                  <option value="+33">+33 (France)</option>
+                  {/* Add more country codes as needed */}
+                </select>
+                {/* Phone Number Input */}
+                <input
+                  placeholder="234 567 890"
+                  type="text"
+                  required
+                  className="w-full md:w-3/4 text-[#B3B3B3] placeholder:text-[#B3B3B3] border p-1.5 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-[8px]"
+                />
+              </div>
             </div>
             <div className="flex flex-col gap-1 mt-2">
               <label
@@ -215,7 +233,7 @@ const ContactUs = () => {
                 name=""
                 id=""
                 required
-                className=" w-full text-[#B3B3B3] placeholder:text-[#B3B3B3] border p-1.5 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-[8px]"
+                className=" w-full text-[#B3B3B3]  placeholder:text-[#B3B3B3] border p-1.5 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-[8px]"
               >
                 <option value="Mobile App Development">
                   Mobile App Development

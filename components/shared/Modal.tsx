@@ -18,6 +18,7 @@ const Modal = ({
   testimonialBg,
   color,
   imgs = [], // Default to empty array if imgs is not provided
+  content,
 }: {
   heroImg: string;
   heroBg: string;
@@ -25,6 +26,21 @@ const Modal = ({
   testimonialBg: string;
   color: string;
   imgs: string[];
+  content: {
+    title: string;
+    challenge: {
+      title: string;
+      points: string[];
+    };
+    result: {
+      title: string;
+      points: string[];
+    };
+    solution: {
+      title: string;
+      points: string[];
+    };
+  };
 }) => {
   const duplicatedSlides = [...imgs, ...imgs];
 
@@ -36,10 +52,10 @@ const Modal = ({
       >
         View Project
       </DialogTrigger>
-      <DialogContent className="  border-none     md:rounded-2xl p-0 md:min-w-[650px] lg:min-w-[900px] 2xl:min-w-[940px] ">
+      <DialogContent className="  border-none     md:rounded-2xl p-0 lg:min-w-[900px] 2xl:min-w-[940px] ">
         <div className=" w-full flex flex-col max-h-[100svh] md:max-h-[90svh] md:rounded-2xl overflow-y-auto [scroll]  [scrollbar-width:none]   ">
           <div
-            className=" w-full flex flex-col items-center pt-16 gap-4 bg-cover bg-center h-[500px]"
+            className=" w-full flex flex-col items-center pt-16 gap-4  bg-cover bg-center h-[500px]"
             style={{
               backgroundImage: "url(" + heroBg + ")",
               // backgroundImage: "url(/projectModal/orangeBg.webp)",
@@ -63,9 +79,8 @@ const Modal = ({
               />
             </div>
 
-            <p className="text-xl 2xl:text-2xl text-white text-center tracking-wide ">
-              The <span className=" underline font-bold ">Ultimate</span> Key to
-              Fluent <br /> Communication
+            <p className="text-xl 2xl:text-2xl max-w-xl text-white text-center tracking-wide ">
+              {content.title || "Title Goes Here"}
             </p>
             <div className=" w-[370px] h-[200px] md:w-[600px] md:h-[250px] 2xl:w-[600px] 2xl:h-[340px] ">
               <Image
@@ -94,7 +109,7 @@ const Modal = ({
                 width={790}
                 height={790}
                 alt="shape"
-                className="absolute  w-[340px] rotate-12 md:rotate-0 sm:w-[450px] md:w-[790px]  left-4 -bottom-20  md:-bottom-32 md:left-12 2xl:left-16 z-50
+                className="absolute  w-[340px] rotate-12 md:rotate-0 sm:w-[450px] md:w-[410px]  lg:w-[790px]  left-4 -bottom-20  md:-bottom-32 md:left-12 2xl:left-16 z-50
               "
               />
               <div
@@ -127,18 +142,26 @@ const Modal = ({
                   Challenge
                 </p>
                 <h2
-                  className={`text-3xl 2xl:text-5xl font-bold ${recoleta.className}`}
+                  className={`text-3xl xl:text-[48px] xl:leading-[65px]  ${recoleta.className}`}
                 >
-                  Title Goes Here
+                  {content.challenge.title}
                 </h2>
-                <p className="  max-w-lg ">
-                  "Stay ahead of the game. Monitor your marketing campaigns in
-                  real-time with our intuitive tools, and make data-driven
-                  decisions for optimal results." "Stay ahead of the game.
-                  Monitor your marketing campaigns in real-time with our
-                  intuitive tools, and make data-driven decisions for optimal
-                  results."
-                </p>
+                <ul>
+                  {content.challenge.points.length > 1 ? (
+                    content.challenge.points.map((point, index) => (
+                      <li
+                        key={index}
+                        className=" max-w-2xl  text-[20px] leading-[30px] list-disc "
+                      >
+                        {point}
+                      </li>
+                    ))
+                  ) : (
+                    <p className=" max-w-2xl list-disc text-[20px] leading-[30px] ">
+                      {content.challenge.points[0]}
+                    </p>
+                  )}
+                </ul>
               </div>
             </div>
             <div className="flex ml-auto w-full  dark:bg-slate-900 py-16 2xl:px-10 px-8 justify-end gap-5 relative">
@@ -153,26 +176,52 @@ const Modal = ({
                 width={780}
                 height={780}
                 alt="shape"
-                className="absolute  w-[330px] -rotate-12 md:rotate-0 sm:w-[450px] md:w-[790px] right-7  bottom-0  md:-bottom-28 md:right-12 2xl:right-16 z-50
+                className="absolute  w-[330px] -rotate-12 md:rotate-0 sm:w-[450px] md:w-[410px]  lg:w-[790px] right-7  bottom-0  md:-bottom-28 md:right-12 2xl:right-16 z-50
               "
               />
               <div className=" space-y-3 text-right">
                 <p className=" text-[#5956E9] font-bold text-sm 2xl:text-base">
-                  Challenge
+                  The Solution
                 </p>
                 <h2
-                  className={`text-3xl 2xl:text-5xl font-bold ${recoleta.className}`}
+                  className={`text-3xl xl:text-[48px] xl:leading-[65px]  ${recoleta.className}`}
                 >
-                  Title Goes Here
+                  {content.solution.title}
                 </h2>
-                <p className="  max-w-lg ">
-                  "Stay ahead of the game. Monitor your marketing campaigns in
-                  real-time with our intuitive tools, and make data-driven
-                  decisions for optimal results." "Stay ahead of the game.
-                  Monitor your marketing campaigns in real-time with our
-                  intuitive tools, and make data-driven decisions for optimal
-                  results."
-                </p>
+                <ul className="list-none     ">
+                  {content.solution.points.length > 1 ? (
+                    content.solution.points.map((point, index) => (
+                      <li
+                        key={index}
+                        className=" text-[20px] leading-[30px] flex items-start justify-end"
+                      >
+                        <p>
+                          <span>{point}</span>
+                        </p>
+                        <p className="  pt-[11px] pb-1">
+                          <span
+                            className={`
+                            ${
+                              color === "blue"
+                                ? "bg-[#1281DB] "
+                                : color === "pink"
+                                ? "bg-[#F71284]"
+                                : "bg-[#FF7668]"
+                            }
+                            w-[7px] h-[7px]  ml-3 rounded-full flex items-center justify-center text-white text-sm`}
+                          ></span>{" "}
+                        </p>
+                        {/* Styled bullet point */}
+                      </li>
+                    ))
+                  ) : (
+                    <p className="max-w-2xl text-[20px] leading-[30px] flex items-center justify-end">
+                      <span>{content.solution.points[0]}</span>
+                      <span className="ml-2 text-lg text-gray-500">•</span>{" "}
+                      {/* Styled bullet point */}
+                    </p>
+                  )}
+                </ul>
               </div>
               <div
                 className={`
@@ -230,25 +279,51 @@ const Modal = ({
               </div>
               <div className=" space-y-3">
                 <p className=" text-[#5956E9] font-bold text-sm 2xl:text-base">
-                  Challenge
+                  The Result
                 </p>
                 <h2
-                  className={`text-3xl 2xl:text-5xl font-bold ${recoleta.className}`}
+                  className={`text-3xl xl:text-[48px] xl:leading-[65px]  ${recoleta.className}`}
                 >
-                  Title Goes Here
+                  {content.result.title}
                 </h2>
-                <p className="  max-w-lg ">
-                  "Stay ahead of the game. Monitor your marketing campaigns in
-                  real-time with our intuitive tools, and make data-driven
-                  decisions for optimal results." "Stay ahead of the game.
-                  Monitor your marketing campaigns in real-time with our
-                  intuitive tools, and make data-driven decisions for optimal
-                  results."
-                </p>
+                <ul className="list-none     ">
+                  {content.solution.points.length > 1 ? (
+                    content.solution.points.map((point, index) => (
+                      <li
+                        key={index}
+                        className=" text-[20px] leading-[30px] font-normal flex items-start justify-start"
+                      >
+                        <p className="  pt-[11px] pb-1">
+                          <span
+                            className={`
+                            ${
+                              color === "blue"
+                                ? "bg-[#1281DB] "
+                                : color === "pink"
+                                ? "bg-[#F71284]"
+                                : "bg-[#FF7668]"
+                            }
+                            w-[7px] h-[7px]  mr-3 rounded-full flex items-center justify-center text-white text-sm`}
+                          ></span>{" "}
+                        </p>
+                        <p>
+                          <span>{point}</span>
+                        </p>
+                        {/* Styled bullet point */}
+                      </li>
+                    ))
+                  ) : (
+                    <p className="max-w-2xl text-[20px] leading-[30px] flex items-center justify-end">
+                      <span>{content.solution.points[0]}</span>
+                      <span className="ml-2 text-lg text-gray-500">•</span>{" "}
+                      {/* Styled bullet point */}
+                    </p>
+                  )}
+                </ul>
               </div>
             </div>
           </div>
-          <div className="rounded-md  max-w-4xl 2xl:max-w-5xl my-3 flex flex-col  bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center ">
+          <div className="rounded-md  pt-[30px] max-w-4xl 2xl:max-w-5xl my-3 flex flex-col  bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center ">
             {/* <InfiniteMovingCards
               items={images}
               direction="right"
@@ -291,6 +366,13 @@ const Modal = ({
 
             <div className="flex flex-wrap justify-center gap-y-4 gap-x-2.5 py-5  md:gap-y-10">
               <Image
+                src="/projects/react-icon.svg"
+                alt="Tech"
+                width={180}
+                className=" border border-slate-200 dark:border-slate-700 py-3.5 px-8 rounded-md"
+                height={150}
+              />
+              <Image
                 src="/projects/flutter-icon.svg"
                 alt="Tech"
                 width={180}
@@ -304,13 +386,7 @@ const Modal = ({
                 className=" border border-slate-200 dark:border-slate-700 py-3.5 px-8 rounded-md"
                 height={150}
               />
-              <Image
-                src="/projects/react-icon.svg"
-                alt="Tech"
-                width={180}
-                className=" border border-slate-200 dark:border-slate-700 py-3.5 px-8 rounded-md"
-                height={150}
-              />
+
               <Image
                 src="/projects/django-icon.svg"
                 alt="Tech"
@@ -323,27 +399,27 @@ const Modal = ({
           <div
             className={` ${testimonialBg}    relative    flex flex-col lg:flex-row pt-16 md:pt-8   items-center lg:gap-8  justify-center  px-12 md:px-20 border-none `}
           >
-            <Image
+            {/* <Image
               src="/images/arrow3.svg"
               width={140}
               height={390}
               alt="shape"
               className="absolute w-[135px] md:w-[115px] 2xl:w-[140px]  rotate-12 md:rotate-0   left-0 top-0   z-20
               "
-            />
-            <div className="flex flex-col gap-4 md:pb-8 ">
+            /> */}
+            <div className="flex flex-col items-start  gap-4 md:pb-8 ">
               <h2
                 className={`text-4xl text-white font-bold  ${recoleta.className}`}
               >
                 Hear it from our client
               </h2>
-              <p className="text-[14px] 2xl:text-sm  max-w-lg text-white  ">
+              <p className="text-[14px] 2xl:text-sm font-normal  max-w-lg text-white  ">
                 "Working with Raja and Splenify has been incredible. They
                 quickly grasped our business model and vision, transforming our
                 landing page and creating stellar social media assets, pitch
                 decks, and more. Their versatility and expertise are unmatched."
               </p>
-              <div className="flex pl-6 pt-1 z-50 items-center gap-3">
+              <div className="flex pt-1 z-50 items-center gap-3">
                 <Image
                   src="/images/avatar.png"
                   width={100}
@@ -376,32 +452,28 @@ const Modal = ({
               // backgroundSize: "cover",
               // backgroundRepeat: "no-repeat",
               width: "100%",
-              overflow: "hidden",
-              height: "auto",
-              minHeight: "calc(100vh - 400px)",
               display: "flex",
               alignItems: "center",
               textAlign: "center",
               justifyContent: "center",
-              position: "relative",
             }}
-            className=" pt-48 pb-40  bg-[#161C2D] "
+            className="  bg-[#161C2D] "
           >
-            <div className=" flex flex-col items-center  space-y-3">
+            <div className=" p-[122px]  justify-center flex flex-col items-center  space-y-3">
               <h2
-                className={`${recoleta.className} font-bold font-mulish px-6  text-4xl text-white`}
+                className={`${recoleta.className} font-bold font-mulish   text-4xl text-white`}
               >
-                Have A Project In Mind? Let's Get Start.
+                Have an app idea in mind? Bring it to life!{" "}
               </h2>
               <p className="text-center font-mulish text-gray-400  text-sm 2xl:text-base font-medium max-w-sm md:max-w-lg  ">
-                You're looking for a solid partner for the project having in
-                your mind. Connect with us to make your work easier.
+                Get in touch with experts from Splenify, and create an app that
+                shines in the market.
               </p>
 
               <DialogClose className="w-full max-w-[260px]" asChild>
                 <Link href="#contact" className="w-full max-w-[260px]">
                   <Button className="bg-[#6447F9] rounded-[8px] text-white hover:bg-[#6447F9]/80 font-mulish text-sm font-bold px-9 py-4    ">
-                    Get Started
+                    Get in touch now!
                     <ArrowUpRight className="w-5 h-5 ml-2  text-white " />
                   </Button>
                 </Link>

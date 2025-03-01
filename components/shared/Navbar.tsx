@@ -165,7 +165,7 @@ const Navbar = () => {
 
           <Link
             href={"https://www.cal.com/splenify"}
-            className="text-white  text-sm 2xl:text-base bg-[#7165FF] font-semibold rounded-[8px] px-5 2xl:px-6 py-2.5 2xl:py-3 border-[3px] text-center border-[#7165FF]"
+            className="text-white  text-sm 2xl:text-base bg-[#7165FF] font-[500] rounded-[8px] px-5 2xl:px-6 py-2.5 2xl:py-3 border-[3px] text-center border-[#7165FF]"
           >
             Schedule a call
           </Link>
@@ -269,7 +269,7 @@ const Navbar = () => {
           <div className="flex items-center gap-3 w-full">
             <Link
               href={"https://www.cal.com/splenify"}
-              className="text-white w-full  text-sm 2xl:text-base bg-[#7165FF] font-semibold rounded-[8px] px-5 2xl:px-6 py-3 2xl:py-3.5 border-[3px] text-center border-[#7165FF]"
+              className="text-white w-full  text-sm 2xl:text-base bg-[#7165FF] font-[500] rounded-[8px] px-5 2xl:px-6 py-3 2xl:py-3.5 border-[3px] text-center border-[#7165FF]"
             >
               Schedule a call
             </Link>

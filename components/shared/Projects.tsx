@@ -48,6 +48,124 @@ const gregbet = [
   "/projectMockups/b7.webp",
 ];
 
+const blinkContent = {
+  title: "Transforming Restaurant Loyalty with NFC-Powered Rewards",
+  challenge: {
+    title: "Bridging the Gap Between Restaurants and Loyalty",
+    points: [
+      "Restaurant owners struggle to retain customers in a highly competitive market. Traditional loyalty programs often involve outdated punch cards or complicated point systems that lack engagement. The challenge was to create a seamless, modern solution that incentivizes repeat visits while providing users with an effortless way to discover and engage with restaurants.",
+    ],
+  },
+  result: {
+    title: " Engagement & Growth Through Innovation",
+    points: [
+      "Increased customer retention by making loyalty programs seamless and rewarding.",
+      "Simplified reward redemption with NFC, removing the need for physical cards or manual tracking.",
+      "Enhanced restaurant discovery experience, encouraging users to try new places and return.",
+      "Provided businesses with actionable insights to optimize their offers and customer interactions.",
+      "BLINQ redefines restaurant loyalty, making it effortless, digital, and rewarding for both businesses and customers.",
+    ],
+  },
+  solution: {
+    title: " NFC-Powered Loyalty & Discovery",
+    points: [
+      "Users explore nearby restaurants and cafes through an interactive map.",
+      "NFC technology simplifies loyalty programs—customers tap their phones to earn rewards",
+      "Businesses create custom loyalty rewards, offering discounts and free meals to frequent customers.",
+      "The admin dashboard provides real-time insights into customer engagement and loyalty trends",
+    ],
+  },
+};
+const blueProContent = {
+  title: "Step Up Your Fitness Game with Smart Tracking & Rewards",
+  challenge: {
+    title: "Bringing Financial Education & Community Together",
+    points: [
+      "Access to modern financial education is often scattered and unstructured, making it difficult for individuals to stay updated on money-making strategies, live sessions, and expert insights. The challenge was to build a unified platform that offers structured learning, live interactions, and community-driven discussions while keeping users engaged with a rewarding system",
+    ],
+  },
+  result: {
+    title: " The Ultimate Digital Asset Hub",
+    points: [
+      "Splenify developed BluPro, a mobile and web-based platform that makes financial education interactive and accessible. With BluPro",
+      "Users explore modern money-making strategies and financial insights.",
+      "'Connect' groups allow admins to create communities for focused discussions.",
+      "Live sessions provide real-time learning opportunities with comments, likes, and participation.",
+      "An event calendar keeps users updated on upcoming expert-led live sessions.",
+      "A points-based level system rewards users for engagement, allowing them to redeem exclusive benefits.",
+    ],
+  },
+  solution: {
+    title: "Building a Knowledge-Driven Community ",
+    points: [
+      "Simplified financial education with structured content and expert-led sessions.",
+      "Created a dynamic and engaged user base through live interactions.",
+      "Encouraged continuous learning with a gamified points and rewards system.",
+      "Fostered a collaborative space so users learn, connect, and grow financially.",
+      "BluPro redefines financial education by merging knowledge, community, and engagement into one seamless platform",
+    ],
+  },
+};
+const gregbetContent = {
+  title: "Step Up Your Fitness Game with Smart Tracking & Rewards",
+  challenge: {
+    title: "Making Fitness Tracking Engaging & Seamless",
+    points: [
+      "Tracking your steps should be easy, but most fitness apps are either too complicated, too basic, or lack motivation. Users often need multiple apps to track steps, monitor progress, and discover new routes. The challenge was to create an all-in-one solution that made fitness tracking simple, engaging, and rewarding.",
+    ],
+  },
+  result: {
+    title: " Your Ultimate Fitness Companion",
+    points: [
+      "Splenify developed Greg Bet, a cutting-edge mobile app that transforms step tracking into a rewarding experience. ",
+      "Users can effortlessly track steps and monitor detailed performance reports.",
+      "A milestone-based reward system keeps motivation high.",
+      "Live route tracking and interactive maps help users discover new paths.",
+      "Seamless smartwatch and phone integration provide real-time tracking and insights.",
+      "A sleek, intuitive UI/UX makes navigation smooth and enjoyable.",
+    ],
+  },
+  solution: {
+    title: " A Smarter Way to Stay Active",
+    points: [
+      "Simplified fitness tracking with real-time, accurate step monitoring.",
+      "Increased user motivation through gamified rewards.",
+      "Enhanced user engagement with interactive maps and route exploration.",
+      "A seamless, intuitive experience that makes staying active effortless.",
+      "Greg Bet isn't just a step tracker—it's a complete fitness journey designed to keep users engaged, motivated, and always moving forward",
+    ],
+  },
+};
+const mediaContent = {
+  title: " A Digital Marketplace for Creators & Sellers",
+  challenge: {
+    title: "A Seamless Digital Asset Marketplace",
+    points: [
+      "Creators and businesses often struggle to distribute, monetize, and track their digital assets efficiently. Traditional marketplaces lack flexibility, integration, and real-time insights. The challenge was to build an all-in-one platform where creators could upload, sell, and analyze their assets while ensuring users could easily discover and download content",
+    ],
+  },
+  result: {
+    title: "The Ultimate Digital Asset Hub",
+    points: [
+      "Splenify developed Makers Media, a mobile app and web platform designed for seamless asset management and sales. With Makers Media",
+      "The platform owner uploads digital assets, making them available for users.",
+      "Sellers can list their own assets, set prices, and sell directly on the marketplace.",
+      "Users explore, download, and purchase assets effortlessly",
+      "Integration with Shopify, Facebook, and other platforms enables smooth cross-platform transactions",
+      "Built-in analytics provide insights into sales, downloads, and performance metrics",
+    ],
+  },
+  solution: {
+    title: "Empowering Creators, Maximizing Sales ",
+    points: [
+      "Enabled creators and businesses to monetize digital assets efficiently.",
+      "Simplified asset discovery, purchase, and management for users.",
+      "Provided sellers with key performance insights to optimize their listings.",
+      "Enhanced sales potential with seamless third-party integrations.",
+    ],
+  },
+};
+
 const Projects = () => {
   return (
     <>
@@ -140,6 +258,7 @@ const Projects = () => {
                 testimonialBg=" bg-gradient-to-l from-[#FF796B] to-[#FF5047]"
                 color="orange"
                 imgs={blink}
+                content={blinkContent}
               />
             </div>
           </motion.div>
@@ -187,6 +306,7 @@ const Projects = () => {
                 testimonialBg=" bg-gradient-to-l from-[#38B6FF] to-[#0069CA]"
                 color="blue"
                 imgs={gregbet}
+                content={gregbetContent}
               />{" "}
             </div>
           </motion.div>
@@ -233,6 +353,7 @@ const Projects = () => {
                 testimonialBg=" bg-gradient-to-l from-[#FF1589] to-[#B6005B]"
                 color="pink"
                 imgs={media}
+                content={mediaContent}
               />{" "}
             </div>
           </motion.div>
@@ -279,6 +400,7 @@ const Projects = () => {
                 testimonialBg=" bg-gradient-to-l from-[#38B6FF] to-[#0069CA]"
                 color="blue"
                 imgs={bluepro}
+                content={blueProContent}
               />{" "}
             </div>
           </motion.div>
@@ -380,6 +502,7 @@ const Projects = () => {
                 testimonialBg=" bg-gradient-to-l from-[#FF796B] to-[#FF5047]"
                 color="orange"
                 imgs={blink}
+                content={blinkContent}
               />{" "}
             </div>
           </motion.div>
@@ -425,6 +548,7 @@ const Projects = () => {
                 testimonialBg=" bg-gradient-to-l from-[#38B6FF] to-[#0069CA]"
                 color="blue"
                 imgs={gregbet}
+                content={gregbetContent}
               />{" "}
             </div>
           </motion.div>
@@ -470,6 +594,7 @@ const Projects = () => {
                 testimonialBg=" bg-gradient-to-l from-[#FF1589] to-[#B6005B]"
                 color="pink"
                 imgs={media}
+                content={mediaContent}
               />{" "}
             </div>
           </motion.div>
@@ -515,6 +640,7 @@ const Projects = () => {
                 testimonialBg=" bg-gradient-to-l from-[#38B6FF] to-[#0069CA]"
                 color="blue"
                 imgs={bluepro}
+                content={blueProContent}
               />{" "}
             </div>
           </motion.div>

@@ -62,7 +62,7 @@ const Faqs = () => {
         },
       }}
       id="contact"
-      className="flex  flex-col px-[18px] sm:px-0 max-w-2xl md:max-w-7xl mx-auto  w-full items-center overflow-x-hidden  justify-center    gap-4 md:px-2  mt"
+      className="flex  flex-col px-[18px] sm:px-0 max-w-2xl md:max-w-[85rem] mx-auto  w-full items-center overflow-x-hidden  justify-center    gap-4 md:px-2  mt"
     >
       <h1
         className={`text-[28px]   sm:text-[47px] mb-4 md:mb-[60px] md:text-[40px] lg:text-[46px]  ${recoleta.className}    text-center `}
@@ -70,13 +70,13 @@ const Faqs = () => {
         Frequently Asked <span className="text-[#7165FF]">Questions</span>
       </h1>
 
-      <div className=" flex flex-col gap-5 w-full  max-w-2xl lg:max-w-5xl xl:max-w-[74rem]  items-start  justify-center">
+      <div className=" flex flex-col gap-5 w-full  max-w-2xl lg:max-w-5xl xl:max-w-[74rem] 2xl:max-w-[85rem]  items-start  justify-center">
         {faqs.map((faq, index) => (
           <Accordion
             type="single"
             key={index}
             collapsible
-            className=" w-full mx-auto p-2 px-4 rounded-md shadow-custom xl:max-w-[72rem] "
+            className=" w-full mx-auto p-2 px-4 rounded-md shadow-custom xl:max-w-[72rem] 2xl:max-w-[80rem] "
           >
             <AccordionItem value="item-1">
               <AccordionTrigger className="text-[14px] text-start xl:text-[20px]  xl:leading-[30px] ">
