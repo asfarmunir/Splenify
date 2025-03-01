@@ -55,17 +55,12 @@ const Modal = ({
       <DialogContent className="  border-none     md:rounded-2xl p-0 lg:min-w-[900px] 2xl:min-w-[940px] ">
         <div className=" w-full flex flex-col max-h-[100svh] md:max-h-[90svh] md:rounded-2xl overflow-y-auto [scroll]  [scrollbar-width:none]   ">
           <div
-            className=" w-full flex flex-col items-center pt-16   bg-cover bg-center h-[500px]"
+            className=" w-full flex flex-col relative items-center pt-16 gap-4   bg-cover bg-center min-h-[430px] sm:min-h-[500px]"
             style={{
               backgroundImage: "url(" + heroBg + ")",
               // backgroundImage: "url(/projectModal/orangeBg.webp)",
             }}
           >
-            {/* <h2
-              className={` ${recoleta.className} text-5xl 2xl:text-7xl text-white `}
-            >
-              Efandex
-            </h2> */}
             <div className="w-[100px] h-[100px] md:w-[130px] md:h-[120px] 2xl:w-[190px] 2xl:h-[100px]  ">
               <Image
                 src={heroLogo}
@@ -82,7 +77,7 @@ const Modal = ({
             <p className="text-xl 2xl:text-2xl max-w-sm lg:max-w-2xl   text-white text-center tracking-wide ">
               {content.title || "Title Goes Here"}
             </p>
-            <div className=" w-[370px] h-[200px] md:w-[600px] md:h-[250px] 2xl:w-[600px] 2xl:h-[340px]  ">
+            <div className=" w-[370px] h-[200px] md:w-[600px] absolute -bottom-10 md:h-[250px]  2xl:w-[600px] 2xl:h-[340px]  ">
               <Image
                 // src="/projectModal/modalHero1.webp"
                 src={heroImg}
@@ -96,7 +91,7 @@ const Modal = ({
               />
             </div>
           </div>
-          <div className=" pt-10  space-y-14 2xl:pt-20 ">
+          <div className=" pt-12  space-y-14 2xl:pt-20 ">
             <div className="flex gap-5 px-8 2xl:px-10 md:py-12 relative">
               <Image
                 src={
