@@ -22,6 +22,7 @@ const config = {
   	},
   	extend: {
   		screens: {
+			xs1:"400px",
   			sm2: '500px'
   		},
 		boxShadow: {
@@ -29,6 +30,7 @@ const config = {
         'custom2': '0 5px 44px 0 rgba(152, 152, 152, 0.2)', // #9898981A with 10% opacity
       	},
 		maxWidth:{
+
 			"5xl":"960px",
 		},
   		fontFamily: {

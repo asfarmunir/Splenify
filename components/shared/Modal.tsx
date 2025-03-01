@@ -55,7 +55,7 @@ const Modal = ({
       <DialogContent className="  border-none     md:rounded-2xl p-0 lg:min-w-[900px] 2xl:min-w-[940px] ">
         <div className=" w-full flex flex-col max-h-[100svh] md:max-h-[90svh] md:rounded-2xl overflow-y-auto [scroll]  [scrollbar-width:none]   ">
           <div
-            className=" w-full flex flex-col items-center pt-16 gap-4  bg-cover bg-center h-[500px]"
+            className=" w-full flex flex-col items-center pt-16   bg-cover bg-center h-[500px]"
             style={{
               backgroundImage: "url(" + heroBg + ")",
               // backgroundImage: "url(/projectModal/orangeBg.webp)",
@@ -66,7 +66,7 @@ const Modal = ({
             >
               Efandex
             </h2> */}
-            <div className="w-[100px] h-[100px] md:w-[130px] md:h-[120px] 2xl:w-[190px] 2xl:h-[100px] ">
+            <div className="w-[100px] h-[100px] md:w-[130px] md:h-[120px] 2xl:w-[190px] 2xl:h-[100px]  ">
               <Image
                 src={heroLogo}
                 // src={"/projectModal/logo1.svg"}
@@ -79,10 +79,10 @@ const Modal = ({
               />
             </div>
 
-            <p className="text-xl 2xl:text-2xl max-w-xl text-white text-center tracking-wide ">
+            <p className="text-xl 2xl:text-2xl max-w-sm lg:max-w-2xl   text-white text-center tracking-wide ">
               {content.title || "Title Goes Here"}
             </p>
-            <div className=" w-[370px] h-[200px] md:w-[600px] md:h-[250px] 2xl:w-[600px] 2xl:h-[340px] ">
+            <div className=" w-[370px] h-[200px] md:w-[600px] md:h-[250px] 2xl:w-[600px] 2xl:h-[340px]  ">
               <Image
                 // src="/projectModal/modalHero1.webp"
                 src={heroImg}
@@ -96,7 +96,7 @@ const Modal = ({
               />
             </div>
           </div>
-          <div className=" pt-10 md:pt-16 space-y-14 2xl:pt-20 ">
+          <div className=" pt-10  space-y-14 2xl:pt-20 ">
             <div className="flex gap-5 px-8 2xl:px-10 md:py-12 relative">
               <Image
                 src={
@@ -109,7 +109,7 @@ const Modal = ({
                 width={790}
                 height={790}
                 alt="shape"
-                className="absolute  w-[340px] rotate-12 md:rotate-0 sm:w-[450px] md:w-[410px]  lg:w-[790px]  left-4 -bottom-20  md:-bottom-32 md:left-12 2xl:left-16 z-50
+                className="absolute w-[300px] xs1:w-[370px] rotate-12 md:rotate-0 sm:w-[450px] md:w-[410px]  lg:w-[790px]  left-4 -bottom-20  md:-bottom-32 md:left-12 2xl:left-16 z-50
               "
               />
               <div
@@ -142,7 +142,7 @@ const Modal = ({
                   Challenge
                 </p>
                 <h2
-                  className={`text-3xl xl:text-[48px] xl:leading-[65px]  ${recoleta.className}`}
+                  className={`text-[28px] xl:text-[48px] xl:leading-[65px]  ${recoleta.className}`}
                 >
                   {content.challenge.title}
                 </h2>
@@ -151,13 +151,13 @@ const Modal = ({
                     content.challenge.points.map((point, index) => (
                       <li
                         key={index}
-                        className=" max-w-2xl  text-[20px] leading-[30px] list-disc "
+                        className=" max-w-2xl text-[14px] leading-[21px] sm:text-[20px] sm:leading-[30px] list-disc "
                       >
                         {point}
                       </li>
                     ))
                   ) : (
-                    <p className=" max-w-2xl list-disc text-[20px] leading-[30px] ">
+                    <p className=" max-w-2xl list-disc text-[14px] leading-[21px] sm:text-[20px] sm:leading-[30px]  ">
                       {content.challenge.points[0]}
                     </p>
                   )}
@@ -176,7 +176,7 @@ const Modal = ({
                 width={780}
                 height={780}
                 alt="shape"
-                className="absolute  w-[330px] -rotate-12 md:rotate-0 sm:w-[450px] md:w-[410px]  lg:w-[790px] right-7  bottom-0  md:-bottom-28 md:right-12 2xl:right-16 z-50
+                className="absolute w-[300px] xs1:w-[370px]   -rotate-12 md:rotate-0 sm:w-[450px] md:w-[410px]  lg:w-[790px] right-7  bottom-0  md:-bottom-28 md:right-12 2xl:right-16 z-50
               "
               />
               <div className=" space-y-3 text-right">
@@ -184,7 +184,7 @@ const Modal = ({
                   The Solution
                 </p>
                 <h2
-                  className={`text-3xl xl:text-[48px] xl:leading-[65px]  ${recoleta.className}`}
+                  className={`text-[28px] xl:text-[48px] xl:leading-[65px]  ${recoleta.className}`}
                 >
                   {content.solution.title}
                 </h2>
@@ -193,7 +193,7 @@ const Modal = ({
                     content.solution.points.map((point, index) => (
                       <li
                         key={index}
-                        className=" text-[20px] leading-[30px] flex items-start justify-end"
+                        className=" text-[14px] leading-[21px] sm:text-[20px] sm:leading-[30px]  flex items-start justify-end"
                       >
                         <p>
                           <span>{point}</span>
@@ -282,7 +282,7 @@ const Modal = ({
                   The Result
                 </p>
                 <h2
-                  className={`text-3xl xl:text-[48px] xl:leading-[65px]  ${recoleta.className}`}
+                  className={`text-[28px] xl:text-[48px] xl:leading-[65px]  ${recoleta.className}`}
                 >
                   {content.result.title}
                 </h2>
@@ -291,7 +291,7 @@ const Modal = ({
                     content.solution.points.map((point, index) => (
                       <li
                         key={index}
-                        className=" text-[20px] leading-[30px] font-normal flex items-start justify-start"
+                        className=" text-[14px] leading-[21px] sm:text-[20px] sm:leading-[30px]  font-normal flex items-start justify-start"
                       >
                         <p className="  pt-[11px] pb-1">
                           <span
@@ -364,7 +364,7 @@ const Modal = ({
               Tools Used
             </h2>
 
-            <div className="flex flex-wrap justify-center gap-y-4 gap-x-2.5 py-5  md:gap-y-10">
+            <div className="flex flex-wrap justify-center gap-y-2.5 gap-x-2.5 py-5  ">
               <Image
                 src="/projects/react-icon.svg"
                 alt="Tech"
@@ -472,7 +472,7 @@ const Modal = ({
 
               <DialogClose className="w-full max-w-[260px]" asChild>
                 <Link href="#contact" className="w-full max-w-[260px]">
-                  <Button className="bg-[#6447F9] rounded-[8px] text-white hover:bg-[#6447F9]/80 font-mulish text-sm font-bold px-9 py-4    ">
+                  <Button className="bg-[#6447F9] rounded-[8px] text-white hover:bg-[#6447F9]/80 font-mulish text-sm h-[45px] px-9 py-4    ">
                     Get in touch now!
                     <ArrowUpRight className="w-5 h-5 ml-2  text-white " />
                   </Button>

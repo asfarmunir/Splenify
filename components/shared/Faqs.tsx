@@ -70,7 +70,7 @@ const Faqs = () => {
         Frequently Asked <span className="text-[#7165FF]">Questions</span>
       </h1>
 
-      <div className=" flex flex-col gap-5 w-full  max-w-2xl lg:max-w-5xl xl:max-w-[74rem] 2xl:max-w-[85rem]  items-start  justify-center">
+      <div className=" flex flex-col gap-5 w-full pb-8 max-w-2xl lg:max-w-5xl xl:max-w-[74rem] 2xl:max-w-[85rem]  items-start  justify-center">
         {faqs.map((faq, index) => (
           <Accordion
             type="single"
