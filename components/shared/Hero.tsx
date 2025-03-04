@@ -24,11 +24,11 @@ const acheivments = [
   },
   {
     title: "App Built",
-    number: "80+",
+    number: "35+",
   },
   {
     title: "Skillful Talent",
-    number: "50+",
+    number: "25+",
   },
 ];
 
@@ -66,7 +66,7 @@ const Hero = () => {
             Design
           </h3>
           <h3 className=" text-xs sm:text-sm px-2.5 py-1.5 sm:px-6 sm:py-2   2xl:py-2  2xl:px-8 border   rotate-12 text-[#7268FA] rounded-[20px] border-slate- dark:border-slate-700 dark:bg-slate-900 2xl:text-lg">
-            Writing
+            Website
           </h3>
         </div>
         <h2 className=" text-[18px] sm:text-[35px] mt-2  md:text-[1.9rem] font-normal 2xl:text-[2.3rem]  ">

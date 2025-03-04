@@ -31,17 +31,17 @@ const faqs = [
   {
     question: "Will my app work on both iOS and Android?",
     answer:
-      "We specialize in building high-performance mobile applications using Flutter. Whether you need an e-commerce app, social networking platform, booking system, fintech solution, or any custom app idea, we can bring it to life",
+      "Yes! Since we use Flutter, your app will be cross-platform, meaning it will run smoothly on both iOS and Android devices.",
   },
   {
     question: "Do you offer app maintenance and support after launch?",
     answer:
-      "We specialize in building high-performance mobile applications using Flutter. Whether you need an e-commerce app, social networking platform, booking system, fintech solution, or any custom app idea, we can bring it to life",
+      "Yes, we provide ongoing maintenance, updates, and bug fixes to ensure your app runs smoothly post-launch.",
   },
   {
     question: "How do I get started with Splenify for my app idea?",
     answer:
-      "We specialize in building high-performance mobile applications using Flutter. Whether you need an e-commerce app, social networking platform, booking system, fintech solution, or any custom app idea, we can bring it to life",
+      "Yes, we provide ongoing maintenance, updates, and bug fixes to ensure your app runs smoothly post-launch.",
   },
 ];
 

@@ -235,7 +235,7 @@ const page = () => {
         <h1 className={`text-[36px]  sm:text-[57px]  ${recoleta.className} `}>
           Our <span className="text-[#5956E9]">Story</span>
         </h1>{" "}
-        <div className="flex gap-5 lg:gap-12 2xl:gap-20 py-6 sm:py-12 2xl:py-16 w-full">
+        <div className="flex gap-6 xl:gap-0 py-6 sm:py-12 2xl:py-16 w-full">
           <div className="bg-[#5956E9] bg-opacity-[12%] ml-4 sm:mx-12 lg:mx-10 xl:mx-20 w-2 rounded-full mt-10 lg:mt-16 relative">
             <motion.div
               className="absolute top-0 transition-all duration-700 ease-out   w-full rounded-full  bg-[#5956E9] " /* roadmapProgressBar */
@@ -329,7 +329,7 @@ const page = () => {
                 viewport={{
                   once: true,
                 }}
-                className=" w-full sm:w-fit lg:w-[495px] h-[295px]"
+                className=" w-full sm:w-fit lg:w-[495px] xl:w-[295px] h-[295px]"
               >
                 <Image
                   src="/images/about.png"
@@ -389,7 +389,7 @@ const page = () => {
                 viewport={{
                   once: true,
                 }}
-                className=" w-full sm:w-fit lg:w-[495px] h-[295px]"
+                className=" w-full sm:w-fit lg:w-[495px] xl:w-[295px] h-[295px]"
               >
                 <Image
                   src="/about/story1.webp"
@@ -425,18 +425,18 @@ const page = () => {
                   className={`${recoleta.className} text-[28px] sm:text-[40px] sm:leading-[54px]  max-w-2xl`}
                 >
                   {" "}
-                  <span className="text-[#DB14F1] px-1 ">
+                  <span className="text-[#DB14F1] px-1 pr-2 ">
                     {" "}
                     45+ applications
                   </span>
                   and counting
                 </h3>
                 <p className="text-[16px] sm:text-[20px] tracking-wide leading-snug sm:leading-[30px] ">
-                  Over the years, we’ve designed, developed, and launched 100+
-                  applications, each tailored to deliver real results. From
-                  seamless user experiences to robust, scalable solutions, we’ve
-                  helped businesses across industries bring their ideas to life
-                  and achieve their goals.
+                  Last year, we’ve designed and developed 45+ applications for
+                  passionate entrepreneurs. <br /> <br /> From seamless user
+                  experiences to robust, scalable solutions, we’ve helped
+                  businesses across industries bring their ideas to life and
+                  achieve their goals.
                 </p>
               </motion.div>
               <motion.div
@@ -453,7 +453,7 @@ const page = () => {
                 viewport={{
                   once: true,
                 }}
-                className=" w-full sm:w-fit lg:w-[495px] h-[295px]"
+                className=" w-full sm:w-fit lg:w-[495px] xl:w-[295px] h-[295px]"
               >
                 <Image
                   src="/about/story2.webp"
@@ -497,9 +497,9 @@ const page = () => {
                   Our name reflects what we aim to do: "Splenify"—to transform
                   and elevate. Every app we develop is more than just code—it’s
                   a blend of strategy, design, and technology, crafted to bring
-                  our clients’ visions to life. We measure success by the value
-                  we create, the impact we deliver, and the dreams we help
-                  realize.
+                  our clients’ visions to life. <br /> <br /> We measure success
+                  by the value we create, the impact we deliver, and the dreams
+                  we help realize.
                 </p>
               </motion.div>
               <motion.div
@@ -516,7 +516,7 @@ const page = () => {
                 viewport={{
                   once: true,
                 }}
-                className=" w-full sm:w-fit lg:w-[495px] h-[295px]"
+                className=" w-full sm:w-fit lg:w-[495px] xl:w-[295px] h-[295px]"
               >
                 <Image
                   src="/about/story3.webp"
@@ -618,7 +618,8 @@ const page = () => {
                 </div>
               </div>
               <p className="text-[14px] sm:text-[16px] xl:text-[20px] text-center sm:text-start text-[#747576] dark:text-slate-300 mb-4">
-                Co-founder splenidy. Senior Graphics Designer
+                Co-founder splenidy. <br className=" lg:hidden" /> Senior
+                Graphics Designer
               </p>
               <div className=" inline-flex sm:hidden lg:inline-flex items-center gap-4">
                 <Image

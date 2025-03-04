@@ -71,7 +71,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="w-full mx-[18px] lg:mx-0 sm:max-w-2xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl rounded-[8px] drop-shadow-sm relative z-40 my-4 bg-[#F8F4FE] bg-opacity-55 backdrop-blur-lg items-center flex justify-between  dark:shadow-gray-900/60 px-4 sm:px-8 md:pl-12 md:pr-8 py-3 ">
+      <div className="w-full mx-[18px] lg:mx-0 sm:max-w-2xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl rounded-[8px] drop-shadow-sm relative z-40 my-4 bg-[#F8F4FE] bg-opacity-55 backdrop-blur-lg items-center flex justify-between  dark:shadow-gray-900/60 px-2.5 sm:px-8 md:pl-12 md:pr-8 py-3 ">
         <Image
           src="/images/logoWhite.png"
           alt="Splenify"
@@ -79,7 +79,7 @@ const Navbar = () => {
           height={50}
           priority
           unoptimized
-          className="hidden dark:block"
+          className="hidden dark:block "
         />
         <Image
           src="/images/logoBlack.png"
@@ -88,7 +88,7 @@ const Navbar = () => {
           height={50}
           priority
           unoptimized
-          className="dark:hidden"
+          className="dark:hidden w-[100px] sm:w-[150px]  "
         />
         <div className="hidden lg:inline-flex items-center gap-10">
           {navlinks.map((item, index) => (
@@ -174,14 +174,14 @@ const Navbar = () => {
         <div className="lg:hidden">
           <button
             onClick={toggleMenu}
-            className={`p-2 text-2xl transition-transform duration-500 ease-in-out ${
+            className={`p-2 text-xl sm:text-2xl transition-transform duration-500 ease-in-out ${
               isMenuOpen ? "rotate-90" : "rotate-0"
             } relative z-20`}
           >
             {isMenuOpen ? (
               <FiX className="transition-transform duration-500" />
             ) : (
-              <RiMenu3Line className="transition-transform duration-500" />
+              <RiMenu3Line className=" transition-transform duration-500" />
             )}
           </button>
         </div>

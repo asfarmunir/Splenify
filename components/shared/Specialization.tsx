@@ -349,28 +349,28 @@ const Specialization = () => {
               },
             }}
             key={index}
-            className="flex items-center sm:py-4 flex-col justify-center lg:flex-row gap-6 px-5 sm:px-0  2xl:gap-8  "
+            className="flex items-center   flex-col justify-center lg:flex-row gap-6 px-5 sm:px-0  2xl:gap-8  "
           >
-            <div className=" w-full ">
+            <div className=" w-full h-full  ">
               <Image
                 src={item.image}
                 alt="Splenify"
                 loading="lazy"
                 width={225}
-                className=" w-full h-full lg:h-[206px] xl:h-[254px] object-cover object-center rounded-2xl"
+                className=" w-full h-full object-cover object-center rounded-2xl"
                 height={123}
               />
             </div>
-            <div className=" w-full flex flex-col justify-center  ">
-              <h2 className="text-[20px] xl:text-[24px] xl:leading-[36px] font-semibold mb-2 capitalize">
+            <div className=" w-full flex flex-col  justify-center  ">
+              <h2 className="text-[20px] xl:text-[24px] xl:leading-[36px] font-semibold mb-1.5 capitalize">
                 {item.title}
               </h2>
-              <p className="text-[14px] lg:text-[12px] xl:text-[14px]   ">
+              <p className="text-[14px] lg:text-[12px] xl:text-[14px] xl:leading-[20px]   ">
                 {item.description}
               </p>
               <div
                 className="flex pt-4 lg:pt-0
-               sm:mt-2  items-center flex-wrap w-full gap-2 "
+               sm:mt-2  items-center flex-wrap w-full gap-1 "
               >
                 {item.tags.map((tag, index) => (
                   <p

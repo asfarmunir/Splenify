@@ -7,6 +7,13 @@ import { Mulish } from "next/font/google";
 import localFont from "next/font/local";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Link from "next/link";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 const recoleta = localFont({ src: "../../app/recoleta.ttf" });
 
@@ -229,19 +236,17 @@ const ContactUs = () => {
               >
                 Solution
               </label>
-              <select
-                name=""
-                id=""
-                required
-                className=" w-full text-[#B3B3B3]  placeholder:text-[#B3B3B3] border p-1.5 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-[8px]"
-              >
-                <option value="Mobile App Development">
-                  Mobile App Development
-                </option>
-                <option value="Web Development">Web Development</option>
-                <option value="UI/UX Design">UI/UX Design</option>
-                <option value="Other">Other</option>
-              </select>
+
+              <Select>
+                <SelectTrigger className=" w-full text-[#B3B3B3]  placeholder:text-[#B3B3B3] border p-1.5 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-[8px]">
+                  <SelectValue placeholder="Theme" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="light">Web Development</SelectItem>
+                  <SelectItem value="dark">UI/UX Design</SelectItem>
+                  <SelectItem value="system">Others</SelectItem>
+                </SelectContent>
+              </Select>
             </div>
             <div className="flex flex-col gap-1 mt-2">
               <label
