@@ -143,7 +143,7 @@ const page = () => {
             src="/about/1.webp"
             alt="about"
             width={450}
-            className=" w-full lg:h-[391px] xl:h-[548px] rounded-[24px] "
+            className=" w-full lg:h-[401px] xl:h-[548px] rounded-[24px] "
             height={450}
           />
         </motion.div>
@@ -177,7 +177,7 @@ const page = () => {
           >
             Building Your App’s Success Story
           </h3>
-          <p className="text-[16px] leading-[24px] sm:text-[20px] sm:leading-[30px]  2xl:text-lg tracking-wide  ">
+          <p className="text-[16px] leading-[24px] sm:text-[20px] sm:leading-[30px]  2xl:text-lg   ">
             At Splenify, we transform your ideas into powerful, high-performing
             mobile apps that stand out in a crowded digital world. Starting from
             ground zero, we guide your app through every stage of its
@@ -280,7 +280,7 @@ const page = () => {
           <div className="flex flex-col gap-[30px] sm:gap-[64px] w-full">
             <div
               ref={ref1}
-              className=" w-full gap-5 sm:gap-10 mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between  max-w-6xl 2xl:max-w-7xl"
+              className=" w-full gap-5 sm:gap-8 mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between  max-w-6xl 2xl:max-w-7xl"
             >
               <motion.div
                 initial={{
@@ -306,7 +306,7 @@ const page = () => {
                   Four graduates,{" "}
                   <span className="text-[#DB14F1]">one shared vision</span>
                 </h3>
-                <p className="text-[16px] sm:text-[20px] tracking-wide leading-snug sm:leading-[30px] ">
+                <p className="text-[16px] sm:text-[20px]  leading-snug sm:leading-[30px] ">
                   Splenify was born in 2019, when four software graduate
                   students came together with a shared passion for technology
                   and a mission to build applications that deliver real
@@ -329,7 +329,7 @@ const page = () => {
                 viewport={{
                   once: true,
                 }}
-                className=" w-full sm:w-fit lg:w-[495px] xl:w-[295px] h-[295px]"
+                className=" w-full sm:w-fit lg:w-[600px] xl:w-[295px] h-full xl:h-[295px]"
               >
                 <Image
                   src="/images/about.png"
@@ -577,7 +577,7 @@ const page = () => {
           Meet the heart of <span className="text-[#CA67FC]">Splenify</span>
         </h1>
 
-        <div className=" w-full grid grid-cols-2   lg:grid-cols-4 gap-3 sm:gap-6   gap-y-12 pt-7">
+        <div className=" w-full grid grid-cols-2   lg:grid-cols-4 gap-4 sm:gap-8 lg:gap-3    gap-y-12 pt-7">
           {Array.from({ length: 8 }).map((_, index) => (
             <motion.div
               key={index}

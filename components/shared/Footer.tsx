@@ -8,7 +8,7 @@ import logo from "../../public/icons/Logo.svg";
 
 const Footer = () => {
   return (
-    <footer className=" mx-[18px] sm:mx-auto sm:max-w-2xl  lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mb-6 ms:mb-8 rounded-[21px] md:mb-16 bg-[#161C2D] py-[42px] xl:py-[52px]  px-2.5 md:px-[70px] ">
+    <footer className=" mx-[18px] sm:mx-auto sm:max-w-2xl  lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl mb-6 ms:mb-8 rounded-[21px] md:mb-16 bg-[#161C2D] py-[42px] lg:py-[52px]  px-2.5 md:px-[70px] ">
       <div className="flex flex-col  gap-8 items-center px-3 md:px-0  w-fit mx-auto  pb-10  border-b border-[#272B39]">
         <div className="flex flex-col items-center lg:items-start  gap-3">
           <Image

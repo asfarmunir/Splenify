@@ -146,10 +146,10 @@ const ContactUs = () => {
             className=" bg-white h-full  dark:bg-slate-900 dark:shadow-inner border dark:border-none border-[#D9D9D9] dark:shadow-gray-800 p-4 sm:p-8   rounded-xl  flex flex-col gap-1 xl:gap-2"
           >
             <h2
-              className={` text-center  sm:capitalize  leading-[33px] sm:text-start text-[28px]  mb-2 ${recoleta.className}`}
+              className={` text-center  sm:capitalize  leading-[28px] sm:leading-[38px] sm:text-start text-[28px]  mb-2 ${recoleta.className}`}
             >
               Got an idea? <br className=" sm:hidden" />
-              <span className="text-[#7165FF] sm:text-[#DF56FE] ">
+              <span className="text-[#7165FF] px-0.5 sm:text-[#DF56FE] ">
                 We’ve got the skills.
               </span>
             </h2>
