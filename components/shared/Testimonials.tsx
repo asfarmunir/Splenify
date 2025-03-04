@@ -32,26 +32,26 @@ const Testimonials = () => {
         <p className="text-center text-[16px] sm:text-[32px] font-normal">
           Don&apos;t take our word for it!
         </p>
-        <div className="flex md:space-x-4 w-full justify-center items-center whitespace-nowrap">
+        <div className="flex md:space-x-4 w-full justify-between max-w-2xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl  mx-auto lg:justify-center items-center whitespace-nowrap">
           <Image
             src={"/images/leafl.svg"}
             width={10}
             height={10}
             alt="leaf"
-            className="w-[40px] h-[70px] sm:w-[55px] sm:h-[84px] dark:invert block"
+            className=" w-[30px] xs1:w-[40px] h-[70px] sm:w-[55px] sm:h-[84px] dark:invert block"
           />
 
           <h1
-            className={`text-[27px] text-wrap relative max-w-lg md:max-w-5xl  sm:text-[48px]  ${recoleta.className}    text-center `}
+            className={`text-[25px] text-wrap relative max-w-lg md:max-w-5xl  sm:text-[48px]  ${recoleta.className}    text-center `}
           >
-            Here’s what our 100+{" "}
+            Here’s what our 100+ <br className="  sm:hidden" />
             <span className="text-[#7165FF] ">clients</span> say
             <Image
               src="/images/line_vector2.svg"
               alt="Splenify"
               width={380}
               height={380}
-              className="  dark:invert hidden lg:block lg:bottom-0   lg:w-[150px]  xl:w-[150px] absolute lg:right-[5rem] xl:right-[5rem]  -rotate-4 "
+              className="  dark:invert sm:hidden lg:block lg:bottom-0 w-[70px]  lg:w-[150px] right-24 bottom-1  xl:w-[150px] absolute lg:right-[5rem] xl:right-[5rem]  -rotate-4 "
             />
           </h1>
 
@@ -60,7 +60,7 @@ const Testimonials = () => {
             width={10}
             height={10}
             alt="leaf"
-            className="w-[40px] h-[70px] sm:w-[55px] sm:h-[84px] dark:invert block"
+            className="w-[30px] xs1:w-[40px] h-[70px] sm:w-[55px] sm:h-[84px] dark:invert block"
           />
         </div>
       </div>
@@ -83,6 +83,17 @@ const Testimonials = () => {
             role={"Co-Founder of RecruitU"}
             review="Splenify is the partner you dream of when embarking on a project like this. They listened to our needs, worked with our team, and delivered an app that not only looks great but performs flawlessly. Splenify didn’t just build our app—they helped us shape it into something truly awesome"
           />
+          <div className="hidden sm:block xl:hidden">
+            <TestimonialModal
+              logo={"/images/recruitu.svg"}
+              userImage="/images/client3.svg"
+              profileImage={"/images/avatar.png"}
+              name="Ruslan Babar"
+              delayDuration={0.4}
+              role="Co-Founder of RecruitU"
+              review="Working with Splenify felt like having an extension of our own team. They cared deeply about our success, and their work resulted in an app that has taken our business to new heights. The team at Splenify transformed our vague idea into a polished app that’s received rave reviews from our users. Their creativity and technical skill are unparalleled."
+            />
+          </div>
         </div>
         <div className="flex flex-col space-y-10">
           <TestimonialModal
@@ -102,8 +113,18 @@ const Testimonials = () => {
             role={"Co-Founder of RecruitU"}
             review="Collaborating with Splenify was an absolute pleasure. Their team was always one step ahead, offering solutions and ideas that made our app more functional and impactful than we initially planned."
           />
+          <div className="hidden sm:block xl:hidden">
+            <TestimonialModal
+              logo={"/images/genex.svg"}
+              profileImage={"/images/avatar.png"}
+              name={"Ruslan Babar"}
+              delayDuration={0.35}
+              role={"Co-Founder of RecruitU"}
+              review="“Our experience with Splenify was nothing short of amazing. They turned our complex requirements into a smooth, user-friendly app while ensuring every milestone was delivered on time”. Their proactive communication, innovative solutions, and technical prowess made the entire process seamless."
+            />
+          </div>
         </div>
-        <div className="flex md:hidden lg:flex flex-col space-y-10">
+        <div className="flex sm:hidden xl:flex flex-col lg:flex-row-reverse xl:flex-col col-span-1 lg:col-span-2 gap-0 lg:gap-4 xl:gap-0  xl:col-span-1 space-y-10">
           <TestimonialModal
             logo={"/images/genex.svg"}
             profileImage={"/images/avatar.png"}
@@ -123,7 +144,7 @@ const Testimonials = () => {
           />
         </div>
       </div>
-      <div className="hidden sm:flex flex-col md:flex-row max-w-2xl lg:hidden  items-start gap-4  ">
+      {/* <div className="hidden md:flex flex-col md:flex-row max-w-2xl lg:hidden  items-start gap-4  ">
         <TestimonialModal
           logo={"/images/genex.svg"}
           profileImage={"/images/avatar.png"}
@@ -141,7 +162,7 @@ const Testimonials = () => {
           role="Co-Founder of RecruitU"
           review="&quot;Working with Raja and Splenify has been incredible. They &lt;span class='font-bold'&gt;quickly grasped our business model&lt;/span&gt;, transforming our landing page and creating stellar social media assets, pitch decks, and more. &lt;span class='font-bold'&gt;Their versatility and expertise are unmatched&lt;/span&gt;.&quot;"
         />
-      </div>
+      </div> */}
     </motion.div>
   );
 };

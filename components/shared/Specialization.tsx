@@ -102,7 +102,7 @@ const Specialization = () => {
             alt="Splenify"
             width={380}
             height={380}
-            className="  dark:invert hidden lg:block lg:bottom-16 xl:-bottom-6  lg:w-[190px]  xl:w-[380px] absolute lg:right-8 xl:right-40  -rotate-4 "
+            className="  dark:invert hidden lg:block lg:bottom-16 xl:-bottom-6  lg:w-[190px]  xl:w-[380px] absolute lg:right-2 xl:right-40  -rotate-4 "
           />
         </h1>
       </div>

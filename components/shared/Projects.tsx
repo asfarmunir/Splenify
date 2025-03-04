@@ -432,20 +432,24 @@ const Projects = () => {
           We go beyond just visuals
         </h2>
         <h1
-          className={` text-[27px] sm:text-[48px] relative  tracking-wide text-center mb-6 ${recoleta.className}`}
+          className={` hidden  sm:block text-[27px] sm:text-[48px] relative  tracking-wide text-center mb-6 ${recoleta.className}`}
         >
-          Browse our <span className="px-1 hidden sm:block">most</span>{" "}
-          <br className="hidden sm:block" />
+          Browse our most <br className=" lg:hidden" />
           <span className="text-[#7165FF]">recent projects</span>
         </h1>
-
+        <h1
+          className={` text-[27px] sm:text-[41px] relative sm:hidden  tracking-wide text-center mb-6 ${recoleta.className}`}
+        >
+          Browse our <span className="hidden sm:block">most</span>
+          <span className="text-[#7165FF]">recent projects</span>
+        </h1>
         <Image
           src="/images/left-arrow.svg"
           alt="Splenify"
           width={300}
           height={300}
-          className=" absolute  top-16   rotate-1 -right-[4.5rem]  
-          hidden sm:block sm:w-[200px] dark:invert
+          className=" absolute  sm:top-16 -top-4   rotate-1 -right-[3.5rem]   sm:-right-[4.5rem]  
+          block w-[120px] sm:w-[200px] dark:invert
 
            "
         />
@@ -454,12 +458,12 @@ const Projects = () => {
           alt="Splenify"
           width={160}
           height={140}
-          className="   hidden sm:block absolute -left-24  top-16  -rotate-6
-          w-[210px] dark:invert
+          className="  w-[120px] block absolute -left-12 sm:-left-24  -top-5 sm:top-16  -rotate-6
+          sm:w-[210px] dark:invert
           "
         />
 
-        <div className=" w-full max-w-5xl 2xl:max-w-7xl space-y-8 px-8 sm:px-0   2xl:gap-16 ">
+        <div className=" w-full max-w-5xl 2xl:max-w-7xl space-y-8 px-5 sm:px-0   2xl:gap-16 ">
           <motion.div
             initial={{
               x: 150,
@@ -474,9 +478,9 @@ const Projects = () => {
                 ease: "easeInOut",
               },
             }}
-            className=" flex h-[400px] sm:h-[800px]   flex-col  "
+            className=" flex h-[400x] xs1:h-[510px] sm:h-[800px]   flex-col  "
           >
-            <div className=" w-full h-full rounded-3xl overflow-hidden">
+            <div className=" w-full h-full rounded-[10px] overflow-hidden">
               <Image
                 src="/projectModal/hero2.webp"
                 alt="Splenify"
@@ -522,7 +526,7 @@ const Projects = () => {
             }}
             className=" flex h-[400px] sm:h-[558px]   flex-col  "
           >
-            <div className=" w-full h-full rounded-3xl overflow-hidden">
+            <div className=" w-full h-full rounded-[10px] overflow-hidden">
               <Image
                 src="/projectModal/hero3.webp"
                 alt="Splenify"
@@ -568,7 +572,7 @@ const Projects = () => {
             }}
             className=" flex h-[400px] sm:h-[558px]   flex-col  "
           >
-            <div className=" w-full h-full rounded-3xl overflow-hidden">
+            <div className=" w-full h-full rounded-[10px] overflow-hidden">
               <Image
                 src="/projectModal/hero4.webp"
                 loading="lazy"
@@ -612,9 +616,9 @@ const Projects = () => {
                 ease: "easeInOut",
               },
             }}
-            className=" flex h-[400px] sm:h-[820px]  flex-col  "
+            className=" flex  h-[400x] xs1:h-[510px] sm:h-[820px]  flex-col  "
           >
-            <div className=" w-full h-full  rounded-3xl overflow-hidden">
+            <div className=" w-full h-full  rounded-[10px] overflow-hidden">
               <Image
                 src="/projectModal/hero1.webp"
                 alt="Splenify"

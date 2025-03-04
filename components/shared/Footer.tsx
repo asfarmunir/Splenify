@@ -18,17 +18,17 @@ const Footer = () => {
             className=" mx-auto mb-3"
             height={160}
           />
-          <h2 className=" text-[28px] xl:text-[32px] sm:text-3xl mb-4 text-center  md:text-3xl  text-white font-semibold">
-            Ready to launch your next project?
+          <h2 className=" text-[28px] leading-[36px] xl:text-[32px] sm:text-3xl mb-4 text-center  md:text-3xl  text-white font-semibold">
+            Ready to launch <br className=" sm:hidden" /> your next project?
           </h2>
-          <p className=" text-white text-[16px] max-w-lg text-center  my-2 md:my-0 leading-loose md:leading-6 tracking-wide">
+          <p className=" text-white text-[16px] leading-[24px] max-w-lg text-center  my-2 md:my-0  md:leading-6 tracking-wide">
             With lots of unique blocks, you can easily build a page without
             coding. Build your next landing page.
           </p>
         </div>
         <Link
           href={"https://www.cal.com/splenify"}
-          className=" bg-[#7165FF] mx-auto sm:mx-0 w-full text-center sm:w-fit rounded-[10px] text-white py-5 px-6 2xl:px-12  2xl:text-lg"
+          className=" bg-[#7165FF] mx-auto sm:mx-0 w-[229px] text-center text-sm sm:w-fit rounded-[10px] text-white py-4 sm:py-5 sm:px-6 2xl:px-12  2xl:text-lg"
         >
           Get Started with Splenify
         </Link>

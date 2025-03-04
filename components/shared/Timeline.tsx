@@ -689,7 +689,7 @@ export const Timeline = () => {
               </h3>
             </div>
 
-            <div className="relative  xl:pl-[4.1rem] pl-3  sm:pl-[1.8rem] w-full pr-4 md:pr-0 ">
+            <div className="relative  xl:pl-[4.1rem] pl-3   w-full pr-4 md:pr-0 ">
               <h3
                 className={` ${recoleta.className} lg:hidden block text-[28px] sm:text-5xl mb-4 text-left   dark:text-slate-200`}
               >

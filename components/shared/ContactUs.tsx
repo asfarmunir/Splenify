@@ -39,8 +39,8 @@ const ContactUs = () => {
       <h1
         className={`text-[28px]   sm:text-[47px] mb-4 md:mb-[60px] md:text-[40px] lg:text-[46px]  ${recoleta.className}    text-center `}
       >
-        Ready To <span className="text-[#DF56FE]">Start</span> Your{" "}
-        <span className="text-[#7165FF]">Flutter Journey</span>?
+        Ready to <span className="text-[#DF56FE]">start</span> your{" "}
+        <span className="text-[#7165FF]">Flutter journey</span>?
       </h1>
 
       <div className=" flex flex-col lg:h-[855px] xl:h-[860px] 2xl:h-[900px]  xl:px-[60px] 2xl:px-0  w-full  max-w-2xl lg:max-w-5xl xl:max-w-6xl  items-start  justify-center   lg:flex-row gap-4 lg:gap-4 xl:gap-8">
@@ -72,7 +72,7 @@ const ContactUs = () => {
                 className=" "
               />
               <div className=" absolute  -bottom-12 -right-20  p-4 px-6 shadow-custom2 rounded-lg backdrop-blur  ">
-                <h2 className="text-2xl font-bold">Shayan</h2>
+                <h2 className="text-[20px] sm:text-2xl font-bold">Shayan</h2>
                 <p className="text-sm text-[#747576] dark:text-slate-400 ">
                   Solution Specialist
                 </p>
@@ -85,9 +85,8 @@ const ContactUs = () => {
               <h2 className="sm:text-[20px]    dark:text-slate-400">
                 We’ve got your back.
               </h2>
-              <h2 className="sm:text-[20px]    dark:text-slate-400">
-                Schedule a call below, or send a quick <br className="" /> email
-                to
+              <h2 className="sm:text-[20px]   max-w-xs  dark:text-slate-400">
+                Schedule a call below, or send a quick email to
                 <span className="text-[#7165FF]">
                   {" "}
                   teamsplenify@splenify.com
@@ -97,7 +96,7 @@ const ContactUs = () => {
           </div>
 
           <h1
-            className={` ${recoleta.className} mt-7 sm:mt-20 lg:mt-5 text-[28px] text-center  sm:text-start sm:text-[33px] xl:text-[36px]  capitalize tracking-wide`}
+            className={` ${recoleta.className} mt-7 sm:mt-20 lg:mt-5 leading-[33px] text-[28px] text-center  sm:text-start sm:text-[33px] xl:text-[36px]   tracking-wide`}
           >
             Talk to you <br className="block sm:hidden" /> in less than{" "}
             <span className="text-[#DF56FE] px-1">24hs.</span>
@@ -147,13 +146,16 @@ const ContactUs = () => {
             className=" bg-white h-full  dark:bg-slate-900 dark:shadow-inner border dark:border-none border-[#D9D9D9] dark:shadow-gray-800 p-4 sm:p-8   rounded-xl  flex flex-col gap-1 xl:gap-2"
           >
             <h2
-              className={` text-center capitalize sm:text-start text-[28px]  mb-2 ${recoleta.className}`}
+              className={` text-center  sm:capitalize  leading-[33px] sm:text-start text-[28px]  mb-2 ${recoleta.className}`}
             >
               Got an idea? <br className=" sm:hidden" />
-              <span className="text-[#DF56FE] ">We’ve got the skills.</span>
+              <span className="text-[#7165FF] sm:text-[#DF56FE] ">
+                We’ve got the skills.
+              </span>
             </h2>
-            <p className="text-sm text-center sm:text-start sm:text-[20px] capitalize text-slate-800 dark:text-slate-300 tracking-wide leading-[30px]  ">
-              Fill out our contact form and we’ll get in touch!
+            <p className="text-sm text-center sm:text-start sm:text-[20px]  text-slate-800 dark:text-slate-300 tracking-wide leading-[30px]  ">
+              Fill out our contact form and we’ll <br className="sm:hidden" />{" "}
+              get in touch!
             </p>
             <div className="flex flex-col gap-1 mt-3">
               <label
@@ -188,7 +190,7 @@ const ContactUs = () => {
                 htmlFor=""
                 className=" text-sm 2xl:text-base mb-1   dark:text-slate-400"
               >
-                Email
+                E-mail
               </label>
               <input
                 placeholder="email@gmail.com"
@@ -204,22 +206,23 @@ const ContactUs = () => {
               >
                 Phone Number
               </label>
-              <div className="flex flex-col md:flex-row gap-2">
+              <div className="flex flex-row gap-2">
                 {" "}
                 {/* Responsive container */}
                 {/* Country Code Dropdown */}
-                <select
-                  required
-                  className="w-full md:w-1/4 text-[#B3B3B3] border p-1.5 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-[8px] appearance-none"
-                >
-                  <option value="+1">+1 (USA)</option>
-                  <option value="+44">+44 (UK)</option>
-                  <option value="+91">+91 (India)</option>
-                  <option value="+91">+92 (Pk)</option>
-                  <option value="+61">+61 (Aus)</option>
-                  <option value="+33">+33 (France)</option>
-                  {/* Add more country codes as needed */}
-                </select>
+                <Select>
+                  <SelectTrigger className="w-1/4 text-[#B3B3B3] border p-1.5 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800  px-3 sm:px-4 rounded-[8px] appearance-none">
+                    <SelectValue placeholder="+1 (USA)" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="+1">+1 USA</SelectItem>
+                    <SelectItem value="+44">+44 UK</SelectItem>
+                    <SelectItem value="+91">+91 India</SelectItem>
+                    <SelectItem value="+92">+92 Pk</SelectItem>
+                    <SelectItem value="+61">+61 Aus</SelectItem>
+                    <SelectItem value="+33">+33 France</SelectItem>
+                  </SelectContent>
+                </Select>
                 {/* Phone Number Input */}
                 <input
                   placeholder="234 567 890"
@@ -239,7 +242,7 @@ const ContactUs = () => {
 
               <Select>
                 <SelectTrigger className=" w-full text-[#B3B3B3]  placeholder:text-[#B3B3B3] border p-1.5 border-[#D9D9D9] dark:border-slate-800 dark:bg-slate-800 px-4 rounded-[8px]">
-                  <SelectValue placeholder="Theme" />
+                  <SelectValue placeholder="Solution" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="light">Web Development</SelectItem>
@@ -287,11 +290,11 @@ const ContactUs = () => {
           <div className="flex items-start justify-between gap-6 flex-col ">
             <div className=" w-full">
               <h2
-                className={`${recoleta.className} text-xl mb-4 sm:text-[28px] font-semibold `}
+                className={`${recoleta.className} mb-4 text-[28px] font-semibold `}
               >
-                Schedule A Call
+                Schedule a call
               </h2>
-              <p className=" sm:text-[20px] max-w-xs">
+              <p className="  [sm:text-[20px] max-w-xs">
                 Feel free to select a time at your convenience!
               </p>
             </div>
@@ -299,7 +302,7 @@ const ContactUs = () => {
               href={"https://www.cal.com/splenify"}
               className="text-[#7165FF]   inline-flex text-nowrap items-center gap-2 xl:text-[20px]  font-semibold"
             >
-              Lets Talk
+              Let's Talk
               <FaArrowRightLong className="text-lg" />
             </Link>
           </div>
