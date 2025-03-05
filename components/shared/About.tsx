@@ -178,7 +178,7 @@ const page = () => {
             Building Your App’s Success Story
           </h3>
           <p className="text-[16px] leading-[24px] sm:text-[20px] sm:leading-[30px]  2xl:text-lg   ">
-            At Splenify, we transform your ideas into powerful, high-performing
+            At Splenify, we transform ideas into powerful, high-performing
             mobile apps that stand out in a crowded digital world. Starting from
             ground zero, we guide your app through every stage of its
             journey—from concept to launch and beyond—ensuring it reaches its
