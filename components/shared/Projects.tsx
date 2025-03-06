@@ -448,8 +448,8 @@ const Projects = () => {
           alt="Splenify"
           width={300}
           height={300}
-          className=" absolute  sm:top-16 -top-4   rotate-1 -right-[3.5rem]   sm:-right-[4.5rem]  
-          block w-[120px] sm:w-[200px] dark:invert
+          className=" absolute  sm:top-16 -top-4   rotate-1 -right-[3.5rem]   sm:-right-[4.5rem] md:-right-[12rem]  
+          block w-[120px] sm:w-[200px] md:sm:w-[300px] dark:invert
 
            "
         />
@@ -458,8 +458,8 @@ const Projects = () => {
           alt="Splenify"
           width={160}
           height={140}
-          className="  w-[120px] block absolute -left-12 sm:-left-24  -top-5 sm:top-16  -rotate-6
-          sm:w-[210px] dark:invert
+          className="  w-[120px] block absolute -left-12 sm:-left-24 md:-left-44   -top-5 sm:top-16  -rotate-6
+          sm:w-[210px] md:w-[300px] dark:invert
           "
         />
 

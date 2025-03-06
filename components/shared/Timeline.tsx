@@ -646,13 +646,11 @@ export const Timeline = () => {
           },
         }}
         viewport={{ once: true, amount: 0.5 }}
-        className="mb-12 2xl:mb-16 flex flex-col items-center gap-3 2xl:gap-5"
+        className="mb-5 sm:mb-12 2xl:mb-16 flex flex-col items-center gap-3 2xl:gap-5"
       >
-        <h2 className=" text-[16px]  sm:text-[32px] mb-2 sm:mb-4 ">
-          How we do it?
-        </h2>
+        <h2 className=" text-[16px]  sm:text-[32px]  ">How we do it?</h2>
         <h1
-          className={` px-4 relative text-[25px] sm:text-[48px] mb-4 max-w-2xl xl:max-w-7xl lg:leading-[65px] lg:text-[48px] tracking-wide text-center  ${recoleta.className}`}
+          className={` px-4 relative text-[28px] sm:text-[48px] mb-4 max-w-2xl xl:max-w-7xl lg:leading-[65px] lg:text-[48px]  text-center  ${recoleta.className}`}
         >
           World-class apps on demand, with our{" "}
           <span className=" text-[#DF56FE] "> process!</span>
@@ -683,7 +681,7 @@ export const Timeline = () => {
                 />
               </div>
               <h3
-                className={`hidden lg:block  lg:pl-20 text-[40px]   dark:text-slate-200 ${recoleta.className}`}
+                className={`hidden lg:block  lg:pl-16 text-[40px]   dark:text-slate-200 ${recoleta.className}`}
               >
                 {item.title}
               </h3>

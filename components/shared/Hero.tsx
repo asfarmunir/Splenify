@@ -73,7 +73,7 @@ const Hero = () => {
           We help you
         </h2>
       </header>
-      <section className="flex  flex-col   items-center gap-6  ">
+      <section className="flex  flex-col   items-center gap-2 sm:gap-4  ">
         <motion.div
           viewport={{ once: true }}
           initial={
@@ -92,7 +92,7 @@ const Hero = () => {
               },
             } /* Animate when in view */
           }
-          className={`  sm:max-w-full -mt-10   md:-mt-4 leading-snug sm:leading-none  -tracking-wide  text-[32px] sm2:text-[2.8rem]   sm:text-[64px]  md:text-7xl lg:text-[80px] xl:text-[98px] px-0.5 text-center ${recoleta.className}`}
+          className={`  sm:max-w-full -mt-10   md:-mt-4 leading-snug sm:leading-none  -tracking-wide  text-[32px] sm2:text-[2.8rem]   sm:text-[64px]   lg:text-[80px] xl:text-[98px] px-0.5 text-center ${recoleta.className}`}
         >
           Design. <span className="grad_text md:px-4 2xl:px-6 ">Develop.</span>{" "}
           Deploy
@@ -101,7 +101,7 @@ const Hero = () => {
           We’re a modern app-building company that creates apps that your
           customers love and that evolve with your business.
         </p>
-        <div className="flex xl:mb-[40px] sm:mb-[44px]  items-center justify-center gap-3 w-full   md:gap-4 px-5 md:px-12">
+        <div className="flex mb-9 xl:mb-[40px] sm:mb-[44px]  items-center justify-center gap-3 w-full   md:gap-4 px-5 md:px-12">
           <button
             onClick={() => scrollToSection("contact")}
             className=" bg-gradient-to-r hover:bg-gradient-to-tr w-[119px] hover:bg-[#DF56FE] transition-colors text-xs md:flex-grow-0  sm:w-[174px] lg:w-[194px] from-[#DF56FE] to-[#7165FF]   md:text-base 2xl:text-lg text-white font-normal rounded-[8px]  2xl:px-8 py-[0.8rem] sm:py-[1.1rem]  "
@@ -118,7 +118,7 @@ const Hero = () => {
         {/* <HeroBentoGrid /> */}
         <BentoGrid />
       </section>
-      <div className="w-full px-[18px] sm:px-0 mb-[30px] sm:mb-[120px] sm:mt-[64px] lg:mt-[112px]  xl:mt-[224px]  max-w-2xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl gap-2 sm:gap-4 2xl:gap-6 mx-auto grid grid-cols-2 lg:grid-cols-4 justify-items-center ">
+      <div className="w-full px-[18px] sm:px-0 mb-[30px] sm:mb-[120px] mt-9 sm:mt-[64px] lg:mt-[112px]  xl:mt-[224px]  max-w-2xl lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl gap-2 sm:gap-4 2xl:gap-6 mx-auto grid grid-cols-2 lg:grid-cols-4 justify-items-center ">
         {acheivments.map((acheivment, index) => (
           <motion.div
             key={index}

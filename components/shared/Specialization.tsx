@@ -84,11 +84,11 @@ const Specialization = () => {
       className="flex flex-col w-full  items-center gap-5  "
     >
       <div className=" mb-[24px] sm:mb-7 xl:mb-[60px] flex flex-col items-center gap-3  2xl:gap-5">
-        <h2 className=" text-[16px]   sm:text-[32px] tracking-wide mb-2 sm:mb-4 ">
+        <h2 className=" text-[16px]   sm:text-[32px] tracking-wide  ">
           What do we specialize in?
         </h2>
         <h1
-          className={` text-[28px] sm:text-5xl  px-3.5 relative sm:leading-[65px] md:text-3xl sm:mb-4 max-w-2xl lg:max-w-5xl xl:max-w-7xl lg:text-[48px] lg:leading-[65px] tracking-wide text-center  ${recoleta.className}`}
+          className={` text-[28px] sm:text-5xl  px-3.5 relative sm:leading-[65px]  sm:mb-4 max-w-2xl lg:max-w-5xl xl:max-w-7xl lg:text-[48px] lg:leading-[65px]  text-center  ${recoleta.className}`}
         >
           Our partners hire us to{" "}
           <span className="text-[#7165FF]">
@@ -102,7 +102,7 @@ const Specialization = () => {
             alt="Splenify"
             width={380}
             height={380}
-            className="  dark:invert hidden lg:block lg:bottom-16 xl:-bottom-6  lg:w-[190px]  xl:w-[380px] absolute lg:right-2 xl:right-40  -rotate-4 "
+            className="  dark:invert hidden sm:block lg:bottom-16 xl:-bottom-6  lg:w-[190px]  xl:w-[380px] absolute right-56  lg:right-2 xl:right-40  -rotate-4 "
           />
         </h1>
       </div>
