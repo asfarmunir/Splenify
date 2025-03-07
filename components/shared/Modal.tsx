@@ -92,7 +92,7 @@ const Modal = ({
             </div>
           </div>
           <div className=" pt-12  space-y-14 2xl:pt-20 ">
-            <div className="flex gap-5 px-8 2xl:px-10 md:py-12 relative">
+            <div className="flex gap-5 px-4 xs1:px-8 2xl:px-10 md:py-12 relative">
               <Image
                 src={
                   color === "blue"
@@ -116,7 +116,7 @@ const Modal = ({
                   ? "bg-[#F712841A]"
                   : "bg-[#FF76681A]"
               }
-                 2xl:w-20 2xl:h-20 w-16 h-16  rounded-full flex items-center justify-center   p-2 2xl:p-3`}
+                 2xl:w-20 2xl:h-20 xs1:w-16 w-11 h-10 xs1:h-16  rounded-full flex items-center justify-center   p-2 2xl:p-3`}
               >
                 <p
                   className={`
@@ -127,7 +127,7 @@ const Modal = ({
                         ? "bg-[#F71284]"
                         : "bg-[#FF7668]"
                     }
-                  text-2xl  2xl:w-16 2xl:h-14 w-14 h-12 text-center font-semibold text-white rounded-full flex items-center justify-center `}
+                  text-lg xs1:text-2xl  2xl:w-16 2xl:h-14 xs1:w-14 w-7 h-7 xs1:h-12 text-center font-semibold text-white rounded-full flex items-center justify-center `}
                 >
                   1
                 </p>
@@ -159,7 +159,7 @@ const Modal = ({
                 </ul>
               </div>
             </div>
-            <div className="flex ml-auto w-full  dark:bg-slate-900 py-16 2xl:px-10 px-8 justify-end gap-5 relative">
+            <div className="flex ml-auto w-full  dark:bg-slate-900 py-16 2xl:px-10 px-4 xs1:px-8 justify-end gap-5 relative">
               <Image
                 src={
                   color === "blue"
@@ -171,7 +171,7 @@ const Modal = ({
                 width={780}
                 height={780}
                 alt="shape"
-                className="absolute w-[300px] xs1:w-[370px]   -rotate-12 md:rotate-0 sm:w-[450px] md:w-[560px]  lg:w-[790px] right-7  bottom-0  md:-bottom-28 md:right-12 2xl:right-16 z-50
+                className="absolute w-[300px] xs1:w-[370px]   -rotate-12 md:rotate-0 sm:w-[450px] md:w-[560px]  lg:w-[790px] right-11 xs1:right-7  bottom-0  md:-bottom-28 md:right-12 2xl:right-16 z-50
               "
               />
               <div className=" space-y-3 text-right">
@@ -227,7 +227,7 @@ const Modal = ({
                   ? "bg-[#F712841A]"
                   : "bg-[#FF76681A]"
               }
-                 2xl:w-20 2xl:h-20 w-16 h-16  rounded-full flex items-center justify-center   p-2 2xl:p-3`}
+                 2xl:w-20 2xl:h-20 xs1:w-16 w-11 h-10 xs1:h-16  rounded-full flex items-center justify-center   p-2 2xl:p-3`}
               >
                 <p
                   className={`
@@ -238,14 +238,14 @@ const Modal = ({
                         ? "bg-[#F71284]"
                         : "bg-[#FF7668]"
                     }
-                  text-2xl  2xl:w-16 2xl:h-14 w-14 h-12 text-center font-semibold text-white rounded-full flex items-center justify-center `}
+                  text-lg xs1:text-2xl  2xl:w-16 2xl:h-14 xs1:w-14 w-7 h-7 xs1:h-12 text-center font-semibold text-white rounded-full flex items-center justify-center `}
                 >
                   {" "}
                   2
                 </p>
               </div>
             </div>
-            <div className="flex gap-5 px-8 2xl:px-10 pb-12 md:py-12">
+            <div className="flex gap-5 px-4 xs1:px-8 2xl:px-10 pb-12 md:py-12">
               <div
                 className={`
               ${
@@ -255,7 +255,7 @@ const Modal = ({
                   ? "bg-[#F712841A]"
                   : "bg-[#FF76681A]"
               }
-                 2xl:w-20 2xl:h-20 w-16 h-16  rounded-full flex items-center justify-center   p-2 2xl:p-3`}
+                 2xl:w-20 2xl:h-20 xs1:w-16 w-11 h-10 xs1:h-16  rounded-full flex items-center justify-center   p-2 2xl:p-3`}
               >
                 <p
                   className={`
@@ -266,7 +266,7 @@ const Modal = ({
                         ? "bg-[#F71284]"
                         : "bg-[#FF7668]"
                     }
-                  text-2xl  2xl:w-16 2xl:h-14 w-14 h-12 text-center font-semibold text-white rounded-full flex items-center justify-center `}
+                  text-lg xs1:text-2xl  2xl:w-16 2xl:h-14 xs1:w-14 w-7 h-7 xs1:h-12 text-center font-semibold text-white rounded-full flex items-center justify-center `}
                 >
                   {" "}
                   3
