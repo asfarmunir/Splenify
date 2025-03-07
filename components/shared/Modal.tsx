@@ -52,7 +52,7 @@ const Modal = ({
       >
         View Project
       </DialogTrigger>
-      <DialogContent className="  border-none     md:rounded-2xl p-0 lg:min-w-[900px] 2xl:min-w-[940px] ">
+      <DialogContent className="  border-none     md:rounded-2xl p-0 md:min-w-[680px] lg:min-w-[900px] 2xl:min-w-[940px] ">
         <div className=" w-full flex flex-col max-h-[100svh] md:max-h-[90svh] md:rounded-2xl overflow-y-auto [scroll]  [scrollbar-width:none]   ">
           <div
             className=" w-full flex flex-col relative items-center pt-16 gap-4   bg-cover bg-center min-h-[430px] sm:min-h-[500px]"
@@ -74,7 +74,7 @@ const Modal = ({
               />
             </div>
 
-            <p className="text-xl 2xl:text-2xl max-w-sm lg:max-w-2xl   text-white text-center tracking-wide ">
+            <p className="text-xl sm:text-2xl max-w-sm lg:max-w-2xl   text-white text-center tracking-wide ">
               {content.title || "Title Goes Here"}
             </p>
             <div className=" w-[370px] h-[200px] md:w-[600px] absolute -bottom-10 md:h-[250px]  2xl:w-[600px] 2xl:h-[340px]  ">
@@ -104,7 +104,7 @@ const Modal = ({
                 width={790}
                 height={790}
                 alt="shape"
-                className="absolute w-[300px] xs1:w-[370px] rotate-12 md:rotate-0 sm:w-[450px] md:w-[410px]  lg:w-[790px]  left-4 -bottom-20  md:-bottom-32 md:left-12 2xl:left-16 z-50
+                className="absolute w-[300px] xs1:w-[370px] rotate-12 md:rotate-0 sm:w-[450px] md:w-[570px]  lg:w-[790px]  left-4 -bottom-20  md:-bottom-32 md:left-12 2xl:left-16 z-50
               "
               />
               <div
@@ -171,7 +171,7 @@ const Modal = ({
                 width={780}
                 height={780}
                 alt="shape"
-                className="absolute w-[300px] xs1:w-[370px]   -rotate-12 md:rotate-0 sm:w-[450px] md:w-[410px]  lg:w-[790px] right-7  bottom-0  md:-bottom-28 md:right-12 2xl:right-16 z-50
+                className="absolute w-[300px] xs1:w-[370px]   -rotate-12 md:rotate-0 sm:w-[450px] md:w-[560px]  lg:w-[790px] right-7  bottom-0  md:-bottom-28 md:right-12 2xl:right-16 z-50
               "
               />
               <div className=" space-y-3 text-right">
@@ -179,7 +179,7 @@ const Modal = ({
                   The Solution
                 </p>
                 <h2
-                  className={`text-[28px] xl:text-[48px] xl:leading-[65px]  ${recoleta.className}`}
+                  className={`text-[28px] xl:text-[48px]  xl:leading-[65px]  ${recoleta.className}`}
                 >
                   {content.solution.title}
                 </h2>
@@ -364,21 +364,21 @@ const Modal = ({
                 src="/projects/react-icon.svg"
                 alt="Tech"
                 width={180}
-                className=" border border-slate-200 dark:border-slate-700 py-3.5 px-8 rounded-md"
+                className=" border w-[138px] xs1:w-[170px] sm:w-[180px] border-slate-200 dark:border-slate-700 py-3.5 px-8 rounded-md"
                 height={150}
               />
               <Image
                 src="/projects/flutter-icon.svg"
                 alt="Tech"
                 width={180}
-                className=" border border-slate-200 dark:border-slate-700 py-3.5 px-8 rounded-md"
+                className=" border w-[138px] xs1:w-[170px] sm:w-[180px] border-slate-200 dark:border-slate-700 py-3.5 px-8 rounded-md"
                 height={150}
               />
               <Image
                 src="/projects/angular-icon.svg"
                 alt="Tech"
                 width={180}
-                className=" border border-slate-200 dark:border-slate-700 py-3.5 px-8 rounded-md"
+                className=" border w-[138px] xs1:w-[170px] sm:w-[180px] border-slate-200 dark:border-slate-700 py-3.5 px-8 rounded-md"
                 height={150}
               />
 
@@ -386,29 +386,21 @@ const Modal = ({
                 src="/projects/django-icon.svg"
                 alt="Tech"
                 width={180}
-                className=" border  border-slate-200 dark:border-slate-700 py-3.5 px-8 rounded-md"
+                className=" border w-[138px] xs1:w-[170px] sm:w-[180px] border-slate-200 dark:border-slate-700 py-3.5 px-8 rounded-md"
                 height={150}
               />
             </div>
           </div>
           <div
-            className={` ${testimonialBg}    relative    flex flex-col lg:flex-row pt-16 md:pt-8   items-center lg:gap-8  justify-center  px-12 md:px-20 border-none `}
+            className={` ${testimonialBg}    relative    flex flex-col lg:flex-row pt-16 pb-8 lg:pb-0 lg:pt-8   items-center gap-4 sm:gap-0 lg:gap-8  justify-center  px-8 lg:px-20 border-none `}
           >
-            {/* <Image
-              src="/images/arrow3.svg"
-              width={140}
-              height={390}
-              alt="shape"
-              className="absolute w-[135px] md:w-[115px] 2xl:w-[140px]  rotate-12 md:rotate-0   left-0 top-0   z-20
-              "
-            /> */}
-            <div className="flex flex-col items-start  gap-4 md:pb-8 ">
+            <div className="flex flex-col items-start  gap-4 lg:gap-4 md:pb-8 ">
               <h2
-                className={`text-4xl text-white font-bold  ${recoleta.className}`}
+                className={`text-2xl xs1:text-4xl text-white font-semibold  ${recoleta.className}`}
               >
                 Hear it from our client
               </h2>
-              <p className="text-[14px] 2xl:text-sm font-normal  max-w-lg text-white  ">
+              <p className="text-xs xs1:text-[14px] 2xl:text-sm font-normal  max-w-lg text-white  ">
                 "Working with Raja and Splenify has been incredible. They
                 quickly grasped our business model and vision, transforming our
                 landing page and creating stellar social media assets, pitch
@@ -436,7 +428,15 @@ const Modal = ({
               width={10}
               height={10}
               alt="review-img"
-              className="2xl:w-[350px] 2xl:h-[239px] mt-auto w-[300px] h-[189px] rounded-[16px]"
+              className="hidden lg:block 2xl:w-[350px] 2xl:h-[239px] mt-auto w-[300px] h-[189px] rounded-[16px]"
+            />
+            <Image
+              src="/image.svg"
+              layout="intrinsic"
+              width={10}
+              height={10}
+              alt="review-img"
+              className=" lg:hidden 2xl:w-[350px] 2xl:h-[239px] mt-auto w-[300px] h-[189px] rounded-[16px]"
             />
           </div>
           <div
@@ -454,20 +454,20 @@ const Modal = ({
             }}
             className="  bg-[#161C2D] "
           >
-            <div className=" p-[122px]  justify-center flex flex-col items-center  space-y-3">
+            <div className=" px-[30px] xs1:px-[40px] py-[100px] md:px-[122px] md:py-[122px]  justify-center flex flex-col items-center  space-y-6">
               <h2
-                className={`${recoleta.className} font-bold font-mulish   text-4xl text-white`}
+                className={`${recoleta.className} font-bold font-mulish text-2xl  xs1:text-4xl text-white`}
               >
                 Have an app idea in mind? Bring it to life!{" "}
               </h2>
-              <p className="text-center font-mulish text-gray-400  text-sm 2xl:text-base font-medium max-w-sm md:max-w-lg  ">
+              <p className="text-center pb-3 sm:pb-0 font-mulish text-white  text-xs xs1:text-sm 2xl:text-base font-medium max-w-sm md:max-w-lg  ">
                 Get in touch with experts from Splenify, and create an app that
                 shines in the market.
               </p>
 
               <DialogClose className="w-full max-w-[260px]" asChild>
                 <Link href="#contact" className="w-full max-w-[260px]">
-                  <Button className="bg-[#6447F9] rounded-[8px] text-white hover:bg-[#6447F9]/80 font-mulish text-sm h-[45px] px-9 py-4    ">
+                  <Button className="bg-[#6447F9] rounded-[8px] text-white hover:bg-[#6447F9]/80 font-mulish text-sm h-[45px] px-9 py-[20px]    ">
                     Get in touch now!
                     <ArrowUpRight className="w-5 h-5 ml-2  text-white " />
                   </Button>
